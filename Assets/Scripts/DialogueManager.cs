@@ -8,6 +8,7 @@ public class DialogueManager : MonoBehaviour{
 
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
+    public Image npcImage;
 
     public Animator animator;
 
@@ -24,6 +25,7 @@ public class DialogueManager : MonoBehaviour{
         animator.SetBool("IsOpen", true);
 
         nameText.text = dialogue.name;
+        npcImage.sprite = dialogue.image;
 
         sentences.Clear();
 
@@ -55,6 +57,5 @@ public class DialogueManager : MonoBehaviour{
 
     public void EndDialogue(){
         animator.SetBool("IsOpen", false);
-        Debug.Log("Conversa Finalizada.");
     }
 }
