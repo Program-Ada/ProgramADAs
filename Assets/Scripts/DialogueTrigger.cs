@@ -8,22 +8,31 @@ public class DialogueTrigger : MonoBehaviour
     public Dialogue dialogue;
     public bool playerIsClose;
     public bool playerIsChatting;
+    public DialogueManager dm;
+    [SerializeField]GameObject toolTip;
+
+    void Start(){
+        dm = FindObjectOfType<DialogueManager>();
+        toolTip.SetActive(false);
+    }
 
     void Update(){
         if(Input.GetKeyDown(KeyCode.E) && playerIsClose && playerIsChatting == false){
             TriggerDialogue();
         }else if(Input.GetKeyDown(KeyCode.E) && playerIsClose && playerIsChatting){
-            FindObjectOfType<DialogueManager>().DisplayNextSentence();
+            dm.DisplayNextSentence();
         }
     }
     public void TriggerDialogue(){
         playerIsChatting = true;
-        FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+        dm.StartDialogue(dialogue);
+        toolTip.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D other){
         if(other.CompareTag("Player")){
             playerIsClose = true;
+            toolTip.SetActive(true);
         }
     }
 
@@ -31,7 +40,8 @@ public class DialogueTrigger : MonoBehaviour
         if(other.CompareTag("Player")){
             playerIsClose = false;
             playerIsChatting = false;
-            FindObjectOfType<DialogueManager>().EndDialogue();
+            toolTip.SetActive(false);
+            dm.EndDialogue();
         }
     }
 }
