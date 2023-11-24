@@ -14,6 +14,7 @@ public class QuizManager : MonoBehaviour
 
     public GameObject QuizPanel;
     public GameObject ScorePanel;
+    public GameObject InicialPanel;
     public GameObject Player;
 
     public TextMeshProUGUI QuestionTxt;
@@ -23,6 +24,7 @@ public class QuizManager : MonoBehaviour
     public int score;
 
     private void Start(){
+        InicialPanel.SetActive(false);
         QuizPanel.SetActive(false);
         ScorePanel.SetActive(false);
         QnA = new List<QuestionAndAnswers>();
@@ -35,10 +37,15 @@ public class QuizManager : MonoBehaviour
         }
     }
 
+    public void InicialPage(){
+        InicialPanel.SetActive(true);
+    }
+
     public void StartQuiz(){
         Copia();
         Debug.Log(QnA.Count);
         totalQuestions = QnA.Count;
+        InicialPanel.SetActive(false);
         QuizPanel.SetActive(true);
         Player.SetActive(false);
         GenerateQuestion();
@@ -51,6 +58,7 @@ public class QuizManager : MonoBehaviour
     }
 
     public void Sair(){
+        InicialPanel.SetActive(false);
         ScorePanel.SetActive(false);
         Player.SetActive(true);
         score = 0;

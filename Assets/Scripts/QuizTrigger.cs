@@ -19,7 +19,7 @@ public class QuizTrigger : MonoBehaviour
         }
     }
     public void TriggerQuiz(){
-        Qm.StartQuiz();
+        Qm.InicialPage();
     }
 
     private void OnTriggerEnter2D(Collider2D other){
