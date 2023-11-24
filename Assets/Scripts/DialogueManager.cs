@@ -9,6 +9,7 @@ public class DialogueManager : MonoBehaviour{
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
     public Image npcImage;
+    public bool pularTexto = false;
 
     public Animator animator;
 
@@ -36,13 +37,23 @@ public class DialogueManager : MonoBehaviour{
         DisplayNextSentence();
     }
 
+    string sentence = "";
+
     public void DisplayNextSentence(){
+        if(pularTexto){
+            pularTexto = false;
+            StopAllCoroutines();
+            dialogueText.text = sentence;
+            return;
+        }
         if(sentences.Count == 0){
             EndDialogue();
             return;
         }
 
-        string sentence = sentences.Dequeue();
+        pularTexto = true;
+
+        sentence = sentences.Dequeue();
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
     }
@@ -53,6 +64,7 @@ public class DialogueManager : MonoBehaviour{
             dialogueText.text += letter;
             yield return new WaitForSeconds((float)0.05);
         }
+        pularTexto = false;
     }
 
     public void EndDialogue(){
