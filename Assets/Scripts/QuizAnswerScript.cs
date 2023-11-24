@@ -9,10 +9,8 @@ public class QuizAnswerScript : MonoBehaviour
 
     public void Answer(){
         if(isCorrect){
-            Debug.Log("Correct Answer");
             quizManager.Correct();
         }else{
-            Debug.Log("Wrong Answer");
             quizManager.Wrong();
         }
     }

@@ -7,7 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class QuizManager : MonoBehaviour
 {
-    public List<QuestionAndAnswers> QnA;
+    List<QuestionAndAnswers> QnA;
+    public List<QuestionAndAnswers> Qn;
     public GameObject[] options;
     public int currentQuestion;
 
@@ -24,23 +25,35 @@ public class QuizManager : MonoBehaviour
     private void Start(){
         QuizPanel.SetActive(false);
         ScorePanel.SetActive(false);
+        QnA = new List<QuestionAndAnswers>();
+    }
+
+    private void Copia(){
+        QnA.Clear();
+        foreach(QuestionAndAnswers q in Qn){
+            QnA.Add(q);
+        }
     }
 
     public void StartQuiz(){
+        Copia();
+        Debug.Log(QnA.Count);
         totalQuestions = QnA.Count;
         QuizPanel.SetActive(true);
         Player.SetActive(false);
         GenerateQuestion();
-
     }
 
     public void Retry(){
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Sair();
+        StartQuiz();
     }
 
     public void Sair(){
         ScorePanel.SetActive(false);
         Player.SetActive(true);
+        score = 0;
     }
 
     public void GameOver(){
@@ -78,7 +91,6 @@ public class QuizManager : MonoBehaviour
             QuestionTxt.text = QnA[currentQuestion].Question;
             SetAnswers();
         }else{
-            Debug.Log("Out of Questions");
             GameOver();
         }
 
