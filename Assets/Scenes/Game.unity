@@ -539,7 +539,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Resposta
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9cb3d968203fcfa47b3f25f81d2ebb13, type: 2}
   m_sharedMaterial: {fileID: -4882347108149678699, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -564,13 +564,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 50
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 36
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -603,7 +603,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &54846506
@@ -973,6 +973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c38b05a43b6963345a70f02c990ceca2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startColor: {r: 0, g: 0, b: 0, a: 0}
   isCorrect: 0
   quizManager: {fileID: 1758142866}
 --- !u!114 &88823999
@@ -2062,7 +2063,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Selecione a resposta correta
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9cb3d968203fcfa47b3f25f81d2ebb13, type: 2}
   m_sharedMaterial: {fileID: -4882347108149678699, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2087,13 +2088,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 36
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -2126,7 +2127,7 @@ MonoBehaviour:
   m_margin: {x: 429.63467, y: 0, z: 429.63474, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &361753697
@@ -3090,7 +3091,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Parab\xE9ns! Voc\xEA Acertou:"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9cb3d968203fcfa47b3f25f81d2ebb13, type: 2}
   m_sharedMaterial: {fileID: -4882347108149678699, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3154,7 +3155,7 @@ MonoBehaviour:
   m_margin: {x: 67.29361, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &413389860
@@ -3224,7 +3225,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Resposta
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9cb3d968203fcfa47b3f25f81d2ebb13, type: 2}
   m_sharedMaterial: {fileID: -4882347108149678699, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3249,13 +3250,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 50
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 36
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -3288,7 +3289,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &429370125
@@ -4020,7 +4021,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.95187664, y: 4.67351, z: -10}
+  m_LocalPosition: {x: -0.9585719, y: 4.67351, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4550,6 +4551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c38b05a43b6963345a70f02c990ceca2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startColor: {r: 0, g: 0, b: 0, a: 0}
   isCorrect: 0
   quizManager: {fileID: 1758142866}
 --- !u!114 &620293623
@@ -4978,7 +4980,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Sair
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9cb3d968203fcfa47b3f25f81d2ebb13, type: 2}
   m_sharedMaterial: {fileID: -4882347108149678699, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -5042,7 +5044,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &678042981
@@ -6137,7 +6139,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Come\xE7ar"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9cb3d968203fcfa47b3f25f81d2ebb13, type: 2}
   m_sharedMaterial: {fileID: -4882347108149678699, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -6201,7 +6203,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &872283190
@@ -6537,7 +6539,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Sim
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9cb3d968203fcfa47b3f25f81d2ebb13, type: 2}
   m_sharedMaterial: {fileID: -4882347108149678699, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -6601,7 +6603,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &921600213
@@ -6671,8 +6673,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Nome
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
-  m_sharedMaterial: {fileID: -4882347108149678699, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9cb3d968203fcfa47b3f25f81d2ebb13, type: 2}
+  m_sharedMaterial: {fileID: 2348706102305327995, guid: 9cb3d968203fcfa47b3f25f81d2ebb13, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6696,8 +6698,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.5
-  m_fontSizeBase: 0.5
+  m_fontSize: 0.8
+  m_fontSizeBase: 0.8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -7158,6 +7160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c38b05a43b6963345a70f02c990ceca2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startColor: {r: 0, g: 0, b: 0, a: 0}
   isCorrect: 0
   quizManager: {fileID: 1758142866}
 --- !u!114 &1111872559
@@ -8078,7 +8081,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 16.570068, y: -3.5500488}
+  m_AnchoredPosition: {x: 16.570068, y: -3.5499878}
   m_SizeDelta: {x: -836.74, y: -73.47}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1284145661
@@ -8455,7 +8458,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Continue >>
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9cb3d968203fcfa47b3f25f81d2ebb13, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -8519,7 +8522,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1326349079
@@ -9615,8 +9618,8 @@ MonoBehaviour:
     eros viverra ac. Fusce vitae tellus et justo laoreet blandit. Nam semper velit
     sodales nulla hendrerit venenatis. Aliquam a commodo nibh, nec finibus tellus.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
-  m_sharedMaterial: {fileID: -4882347108149678699, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9cb3d968203fcfa47b3f25f81d2ebb13, type: 2}
+  m_sharedMaterial: {fileID: 2348706102305327995, guid: 9cb3d968203fcfa47b3f25f81d2ebb13, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9640,13 +9643,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.5
-  m_fontSizeBase: 0.5
+  m_fontSize: 0.8
+  m_fontSizeBase: 0.8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
   m_fontSizeMax: 0
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -9869,7 +9872,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "N\xE3o"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9cb3d968203fcfa47b3f25f81d2ebb13, type: 2}
   m_sharedMaterial: {fileID: -4882347108149678699, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -9933,7 +9936,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1688688619
@@ -10097,6 +10100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c38b05a43b6963345a70f02c990ceca2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startColor: {r: 0, g: 0, b: 0, a: 0}
   isCorrect: 0
   quizManager: {fileID: 1758142866}
 --- !u!114 &1715445445
@@ -10287,7 +10291,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Tente Novamente
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9cb3d968203fcfa47b3f25f81d2ebb13, type: 2}
   m_sharedMaterial: {fileID: -4882347108149678699, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -10351,7 +10355,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1739408638
@@ -10424,7 +10428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Qn:
-  - Question: "O que est\xE1 faltando no c\xF3digo a baixo?\n\n#include <iostream>
+  - Question: "O que est\xE1 faltando no c\xF3digo a seguir?\n\n#include <iostream>
       \nusing namespace std;  \nint main( ) {\n\n}"
     Answers:
     - "Uma vari\xE1vel"
@@ -10444,9 +10448,9 @@ MonoBehaviour:
     - return 0; na linha 9
     correctAnswer: 3
   - Question: "Dadas as entradas:\n\n- 3\n- false\n- 2.7\n- \"a\"\n\nQual o tipo
-      de vari\xE1vel de cada uma delas, respectivvamente?\n"
+      de vari\xE1vel de cada uma delas, respectivamente?\n"
     Answers:
-    - int, char, floar e bool
+    - int, char, float e bool
     - int, bool, float e char
     - float, bool, int, char
     - char, int, float e bool
@@ -10455,7 +10459,7 @@ MonoBehaviour:
       respectivamente, cada um deles:\n\n- !\n- !=\n- &&\n- | | "
     Answers:
     - "nega\xE7\xE3o, diferente, conjun\xE7\xE3o e disjun\xE7\xE3o"
-    - "diferente, nega\xE7\xE3o, dusjun\xE7\xE3o e conjun\xE7\xE3o"
+    - "diferente, nega\xE7\xE3o, disjun\xE7\xE3o e conjun\xE7\xE3o"
     - "igual, nega\xE7\xE3o, conjun\xE7\xE3o e nega\xE7\xE3o"
     - "disjun\xE7\xE3o, conjun\xE7\xE3o, nega\xE7\xE3o e igual"
     correctAnswer: 1
@@ -11206,7 +11210,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Resposta
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9cb3d968203fcfa47b3f25f81d2ebb13, type: 2}
   m_sharedMaterial: {fileID: -4882347108149678699, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -11231,13 +11235,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 50
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 36
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -11270,7 +11274,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1867293026
@@ -11470,7 +11474,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Sair
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9cb3d968203fcfa47b3f25f81d2ebb13, type: 2}
   m_sharedMaterial: {fileID: -4882347108149678699, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -11534,7 +11538,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1943063568
@@ -11881,7 +11885,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 4/5
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9cb3d968203fcfa47b3f25f81d2ebb13, type: 2}
   m_sharedMaterial: {fileID: -4882347108149678699, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -11945,7 +11949,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2021755156
@@ -12251,7 +12255,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Voc\xEA est\xE1 prestes a sair da sala, tem certeza?"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9cb3d968203fcfa47b3f25f81d2ebb13, type: 2}
   m_sharedMaterial: {fileID: -4882347108149678699, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -12315,7 +12319,7 @@ MonoBehaviour:
   m_margin: {x: 83.42471, y: 0, z: 27.653381, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2049081130
@@ -12826,7 +12830,7 @@ MonoBehaviour:
 
     - Aula Inicial -'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9cb3d968203fcfa47b3f25f81d2ebb13, type: 2}
   m_sharedMaterial: {fileID: -4882347108149678699, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -12890,7 +12894,7 @@ MonoBehaviour:
   m_margin: {x: 67.29361, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2115732775
@@ -12960,7 +12964,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Resposta
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9cb3d968203fcfa47b3f25f81d2ebb13, type: 2}
   m_sharedMaterial: {fileID: -4882347108149678699, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -12985,13 +12989,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 50
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 36
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -13024,7 +13028,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2126208173
@@ -13281,7 +13285,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.name
-      value: Barbara
+      value: "B\xE1rbara"
       objectReference: {fileID: 0}
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.image
@@ -13298,12 +13302,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.setences.Array.data[1]
-      value: "Aqui do meu lado tenho um quiz introdut\xF3rio com algumas perguntas
-        b\xE1sicas sobre introdu\xE7\xE3o a Algoritmos I."
+      value: "Aqui do meu lado tenho um quiz com algumas perguntas b\xE1sicas sobre
+        introdu\xE7\xE3o a Algoritmos."
       objectReference: {fileID: 0}
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.setences.Array.data[2]
-      value: "Sinta-se a vontade para tentar faz\xEA-lo quando se sentir confort\xE1vel!"
+      value: "Sinta-se \xE0 vontade para tentar faz\xEA-lo quando se sentir confort\xE1vel!"
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3486044095752316602, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
