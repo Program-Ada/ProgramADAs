@@ -8,4 +8,8 @@ public class EndPanel : MonoBehaviour
     public void QuitGame(){
         Application.Quit();
     }
+
+    public void ReturnToMenu(){
+        SceneManager.LoadScene("Menu");
+    }
 }
