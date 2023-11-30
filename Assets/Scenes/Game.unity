@@ -564,8 +564,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32
-  m_fontSizeBase: 32
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2505,8 +2505,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3667,8 +3667,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32
-  m_fontSizeBase: 32
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4438,7 +4438,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.96954393, y: 4.67352, z: -10}
+  m_LocalPosition: {x: -0.9452796, y: 4.67351, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8630,8 +8630,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 10.649902, y: 252.90002}
-  m_SizeDelta: {x: -181.3, y: -694.2}
+  m_AnchoredPosition: {x: 10.844971, y: 222.51001}
+  m_SizeDelta: {x: -181.69, y: -633.41}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1179031095
 MonoBehaviour:
@@ -9179,7 +9179,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 16.570068, y: -3.550293}
+  m_AnchoredPosition: {x: 16.570068, y: -3.550171}
   m_SizeDelta: {x: -836.74, y: -73.47}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1284145661
@@ -11783,10 +11783,10 @@ MonoBehaviour:
     - cout << "Hello World";
     correctAnswer: 2
   - Question: "Qual o erro presente nesse c\xF3digo?\n\n1 #include <iostream>\r\n2
-      using namespace std;\r\n3 int main()\r\n4 {\r\n5 cout << \"Erros devem ser
-      ;\r\n6 cout << \"corrigidos na ordem em que sao identificados,\";\r\n7 out
-      << \" pois ao corrigir \";\r\n8 cout << \"um erro \\nOutros podem ser identificados\";\r\n9
-      return 0;\r\n10 }"
+      using namespace std;\r\n3 int main()\r\n4 {\r\n5     cout << \"Erros devem
+      ser ;\r\n6     cout << \"corrigidos na ordem em que sao identificados,\";\r\n7    
+      out << \" pois ao corrigir \";\r\n8     cout << \"um erro \\nOutros podem ser
+      identificados\";\r\n9     return 0;\r\n10 }"
     Answers:
     - '"\n" na linha 8'
     - '"um erro" na linha 8'
@@ -12581,8 +12581,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32
-  m_fontSizeBase: 32
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -13301,7 +13301,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.setences.Array.data[0]
-      value: Oi eu sou a tiemi!
+      value: Oi, eu sou a Tiemi!
       objectReference: {fileID: 0}
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.setences.Array.data[1]
@@ -14665,7 +14665,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Quiz de Algoritmos 1
+  m_text: 'Quiz de Algoritmos
 
     - Aula Inicial -'
   m_isRightToLeft: 0
@@ -14828,8 +14828,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32
-  m_fontSizeBase: 32
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -15137,12 +15137,12 @@ PrefabInstance:
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.setences.Array.data[0]
       value: "Oi! Meu nome \xE9 B\xE1rbara e serei sua professora de Algoritmos nesse
-        Semestre"
+        semestre."
       objectReference: {fileID: 0}
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.setences.Array.data[1]
-      value: "Aqui do meu lado tenho um quiz com algumas perguntas b\xE1sicas sobre
-        introdu\xE7\xE3o a Algoritmos."
+      value: "Aqui do meu lado tenho um quiz com algumas perguntas sobre introdu\xE7\xE3o
+        a Algoritmos."
       objectReference: {fileID: 0}
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.setences.Array.data[2]
