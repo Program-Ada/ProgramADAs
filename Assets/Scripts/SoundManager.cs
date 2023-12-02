@@ -6,6 +6,12 @@ public class SoundManager : MonoBehaviour
 {
    public AudioSource src;
    public AudioClip correct_sfx, wrong_sfx, confirm_sfx, cancel_sfx;
+   public static SoundManager sm;
+
+   void Awake(){
+     sm = this;
+     src = GetComponent<AudioSource>();
+   }
 
    public void Correct(){
         src.clip = correct_sfx;

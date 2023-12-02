@@ -18,6 +18,7 @@ public class DialogueTrigger : MonoBehaviour
 
     void Update(){
         if(Input.GetKeyDown(KeyCode.E) && playerIsClose && playerIsChatting == false){
+            SoundManager.sm.Click();
             TriggerDialogue();
         }else if(Input.GetKeyDown(KeyCode.E) && playerIsClose && playerIsChatting){
             dm.DisplayNextSentence();

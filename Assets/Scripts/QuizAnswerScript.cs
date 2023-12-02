@@ -8,7 +8,6 @@ public class QuizAnswerScript : MonoBehaviour
     public Color startColor;
     public bool isCorrect = false;
     public QuizManager quizManager;
-    public SoundManager soundManager;
 
     private void Start(){
         startColor = GetComponent<Image>().color;
@@ -16,12 +15,12 @@ public class QuizAnswerScript : MonoBehaviour
 
     public void Answer(){
         if(isCorrect){
-            soundManager.Correct();
+            SoundManager.sm.Correct();
             GetComponent<Image>().color = Color.green;
             Invoke("AnswerCorrect", 1);
 
         }else{
-            soundManager.Wrong();
+            SoundManager.sm.Wrong();
             GetComponent<Image>().color = Color.red;
             Invoke("AnswerWrong", 1);
         }
