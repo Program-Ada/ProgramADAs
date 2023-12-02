@@ -322,6 +322,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 151978814}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7869814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -976,6 +988,7 @@ MonoBehaviour:
   startColor: {r: 0, g: 0, b: 0, a: 0}
   isCorrect: 0
   quizManager: {fileID: 1758142866}
+  soundManager: {fileID: 0}
 --- !u!114 &88823999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1443,6 +1456,152 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3919617994435948074, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
   m_PrefabInstance: {fileID: 2010222278}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &151978813
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 151978816}
+  - component: {fileID: 151978815}
+  - component: {fileID: 151978814}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &151978814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151978813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1576bbb778953ed4cb3f51e6fd1e0e04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  src: {fileID: 151978815}
+  correct_sfx: {fileID: 8300000, guid: 6a34feea99b26b1448fbe1470bca508b, type: 3}
+  wrong_sfx: {fileID: 8300000, guid: 8f53c015509e25244a8875c8d633ca29, type: 3}
+  confirm_sfx: {fileID: 8300000, guid: a730f7b8ddbff46468b98e60cf543a4f, type: 3}
+  cancel_sfx: {fileID: 8300000, guid: e1166ccfa66fb014f9866a82b9491b9f, type: 3}
+--- !u!82 &151978815
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151978813}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &151978816
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151978813}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.3045441, y: 4.260622, z: -0.076233745}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &175002976
 GameObject:
   m_ObjectHideFlags: 0
@@ -1538,7 +1697,7 @@ GameObject:
   - component: {fileID: 199131385}
   - component: {fileID: 199131384}
   m_Layer: 5
-  m_Name: TryAgain_Btn
+  m_Name: Start_Btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1626,6 +1785,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1758142866}
         m_TargetAssemblyTypeName: QuizManager, Assembly-CSharp
         m_MethodName: StartQuiz
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 151978814}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1904,6 +2075,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 151978814}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &263787513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2044,6 +2227,18 @@ MonoBehaviour:
       - m_Target: {fileID: 2114841528}
         m_TargetAssemblyTypeName: ExitDoor, Assembly-CSharp
         m_MethodName: ExitTrue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 151978814}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3509,7 +3704,7 @@ MonoBehaviour:
   m_text: "Parab\xE9ns! Voc\xEA Acertou:"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9cb3d968203fcfa47b3f25f81d2ebb13, type: 2}
-  m_sharedMaterial: {fileID: -4882347108149678699, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
+  m_sharedMaterial: {fileID: 2348706102305327995, guid: 9cb3d968203fcfa47b3f25f81d2ebb13, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4438,7 +4633,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.9452796, y: 4.67351, z: -10}
+  m_LocalPosition: {x: -0.9512124, y: 4.67351, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5011,6 +5206,7 @@ MonoBehaviour:
   startColor: {r: 0, g: 0, b: 0, a: 0}
   isCorrect: 0
   quizManager: {fileID: 1758142866}
+  soundManager: {fileID: 0}
 --- !u!114 &620293623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5438,7 +5634,7 @@ MonoBehaviour:
   m_text: Sair
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9cb3d968203fcfa47b3f25f81d2ebb13, type: 2}
-  m_sharedMaterial: {fileID: -4882347108149678699, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
+  m_sharedMaterial: {fileID: 2348706102305327995, guid: 9cb3d968203fcfa47b3f25f81d2ebb13, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6747,7 +6943,7 @@ MonoBehaviour:
   m_text: "Come\xE7ar"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9cb3d968203fcfa47b3f25f81d2ebb13, type: 2}
-  m_sharedMaterial: {fileID: -4882347108149678699, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
+  m_sharedMaterial: {fileID: 2348706102305327995, guid: 9cb3d968203fcfa47b3f25f81d2ebb13, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7541,6 +7737,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 151978814}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: Cancel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &948470008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8070,6 +8278,7 @@ MonoBehaviour:
   startColor: {r: 0, g: 0, b: 0, a: 0}
   isCorrect: 0
   quizManager: {fileID: 1758142866}
+  soundManager: {fileID: 0}
 --- !u!114 &1111872559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9179,7 +9388,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 16.570068, y: -3.550171}
+  m_AnchoredPosition: {x: 16.570068, y: -3.5499268}
   m_SizeDelta: {x: -836.74, y: -73.47}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1284145661
@@ -11449,6 +11658,7 @@ MonoBehaviour:
   startColor: {r: 0, g: 0, b: 0, a: 0}
   isCorrect: 0
   quizManager: {fileID: 1758142866}
+  soundManager: {fileID: 0}
 --- !u!114 &1715445445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11638,7 +11848,7 @@ MonoBehaviour:
   m_text: Tente Novamente
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9cb3d968203fcfa47b3f25f81d2ebb13, type: 2}
-  m_sharedMaterial: {fileID: -4882347108149678699, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
+  m_sharedMaterial: {fileID: 2348706102305327995, guid: 9cb3d968203fcfa47b3f25f81d2ebb13, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11791,7 +12001,7 @@ MonoBehaviour:
     - '"\n" na linha 8'
     - '"um erro" na linha 8'
     - '"out" na linha 7'
-    - return 0; na linha 10
+    - return 0; na linha 9
     correctAnswer: 3
   - Question: "Dadas as entradas:\n\na) 3\nb) false\nc) 2.7\nd) 'a'\n\nQual o tipo
       de vari\xE1vel de cada uma delas, respectivamente?\n"
@@ -11809,6 +12019,49 @@ MonoBehaviour:
     - "igual, nega\xE7\xE3o, conjun\xE7\xE3o e nega\xE7\xE3o"
     - "disjun\xE7\xE3o, conjun\xE7\xE3o, nega\xE7\xE3o e igual"
     correctAnswer: 1
+  - Question: "Dadas as seguintes declara\xE7\xF5es:\n\r\n    int a = 9, b = 4, c
+      = -2;\n \r\nQual o resultado da express\xE3o (a + c) / (2 * b)?"
+    Answers:
+    - 0
+    - 1
+    - 0.8
+    - 0.7
+    correctAnswer: 1
+  - Question: "Dadas as seguintes declara\xE7\xF5es:\r\n    \r\n    int a = 9, b
+      = 4, c = -2; \r\n    float r = 3.5, s = 2.0, t = 0.5;\n\r\nQual o resultado
+      da express\xE3o: !(a <= b * 2 + 1) || (r >= s + t)?"
+    Answers:
+    - 0
+    - true
+    - 2
+    - false
+    correctAnswer: 2
+  - Question: Para que eu preciso aprender a fazer um teste de mesa?
+    Answers:
+    - "Para ter mais autonomia para conferir meu pr\xF3prio algoritmo."
+    - "Para conseguir identificar problemas na ordem das instru\xE7\xF5es antes de
+      precisar executar."
+    - "As letras a. e b. est\xE3o certas. "
+    - "N\xE3o \xE9 nada disso."
+    correctAnswer: 3
+  - Question: "A declara\xE7\xE3o de vari\xE1veis separa um espa\xE7o na mem\xF3ria
+      para armazenar um valor do tipo informado no inicio da instru\xE7\xE3o. Por
+      exemplo, as instru\xE7\xF5es a seguir significam:\n\nint cont;\r\nfloat soma;\n"
+    Answers:
+    - "Separa\xE7\xE3o de espa\xE7o na mem\xF3ria para dois valores inteiros."
+    - "Separa\xE7\xE3o de espa\xE7o na mem\xF3ria para um valor inteiro chamado cont
+      e outro valor ponto flutuante chamado soma. "
+    - "Separa\xE7\xE3o de espa\xE7o para dois valores do mesmo tipo."
+    - "Separa\xE7\xE3o de espa\xE7o para um n\xFAmero ponto flutuante e um n\xFAmero
+      inteiro, respectivamente."
+    correctAnswer: 2
+  - Question: "Sobre declara\xE7\xF5es de vari\xE1veis escolha a op\xE7\xE3o v\xE1lida:"
+    Answers:
+    - "char endere\xE7o;"
+    - 'int valor1, valor2; '
+    - char a, b, char;
+    - 'int 21; '
+    correctAnswer: 2
   options:
   - {fileID: 88823997}
   - {fileID: 1715445443}
@@ -12821,7 +13074,7 @@ MonoBehaviour:
   m_text: Sair
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9cb3d968203fcfa47b3f25f81d2ebb13, type: 2}
-  m_sharedMaterial: {fileID: -4882347108149678699, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
+  m_sharedMaterial: {fileID: 2348706102305327995, guid: 9cb3d968203fcfa47b3f25f81d2ebb13, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -13366,7 +13619,7 @@ MonoBehaviour:
   m_text: 4/5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9cb3d968203fcfa47b3f25f81d2ebb13, type: 2}
-  m_sharedMaterial: {fileID: -4882347108149678699, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
+  m_sharedMaterial: {fileID: 2348706102305327995, guid: 9cb3d968203fcfa47b3f25f81d2ebb13, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -13561,6 +13814,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1758142866}
         m_TargetAssemblyTypeName: QuizManager, Assembly-CSharp
         m_MethodName: Sair
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 151978814}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: Cancel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14266,6 +14531,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 151978814}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: Cancel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2075801505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14670,7 +14947,7 @@ MonoBehaviour:
     - Aula Inicial -'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9cb3d968203fcfa47b3f25f81d2ebb13, type: 2}
-  m_sharedMaterial: {fileID: -4882347108149678699, guid: c99ac4e6f382a984a8b8ad617770b86e, type: 2}
+  m_sharedMaterial: {fileID: 2348706102305327995, guid: 9cb3d968203fcfa47b3f25f81d2ebb13, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -15181,3 +15458,4 @@ SceneRoots:
   - {fileID: 1747540929}
   - {fileID: 401977785}
   - {fileID: 175002978}
+  - {fileID: 151978816}
