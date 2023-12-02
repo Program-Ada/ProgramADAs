@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class QuizManager : MonoBehaviour
 {
@@ -22,12 +23,15 @@ public class QuizManager : MonoBehaviour
 
     int totalQuestions = 0;
     public int score;
+    public bool passed = false;
+    public static QuizManager qm;
 
-    private void Start(){
+    private void Awake(){
         InicialPanel.SetActive(false);
         QuizPanel.SetActive(false);
         ScorePanel.SetActive(false);
         QnA = new List<QuestionAndAnswers>();
+        qm = this;
     }
 
     private void Copia(){
@@ -43,7 +47,6 @@ public class QuizManager : MonoBehaviour
 
     public void StartQuiz(){
         Copia();
-        Debug.Log(QnA.Count);
         totalQuestions = QnA.Count;
         InicialPanel.SetActive(false);
         QuizPanel.SetActive(true);
@@ -61,13 +64,19 @@ public class QuizManager : MonoBehaviour
         InicialPanel.SetActive(false);
         ScorePanel.SetActive(false);
         Player.SetActive(true);
+        if(totalQuestions != 0 && (float)score/totalQuestions >= 0.75f){
+            passed = true;
+        }else{
+            passed = false;
+        }
         score = 0;
     }
 
     public void GameOver(){
+        float media = MathF.Round((float)score/totalQuestions * 100);
         QuizPanel.SetActive(false);
         ScorePanel.SetActive(true);  
-        ScoreTxt.text =   score + " / " + totalQuestions;
+        ScoreTxt.text = media.ToString() + "%";
     }
 
     public void Correct(){
@@ -94,7 +103,7 @@ public class QuizManager : MonoBehaviour
 
     void GenerateQuestion(){
         if(QnA.Count > 0){
-            currentQuestion = Random.Range(0, QnA.Count);
+            currentQuestion = UnityEngine.Random.Range(0, QnA.Count);
 
             QuestionTxt.text = QnA[currentQuestion].Question;
             SetAnswers();

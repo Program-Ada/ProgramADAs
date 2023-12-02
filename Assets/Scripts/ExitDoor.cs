@@ -8,11 +8,13 @@ public class ExitDoor : MonoBehaviour
 {
     public bool playerIsClose;
     public GameObject ExitOptionCanvas;
+    public GameObject ExitOptionCanvasFalse;
     public GameObject Player;
     [SerializeField]GameObject toolTip;
 
     void Start(){
         ExitOptionCanvas.SetActive(false);
+        ExitOptionCanvasFalse.SetActive(false);
         toolTip.SetActive(false);
     }
 
@@ -24,12 +26,18 @@ public class ExitDoor : MonoBehaviour
     public void TriggerExitOption(){
         toolTip.SetActive(false);
         Player.GetComponent<PlayerMovement>().enabled = false;
-        ExitOptionCanvas.SetActive(true);
+
+        if(QuizManager.qm.passed){
+            ExitOptionCanvas.SetActive(true);
+        }else{
+           ExitOptionCanvasFalse.SetActive(true); 
+        }
     }
 
     public void ExitFalse(){
         Player.GetComponent<PlayerMovement>().enabled = true;
         ExitOptionCanvas.SetActive(false);
+        ExitOptionCanvasFalse.SetActive(false);
     }
 
     public void ExitTrue(){
