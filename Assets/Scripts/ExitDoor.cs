@@ -44,6 +44,10 @@ public class ExitDoor : MonoBehaviour
         SceneManager.LoadScene("End");
     }
 
+    public void goToFase2(){
+        SceneManager.LoadScene("Fase 2");
+    }
+
     private void OnTriggerEnter2D(Collider2D other){
         if(other.CompareTag("Player")){
             playerIsClose = true;
