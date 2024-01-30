@@ -17,7 +17,9 @@ public class NotePadTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        TriggerChapter();
+        // if(teste) {
+            TriggerChapter();
+        // }
     }
 
     public void TriggerChapter() {

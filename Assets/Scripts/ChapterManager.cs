@@ -19,6 +19,7 @@ public class ChapterManager : MonoBehaviour
     void Start()
     {
         // tittleChapter = new Queue<string>();
+        currentpage = 1;
     }
 
     // Update is called once per frame
@@ -36,6 +37,8 @@ public class ChapterManager : MonoBehaviour
         // foreach (string word in chapter.tittle){
         //     tittleChapter.Enqueue(word);
         // }
+
+        // currentpage = 1;
     }
 
     public void NextPage_Btn()

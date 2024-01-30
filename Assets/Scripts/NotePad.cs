@@ -40,12 +40,19 @@ public class NotePad : MonoBehaviour
     public void Screen_Chapter1() {
         Menu.SetActive(false);
         Chapter1.SetActive(true);
-        Chapter2.SetActive(false);  
+        Chapter2.SetActive(false); 
     }
 
     public void Screen_Chapter2() {
         Menu.SetActive(false);
         Chapter1.SetActive(false);
-        Chapter2.SetActive(true);  
+        Chapter2.SetActive(true); 
+    }
+
+
+    public void Screen_Chapter(GameObject chapterObject) {
+        Menu.SetActive(false);
+        chapterObject.SetActive(true);
+        // chapterObject.currentpage = 1;
     }
 }

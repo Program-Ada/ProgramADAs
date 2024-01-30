@@ -11,4 +11,6 @@ public class Chapter
     public string content;
 
     // public bool chapterOpen;
+
+    // int currentpage = 1;
 }
