@@ -5,7 +5,6 @@ using TMPro;
 
 public class NotePad : MonoBehaviour
 {
-    public Chapter chapter;
     public GameObject NotePadCanvas;
     public GameObject Player;
 
@@ -13,12 +12,16 @@ public class NotePad : MonoBehaviour
     public GameObject Chapter1;
     public GameObject Chapter2;
 
+    public ChapterManager cm;
+
     void Start()
     {
         NotePadCanvas.SetActive(false); 
         Menu.SetActive(true);
         Chapter1.SetActive(false);
         Chapter2.SetActive(false);
+
+        cm = FindObjectOfType<ChapterManager>();
     }
 
     public void OpenNotePad() {
@@ -34,25 +37,13 @@ public class NotePad : MonoBehaviour
     public void Screen_Menu() {
         Menu.SetActive(true);
         Chapter1.SetActive(false);
-        Chapter2.SetActive(false);   
-    }
+        Chapter2.SetActive(false);
 
-    public void Screen_Chapter1() {
-        Menu.SetActive(false);
-        Chapter1.SetActive(true);
-        Chapter2.SetActive(false); 
+        cm.ResetPage();
     }
-
-    public void Screen_Chapter2() {
-        Menu.SetActive(false);
-        Chapter1.SetActive(false);
-        Chapter2.SetActive(true); 
-    }
-
 
     public void Screen_Chapter(GameObject chapterObject) {
         Menu.SetActive(false);
         chapterObject.SetActive(true);
-        // chapterObject.currentpage = 1;
     }
 }
