@@ -18,4 +18,9 @@ public class Tutorial : MonoBehaviour
         TutorialCanvas.SetActive(false);
     }
 
+    public void OpenTutorial(){
+        Player.GetComponent<PlayerMovement>().enabled = false;
+        TutorialCanvas.SetActive(true);       
+    }
+
 }

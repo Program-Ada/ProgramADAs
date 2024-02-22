@@ -4,13 +4,13 @@ using UnityEngine;
 using UnityEngine.Experimental.Animations;
 
 [System.Serializable]
-public class PlayerData
+public class GameData
 {
     public float[] position;
     public string scene;
     public int[] pointFases;
 
-    public PlayerData (Player player)
+    public GameData (Player player)
     {
             position = new float[3];
             position[0] = player.transform.position.x;

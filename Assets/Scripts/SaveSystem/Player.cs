@@ -5,14 +5,14 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public void Start(){
-        LoadPLayer();
+        LoadPLayerPosition();
     }
     public void SavePlayer(){
-        SaveSystem.SavePlayer(this);
+        SaveSystem.SaveGameData(this);
     }
 
-    public void LoadPLayer(){
-        PlayerData data = SaveSystem.LoadPlayer();
+    public void LoadPLayerPosition(){
+        GameData data = SaveSystem.LoadGameData();
 
         Vector3 position;
         position.x = data.position[0];
