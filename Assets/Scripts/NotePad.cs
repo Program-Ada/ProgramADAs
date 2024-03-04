@@ -7,8 +7,8 @@ public class NotePad : MonoBehaviour
 {
     public GameObject NotePadCanvas;
     public GameObject Player;
-
     public GameObject Menu;
+    public GameObject NotificationCanvas;
     public GameObject Chapter1;
     public GameObject Chapter2;
 
@@ -18,6 +18,7 @@ public class NotePad : MonoBehaviour
     {
         NotePadCanvas.SetActive(false); 
         Menu.SetActive(true);
+        NotificationCanvas.SetActive(true);
         Chapter1.SetActive(false);
         Chapter2.SetActive(false);
 
@@ -26,7 +27,8 @@ public class NotePad : MonoBehaviour
 
     public void OpenNotePad() {
         Player.GetComponent<PlayerMovement>().enabled = false;
-        NotePadCanvas.SetActive(true);   
+        NotePadCanvas.SetActive(true);
+        NotificationCanvas.SetActive(false); 
     }
 
     public void CloseNotePad() {
@@ -45,5 +47,10 @@ public class NotePad : MonoBehaviour
     public void Screen_Chapter(GameObject chapterObject) {
         Menu.SetActive(false);
         chapterObject.SetActive(true);
+        
+    }
+
+    public void Screen_Notificacao() {
+        NotificationCanvas.SetActive(true);
     }
 }

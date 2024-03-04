@@ -2376,11 +2376,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 296119417}
         m_TargetAssemblyTypeName: NotePad, Assembly-CSharp
-        m_MethodName: Screen_Chapter1
-        m_Mode: 1
+        m_MethodName: Screen_Chapter
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 505932306}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2629,11 +2629,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 296119417}
         m_TargetAssemblyTypeName: NotePad, Assembly-CSharp
-        m_MethodName: Screen_Chapter2
-        m_Mode: 1
+        m_MethodName: Screen_Chapter
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1252433828}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3026,14 +3026,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64d4a65b96f564b118606eb907c2476d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chapter:
-    tittle: 
-    content: 
   NotePadCanvas: {fileID: 296119415}
   Player: {fileID: 453369648}
   Menu: {fileID: 1923731376}
   Chapter1: {fileID: 505932306}
   Chapter2: {fileID: 1252433828}
+  cm: {fileID: 0}
 --- !u!114 &296119418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11840,7 +11838,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tittleChapter: {fileID: 1168932224}
   contentChapter: {fileID: 1752763434}
-  animator: {fileID: 985809848}
+  currentpage: 1
 --- !u!1 &1192587845
 GameObject:
   m_ObjectHideFlags: 0
@@ -18979,7 +18977,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tittleChapter: {fileID: 0}
   contentChapter: {fileID: 0}
-  animator: {fileID: 0}
+  currentpage: 1
 --- !u!1 &2049081127
 GameObject:
   m_ObjectHideFlags: 0
