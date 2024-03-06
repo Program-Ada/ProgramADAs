@@ -5,14 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class EndPanel : MonoBehaviour
 {
-    public Player p;
+    //public Player p;
     public void QuitGame(){
-        p.SavePlayer();
+        //p.SavePlayer();
         Application.Quit();
     }
 
     public void ReturnToMenu(){
-        p.SavePlayer();
+        //p.SavePlayer();
         SceneManager.LoadScene("Menu");
     }
 }

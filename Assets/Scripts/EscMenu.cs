@@ -27,7 +27,7 @@ public class EscMenu : MonoBehaviour
     }
 
     public void MenuButton(){
-        Player.GetComponent<Player>().SavePlayer();
+        //Player.GetComponent<Player>().SavePlayer();
         SceneManager.LoadScene("Menu");
     }
 

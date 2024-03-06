@@ -1,20 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using UnityEngine;
 using UnityEngine.Experimental.Animations;
 
 [System.Serializable]
 public class GameData
 {
-    public float[] position;
+    public Vector2 playerPosition;
     public string scene;
     public int[] pointFases;
 
-    public GameData (Player player)
+    // os valores nesse constructor serão os valores iniciais que o jogo irá iniciar
+    // toda vez que não tiver um arquivo de save criado ou começar um jogo novo
+
+    public GameData (/*Player player*/)
     {
-            position = new float[3];
-            position[0] = player.transform.position.x;
-            position[1] = player.transform.position.y;
-            position[2] = player.transform.position.z;
+            playerPosition = new float[2];
+            playerPosition[0] = -6.12;
+            playerPosition[1] = 6.12;
     }
 }

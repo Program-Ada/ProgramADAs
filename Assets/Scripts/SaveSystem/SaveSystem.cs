@@ -4,7 +4,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public static class SaveSystem
 {
-    public static void SaveGameData(Player player)
+    /*public static void SaveGameData(Player player)
     {
         BinaryFormatter formatter = new BinaryFormatter();
         string path = Application.persistentDataPath + "/gamedata.data";
@@ -34,5 +34,5 @@ public static class SaveSystem
             Debug.LogError("Arquivo de Salve não encontrado em: " + path);
             return null;
         }
-    }
+    }*/
 }
