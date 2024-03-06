@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class NotePadManager : MonoBehaviour
 {
-    public int fase;
+    public int fase;  //se referenciar em outro lugar, da pra mudar esse
     private GameObject Player;
     private GameObject NotePadCanvas;
     private GameObject NotePadNotification;

@@ -2202,7 +2202,7 @@ GameObject:
   - component: {fileID: 206381944}
   m_Layer: 5
   m_Name: Notification
-  m_TagString: Untagged
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2279,7 +2279,7 @@ GameObject:
   - component: {fileID: 229664875}
   m_Layer: 5
   m_Name: Button1
-  m_TagString: Untagged
+  m_TagString: Chapter_Btn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2349,8 +2349,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 296119417}
-        m_TargetAssemblyTypeName: NotePad, Assembly-CSharp
+      - m_Target: {fileID: 1671510422}
+        m_TargetAssemblyTypeName: NotePadManager, Assembly-CSharp
         m_MethodName: Screen_Chapter
         m_Mode: 2
         m_Arguments:
@@ -2545,7 +2545,7 @@ GameObject:
   - component: {fileID: 244888990}
   m_Layer: 5
   m_Name: Button2
-  m_TagString: Untagged
+  m_TagString: Chapter_Btn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2615,8 +2615,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 296119417}
-        m_TargetAssemblyTypeName: NotePad, Assembly-CSharp
+      - m_Target: {fileID: 1671510422}
+        m_TargetAssemblyTypeName: NotePadManager, Assembly-CSharp
         m_MethodName: Screen_Chapter
         m_Mode: 2
         m_Arguments:
@@ -2986,7 +2986,7 @@ GameObject:
   - component: {fileID: 296119417}
   m_Layer: 5
   m_Name: NotePad
-  m_TagString: Untagged
+  m_TagString: NotePadCanvas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3026,13 +3026,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64d4a65b96f564b118606eb907c2476d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NotePadCanvas: {fileID: 296119415}
-  Player: {fileID: 453369648}
-  Menu: {fileID: 1923731376}
-  NotificationCanvas: {fileID: 816331544}
-  Chapter1: {fileID: 505932306}
-  Chapter2: {fileID: 1252433828}
-  cm: {fileID: 0}
 --- !u!114 &296119418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6111,7 +6104,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1428431716}
-  - {fileID: 1671510418}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &519420033
@@ -8087,8 +8079,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 296119417}
-        m_TargetAssemblyTypeName: NotePad, Assembly-CSharp
+      - m_Target: {fileID: 1671510422}
+        m_TargetAssemblyTypeName: NotePadManager, Assembly-CSharp
         m_MethodName: CloseNotePad
         m_Mode: 1
         m_Arguments:
@@ -8698,7 +8690,7 @@ GameObject:
   - component: {fileID: 816331547}
   m_Layer: 5
   m_Name: Notification
-  m_TagString: Untagged
+  m_TagString: NotePadNotification
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8736,7 +8728,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.85098046, g: 0.75294125, b: 0.86274517, a: 1}
+  m_Color: {r: 0.8117647, g: 0.22745098, b: 0.73333335, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -10876,8 +10868,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 296119417}
-        m_TargetAssemblyTypeName: NotePad, Assembly-CSharp
+      - m_Target: {fileID: 1671510422}
+        m_TargetAssemblyTypeName: NotePadManager, Assembly-CSharp
         m_MethodName: Screen_Menu
         m_Mode: 1
         m_Arguments:
@@ -12088,7 +12080,7 @@ GameObject:
   - component: {fileID: 1184182601}
   - component: {fileID: 1184182602}
   m_Layer: 0
-  m_Name: NotePadManager
+  m_Name: ChapterManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12103,11 +12095,11 @@ Transform:
   m_GameObject: {fileID: 1184182599}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -960, y: -540, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1671510418}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1184182602
 MonoBehaviour:
@@ -13434,8 +13426,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4289739670
-  m_fontColor: {r: 0.5882353, g: 0.23137257, b: 0.6901961, a: 1}
+    rgba: 4294167534
+  m_fontColor: {r: 0.93333334, g: 0.79607844, b: 0.9529412, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -15507,8 +15499,9 @@ GameObject:
   - component: {fileID: 1671510421}
   - component: {fileID: 1671510420}
   - component: {fileID: 1671510419}
+  - component: {fileID: 1671510422}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: NotePadManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15526,9 +15519,10 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1184182601}
   - {fileID: 1837227266}
   - {fileID: 296119416}
-  m_Father: {fileID: 519420032}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -15598,6 +15592,23 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1671510422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671510417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7cfe8a135be42399a0daf8bf3957fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fase: 0
+  Menu: {fileID: 1923731376}
+  Chapter1: {fileID: 505932306}
+  Chapter2: {fileID: 1252433828}
+  Chapter_Buttons: []
 --- !u!1 &1676467410
 GameObject:
   m_ObjectHideFlags: 0
@@ -17442,8 +17453,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 296119417}
-        m_TargetAssemblyTypeName: NotePad, Assembly-CSharp
+      - m_Target: {fileID: 1671510422}
+        m_TargetAssemblyTypeName: NotePadManager, Assembly-CSharp
         m_MethodName: OpenNotePad
         m_Mode: 1
         m_Arguments:
@@ -20722,7 +20733,6 @@ SceneRoots:
   - {fileID: 1454815459}
   - {fileID: 1758142867}
   - {fileID: 151978816}
-  - {fileID: 1184182601}
   - {fileID: 2042484712}
   - {fileID: 519420032}
   - {fileID: 453369651}
@@ -20733,3 +20743,4 @@ SceneRoots:
   - {fileID: 401977785}
   - {fileID: 175002978}
   - {fileID: 626360171}
+  - {fileID: 1671510418}
