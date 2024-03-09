@@ -8,6 +8,7 @@ public class DataPersistenceManager : MonoBehaviour
 {
     [Header("File Storage Config")]
     [SerializeField] private string fileName;
+    [SerializeField] private bool useEncryption;
 
     private GameData gameData;
 
@@ -26,7 +27,7 @@ public class DataPersistenceManager : MonoBehaviour
     }
 
     private void Start(){
-        this.dataHandler = new FileDataHandler(Application.persistentDataPath, fileName);
+        this.dataHandler = new FileDataHandler(Application.persistentDataPath, fileName, useEncryption);
         this.dataPersistenceObjects = FindAllDataPersistenceObjects();
         LoadGame();
     }
@@ -51,7 +52,7 @@ public class DataPersistenceManager : MonoBehaviour
             dataPersistenceObj.LoadData(gameData);
         }
 
-        Debug.Log("Loaded position = " + gameData.position);
+        Debug.Log("Loaded position = " + gameData.playerPosition);
     }
 
     public void SaveGame(){
@@ -61,7 +62,7 @@ public class DataPersistenceManager : MonoBehaviour
             dataPersistenceObj.SaveData(ref gameData);
         }
 
-        Debug.Log("Saved position = " + gameData.position);
+        Debug.Log("Saved position = " + gameData.playerPosition);
 
         // Salva esses dados em um arquivo usando o data handler
         dataHandler.Save(gameData);

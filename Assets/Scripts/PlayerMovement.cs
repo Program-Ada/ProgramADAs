@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour, IDataPersistence
 {
 
     public float moveSpeed = 3f;
@@ -27,5 +27,12 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate(){
 
         rb.MovePosition(rb.position + movement.normalized * moveSpeed * Time.fixedDeltaTime);
+    }
+
+    public void LoadData(GameData data){
+        this.transform.position = data.playerPosition;
+    }
+    public void SaveData(ref GameData data){
+        data.playerPosition = this.transform.position;
     }
 }

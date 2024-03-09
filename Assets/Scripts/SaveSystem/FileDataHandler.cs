@@ -10,9 +10,13 @@ public class FileDataHandler
 
     private string dataFileName = "";
 
-    public FileDataHandler(string dataDirPath, string dataFileName){
+    private bool useEncryption = false;
+    private readonly string encryptionCodeWord = "ProgramADA";
+
+    public FileDataHandler(string dataDirPath, string dataFileName, bool useEncryption){
         this.dataDirPath = dataDirPath;
         this.dataFileName = dataFileName;
+        this.useEncryption = useEncryption;
     }
 
     public GameData Load(){
@@ -35,6 +39,11 @@ public class FileDataHandler
 
                 }
 
+                // Desencrypta os dados
+                if(useEncryption){
+                    dataToLoad = EncryptDecrypt(dataToLoad);
+                }
+
                 // Desserializa os dados do arquivo JSON de volta para Objeto C#
                 loadedData = JsonUtility.FromJson<GameData>(dataToLoad);
 
@@ -55,6 +64,11 @@ public class FileDataHandler
             // Serializa os dados do jogo em C# para um arquivo JSON
             string dataToStore = JsonUtility.ToJson(data, true);
 
+            // Encrypta os dados
+            if(useEncryption){
+                dataToStore = EncryptDecrypt(dataToStore);
+            }
+
             // Escreve os dados serializados no arquivo JSON
             using(FileStream stream = new FileStream(fullPath, FileMode.Create)){
                 using(StreamWriter writer = new StreamWriter(stream)){
@@ -64,5 +78,13 @@ public class FileDataHandler
         }catch(Exception e){
             Debug.LogError("Erro ocorreu ao tentar salvar os dados no arquivo: " + fullPath + "\n" + e);
         }
+    }
+
+    private string EncryptDecrypt(string data){
+        string modifiedData = "";
+        for(int i = 0; i < data.Length; i++){
+            modifiedData += (char) (data[i] ^ encryptionCodeWord[i % encryptionCodeWord.Length]);
+        }
+        return modifiedData;
     }
 }

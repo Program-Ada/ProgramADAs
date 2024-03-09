@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Numerics;
 using UnityEngine;
-using UnityEngine.Experimental.Animations;
 
 [System.Serializable]
 public class GameData
 {
-    public Vector2 playerPosition;
+   // public Vector2 playerPosition;
+
+   public Vector2 playerPosition;
     public string scene;
     public int[] pointFases;
 
@@ -16,8 +16,8 @@ public class GameData
 
     public GameData (/*Player player*/)
     {
-            playerPosition = new float[2];
-            playerPosition[0] = -6.12;
-            playerPosition[1] = 6.12;
+        
+            playerPosition.x = -6.12f;
+            playerPosition.y = 6.12f;
     }
 }

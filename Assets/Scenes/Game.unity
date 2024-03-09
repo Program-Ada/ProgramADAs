@@ -7411,6 +7411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fileName: data.game
+  useEncryption: 1
 --- !u!1 &849469834
 GameObject:
   m_ObjectHideFlags: 0
