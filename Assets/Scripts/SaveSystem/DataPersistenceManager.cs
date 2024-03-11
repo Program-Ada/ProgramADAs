@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using UnityEngine.SceneManagement;
 using UnityEngine.Windows;
 
 public class DataPersistenceManager : MonoBehaviour
@@ -21,15 +22,34 @@ public class DataPersistenceManager : MonoBehaviour
     private void Awake()
     {
         if(Instance != null){
-            Debug.LogError("Existe mais de um Data Persistence Manager na scena");
+            Debug.LogError("Existe mais de um Data Persistence Manager na scena. Destruindo o arquivo novo");
+            Destroy(this.gameObject);
+            return;
         }
         Instance = this;
+
+        DontDestroyOnLoad(this.gameObject);
+
+        this.dataHandler = new FileDataHandler(Application.persistentDataPath, fileName, useEncryption);
     }
 
-    private void Start(){
-        this.dataHandler = new FileDataHandler(Application.persistentDataPath, fileName, useEncryption);
+    private void OnEnable(){
+        SceneManager.sceneLoaded += OnSceneLoaded;
+        SceneManager.sceneUnloaded += OnSceneUnloaded;
+    }
+
+    private void OnDisable(){
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+        SceneManager.sceneUnloaded -= OnSceneUnloaded;
+    }
+
+    public void OnSceneLoaded(Scene scene, LoadSceneMode mode){
         this.dataPersistenceObjects = FindAllDataPersistenceObjects();
         LoadGame();
+    }
+
+    public void OnSceneUnloaded(Scene scene){
+        SaveGame();
     }
 
     public void NewGame(){
@@ -40,11 +60,11 @@ public class DataPersistenceManager : MonoBehaviour
         // Dá load no arquivo de save usando o data handler
         this.gameData = dataHandler.Load();
 
-        // se não tiver nenhum arquivo a ser carregado, então, inicializar um jogo novo
+        // se não tiver nenhum arquivo a ser carregado, não permita
 
         if(this.gameData == null){
-            Debug.Log("Nenhum dado foi encontrado. Inicializando dados padrão.");
-            NewGame();
+            Debug.Log("Nenhum dado foi encontrado. Um novo jogo precisa ser iniciado antes que os dados possam ser lidos");
+            return;
         }
 
         // envia os dados carregados aos arquivos que precisam dessa atualização de informações
@@ -56,8 +76,13 @@ public class DataPersistenceManager : MonoBehaviour
     }
 
     public void SaveGame(){
+        // Se não tivermos dados a serem salvos, log um aviso aqui
+        if(this.gameData == null){
+            Debug.LogWarning("Nenhum dado foi encontrado. Um novo jogo deve ser inicializado antes que os dados possam ser salvos.");
+            return;
+        }
 
-        // TO DO - passar os dados para os scripts, para que as informações sejam atualizadas
+        // passa os dados para os scripts, para que as informações sejam atualizadas
         foreach(IDataPersistence dataPersistenceObj in dataPersistenceObjects){
             dataPersistenceObj.SaveData(ref gameData);
         }
@@ -75,6 +100,10 @@ public class DataPersistenceManager : MonoBehaviour
     private List<IDataPersistence> FindAllDataPersistenceObjects(){
         IEnumerable<IDataPersistence> dataPersistenceObjects = FindObjectsOfType<MonoBehaviour>().OfType<IDataPersistence>();
         return new List<IDataPersistence>(dataPersistenceObjects);
+    }
+
+    public bool HasGameData(){
+        return gameData != null;
     }
 
 }
