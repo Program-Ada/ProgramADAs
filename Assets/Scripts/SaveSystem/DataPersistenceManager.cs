@@ -7,6 +7,9 @@ using UnityEngine.Windows;
 
 public class DataPersistenceManager : MonoBehaviour
 {
+    [Header("Debugging")]
+    [SerializeField] private bool initializeDataIfNull = false;
+
     [Header("File Storage Config")]
     [SerializeField] private string fileName;
     [SerializeField] private bool useEncryption;
@@ -17,12 +20,14 @@ public class DataPersistenceManager : MonoBehaviour
 
     private FileDataHandler dataHandler;
 
+    private string selectedProfileId = "test";
+
     public static DataPersistenceManager Instance {get; private set;}
 
     private void Awake()
     {
         if(Instance != null){
-            Debug.LogError("Existe mais de um Data Persistence Manager na scena. Destruindo o arquivo novo");
+            Debug.Log("Existe mais de um Data Persistence Manager na scena. Destruindo o arquivo novo");
             Destroy(this.gameObject);
             return;
         }
@@ -58,10 +63,14 @@ public class DataPersistenceManager : MonoBehaviour
 
     public void LoadGame(){
         // Dá load no arquivo de save usando o data handler
-        this.gameData = dataHandler.Load();
+        this.gameData = dataHandler.Load(selectedProfileId);
+
+        // Começa um novo jogo caso os dados estão como null e nós selecionamos a parte de debbug para desenvolvimento
+        if(this.gameData == null && initializeDataIfNull){
+            NewGame();
+        }
 
         // se não tiver nenhum arquivo a ser carregado, não permita
-
         if(this.gameData == null){
             Debug.Log("Nenhum dado foi encontrado. Um novo jogo precisa ser iniciado antes que os dados possam ser lidos");
             return;
@@ -90,7 +99,7 @@ public class DataPersistenceManager : MonoBehaviour
         Debug.Log("Saved position = " + gameData.playerPosition);
 
         // Salva esses dados em um arquivo usando o data handler
-        dataHandler.Save(gameData);
+        dataHandler.Save(gameData, selectedProfileId);
     }
 
     private void OnApplicationQuit(){

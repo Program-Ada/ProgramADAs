@@ -19,10 +19,10 @@ public class FileDataHandler
         this.useEncryption = useEncryption;
     }
 
-    public GameData Load(){
+    public GameData Load(string profileId){
 
         // Usa Path.Combine para evitar erros de diferentes sistemas operacionais
-        string fullPath = Path.Combine(dataDirPath, dataFileName);
+        string fullPath = Path.Combine(dataDirPath, profileId, dataFileName);
         GameData loadedData = null;
 
         if(File.Exists(fullPath)){
@@ -54,8 +54,8 @@ public class FileDataHandler
         return loadedData;
     }
 
-    public void Save(GameData data){
-        string fullPath = Path.Combine(dataDirPath, dataFileName);
+    public void Save(GameData data, string profileId){
+        string fullPath = Path.Combine(dataDirPath, profileId, dataFileName);
 
         try{
             // Cria o diretório. O arquivo será criado caso ainda não exista
