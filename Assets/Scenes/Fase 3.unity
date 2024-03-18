@@ -1032,7 +1032,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 678289188}
   npcImage: {fileID: 1099791320}
-  dialogueTextFalse: {fileID: 0}
+  dialogueTextFalse: {fileID: 1777033103}
+  buttonFalse: {fileID: 1727631825}
+  buttonTrue: {fileID: 643425656}
+  animator: {fileID: 1247756386}
 --- !u!1 &585429383
 GameObject:
   m_ObjectHideFlags: 0
@@ -1261,7 +1264,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &643425657
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5361,7 +5364,7 @@ MonoBehaviour:
   npcImage: {fileID: 1368946958}
   pularTexto: 0
   animator: {fileID: 1032023671}
-  animatorMiniGame: {fileID: 1247756386}
+  miniGameManager: {fileID: 0}
 --- !u!4 &1669377320
 Transform:
   m_ObjectHideFlags: 0
@@ -5755,7 +5758,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1727631826
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6061,7 +6064,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 27.32, y: -10}
+  m_AnchoredPosition: {x: 27.32, y: -15}
   m_SizeDelta: {x: 22, y: 2.33}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1777033103
