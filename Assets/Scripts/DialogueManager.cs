@@ -10,15 +10,17 @@ public class DialogueManager : MonoBehaviour{
     public TextMeshProUGUI dialogueText;
     public Image npcImage;
     public bool pularTexto = false;
-
+    
     public Animator animator;
+    // public Animator animatorMiniGame;
 
     private Queue<string> sentences;
+    public MiniGameManager miniGameManager;
 
     // Start is called before the first frame update
     void Start(){
         sentences = new Queue<string>();
-        
+        miniGameManager = FindObjectOfType<MiniGameManager>();
     }
 
     public void StartDialogue(Dialogue dialogue){
@@ -48,6 +50,7 @@ public class DialogueManager : MonoBehaviour{
         }
         if(sentences.Count == 0){
             EndDialogue();
+            miniGameManager.OpenAskMiniGame();
             return;
         }
 
@@ -70,4 +73,12 @@ public class DialogueManager : MonoBehaviour{
     public void EndDialogue(){
         animator.SetBool("IsOpen", false);
     }
+
+    // public void OpenAskMiniGame(){
+    //     animatorMiniGame.SetBool("IsOpen", true);
+    // }
+
+    // public void CloseAskMiniGame(){
+    //     animatorMiniGame.SetBool("IsOpen", false);
+    // }
 }

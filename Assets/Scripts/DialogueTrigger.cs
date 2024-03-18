@@ -9,10 +9,12 @@ public class DialogueTrigger : MonoBehaviour
     public bool playerIsClose;
     public bool playerIsChatting;
     public DialogueManager dm;
+    public MiniGameManager miniGameManager;
     [SerializeField]GameObject toolTip;
 
     void Start(){
         dm = FindObjectOfType<DialogueManager>();
+        miniGameManager = FindObjectOfType<MiniGameManager>();
         toolTip.SetActive(false);
     }
 
@@ -43,6 +45,7 @@ public class DialogueTrigger : MonoBehaviour
             playerIsChatting = false;
             toolTip.SetActive(false);
             dm.EndDialogue();
+            miniGameManager.CloseAskMiniGame();
         }
     }
 }
