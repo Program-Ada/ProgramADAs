@@ -20,7 +20,7 @@ public class DataPersistenceManager : MonoBehaviour
 
     private FileDataHandler dataHandler;
 
-    private string selectedProfileId = "test";
+    private string selectedProfileId = "";
 
     public static DataPersistenceManager Instance {get; private set;}
 
@@ -55,6 +55,12 @@ public class DataPersistenceManager : MonoBehaviour
 
     public void OnSceneUnloaded(Scene scene){
         SaveGame();
+    }
+
+    public void ChangeSelectedProfileId(string newProfileId){
+        // Função responsável por mudar o perfil de jogador utilizado para o novo selecionado e carregar o jogo
+        this.selectedProfileId = newProfileId;
+        LoadGame();
     }
 
     public void NewGame(){
@@ -113,6 +119,10 @@ public class DataPersistenceManager : MonoBehaviour
 
     public bool HasGameData(){
         return gameData != null;
+    }
+
+    public Dictionary<string, GameData> GetAllProfilesGameData(){
+        return dataHandler.loadAllProfiles();
     }
 
 }

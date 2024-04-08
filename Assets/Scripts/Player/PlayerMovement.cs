@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour, IDataPersistence
 {
@@ -34,5 +35,6 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
     }
     public void SaveData(ref GameData data){
         data.playerPosition = this.transform.position;
+        data.scene = SceneManager.GetActiveScene().name;
     }
 }

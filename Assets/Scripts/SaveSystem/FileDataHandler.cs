@@ -80,6 +80,36 @@ public class FileDataHandler
         }
     }
 
+    public Dictionary<string, GameData> loadAllProfiles(){
+        Dictionary<string, GameData> profileDictionary = new Dictionary<string, GameData>();
+
+        // Fazer um loop que passe pelos nomes dos diretórios dentro do caminho do diretório de dados
+        IEnumerable<DirectoryInfo> dirInfos = new DirectoryInfo(dataDirPath).EnumerateDirectories();
+        foreach(DirectoryInfo dirInfo in dirInfos){
+            string profileId = dirInfo.Name;
+
+            // Programação defendiva -> verificar se o arquivo realmente existe
+            // Caso não exista, então essa pasta não é um perfil e deveria ser pulado
+            string fullPath = Path.Combine(dataDirPath, profileId, dataFileName);
+            if(!File.Exists(fullPath)){
+                Debug.LogWarning("Pulando esse diretório ao carregar todos por não conter dados: " + profileId);
+                continue;
+            }
+
+            // Carrega os dados de jogo desse perfil e o coloca no dicionário
+            GameData profileData = Load(profileId);
+
+            // Programação defensiva -> Conferir se os dados do perfil não estão vazios
+            if(profileData != null){
+                profileDictionary.Add(profileId, profileData);
+            }else{
+                Debug.LogError("Tentativa de carregamento de perfil de errado. Id do Perfil: " + profileId);
+            }
+        }
+
+        return profileDictionary;
+    }
+
     private string EncryptDecrypt(string data){
         string modifiedData = "";
         for(int i = 0; i < data.Length; i++){

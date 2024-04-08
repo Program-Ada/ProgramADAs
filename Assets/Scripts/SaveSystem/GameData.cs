@@ -9,6 +9,8 @@ public class GameData
 
    public Vector2 playerPosition;
     public string scene;
+    public int totalCompleted;
+    public string saveSlotName;
     public int[] pointFases;
 
     // os valores nesse constructor serão os valores iniciais que o jogo irá iniciar
@@ -17,7 +19,10 @@ public class GameData
     public GameData (/*Player player*/)
     {
         
-            playerPosition.x = -6.12f;
-            playerPosition.y = 6.12f;
+        playerPosition.x = -6.12f;
+        playerPosition.y = 6.12f;
+        totalCompleted = 0;
+        saveSlotName = "Insira um Nome";
+        scene = "Game";
     }
 }

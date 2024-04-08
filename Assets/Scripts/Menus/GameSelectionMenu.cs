@@ -27,7 +27,7 @@ public class GameSelectionMenu : MonoBehaviour
 
     public void OnContinueGameClicked(){
         DisableMenuButtons();
-        // Carrewga a próxima scena - a qual vai crregar os dados do jogo devido ao OnSceneLoaded()
+        // Carrewga a próxima scena - a qual vai carregar os dados do jogo devido ao OnSceneLoaded()
         SceneManager.LoadSceneAsync("Game");
     }
 
