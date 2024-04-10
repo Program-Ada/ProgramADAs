@@ -12,11 +12,11 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private Button quitGameButton;
 
     public void PlayGame(){
-        SceneManager.LoadScene("GameSelection");
+        SceneManager.LoadSceneAsync("GameSelection");
     }
 
     public void GameOptions(){
-        SceneManager.LoadScene("GameOptions");
+        SceneManager.LoadSceneAsync("GameOptions");
     }
 
     public void QuitGame(){

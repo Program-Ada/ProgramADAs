@@ -50,6 +50,11 @@ public class SaveSlotsMenu : MonoBehaviour
         }
     }
 
+    public void BackButton(){
+        DisableSaveSlotsButtons();
+        SceneManager.LoadSceneAsync("Menu");
+    }
+
     private void DisableSaveSlotsButtons(){
         foreach(SaveSlot saveSlot in saveSlots){
             saveSlot.SetInteractable(false);
