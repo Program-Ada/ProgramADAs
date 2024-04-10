@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class PlayerMovement : MonoBehaviour, IDataPersistence
+public class PlayerMovement : MonoBehaviour
 {
 
     public float moveSpeed = 3f;
@@ -28,13 +27,5 @@ public class PlayerMovement : MonoBehaviour, IDataPersistence
     void FixedUpdate(){
 
         rb.MovePosition(rb.position + movement.normalized * moveSpeed * Time.fixedDeltaTime);
-    }
-
-    public void LoadData(GameData data){
-        this.transform.position = data.playerPosition;
-    }
-    public void SaveData(ref GameData data){
-        data.playerPosition = this.transform.position;
-        data.scene = SceneManager.GetActiveScene().name;
     }
 }
