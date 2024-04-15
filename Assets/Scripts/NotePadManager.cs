@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class NotePadManager : MonoBehaviour
 {
-    public int fase;  //se referenciar em outro lugar, da pra mudar esse
+    public int fase;
     private GameManager gameManager;
     private GameObject Player;
     private GameObject NotePadCanvas;
@@ -88,9 +88,9 @@ public class NotePadManager : MonoBehaviour
             GameObject.Destroy(this.gameObject);
         }
         else {
+            //acho q aqui vai dar problema quando mudar de cena mas não mudar a fase, dai acho q da pra criar uma variavel "faseInicial" e verificar se mudou de fase ou so de cena
             NotePadNotification.SetActive(true);
             Player = GameObject.FindGameObjectWithTag("Player");
-            // fase++;
         }
     }
 }
