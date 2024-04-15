@@ -34,6 +34,6 @@ public class MiniGameAsk : MonoBehaviour
     }
 
     public void AnwserTrue(){
-        // SceneManager.LoadScene("MiniGame_Cafe");    //adicionar proxima cena
+        SceneManager.LoadScene("MiniGame_Cafe");    //adicionar proxima cena
     }
 }
