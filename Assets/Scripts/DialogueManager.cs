@@ -15,15 +15,16 @@ public class DialogueManager : MonoBehaviour{
     // public Animator animatorMiniGame;
 
     private Queue<string> sentences;
-    public MiniGameManager miniGameManager;
 
     // Start is called before the first frame update
     void Start(){
         sentences = new Queue<string>();
-        miniGameManager = FindObjectOfType<MiniGameManager>();
     }
 
     public void StartDialogue(Dialogue dialogue){
+        if (dialogue.haveQuestion) {
+            dialogue.ask.SetActive(false);
+        }
 
         animator.SetBool("IsOpen", true);
 
@@ -36,21 +37,24 @@ public class DialogueManager : MonoBehaviour{
             sentences.Enqueue(sentence);
         }
 
-        DisplayNextSentence();
+        DisplayNextSentence(dialogue);
     }
 
     string sentence = "";
 
-    public void DisplayNextSentence(){
+    public void DisplayNextSentence(Dialogue dialogue){
         if(pularTexto){
             pularTexto = false;
             StopAllCoroutines();
             dialogueText.text = sentence;
             return;
         }
+        //gambiarra, se tiver mais uma sentenca (ideal q esteja vazia) e tiver a pergunta, ele vai ativar o gameObject linkado
+        if (dialogue.haveQuestion && sentences.Count == 1) {
+            dialogue.ask.SetActive(true);
+        }
         if(sentences.Count == 0){
             EndDialogue();
-            miniGameManager.OpenAskMiniGame();
             return;
         }
 
@@ -73,12 +77,4 @@ public class DialogueManager : MonoBehaviour{
     public void EndDialogue(){
         animator.SetBool("IsOpen", false);
     }
-
-    // public void OpenAskMiniGame(){
-    //     animatorMiniGame.SetBool("IsOpen", true);
-    // }
-
-    // public void CloseAskMiniGame(){
-    //     animatorMiniGame.SetBool("IsOpen", false);
-    // }
 }

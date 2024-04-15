@@ -23,7 +23,7 @@ public class DialogueTrigger : MonoBehaviour
             SoundManager.sm.Click();
             TriggerDialogue();
         }else if(Input.GetKeyDown(KeyCode.E) && playerIsClose && playerIsChatting){
-            dm.DisplayNextSentence();
+            dm.DisplayNextSentence(dialogue);
         }
     }
     public void TriggerDialogue(){
