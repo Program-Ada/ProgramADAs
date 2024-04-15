@@ -11,5 +11,5 @@ public class Dialogue
     [TextArea(3, 10)]
     public string[] setences;
     public bool haveQuestion;
-    public GameObject ask;
+    public GameObject question;
 }

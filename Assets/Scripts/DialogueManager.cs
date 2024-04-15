@@ -23,7 +23,7 @@ public class DialogueManager : MonoBehaviour{
 
     public void StartDialogue(Dialogue dialogue){
         if (dialogue.haveQuestion) {
-            dialogue.ask.SetActive(false);
+            dialogue.question.SetActive(false);
         }
 
         animator.SetBool("IsOpen", true);
@@ -51,7 +51,7 @@ public class DialogueManager : MonoBehaviour{
         }
         //gambiarra, se tiver mais uma sentenca (ideal q esteja vazia) e tiver a pergunta, ele vai ativar o gameObject linkado
         if (dialogue.haveQuestion && sentences.Count == 1) {
-            dialogue.ask.SetActive(true);
+            dialogue.question.SetActive(true);
         }
         if(sentences.Count == 0){
             EndDialogue();
