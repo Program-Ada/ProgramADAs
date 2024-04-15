@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class NotePadManager : MonoBehaviour
 {
     public int fase;  //se referenciar em outro lugar, da pra mudar esse
+    public GameManager gameManager;
     private GameObject Player;
     private GameObject NotePadCanvas;
     private GameObject NotePadNotification;
@@ -20,7 +21,10 @@ public class NotePadManager : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
         SceneManager.sceneLoaded += OnSceneLoaded;
 
-        fase = 1;
+        // fase = 1;
+        gameManager = FindObjectOfType<GameManager>();
+        fase = gameManager.level;
+
         Player = GameObject.FindGameObjectWithTag("Player");
         NotePadCanvas = GameObject.FindGameObjectWithTag("NotePadCanvas");
         NotePadCanvas.SetActive(false);
@@ -82,7 +86,7 @@ public class NotePadManager : MonoBehaviour
         else {
             NotePadNotification.SetActive(true);
             Player = GameObject.FindGameObjectWithTag("Player");
-            fase++;
+            // fase++;
         }
     }
 }
