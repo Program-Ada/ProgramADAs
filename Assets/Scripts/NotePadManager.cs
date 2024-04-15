@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class NotePadManager : MonoBehaviour
 {
     public int fase;  //se referenciar em outro lugar, da pra mudar esse
-    public GameManager gameManager;
+    private GameManager gameManager;
     private GameObject Player;
     private GameObject NotePadCanvas;
     private GameObject NotePadNotification;
@@ -36,6 +36,10 @@ public class NotePadManager : MonoBehaviour
         Chapter2.SetActive(false);
 
         cm = FindObjectOfType<ChapterManager>();
+    }
+
+    void Update() {
+        fase = gameManager.level;
     }
 
     public void OpenNotePad()

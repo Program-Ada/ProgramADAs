@@ -10,12 +10,14 @@ public class ExitDoor : MonoBehaviour
     public GameObject ExitOptionCanvas;
     public GameObject ExitOptionCanvasFalse;
     public GameObject Player;
+    private GameManager gameManager;
     [SerializeField]GameObject toolTip;
 
     void Start(){
         ExitOptionCanvas.SetActive(false);
         ExitOptionCanvasFalse.SetActive(false);
         toolTip.SetActive(false);
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     void Update(){
@@ -46,6 +48,7 @@ public class ExitDoor : MonoBehaviour
 
     public void goToFase2(){
         SceneManager.LoadScene("Fase 2");
+        gameManager.NextLevel();
     }
 
     private void OnTriggerEnter2D(Collider2D other){
