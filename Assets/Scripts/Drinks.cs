@@ -6,6 +6,7 @@ public class Drinks : MonoBehaviour
 {
     public GameObject[] drinks;
     private bool containerFull = false;
+    public int drinkEcolhido = -1;
 
     void Start()
     {
@@ -15,6 +16,7 @@ public class Drinks : MonoBehaviour
         if (!containerFull) { 
             drinks[i].SetActive(true);
             containerFull = true;
+            drinkEcolhido = i;
         }
     }
 
@@ -23,6 +25,7 @@ public class Drinks : MonoBehaviour
             if (drinks[i].activeSelf) {
                 drinks[i].SetActive(false);
                 containerFull = false;
+                drinkEcolhido = -1;
             }
         }
     }

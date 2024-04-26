@@ -6,6 +6,7 @@ public class Foods : MonoBehaviour
 {
     public GameObject[] foods;
     private bool containerFull = false;
+    public int foodEcolhido = -1;
 
     void Start()
     {
@@ -15,6 +16,7 @@ public class Foods : MonoBehaviour
         if (!containerFull) { 
             foods[i].SetActive(true);
             containerFull = true;
+            foodEcolhido = i;
         }
     }
 
@@ -23,6 +25,7 @@ public class Foods : MonoBehaviour
             if (foods[i].activeSelf) {
                 foods[i].SetActive(false);
                 containerFull = false;
+                foodEcolhido = -1;
             }
         }
     }
