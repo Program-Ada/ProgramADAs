@@ -11,6 +11,7 @@ public class ButtonsMiniGame : MonoBehaviour
     public GameObject drink_btn;
     public GameObject food_btn;
     public bool pedidoEmAndamento;
+
     void Start()
     {
         pedidos = FindObjectOfType<Orders>();
@@ -19,6 +20,7 @@ public class ButtonsMiniGame : MonoBehaviour
         // drinks = GetComponent<Drinks>();
         pedidoEmAndamento = false;
     }
+
     public void Start_Btn() {
         if (!pedidoEmAndamento) {  
             pedidos.Show_Order();
@@ -30,21 +32,40 @@ public class ButtonsMiniGame : MonoBehaviour
         Verifica_Food();
     }
 
-    public void Show_DrinkOptions() {
+    public void Pegar_Suco() {
         drink_btn.SetActive(true);
-        // int i = 0;
-        // while(i == 0) {
-        //     // i = drinks.Show_Drink();
-        // }
-        //i = retorno do Show_Drink
-        // if(pedidos.pedidoAtual.GetComponent<Pedido>().drink == drinks.drinkEcolhido) {
-        //     Debug.Log("Drink correto");
-        // }
-        // Debug.Log("Tente de novo");
     }
 
-    public void Show_FoodOptions() {
+    public void Pegar_Bolo() {
         food_btn.SetActive(true);
+    }
+
+    public void Pegar_Copo() {
+        drinks.existeCopo = true;
+    }
+
+    public void Pegar_Prato() {
+        foods.existePrato = true;
+    }
+
+    public void JogarFora_Drink() {
+        for (int i = 0; i < drinks.drinks.Length; i++) {
+            if (drinks.drinks[i].activeSelf) {
+                drinks.drinks[i].SetActive(false);
+                drinks.containerFull = false;
+                drinks.drinkEcolhido = -1;
+            }
+        }
+    }
+
+    public void JogarFora_Food() {
+        for (int i = 0; i < foods.foods.Length; i++) {
+            if (foods.foods[i].activeSelf) {
+                foods.foods[i].SetActive(false);
+                foods.containerFull = false;
+                foods.foodEcolhido = -1;
+            }
+        }
     }
 
     public void Verifica_Drink() {
@@ -64,9 +85,9 @@ public class ButtonsMiniGame : MonoBehaviour
             Debug.Log("Food Incorreto");
         }
         pedidos.Stop_Order();
-        drinks.JogarFora();
+        JogarFora_Drink();
         drink_btn.SetActive(false);
-        foods.JogarFora();
+        JogarFora_Food();
         food_btn.SetActive(false);
     }
 }

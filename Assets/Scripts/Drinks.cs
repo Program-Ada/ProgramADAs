@@ -5,28 +5,27 @@ using UnityEngine;
 public class Drinks : MonoBehaviour
 {
     public GameObject[] drinks;
-    private bool containerFull = false;
-    public int drinkEcolhido = -1;
+    public bool containerFull;
+    public int drinkEcolhido;
+    public bool existeCopo;
 
     void Start()
     {
+        containerFull = false;
+        drinkEcolhido = -1;
+        existeCopo = false;
     }
 
     public void Show_Drink(int i) {
-        if (!containerFull) { 
-            drinks[i].SetActive(true);
-            containerFull = true;
-            drinkEcolhido = i;
-        }
-    }
-
-    public void JogarFora() {
-        for (int i = 0; i < drinks.Length; i++) {
-            if (drinks[i].activeSelf) {
-                drinks[i].SetActive(false);
-                containerFull = false;
-                drinkEcolhido = -1;
+        if(existeCopo) {
+            if (!containerFull) { 
+                drinks[i].SetActive(true);
+                containerFull = true;
+                drinkEcolhido = i;
             }
+        }
+        else {
+            Debug.Log("Não tem Copo = Suco derramado");
         }
     }
 }

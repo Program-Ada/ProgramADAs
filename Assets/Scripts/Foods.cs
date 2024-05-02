@@ -5,28 +5,27 @@ using UnityEngine;
 public class Foods : MonoBehaviour
 {
     public GameObject[] foods;
-    private bool containerFull = false;
+    public bool containerFull = false;
     public int foodEcolhido = -1;
+    public bool existePrato;
 
     void Start()
     {
+        containerFull = false;
+        foodEcolhido = -1;
+        existePrato = false;
     }
 
     public void Show_Food(int i) {
-        if (!containerFull) { 
-            foods[i].SetActive(true);
-            containerFull = true;
-            foodEcolhido = i;
-        }
-    }
-
-    public void JogarFora() {
-        for (int i = 0; i < foods.Length; i++) {
-            if (foods[i].activeSelf) {
-                foods[i].SetActive(false);
-                containerFull = false;
-                foodEcolhido = -1;
+        if(existePrato) {
+            if (!containerFull) { 
+                foods[i].SetActive(true);
+                containerFull = true;
+                foodEcolhido = i;
             }
+        }
+        else {
+            Debug.Log("Não tem Prato = Bolo na mesa");
         }
     }
 }

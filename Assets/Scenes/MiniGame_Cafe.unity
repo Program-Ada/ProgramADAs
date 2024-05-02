@@ -208,7 +208,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1612673939}
         m_TargetAssemblyTypeName: ButtonsMiniGame, Assembly-CSharp
-        m_MethodName: Show_FoodOptions
+        m_MethodName: Pegar_Copo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1046,7 +1046,9 @@ MonoBehaviour:
   - {fileID: 1174895482}
   - {fileID: 1516816017}
   - {fileID: 2092277384}
+  containerFull: 0
   foodEcolhido: -1
+  existePrato: 0
 --- !u!1 &211204927
 GameObject:
   m_ObjectHideFlags: 0
@@ -1953,7 +1955,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1612673939}
         m_TargetAssemblyTypeName: ButtonsMiniGame, Assembly-CSharp
-        m_MethodName: Show_FoodOptions
+        m_MethodName: Pegar_Prato
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3268,7 +3270,9 @@ MonoBehaviour:
   - {fileID: 1327510453}
   - {fileID: 740204781}
   - {fileID: 1086533440}
+  containerFull: 0
   drinkEcolhido: -1
+  existeCopo: 0
 --- !u!1 &553058782
 GameObject:
   m_ObjectHideFlags: 0
@@ -5562,9 +5566,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 186192515}
-        m_TargetAssemblyTypeName: Foods, Assembly-CSharp
-        m_MethodName: JogarFora
+      - m_Target: {fileID: 1612673939}
+        m_TargetAssemblyTypeName: ButtonsMiniGame, Assembly-CSharp
+        m_MethodName: JogarFora_Food
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5837,7 +5841,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1612673939}
         m_TargetAssemblyTypeName: ButtonsMiniGame, Assembly-CSharp
-        m_MethodName: Show_DrinkOptions
+        m_MethodName: Pegar_Suco
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8490,7 +8494,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1612673939}
         m_TargetAssemblyTypeName: ButtonsMiniGame, Assembly-CSharp
-        m_MethodName: Show_FoodOptions
+        m_MethodName: Pegar_Bolo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9507,9 +9511,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 531739913}
-        m_TargetAssemblyTypeName: Drinks, Assembly-CSharp
-        m_MethodName: JogarFora
+      - m_Target: {fileID: 1612673939}
+        m_TargetAssemblyTypeName: ButtonsMiniGame, Assembly-CSharp
+        m_MethodName: JogarFora_Drink
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
