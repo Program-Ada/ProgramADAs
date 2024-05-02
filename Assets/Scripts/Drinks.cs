@@ -11,9 +11,10 @@ public class Drinks : MonoBehaviour
 
     void Start()
     {
-        containerFull = false;
-        drinkEcolhido = -1;
-        existeCopo = false;
+        // containerFull = false;
+        // drinkEcolhido = -1;
+        // existeCopo = false;
+        Reset_teste();
     }
 
     public void Show_Drink(int i) {
@@ -27,5 +28,11 @@ public class Drinks : MonoBehaviour
         else {
             Debug.Log("Não tem Copo = Suco derramado");
         }
+    }
+
+    public void Reset_teste() {
+        containerFull = false;
+        drinkEcolhido = -1;
+        existeCopo = false;
     }
 }

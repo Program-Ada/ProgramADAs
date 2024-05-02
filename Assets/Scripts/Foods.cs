@@ -11,9 +11,10 @@ public class Foods : MonoBehaviour
 
     void Start()
     {
-        containerFull = false;
-        foodEcolhido = -1;
-        existePrato = false;
+        // containerFull = false;
+        // foodEcolhido = -1;
+        // existePrato = false;
+        Reset_teste();
     }
 
     public void Show_Food(int i) {
@@ -27,5 +28,11 @@ public class Foods : MonoBehaviour
         else {
             Debug.Log("Não tem Prato = Bolo na mesa");
         }
+    }
+
+    public void Reset_teste() {
+        containerFull = false;
+        foodEcolhido = -1;
+        existePrato = false;
     }
 }

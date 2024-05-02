@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ButtonsMiniGame : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class ButtonsMiniGame : MonoBehaviour
     public Foods foods;
     public GameObject drink_btn;
     public GameObject food_btn;
-    public bool pedidoEmAndamento;
+    public Button[] buttons;
 
     void Start()
     {
@@ -18,12 +19,22 @@ public class ButtonsMiniGame : MonoBehaviour
         drinks = FindAnyObjectByType<Drinks>();
         foods = FindAnyObjectByType<Foods>();
         // drinks = GetComponent<Drinks>();
-        pedidoEmAndamento = false;
+        buttons = GetComponentsInChildren<Button>();
+        Debug.Log(buttons.Length);
+        for (int i = 0; i < buttons.Length; i++) {
+            buttons[i].interactable = false;
+        }
     }
 
     public void Start_Btn() {
-        if (!pedidoEmAndamento) {  
+        if (!pedidos.pedidoEmAndamento) {  
             pedidos.Show_Order();
+            for (int i = 0; i < buttons.Length; i++) {
+                buttons[i].interactable = true;
+            }
+        }
+        else {
+            Debug.Log("Já tem um pedido em andamento, não pode iniciar outro");
         }
     }
 
@@ -34,10 +45,12 @@ public class ButtonsMiniGame : MonoBehaviour
 
     public void Pegar_Suco() {
         drink_btn.SetActive(true);
+        buttons[2].interactable = false;
     }
 
     public void Pegar_Bolo() {
         food_btn.SetActive(true);
+        buttons[3].interactable = false;
     }
 
     public void Pegar_Copo() {
@@ -52,20 +65,22 @@ public class ButtonsMiniGame : MonoBehaviour
         for (int i = 0; i < drinks.drinks.Length; i++) {
             if (drinks.drinks[i].activeSelf) {
                 drinks.drinks[i].SetActive(false);
-                drinks.containerFull = false;
-                drinks.drinkEcolhido = -1;
             }
         }
+        drinks.Reset_teste();
+        drink_btn.SetActive(false);
+        buttons[2].interactable = true;
     }
 
     public void JogarFora_Food() {
         for (int i = 0; i < foods.foods.Length; i++) {
             if (foods.foods[i].activeSelf) {
                 foods.foods[i].SetActive(false);
-                foods.containerFull = false;
-                foods.foodEcolhido = -1;
             }
         }
+        foods.Reset_teste();
+        food_btn.SetActive(false);
+        buttons[3].interactable = true;
     }
 
     public void Verifica_Drink() {
