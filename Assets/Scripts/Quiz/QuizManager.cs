@@ -5,8 +5,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
+using UnityEngine.SocialPlatforms.Impl;
 
-public class QuizManager : MonoBehaviour
+public class QuizManager : MonoBehaviour, IDataPersistence
 {
     List<QuestionAndAnswers> QnA;
     public List<QuestionAndAnswers> Qn;
@@ -25,6 +26,7 @@ public class QuizManager : MonoBehaviour
     public int score;
     public bool passed = false;
     public static QuizManager qm;
+    public float media;
 
     private void Awake(){
         InicialPanel.SetActive(false);
@@ -73,10 +75,11 @@ public class QuizManager : MonoBehaviour
     }
 
     public void GameOver(){
-        float media = MathF.Round((float)score/totalQuestions * 100);
+        media = MathF.Round((float)score/totalQuestions * 100);
         QuizPanel.SetActive(false);
         ScorePanel.SetActive(true);  
         ScoreTxt.text = media.ToString() + "%";
+        DataPersistenceManager.Instance.SaveGame();
     }
 
     public void Correct(){
@@ -110,6 +113,14 @@ public class QuizManager : MonoBehaviour
         }else{
             GameOver();
         }
-
     }
+
+    public void LoadData(GameData data){
+        // empty
+    }
+    public void SaveData(ref GameData data){
+        Debug.Log(ScoreTxt.text);
+        data.pointFases[0] = (int)media;
+    }
+
 }

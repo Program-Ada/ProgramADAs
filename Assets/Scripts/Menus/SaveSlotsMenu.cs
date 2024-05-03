@@ -1,36 +1,48 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class SaveSlotsMenu : MonoBehaviour
+public class SaveSlotsMenu : MonoBehaviour, IDataPersistence
 {
     [Header("Menu Buttons")]
     [SerializeField] private Button backButton;
     private SaveSlot[] saveSlots;
+    [SerializeField] private GameObject saveSlotNameMenu;
+    public TextMeshProUGUI saveSlotNameInput;
 
     private void Awake(){
         saveSlots = this.GetComponentsInChildren<SaveSlot>();
     }
 
-    public void OnSaveSlotClicked(SaveSlot saveSlot){
+    public async void OnSaveSlotClicked(SaveSlot saveSlot){
         // Desabilita os outros botões
         DisableSaveSlotsButtons();
 
         // Atualiza o perfil a ser usado no data persistence
         DataPersistenceManager.Instance.ChangeSelectedProfileId(saveSlot.GetProfileId());
 
-        Debug.Log("saveSlot.GetProfileId() == " + saveSlot.GetProfileId());
         if(!saveSlot.hasData){
-            // Cria um novo jogo - fazendo com que nossos dados sejam inicializados em um estado limpo
-            DataPersistenceManager.Instance.NewGame();
-            // Carrega a cena - por consequência vai salvar o jogo devido ao OnSceneUnloaded() no DataPersistenceManager
-            SceneManager.LoadSceneAsync("Game");
+            // Pede para inserir o nome do saveslot
+            this.gameObject.SetActive(false);
+            saveSlotNameMenu.SetActive(true);
+
         }else{
             SceneManager.LoadSceneAsync(saveSlot.lastScene);
         }
 
+    }
+
+    public void createNewSave(){
+        saveSlotNameMenu.SetActive(false);
+        // Cria um novo jogo - fazendo com que nossos dados sejam inicializados em um estado limpo
+        DataPersistenceManager.Instance.NewGame();
+        // Salva o nome do saveslot
+        DataPersistenceManager.Instance.SaveGame();
+        // Carrega a cena - por consequência vai salvar o jogo devido ao OnSceneUnloaded() no DataPersistenceManager
+        SceneManager.LoadSceneAsync("Game");
     }
 
     private void Start(){
@@ -44,9 +56,9 @@ public class SaveSlotsMenu : MonoBehaviour
         // Faz um loop passando por cada save slot no UI e carrega o conteúdo apropriado
         foreach (SaveSlot saveSlot in saveSlots)
         {
-                   GameData profileData = null;
-                   profilesGameData.TryGetValue(saveSlot.GetProfileId(), out profileData);  
-                   saveSlot.SetData(profileData);
+            GameData profileData = null;
+            profilesGameData.TryGetValue(saveSlot.GetProfileId(), out profileData);  
+            saveSlot.SetData(profileData);
         }
     }
 
@@ -60,5 +72,13 @@ public class SaveSlotsMenu : MonoBehaviour
             saveSlot.SetInteractable(false);
         }
         backButton.interactable = false;
+    }
+
+    public void SaveData(ref GameData data){
+        data.saveSlotName = saveSlotNameInput.text;
+    }
+
+    public void LoadData(GameData data){
+        // empty
     }
 }

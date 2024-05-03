@@ -16,7 +16,7 @@ public class GameData
     // os valores nesse constructor serão os valores iniciais que o jogo irá iniciar
     // toda vez que não tiver um arquivo de save criado ou começar um jogo novo
 
-    public GameData (/*Player player*/)
+    public GameData ()
     {
         
         playerPosition.x = -6.12f;
@@ -24,5 +24,6 @@ public class GameData
         totalCompleted = 0;
         saveSlotName = "Insira um Nome";
         scene = "Game";
+        pointFases = new int[5];
     }
 }

@@ -68,7 +68,12 @@ public class DataPersistenceManager : MonoBehaviour
     public void ChangeSelectedProfileId(string newProfileId){
         // Função responsável por mudar o perfil de jogador utilizado para o novo selecionado e carregar o jogo
         this.selectedProfileId = newProfileId;
-        LoadGame();
+        Debug.Log("GameData no change profile: " + gameData);
+        if(this.gameData != null){
+            Debug.Log("change profile game data null");
+            LoadGame();
+        }
+
     }
 
     public void NewGame(){
