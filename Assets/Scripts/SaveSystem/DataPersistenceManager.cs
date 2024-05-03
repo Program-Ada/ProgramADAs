@@ -24,6 +24,8 @@ public class DataPersistenceManager : MonoBehaviour
 
     public static DataPersistenceManager Instance {get; private set;}
 
+    public string lastScene;
+
     private void Awake()
     {
         if(Instance != null){
@@ -49,8 +51,14 @@ public class DataPersistenceManager : MonoBehaviour
     }
 
     public void OnSceneLoaded(Scene scene, LoadSceneMode mode){
+        Debug.Log("lastscene before if: " + lastScene);
         this.dataPersistenceObjects = FindAllDataPersistenceObjects();
-        LoadGame();
+        if(lastScene == "GameSelection"){
+            LoadGame();
+        }
+
+        lastScene = scene.name;
+        Debug.Log("lastscene after if: " + lastScene);
     }
 
     /*public void OnSceneUnloaded(Scene scene){

@@ -927,6 +927,10 @@ PrefabInstance:
       propertyPath: useEncryption
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 559027288404770245, guid: ee14a6c8f845de04fae30c39e7daccad, type: 3}
+      propertyPath: initializeDataIfNull
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7233475446541554914, guid: ee14a6c8f845de04fae30c39e7daccad, type: 3}
       propertyPath: m_Name
       value: DataPersistenceManager
