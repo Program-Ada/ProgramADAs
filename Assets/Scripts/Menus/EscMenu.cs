@@ -27,10 +27,8 @@ public class EscMenu : MonoBehaviour
     }
 
     public void MenuButton(){
-        //Player.GetComponent<Player>().SavePlayer();
         DataPersistenceManager.Instance.SaveGame();
         SceneManager.LoadSceneAsync("Menu");
-        //SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
     }
 
     public void ContinueButton(){
