@@ -16,7 +16,8 @@ public class MainMenu : MonoBehaviour
     }
 
     public void GameOptions(){
-        SceneManager.LoadSceneAsync("GameOptions");
+        // Desabilitado por enquanto (em desenvolvimento)
+        //SceneManager.LoadSceneAsync("GameOptions");
     }
 
     public void QuitGame(){
