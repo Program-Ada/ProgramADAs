@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ButtonsMiniGame : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class ButtonsMiniGame : MonoBehaviour
     public GameObject drink_btn;
     public GameObject food_btn;
     public Button[] buttons;
+
+    public DialogueTrigger dialogueTrigger;
+    public GameObject aleErroSemCopo;
 
     void Start()
     {
@@ -24,6 +28,8 @@ public class ButtonsMiniGame : MonoBehaviour
         for (int i = 0; i < buttons.Length; i++) {
             buttons[i].interactable = false;
         }
+
+        // dialogueTrigger = FindAnyObjectByType<DialogueTrigger>();
     }
 
     public void Start_Btn() {
@@ -41,6 +47,24 @@ public class ButtonsMiniGame : MonoBehaviour
     public void Verifica_Btn() {
         Verifica_Drink();
         Verifica_Food();
+    }
+
+    public void ResetScene() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void Feedback_Test() {
+        aleErroSemCopo.SetActive(true);
+        teste(10); //dialogo não abre na primeira vez pq ainda nao existe, mas na segunda abre
+        aleErroSemCopo.GetComponent<DialogueTrigger>().TriggerDialogue();
+        // aleErroSemCopo.SetActive(true);
+        // if(aleErroSemCopo.activeSelf) {
+        //     aleErroSemCopo.GetComponent<DialogueTrigger>().TriggerDialogue();
+        // }
+    }
+
+    IEnumerator teste(int duration) {
+        yield return new WaitForSeconds(duration);
     }
 
     public void Pegar_Suco() {

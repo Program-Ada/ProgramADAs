@@ -8,6 +8,7 @@ public class Drinks : MonoBehaviour
     public bool containerFull;
     public int drinkEcolhido;
     public bool existeCopo;
+    public ButtonsMiniGame buttonsMiniGame;
 
     void Start()
     {
@@ -15,6 +16,7 @@ public class Drinks : MonoBehaviour
         // drinkEcolhido = -1;
         // existeCopo = false;
         Reset_teste();
+        buttonsMiniGame = FindAnyObjectByType<ButtonsMiniGame>();
     }
 
     public void Show_Drink(int i) {
@@ -27,6 +29,8 @@ public class Drinks : MonoBehaviour
         }
         else {
             Debug.Log("Não tem Copo = Suco derramado");
+            buttonsMiniGame.Feedback_Test();
+            buttonsMiniGame.Feedback_Test();
         }
     }
 
