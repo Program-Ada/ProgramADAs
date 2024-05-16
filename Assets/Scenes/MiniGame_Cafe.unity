@@ -1411,13 +1411,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e0566788639c4a688663937942ca88a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  foods:
+  options:
   - {fileID: 1174895482}
   - {fileID: 1516816017}
   - {fileID: 2092277384}
   containerFull: 0
-  foodEcolhido: -1
-  existePrato: 0
+  chosenOption: -1
+  containerExists: 0
 --- !u!1 &211204927
 GameObject:
   m_ObjectHideFlags: 0
@@ -3007,7 +3007,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 531739913}
         m_TargetAssemblyTypeName: Drinks, Assembly-CSharp
-        m_MethodName: Show_Drink
+        m_MethodName: Show_Option
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3536,7 +3536,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 531739913}
         m_TargetAssemblyTypeName: Drinks, Assembly-CSharp
-        m_MethodName: Show_Drink
+        m_MethodName: Show_Option
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3635,13 +3635,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f2da0675b1ae49229f2fea187de9488, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drinks:
+  options:
   - {fileID: 1327510453}
   - {fileID: 740204781}
   - {fileID: 1086533440}
   containerFull: 0
-  drinkEcolhido: -1
-  existeCopo: 0
+  chosenOption: 0
+  containerExists: 0
   buttonsMiniGame: {fileID: 0}
 --- !u!1 &553058782
 GameObject:
@@ -6941,7 +6941,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 531739913}
         m_TargetAssemblyTypeName: Drinks, Assembly-CSharp
-        m_MethodName: Show_Drink
+        m_MethodName: Show_Option
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8859,7 +8859,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 186192515}
         m_TargetAssemblyTypeName: Foods, Assembly-CSharp
-        m_MethodName: Show_Food
+        m_MethodName: Show_Option
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9126,7 +9126,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 186192515}
         m_TargetAssemblyTypeName: Foods, Assembly-CSharp
-        m_MethodName: Show_Food
+        m_MethodName: Show_Option
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10146,7 +10146,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 186192515}
         m_TargetAssemblyTypeName: Foods, Assembly-CSharp
-        m_MethodName: Show_Food
+        m_MethodName: Show_Option
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

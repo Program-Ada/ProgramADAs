@@ -31,5 +31,6 @@ public class Orders : MonoBehaviour
 
     public void Stop_Order() {
         pedidoAtual.SetActive(false);
+        pedidoEmAndamento = false;
     }
 }

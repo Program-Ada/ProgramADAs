@@ -4,39 +4,39 @@ using UnityEngine;
 
 public class Drinks : MonoBehaviour
 {
-    public GameObject[] drinks;
+    public GameObject[] options;
     public bool containerFull;
-    public int drinkEcolhido;
-    public bool existeCopo;
+    public int chosenOption;
+    public bool containerExists;
     public ButtonsMiniGame buttonsMiniGame;
 
     void Start()
     {
         // containerFull = false;
-        // drinkEcolhido = -1;
-        // existeCopo = false;
+        // chosenOption = -1;
+        // containerExists = false;
         Reset_teste();
         buttonsMiniGame = FindAnyObjectByType<ButtonsMiniGame>();
     }
 
-    public void Show_Drink(int i) {
-        if(existeCopo) {
+    public void Show_Option(int i) {
+        if(containerExists) {
             if (!containerFull) { 
-                drinks[i].SetActive(true);
+                options[i].SetActive(true);
                 containerFull = true;
-                drinkEcolhido = i;
+                chosenOption = i;
             }
         }
         else {
             Debug.Log("Não tem Copo = Suco derramado");
-            buttonsMiniGame.Feedback_Test();
-            buttonsMiniGame.Feedback_Test();
+            // buttonsMiniGame.Feedback_Test();
+            // buttonsMiniGame.Feedback_Test();
         }
     }
 
     public void Reset_teste() {
         containerFull = false;
-        drinkEcolhido = -1;
-        existeCopo = false;
+        chosenOption = -1;
+        containerExists = false;
     }
 }

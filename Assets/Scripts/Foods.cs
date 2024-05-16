@@ -4,25 +4,25 @@ using UnityEngine;
 
 public class Foods : MonoBehaviour
 {
-    public GameObject[] foods;
+    public GameObject[] options;
     public bool containerFull = false;
-    public int foodEcolhido = -1;
-    public bool existePrato;
+    public int chosenOption = -1;
+    public bool containerExists;
 
     void Start()
     {
         // containerFull = false;
-        // foodEcolhido = -1;
-        // existePrato = false;
+        // chosenOption = -1;
+        // containerExists = false;
         Reset_teste();
     }
 
-    public void Show_Food(int i) {
-        if(existePrato) {
+    public void Show_Option(int i) {
+        if(containerExists) {
             if (!containerFull) { 
-                foods[i].SetActive(true);
+                options[i].SetActive(true);
                 containerFull = true;
-                foodEcolhido = i;
+                chosenOption = i;
             }
         }
         else {
@@ -32,7 +32,7 @@ public class Foods : MonoBehaviour
 
     public void Reset_teste() {
         containerFull = false;
-        foodEcolhido = -1;
-        existePrato = false;
+        chosenOption = -1;
+        containerExists = false;
     }
 }

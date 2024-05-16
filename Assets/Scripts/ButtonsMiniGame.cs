@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
+using UnityEngine.PlayerLoop;
 
 public class ButtonsMiniGame : MonoBehaviour
 {
@@ -14,7 +16,7 @@ public class ButtonsMiniGame : MonoBehaviour
     public GameObject food_btn;
     public Button[] buttons;
 
-    public DialogueTrigger dialogueTrigger;
+    // public DialogueTrigger dialogueTrigger;
     public GameObject aleErroSemCopo;
 
     void Start()
@@ -22,14 +24,10 @@ public class ButtonsMiniGame : MonoBehaviour
         pedidos = FindObjectOfType<Orders>();
         drinks = FindAnyObjectByType<Drinks>();
         foods = FindAnyObjectByType<Foods>();
-        // drinks = GetComponent<Drinks>();
         buttons = GetComponentsInChildren<Button>();
-        Debug.Log(buttons.Length);
         for (int i = 0; i < buttons.Length; i++) {
             buttons[i].interactable = false;
         }
-
-        // dialogueTrigger = FindAnyObjectByType<DialogueTrigger>();
     }
 
     public void Start_Btn() {
@@ -47,6 +45,8 @@ public class ButtonsMiniGame : MonoBehaviour
     public void Verifica_Btn() {
         Verifica_Drink();
         Verifica_Food();
+        ResetOrder();
+        // functionToWait(10);
     }
 
     public void ResetScene() {
@@ -55,7 +55,7 @@ public class ButtonsMiniGame : MonoBehaviour
 
     public void Feedback_Test() {
         aleErroSemCopo.SetActive(true);
-        teste(10); //dialogo não abre na primeira vez pq ainda nao existe, mas na segunda abre
+        functionToWait(10); //dialogo não abre na primeira vez pq ainda nao existe, mas na segunda abre
         aleErroSemCopo.GetComponent<DialogueTrigger>().TriggerDialogue();
         // aleErroSemCopo.SetActive(true);
         // if(aleErroSemCopo.activeSelf) {
@@ -63,7 +63,7 @@ public class ButtonsMiniGame : MonoBehaviour
         // }
     }
 
-    IEnumerator teste(int duration) {
+    IEnumerator functionToWait(int duration) {
         yield return new WaitForSeconds(duration);
     }
 
@@ -78,17 +78,17 @@ public class ButtonsMiniGame : MonoBehaviour
     }
 
     public void Pegar_Copo() {
-        drinks.existeCopo = true;
+        drinks.containerExists = true;
     }
 
     public void Pegar_Prato() {
-        foods.existePrato = true;
+        foods.containerExists = true;
     }
 
     public void JogarFora_Drink() {
-        for (int i = 0; i < drinks.drinks.Length; i++) {
-            if (drinks.drinks[i].activeSelf) {
-                drinks.drinks[i].SetActive(false);
+        for (int i = 0; i < drinks.options.Length; i++) {
+            if (drinks.options[i].activeSelf) {
+                drinks.options[i].SetActive(false);
             }
         }
         drinks.Reset_teste();
@@ -97,9 +97,9 @@ public class ButtonsMiniGame : MonoBehaviour
     }
 
     public void JogarFora_Food() {
-        for (int i = 0; i < foods.foods.Length; i++) {
-            if (foods.foods[i].activeSelf) {
-                foods.foods[i].SetActive(false);
+        for (int i = 0; i < foods.options.Length; i++) {
+            if (foods.options[i].activeSelf) {
+                foods.options[i].SetActive(false);
             }
         }
         foods.Reset_teste();
@@ -108,7 +108,7 @@ public class ButtonsMiniGame : MonoBehaviour
     }
 
     public void Verifica_Drink() {
-        if(pedidos.pedidoAtual.GetComponent<Pedido>().drink == drinks.drinkEcolhido) {
+        if(pedidos.pedidoAtual.GetComponent<Pedido>().drink == drinks.chosenOption) {
             Debug.Log("Drink correto");
         }
         else {
@@ -117,12 +117,15 @@ public class ButtonsMiniGame : MonoBehaviour
     }
 
     public void Verifica_Food() {
-        if(pedidos.pedidoAtual.GetComponent<Pedido>().food == foods.foodEcolhido) {
+        if(pedidos.pedidoAtual.GetComponent<Pedido>().food == foods.chosenOption) {
             Debug.Log("Food correto");
         }
         else {
             Debug.Log("Food Incorreto");
         }
+    }
+
+    public void ResetOrder() {
         pedidos.Stop_Order();
         JogarFora_Drink();
         drink_btn.SetActive(false);
