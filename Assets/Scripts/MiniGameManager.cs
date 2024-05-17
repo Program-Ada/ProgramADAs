@@ -51,4 +51,8 @@ public class MiniGameManager : MonoBehaviour
     public void AnwserTrue(){
         // SceneManager.LoadScene("MiniGame_Cafe");    //adicionar proxima cena
     }
+
+    public void funtionTesteDebug() {
+        Debug.Log("funcinou");
+    }
 }
