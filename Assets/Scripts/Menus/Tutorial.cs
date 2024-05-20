@@ -9,6 +9,11 @@ public class Tutorial : MonoBehaviour
     public GameObject Player;
     public static Tutorial Instance {get; private set;}
 
+    void Awake(){
+        Instance = this;
+        Debug.Log("Instancia Tutorial");
+    }
+
     public void OkButton(){
         Player.GetComponent<PlayerMovement>().enabled = true;
         TutorialCanvas.SetActive(false);
