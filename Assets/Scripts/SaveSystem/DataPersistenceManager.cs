@@ -55,15 +55,13 @@ public class DataPersistenceManager : MonoBehaviour
         this.dataPersistenceObjects = FindAllDataPersistenceObjects();
         if(lastScene == "GameSelection"){
             LoadGame();
+            //Tutorial.Instance.OpenTutorial();
         }
 
         lastScene = scene.name;
         Debug.Log("lastscene after if: " + lastScene);
-    }
-
-    /*public void OnSceneUnloaded(Scene scene){
         SaveGame();
-    }*/
+    }
 
     public void ChangeSelectedProfileId(string newProfileId){
         // Função responsável por mudar o perfil de jogador utilizado para o novo selecionado e carregar o jogo

@@ -27,6 +27,7 @@ public class QuizManager : MonoBehaviour, IDataPersistence
     public bool passed = false;
     public static QuizManager qm;
     public float media;
+    public bool quizDone = false;
 
     private void Awake(){
         InicialPanel.SetActive(false);
@@ -79,6 +80,7 @@ public class QuizManager : MonoBehaviour, IDataPersistence
         QuizPanel.SetActive(false);
         ScorePanel.SetActive(true);  
         ScoreTxt.text = media.ToString() + "%";
+        quizDone = true;
         DataPersistenceManager.Instance.SaveGame();
     }
 
@@ -110,8 +112,23 @@ public class QuizManager : MonoBehaviour, IDataPersistence
 
             QuestionTxt.text = QnA[currentQuestion].Question;
             SetAnswers();
+            EnableAnswerButtons();
         }else{
             GameOver();
+        }
+    }
+
+    public void DisableAnswerButtons(){
+        foreach(GameObject button in options){
+            Button b = button.GetComponent<Button>();
+            b.interactable = false;
+        }
+    }
+
+    public void EnableAnswerButtons(){
+        foreach(GameObject button in options){
+            Button b = button.GetComponent<Button>();
+            b.interactable = true;
         }
     }
 
@@ -119,8 +136,11 @@ public class QuizManager : MonoBehaviour, IDataPersistence
         // empty
     }
     public void SaveData(ref GameData data){
-        Debug.Log(ScoreTxt.text);
-        data.pointFases[0] = (int)media;
+        Debug.Log("quizDone: " + quizDone);
+        if(quizDone){
+            data.pointFases[0] = (int)media;
+        }
+
     }
 
 }

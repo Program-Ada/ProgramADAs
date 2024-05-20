@@ -17,7 +17,7 @@ public class SaveSlotsMenu : MonoBehaviour, IDataPersistence
         saveSlots = this.GetComponentsInChildren<SaveSlot>();
     }
 
-    public async void OnSaveSlotClicked(SaveSlot saveSlot){
+    public /*async*/ void OnSaveSlotClicked(SaveSlot saveSlot){
         // Desabilita os outros botões
         DisableSaveSlotsButtons();
 

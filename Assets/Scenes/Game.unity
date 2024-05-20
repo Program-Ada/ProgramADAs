@@ -759,7 +759,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &54846506
@@ -1242,7 +1242,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -3451,7 +3451,7 @@ MonoBehaviour:
   m_margin: {x: 461.0739, y: 0, z: 461.07394, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &361753697
@@ -4506,7 +4506,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &429370125
@@ -5937,7 +5937,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -6724,7 +6724,7 @@ PrefabInstance:
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.image
       value: 
-      objectReference: {fileID: 21300000, guid: e0d3a95bffa80274ca092a4210deeb59, type: 3}
+      objectReference: {fileID: 21300000, guid: c8117a87683716843bf135e4bc6f3bc7, type: 3}
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.setences.Array.size
       value: 2
@@ -6932,7 +6932,7 @@ PrefabInstance:
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.image
       value: 
-      objectReference: {fileID: 21300000, guid: 514677970af921d4b8e76649cc05eea2, type: 3}
+      objectReference: {fileID: 21300000, guid: 3cf98a189e23d444f8836c110f56c991, type: 3}
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.setences.Array.size
       value: 2
@@ -8581,7 +8581,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -9211,7 +9211,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1129324233
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10204,7 +10204,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.8399999, y: 4.106006}
+    oldSize: {x: 1.8599999, y: 4.106006}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -10406,7 +10406,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1284145660
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10701,7 +10701,7 @@ PrefabInstance:
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.image
       value: 
-      objectReference: {fileID: 21300000, guid: ab302a19144437d42863af4bb5f0e873, type: 3}
+      objectReference: {fileID: 21300000, guid: 4ca7e434879330340a9354bc08554f42, type: 3}
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.setences.Array.size
       value: 2
@@ -11195,8 +11195,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1579839795
+  m_SortingLayer: -1
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 92f35e6fd70766645ad384a3989eefa6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -12361,7 +12361,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -12755,6 +12755,7 @@ MonoBehaviour:
   score: 0
   passed: 0
   media: 0
+  quizDone: 0
 --- !u!4 &1758142867
 Transform:
   m_ObjectHideFlags: 0
@@ -13518,7 +13519,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1867293026
@@ -14306,7 +14307,7 @@ PrefabInstance:
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.image
       value: 
-      objectReference: {fileID: 21300000, guid: e0ed7a244edecc546af988eeeeb41e5d, type: 3}
+      objectReference: {fileID: 21300000, guid: 0c513ef87be9d49479e428cae2469950, type: 3}
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.setences.Array.size
       value: 2
@@ -15484,7 +15485,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2126208173
@@ -15772,7 +15773,7 @@ PrefabInstance:
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.image
       value: 
-      objectReference: {fileID: 21300000, guid: 9382092f0f72281408fd1573ad1492b2, type: 3}
+      objectReference: {fileID: 21300000, guid: 8e88a1537b3e31b47819021ede6a48e0, type: 3}
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.setences.Array.size
       value: 3

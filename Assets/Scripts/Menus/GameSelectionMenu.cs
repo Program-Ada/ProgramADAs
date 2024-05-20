@@ -12,9 +12,9 @@ public class GameSelectionMenu : MonoBehaviour
     [SerializeField] private Button continueGameButton;
 
     private void Start(){
-        if(!DataPersistenceManager.Instance.HasGameData()){
+        /*if(!DataPersistenceManager.Instance.HasGameData()){
             continueGameButton.interactable = false;
-        }
+        }*/
     }
 
     public void OnNewGameClicked(){

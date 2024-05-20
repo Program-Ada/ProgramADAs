@@ -14,6 +14,7 @@ public class QuizAnswerScript : MonoBehaviour
     }
 
     public void Answer(){
+        quizManager.DisableAnswerButtons();
         if(isCorrect){
             SoundManager.sm.Correct();
             GetComponent<Image>().color = Color.green;
