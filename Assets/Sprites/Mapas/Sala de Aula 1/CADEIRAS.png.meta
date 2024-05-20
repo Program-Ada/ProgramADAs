@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,280 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: CADEIRAS_0
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 1063
+        width: 233
+        height: 387
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ca5db14453442140b5b2b587ea241c3
+      internalID: -2131211664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CADEIRAS_1
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 1055
+        width: 235
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d45647abac6aac643ae3bbc8269ef4ce
+      internalID: 798256758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CADEIRAS_2
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 1055
+        width: 233
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64098b0d567926948a7e607a0dac38f7
+      internalID: 696044107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CADEIRAS_3
+      rect:
+        serializedVersion: 2
+        x: 2169
+        y: 1055
+        width: 233
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bccd9e221127364a9e5518cf0494116
+      internalID: -762219723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CADEIRAS_4
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 531
+        width: 323
+        height: 345
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e5a8a4eeb2b7714ab42da3c0a32132e
+      internalID: -1820145167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CADEIRAS_5
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 531
+        width: 233
+        height: 345
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea456fe931169040862495f5bb311f6
+      internalID: 1556608500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CADEIRAS_6
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 538
+        width: 232
+        height: 345
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d53387a7371a84786fcc64806a63a6
+      internalID: -105187137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CADEIRAS_7
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 523
+        width: 233
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26adf4b79d156db4b925e48122f23669
+      internalID: 1420520974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CADEIRAS_8
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 48
+        width: 233
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4412cd6ccd03d3342b5be6bfdc2fe911
+      internalID: 1526728255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CADEIRAS_9
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 48
+        width: 235
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf530063647a33249a2d62bbefe01066
+      internalID: -1863099806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CADEIRAS_10
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 48
+        width: 233
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6dc9ea556df56d479853c0578096e98
+      internalID: 283002600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CADEIRAS_11
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 48
+        width: 233
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1474a6d6e69f7b641a96cf4459e5da0b
+      internalID: -1205519429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CADEIRAS_12
+      rect:
+        serializedVersion: 2
+        x: 2442
+        y: 48
+        width: 233
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a74a00c43c57f2c428e3036d92e8fcb4
+      internalID: 1715970714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +405,20 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CADEIRAS_0: -2131211664
+      CADEIRAS_1: 798256758
+      CADEIRAS_10: 283002600
+      CADEIRAS_11: -1205519429
+      CADEIRAS_12: 1715970714
+      CADEIRAS_2: 696044107
+      CADEIRAS_3: -762219723
+      CADEIRAS_4: -1820145167
+      CADEIRAS_5: 1556608500
+      CADEIRAS_6: -105187137
+      CADEIRAS_7: 1420520974
+      CADEIRAS_8: 1526728255
+      CADEIRAS_9: -1863099806
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
