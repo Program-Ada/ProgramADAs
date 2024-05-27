@@ -111,6 +111,9 @@ public class ButtonsMiniGame : MonoBehaviour
         if(pedidos.pedidoAtual.GetComponent<Pedido>().drink == drinks.chosenOption) {
             Debug.Log("Drink correto");
         }
+        // if(pedidos.GetComponent<Order>().chosenOptionDrink == drinks.chosenOption) {
+        //     Debug.Log("Drink correto ORDER");
+        // }
         else {
             Debug.Log("Drink Incorreto");
         }

@@ -627,7 +627,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &81854877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3746,7 +3746,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &553058783
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4246,7 +4246,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &575528252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8034,7 +8034,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1191601275
 Transform:
   m_ObjectHideFlags: 0
@@ -10227,7 +10227,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1534556902
 Transform:
   m_ObjectHideFlags: 0
@@ -12171,7 +12171,7 @@ MonoBehaviour:
   drink_btn: {fileID: 99114728}
   food_btn: {fileID: 1668714036}
   buttons: []
-  aleErroSemCopo: {fileID: 0}
+  aleErroSemCopo: {fileID: 1099158663}
 --- !u!1 &1625555345
 GameObject:
   m_ObjectHideFlags: 0
@@ -12582,7 +12582,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1672959271
 Transform:
   m_ObjectHideFlags: 0
@@ -14664,6 +14664,7 @@ MonoBehaviour:
   ordersClones: []
   pedidoAtual: {fileID: 1926022810}
   pedidoEmAndamento: 0
+  order: {fileID: 0}
 --- !u!1 &2098550344
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,11 +11,16 @@ public class Orders : MonoBehaviour
     public GameObject pedidoAtual;
     public bool pedidoEmAndamento;
 
+    public GameObject order;
+
     void Start()
     {
         ordersClones = new List<GameObject>(orders);
         pedidoEmAndamento = false;
+
+        // Create_Order();
     }
+
     public void Show_Order() {
         if(ordersClones.Count > 0) {
             pedidoEmAndamento = true;
@@ -33,4 +38,14 @@ public class Orders : MonoBehaviour
         pedidoAtual.SetActive(false);
         pedidoEmAndamento = false;
     }
+
+    // public void Create_Order() {
+    //     order = new GameObject();
+    //     order.name = "Order";
+    //     order.transform.SetParent(this.gameObject.transform);
+    //     order.AddComponent<Order>();
+    //     order.AddComponent<RectTransform>();
+    //     RectTransform rt = order.GetComponent<RectTransform>();
+    //     rt.anchoredPosition = Vector3.zero;
+    // }
 }
