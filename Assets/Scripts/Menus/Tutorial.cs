@@ -11,7 +11,7 @@ public class Tutorial : MonoBehaviour
 
     void Awake(){
         Instance = this;
-        Debug.Log("Instancia Tutorial");
+        TutorialCanvas.SetActive(false);
     }
 
     public void OkButton(){
