@@ -53,7 +53,7 @@ public class QuizManager : MonoBehaviour, IDataPersistence
         totalQuestions = QnA.Count;
         InicialPanel.SetActive(false);
         QuizPanel.SetActive(true);
-        Player.SetActive(false);
+        Player.GetComponent<PlayerMovement>().enabled = false;
         GenerateQuestion();
     }
 
@@ -66,7 +66,7 @@ public class QuizManager : MonoBehaviour, IDataPersistence
     public void Sair(){
         InicialPanel.SetActive(false);
         ScorePanel.SetActive(false);
-        Player.SetActive(true);
+        Player.GetComponent<PlayerMovement>().enabled = true;
         if(totalQuestions != 0 && (float)score/totalQuestions >= 0.75f){
             passed = true;
         }else{
