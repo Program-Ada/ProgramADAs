@@ -915,7 +915,7 @@ PrefabInstance:
     - target: {fileID: 721986884734338985, guid: 63377e57dfcac2343873128ee21cdca0, type: 3}
       propertyPath: m_Texture
       value: 
-      objectReference: {fileID: 2800000, guid: 4989eb88cbf13074e9f018a0bde2d707, type: 3}
+      objectReference: {fileID: 2800000, guid: 3fb7cb373578c7041aeb0aae58ad6ff4, type: 3}
     - target: {fileID: 3172506412205566131, guid: 63377e57dfcac2343873128ee21cdca0, type: 3}
       propertyPath: m_Name
       value: FundoAnimado

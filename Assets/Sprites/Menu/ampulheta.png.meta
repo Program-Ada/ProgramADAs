@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: debacf2d075ef8347b43cf11457c2bfa
+guid: d50d374bb6246414cbb8ae4bfb622e45
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -37,9 +37,9 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -121,28 +121,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Menu_Backgrownd_Green_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1893
-        height: 1080
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 13, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 80a62168ed5a98d4b82f088e3d576af0
-      internalID: -2073132446
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -153,8 +132,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Menu_Backgrownd_Green_0: -2073132446
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
