@@ -136,7 +136,6 @@ public class QuizManager : MonoBehaviour, IDataPersistence
         // empty
     }
     public void SaveData(ref GameData data){
-        Debug.Log("quizDone: " + quizDone);
         if(quizDone){
             data.pointFases[0] = (int)media;
         }

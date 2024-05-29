@@ -12,6 +12,7 @@ public class SaveSlotsMenu : MonoBehaviour, IDataPersistence
     private SaveSlot[] saveSlots;
     [SerializeField] private GameObject saveSlotNameMenu;
     public TextMeshProUGUI saveSlotNameInput;
+    public bool createdNow = false;
 
     private void Awake(){
         saveSlots = this.GetComponentsInChildren<SaveSlot>();
@@ -36,6 +37,7 @@ public class SaveSlotsMenu : MonoBehaviour, IDataPersistence
     }
 
     public void createNewSave(){
+        createdNow = true;
         saveSlotNameMenu.SetActive(false);
         // Cria um novo jogo - fazendo com que nossos dados sejam inicializados em um estado limpo
         DataPersistenceManager.Instance.NewGame();
@@ -75,7 +77,11 @@ public class SaveSlotsMenu : MonoBehaviour, IDataPersistence
     }
 
     public void SaveData(ref GameData data){
-        data.saveSlotName = saveSlotNameInput.text;
+        Debug.Log("Salvando com o nome: " + saveSlotNameInput.text);
+        if(createdNow){
+            data.saveSlotName = saveSlotNameInput.text;
+        }
+
     }
 
     public void LoadData(GameData data){

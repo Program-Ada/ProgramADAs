@@ -55,7 +55,7 @@ public class DataPersistenceManager : MonoBehaviour
         this.dataPersistenceObjects = FindAllDataPersistenceObjects();
         if(lastScene == "GameSelection"){
             LoadGame();
-            Tutorial.Instance.OpenTutorial();
+            //Tutorial.Instance.OpenTutorial();
         }
 
         lastScene = scene.name;
@@ -68,7 +68,6 @@ public class DataPersistenceManager : MonoBehaviour
         this.selectedProfileId = newProfileId;
         Debug.Log("GameData no change profile: " + gameData);
         if(this.gameData != null){
-            Debug.Log("change profile game data null");
             LoadGame();
         }
 

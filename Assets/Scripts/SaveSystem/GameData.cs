@@ -19,8 +19,8 @@ public class GameData
     public GameData ()
     {
         
-        playerPosition.x = -6.12f;
-        playerPosition.y = 6.12f;
+        playerPosition.x = -5.53f;
+        playerPosition.y = 4.1f;
         totalCompleted = 0;
         saveSlotName = "Insira um Nome";
         scene = "Game";
