@@ -55,7 +55,7 @@ public class DataPersistenceManager : MonoBehaviour
         this.dataPersistenceObjects = FindAllDataPersistenceObjects();
         if(lastScene == "GameSelection"){
             LoadGame();
-            //Tutorial.Instance.OpenTutorial();
+            Tutorial.Instance.OpenTutorial();
         }
 
         lastScene = scene.name;
