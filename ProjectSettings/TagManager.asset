@@ -41,9 +41,15 @@ TagManager:
   - name: Ground
     uniqueID: 2715127501
     locked: 0
+  - name: Personagem
+    uniqueID: 3507182051
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
   - name: UI
     uniqueID: 3530000375
+    locked: 0
+  - name: Cerca
+    uniqueID: 1896215853
     locked: 0

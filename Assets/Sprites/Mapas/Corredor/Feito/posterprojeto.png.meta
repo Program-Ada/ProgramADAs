@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 48701ae2a5cf7464e88574456911c657
+guid: e3cfb49669c4beb45bb9fea707c01111
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: posterprojeto_0
+      rect:
+        serializedVersion: 2
+        x: 3831
+        y: 4475
+        width: 253
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86d628f980c0b87439ac36bd80e60b05
+      internalID: -866301889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: posterprojeto_1
+      rect:
+        serializedVersion: 2
+        x: 4127
+        y: 4448
+        width: 182
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42fb9548503efaa4d93d16301bb36fc0
+      internalID: -491973839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: posterprojeto_2
+      rect:
+        serializedVersion: 2
+        x: 8138
+        y: 2633
+        width: 182
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e2a48b936a44da409c316a391e21ca6
+      internalID: 1538387035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: posterprojeto_3
+      rect:
+        serializedVersion: 2
+        x: 8503
+        y: 2794
+        width: 209
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1dd14f2d8257b441bf74f667e39d9b8
+      internalID: -137413557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +203,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      posterprojeto_0: -866301889
+      posterprojeto_1: -491973839
+      posterprojeto_2: 1538387035
+      posterprojeto_3: -137413557
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
