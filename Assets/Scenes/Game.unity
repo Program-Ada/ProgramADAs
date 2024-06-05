@@ -5561,7 +5561,7 @@ PrefabInstance:
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.image
       value: 
-      objectReference: {fileID: 21300000, guid: c8117a87683716843bf135e4bc6f3bc7, type: 3}
+      objectReference: {fileID: -630386561, guid: 54e4aaf90ca4fdd41915a75381099424, type: 3}
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.setences.Array.size
       value: 2
@@ -5769,7 +5769,7 @@ PrefabInstance:
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.image
       value: 
-      objectReference: {fileID: 21300000, guid: 3cf98a189e23d444f8836c110f56c991, type: 3}
+      objectReference: {fileID: 51029485, guid: 084c1b86f986c0c46ba07dfd060dde12, type: 3}
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.setences.Array.size
       value: 2
@@ -8334,7 +8334,7 @@ PrefabInstance:
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.image
       value: 
-      objectReference: {fileID: 21300000, guid: 4ca7e434879330340a9354bc08554f42, type: 3}
+      objectReference: {fileID: 1907385041, guid: 11c6e37b2aa62e240a1167debb6d4a20, type: 3}
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.setences.Array.size
       value: 2
@@ -11150,7 +11150,7 @@ PrefabInstance:
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.image
       value: 
-      objectReference: {fileID: 21300000, guid: 0c513ef87be9d49479e428cae2469950, type: 3}
+      objectReference: {fileID: -1197522717, guid: e8464a39d80d8344fbebd98631b1be23, type: 3}
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.setences.Array.size
       value: 2
@@ -12257,7 +12257,7 @@ PrefabInstance:
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.image
       value: 
-      objectReference: {fileID: 21300000, guid: 8e88a1537b3e31b47819021ede6a48e0, type: 3}
+      objectReference: {fileID: 2019228955, guid: 7310d45053bbe6f46a13729fec63e102, type: 3}
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.setences.Array.size
       value: 3
@@ -12511,6 +12511,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tutorial
       objectReference: {fileID: 0}
+    - target: {fileID: 7619920319992243441, guid: de51ef64bd060a9409d4a19cc717149c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12586,7 +12590,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3354516968173626845, guid: 727e918e195a92348a3a5b74124c490f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 2.56
+      value: 119
       objectReference: {fileID: 0}
     - target: {fileID: 3354516968173626845, guid: 727e918e195a92348a3a5b74124c490f, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -12608,10 +12612,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueBox
       objectReference: {fileID: 0}
+    - target: {fileID: 5824891001083722505, guid: 727e918e195a92348a3a5b74124c490f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 5824891001083722505, guid: 727e918e195a92348a3a5b74124c490f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 110
+      objectReference: {fileID: 0}
+    - target: {fileID: 5824891001083722505, guid: 727e918e195a92348a3a5b74124c490f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 18.3
+      objectReference: {fileID: 0}
     - target: {fileID: 6941240161803499843, guid: 727e918e195a92348a3a5b74124c490f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1454815458}
+    - target: {fileID: 7848803967416602040, guid: 727e918e195a92348a3a5b74124c490f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -28441297, guid: fc76156456bd9894aa97165cf90ea51b, type: 3}
+    - target: {fileID: 7848803967416602040, guid: 727e918e195a92348a3a5b74124c490f, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
