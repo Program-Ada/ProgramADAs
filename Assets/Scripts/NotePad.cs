@@ -2,57 +2,48 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
 
 public class NotePad : MonoBehaviour
 {
-    public Chapter chapter;
-    public GameObject NotePadCanvas;
-    public GameObject Player;
-
-    public GameObject Menu;
-    public GameObject Chapter1;
-    public GameObject Chapter2;
+    // public GameObject Menu;
+    // public GameObject Chapter1;
+    // public GameObject Chapter2;
+    // private ChapterManager cm;
+    // public GameObject[] Chapter_Buttons;
+    // public NotePadManager np_manager;
 
     void Start()
     {
-        NotePadCanvas.SetActive(false); 
-        Menu.SetActive(true);
-        Chapter1.SetActive(false);
-        Chapter2.SetActive(false);
+        // Menu.SetActive(true);
+        // Chapter1.SetActive(false);
+        // Chapter2.SetActive(false);
+
+        // cm = FindObjectOfType<ChapterManager>();
+        // np_manager = FindObjectOfType<NotePadManager>();
+
+        // Chapter_Buttons = GameObject.FindGameObjectsWithTag("Chapter_Btn"); 
     }
 
-    public void OpenNotePad() {
-        Player.GetComponent<PlayerMovement>().enabled = false;
-        NotePadCanvas.SetActive(true);   
-    }
+    // void Update() {
+    //     // Debug.Log(Chapter_Buttons.Length);
+    // }
 
-    public void CloseNotePad() {
-        Player.GetComponent<PlayerMovement>().enabled = true;
-        NotePadCanvas.SetActive(false);   
-    }
+    // public void Screen_Menu() {
+    //     Menu.SetActive(true);
 
-    public void Screen_Menu() {
-        Menu.SetActive(true);
-        Chapter1.SetActive(false);
-        Chapter2.SetActive(false);   
-    }
+    //     for(int i=Chapter_Buttons.Length; i>np_manager.fase; i--) {
+    //         Debug.Log("teste");
+    //         Chapter_Buttons[i-1].SetActive(false);
+    //     }
+    //     Chapter1.SetActive(false);
+    //     Chapter2.SetActive(false);
 
-    public void Screen_Chapter1() {
-        Menu.SetActive(false);
-        Chapter1.SetActive(true);
-        Chapter2.SetActive(false); 
-    }
+    //     cm.ResetPage();
+    // }
 
-    public void Screen_Chapter2() {
-        Menu.SetActive(false);
-        Chapter1.SetActive(false);
-        Chapter2.SetActive(true); 
-    }
-
-
-    public void Screen_Chapter(GameObject chapterObject) {
-        Menu.SetActive(false);
-        chapterObject.SetActive(true);
-        // chapterObject.currentpage = 1;
-    }
+    // public void Screen_Chapter(GameObject chapterObject) {
+    //     Menu.SetActive(false);
+    //     chapterObject.SetActive(true);
+    // }
 }
