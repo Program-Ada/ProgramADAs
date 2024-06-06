@@ -9,11 +9,16 @@ public class ChapterManager : MonoBehaviour
     public TextMeshProUGUI tittleChapter;
     public TextMeshProUGUI contentChapter;
 
-    public int currentpage = 1;
+    public Animator animator;
+    
+    // private Queue<string> tittleChapter;
+
+    int currentpage = 1;
 
     // Start is called before the first frame update
     void Start()
     {
+        // tittleChapter = new Queue<string>();
         currentpage = 1;
     }
 
@@ -24,8 +29,16 @@ public class ChapterManager : MonoBehaviour
     }
 
     public void ShowChapter(Chapter chapter) {
+        // animator.SetBool("IsOpen", true);
+
         tittleChapter.text = chapter.tittle;
         contentChapter.text = chapter.content;
+
+        // foreach (string word in chapter.tittle){
+        //     tittleChapter.Enqueue(word);
+        // }
+
+        // currentpage = 1;
     }
 
     public void NextPage_Btn()
@@ -46,10 +59,5 @@ public class ChapterManager : MonoBehaviour
             currentpage--;
             contentChapter.pageToDisplay--;
         }
-    }
-
-    public void ResetPage() {
-        currentpage = 1;
-        contentChapter.pageToDisplay = 1;
     }
 }

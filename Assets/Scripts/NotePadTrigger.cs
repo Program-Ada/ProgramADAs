@@ -7,7 +7,7 @@ public class NotePadTrigger : MonoBehaviour
 {
     public Chapter chapter;
     public ChapterManager cm;
-
+    // public bool teste;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +17,9 @@ public class NotePadTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        TriggerChapter();
+        // if(teste) {
+            TriggerChapter();
+        // }
     }
 
     public void TriggerChapter() {
