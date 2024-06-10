@@ -11,6 +11,7 @@ public class SoundManager : MonoBehaviour
    void Awake(){
      sm = this;
      src = GetComponent<AudioSource>();
+     src.Play();
    }
 
    public void Correct(){

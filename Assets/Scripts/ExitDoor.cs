@@ -7,23 +7,24 @@ using UnityEngine.SceneManagement;
 public class ExitDoor : MonoBehaviour
 {
     public bool playerIsClose;
-    public GameObject ExitOptionCanvas;
-    public GameObject ExitOptionCanvasFalse;
+    //public GameObject ExitOptionCanvas;
+    //public GameObject ExitOptionCanvasFalse;
     public GameObject Player;
+    public string nextSceneName;
     [SerializeField]GameObject toolTip;
 
     void Start(){
-        ExitOptionCanvas.SetActive(false);
-        ExitOptionCanvasFalse.SetActive(false);
+        //ExitOptionCanvas.SetActive(false);
+        //ExitOptionCanvasFalse.SetActive(false);
         toolTip.SetActive(false);
     }
 
     void Update(){
         if(Input.GetKeyDown(KeyCode.E) && playerIsClose){
-            TriggerExitOption();
+            LoadNextScene();
         }
     }
-    public void TriggerExitOption(){
+    /*public void TriggerExitOption(){
         toolTip.SetActive(false);
         Player.GetComponent<PlayerMovement>().enabled = false;
 
@@ -32,20 +33,20 @@ public class ExitDoor : MonoBehaviour
         }else{
            ExitOptionCanvasFalse.SetActive(true); 
         }
-    }
+    }*/
 
-    public void ExitFalse(){
+    /*public void ExitFalse(){
         Player.GetComponent<PlayerMovement>().enabled = true;
         ExitOptionCanvas.SetActive(false);
         ExitOptionCanvasFalse.SetActive(false);
-    }
+    }*/
 
-    public void ExitTrue(){
+    /*public void ExitTrue(){
         SceneManager.LoadScene("End");
-    }
+    }*/
 
-    public void goToFase2(){
-        SceneManager.LoadScene("Fase 2");
+    public void LoadNextScene(){
+        SceneManager.LoadScene(nextSceneName);
     }
 
     private void OnTriggerEnter2D(Collider2D other){
