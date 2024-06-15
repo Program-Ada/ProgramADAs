@@ -14,12 +14,6 @@ public class NotePadTrigger : MonoBehaviour
         cm = FindObjectOfType<ChapterManager>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        TriggerChapter();
-    }
-
     public void TriggerChapter() {
         cm.ShowChapter(chapter);
     }
