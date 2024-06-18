@@ -3358,7 +3358,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &349658516
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7562,7 +7562,6 @@ MonoBehaviour:
     tittle: "Vari\xE1veis"
     content: "int \xE9 um numero inteiro\n<page> bool \xE9 falso ou verdadeiro\n<page>
       float \xE9 um numero com ,"
-  cm: {fileID: 2090739087}
 --- !u!1 &857668563
 GameObject:
   m_ObjectHideFlags: 0
@@ -8166,12 +8165,24 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 596817162980294149, guid: 88f760f679fc824489be67d17f6ff99a, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 1009163761890378424, guid: 88f760f679fc824489be67d17f6ff99a, type: 3}
       propertyPath: m_Name
       value: NotePadManager
       objectReference: {fileID: 0}
     - target: {fileID: 1009163761890378424, guid: 88f760f679fc824489be67d17f6ff99a, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1913122559041154252, guid: 88f760f679fc824489be67d17f6ff99a, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 2800838996641114264, guid: 88f760f679fc824489be67d17f6ff99a, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2838536878303411967, guid: 88f760f679fc824489be67d17f6ff99a, type: 3}
@@ -8256,6 +8267,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8201308298984500522, guid: 88f760f679fc824489be67d17f6ff99a, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8260931817776038102, guid: 88f760f679fc824489be67d17f6ff99a, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -8670,6 +8685,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 853148494}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 853148494}
+        m_TargetAssemblyTypeName: NotePadManager, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -9416,7 +9443,7 @@ MonoBehaviour:
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
+  m_overflowMode: 5
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1

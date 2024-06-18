@@ -6,7 +6,7 @@ using Unity.VisualScripting;
 public class NotePadTrigger : MonoBehaviour
 {
     public Chapter chapter;
-    public ChapterManager cm;
+    private ChapterManager cm;
 
     // Start is called before the first frame update
     void Start()

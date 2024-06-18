@@ -110,7 +110,7 @@ public class NotePadManager : MonoBehaviour
         Menu.SetActive(false);
         ChapterCanvas.SetActive(true);
         chapterObject.SetActive(true);
-        Chapter chapterContent = chapterObject.GetComponent<Chapter>();
+        Chapter chapterContent = chapterObject.GetComponent<NotePadTrigger>().chapter;
         cm.ShowChapter(chapterContent);
     }
 

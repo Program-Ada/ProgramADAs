@@ -24,6 +24,7 @@ public class ChapterManager : MonoBehaviour
     }
 
     public void ShowChapter(Chapter chapter) {
+        Debug.Log(chapter.tittle);
         tittleChapter.text = chapter.tittle;
         contentChapter.text = chapter.content;
     }
