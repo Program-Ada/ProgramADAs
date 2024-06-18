@@ -5,41 +5,64 @@ using UnityEngine.SceneManagement;
 
 public class NotePadManager : MonoBehaviour
 {
-    public int fase;
-    private GameManager gameManager;
-    private GameObject Player;
-    private GameObject NotePadCanvas;
-    private GameObject NotePadNotification;
-    public GameObject Menu;
-    public GameObject Chapter1;
-    public GameObject Chapter2;
-    private ChapterManager cm;
-    public GameObject[] Chapter_Buttons;
+    [Header("Canvas Items")]
+        public GameObject NotePadCanvas;
+        public GameObject Menu;
+        public GameObject ChapterCanvas;
+        public GameObject NotePadNotification;
 
+    [Header("Chapters Contents")]
+        public GameObject Chapter1;
+        public GameObject Chapter2;
+        public GameObject[] Chapter_Buttons;
+
+    [Header("Managers")]
+        private GameManager gameManager;
+        private ChapterManager cm;
+    
+    [Header("Outros")]
+        public int fase;
+        private GameObject Player;
+
+    public static NotePadManager Instance {get; private set;}
+
+    void Awake(){
+
+        if(Instance != null){
+            Debug.Log("Existe mais de um Data Persistence Manager na scena. Destruindo o arquivo novo");
+            Destroy(this.gameObject);
+            return;
+        }
+        Instance = this;
+
+        DontDestroyOnLoad(this.gameObject);
+    }
     void Start()
     {
-        DontDestroyOnLoad(this.gameObject);
         SceneManager.sceneLoaded += OnSceneLoaded;
 
-        // fase = 1;
-        gameManager = FindObjectOfType<GameManager>();
-        fase = gameManager.level;
-
         Player = GameObject.FindGameObjectWithTag("Player");
-        NotePadCanvas = GameObject.FindGameObjectWithTag("NotePadCanvas");
+        gameManager = FindObjectOfType<GameManager>();
+        cm = FindObjectOfType<ChapterManager>();
+        fase = gameManager.level;
+ 
+        //NotePadCanvas = GameObject.FindGameObjectWithTag("NotePadCanvas");
+        //NotePadNotification = GameObject.FindGameObjectWithTag("NotePadNotification");
+
         NotePadCanvas.SetActive(false);
-        NotePadNotification = GameObject.FindGameObjectWithTag("NotePadNotification");
         NotePadNotification.SetActive(true);
 
         Menu.SetActive(true);
-        Chapter1.SetActive(false);
-        Chapter2.SetActive(false);
+        ChapterCanvas.SetActive(false);
 
-        cm = FindObjectOfType<ChapterManager>();
+        // Conteúdo dos Capítulos
+        Chapter1.SetActive(false); 
+        Chapter2.SetActive(false);
+ 
     }
 
     void Update() {
-        fase = gameManager.level;
+        fase = gameManager.level; 
     }
 
     public void OpenNotePad()
@@ -48,13 +71,15 @@ public class NotePadManager : MonoBehaviour
         NotePadCanvas.SetActive(true);
         NotePadNotification.SetActive(false);
 
+        /*
         if(Chapter_Buttons.Length == 0) {
             Chapter_Buttons = GameObject.FindGameObjectsWithTag("Chapter_Btn");
             for (int i = Chapter_Buttons.Length; i > 0; i--) {
                 Chapter_Buttons[i-1].SetActive(false);
             }
         }
-        Screen_Menu();
+        */
+        //Screen_Menu();
     }
 
     public void CloseNotePad()
@@ -65,20 +90,28 @@ public class NotePadManager : MonoBehaviour
 
     public void Screen_Menu()
     {
+        ChapterCanvas.SetActive(false);
         Menu.SetActive(true);
+
+        /*
         if (!Chapter_Buttons[fase-1].activeSelf) {   
             Chapter_Buttons[fase-1].SetActive(true);
         }
-        Chapter1.SetActive(false);
-        Chapter2.SetActive(false);
-
+        */
+        
+        //Chapter1.SetActive(false);
+        //Chapter2.SetActive(false);
+        
         cm.ResetPage();
     }
 
     public void Screen_Chapter(GameObject chapterObject)
     {
         Menu.SetActive(false);
+        ChapterCanvas.SetActive(true);
         chapterObject.SetActive(true);
+        Chapter chapterContent = chapterObject.GetComponent<Chapter>();
+        cm.ShowChapter(chapterContent);
     }
 
     private void OnSceneLoaded(Scene cena, LoadSceneMode loadSceneMode)
