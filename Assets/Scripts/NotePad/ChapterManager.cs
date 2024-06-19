@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class ChapterManager : MonoBehaviour
 {
-    public TextMeshProUGUI tittleChapter;
+    public TextMeshProUGUI titleChapter;
     public TextMeshProUGUI contentChapter;
 
     public int currentpage = 1;
@@ -25,7 +25,7 @@ public class ChapterManager : MonoBehaviour
 
     public void ShowChapter(Chapter chapter) {
         Debug.Log(chapter.tittle);
-        tittleChapter.text = chapter.tittle;
+        titleChapter.text = chapter.tittle;
         contentChapter.text = chapter.content;
     }
 

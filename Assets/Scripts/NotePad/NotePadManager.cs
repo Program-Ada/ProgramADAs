@@ -1,20 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class NotePadManager : MonoBehaviour
 {
     [Header("Canvas Items")]
         public GameObject NotePadCanvas;
-        public GameObject Menu;
+        public GameObject ChapterSelectionMenu;
         public GameObject ChapterCanvas;
         public GameObject NotePadNotification;
 
     [Header("Chapters Contents")]
         public GameObject Chapter1;
         public GameObject Chapter2;
-        public GameObject[] Chapter_Buttons;
+        //public GameObject[] Chapter_Buttons;
 
     [Header("Managers")]
         private GameManager gameManager;
@@ -29,7 +32,7 @@ public class NotePadManager : MonoBehaviour
     void Awake(){
 
         if(Instance != null){
-            Debug.Log("Existe mais de um Data Persistence Manager na scena. Destruindo o arquivo novo");
+            Debug.Log("Existe mais de um Note Pad Manager na scena. Destruindo o arquivo novo");
             Destroy(this.gameObject);
             return;
         }
@@ -39,7 +42,7 @@ public class NotePadManager : MonoBehaviour
     }
     void Start()
     {
-        SceneManager.sceneLoaded += OnSceneLoaded;
+        //SceneManager.sceneLoaded += OnSceneLoaded;
 
         Player = GameObject.FindGameObjectWithTag("Player");
         gameManager = FindObjectOfType<GameManager>();
@@ -52,12 +55,12 @@ public class NotePadManager : MonoBehaviour
         NotePadCanvas.SetActive(false);
         NotePadNotification.SetActive(true);
 
-        Menu.SetActive(true);
+        ChapterSelectionMenu.SetActive(true);
         ChapterCanvas.SetActive(false);
 
         // Conteúdo dos Capítulos
-        Chapter1.SetActive(false); 
-        Chapter2.SetActive(false);
+        //Chapter1.SetActive(false); 
+        //Chapter2.SetActive(false);
  
     }
 
@@ -88,10 +91,10 @@ public class NotePadManager : MonoBehaviour
         NotePadCanvas.SetActive(false);
     }
 
-    public void Screen_Menu()
+    public void Screen_ChapterSelectionMenu()
     {
         ChapterCanvas.SetActive(false);
-        Menu.SetActive(true);
+        ChapterSelectionMenu.SetActive(true);
 
         /*
         if (!Chapter_Buttons[fase-1].activeSelf) {   
@@ -107,13 +110,17 @@ public class NotePadManager : MonoBehaviour
 
     public void Screen_Chapter(GameObject chapterObject)
     {
-        Menu.SetActive(false);
+        GameObject notification = EventSystem.current.currentSelectedGameObject.transform.Find("Notification").gameObject;
+        notification.SetActive(false);
+
+        ChapterSelectionMenu.SetActive(false);
         ChapterCanvas.SetActive(true);
-        chapterObject.SetActive(true);
+
         Chapter chapterContent = chapterObject.GetComponent<NotePadTrigger>().chapter;
         cm.ShowChapter(chapterContent);
     }
 
+    /*
     private void OnSceneLoaded(Scene cena, LoadSceneMode loadSceneMode)
     {
         if (cena.name == "End") {
@@ -126,4 +133,6 @@ public class NotePadManager : MonoBehaviour
             Player = GameObject.FindGameObjectWithTag("Player");
         }
     }
+    */
+
 }
