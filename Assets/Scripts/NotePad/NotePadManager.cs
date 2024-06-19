@@ -116,7 +116,7 @@ public class NotePadManager : MonoBehaviour
         ChapterSelectionMenu.SetActive(false);
         ChapterCanvas.SetActive(true);
 
-        Chapter chapterContent = chapterObject.GetComponent<NotePadTrigger>().chapter;
+        Chapter chapterContent = chapterObject.GetComponent<ChapterContent>().chapter;
         cm.ShowChapter(chapterContent);
     }
 

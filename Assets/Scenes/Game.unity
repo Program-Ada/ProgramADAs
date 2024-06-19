@@ -5226,7 +5226,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1037548778}
         m_TargetAssemblyTypeName: NotePadManager, Assembly-CSharp
-        m_MethodName: Screen_Menu
+        m_MethodName: Screen_ChapterSelectionMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7560,8 +7560,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chapter:
     tittle: "Vari\xE1veis"
-    content: "int \xE9 um numero inteiro\n<page> bool \xE9 falso ou verdadeiro\n<page>
-      float \xE9 um numero com ,"
+    content: "int \xE9 um numero inteiro\n\n<page>bool \xE9 falso ou verdadeiro\n\n<page>float
+      \xE9 um numero com ,"
 --- !u!1 &857668563
 GameObject:
   m_ObjectHideFlags: 0
@@ -8377,12 +8377,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NotePadCanvas: {fileID: 204930797}
-  Menu: {fileID: 1762242698}
+  ChapterSelectionMenu: {fileID: 1762242698}
   ChapterCanvas: {fileID: 349658515}
   NotePadNotification: {fileID: 1315456483}
   Chapter1: {fileID: 853148494}
   Chapter2: {fileID: 1145220566}
-  Chapter_Buttons: []
   fase: 0
 --- !u!4 &1037548779
 Transform:
@@ -8685,18 +8684,6 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 853148494}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 853148494}
-        m_TargetAssemblyTypeName: NotePadManager, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -9484,6 +9471,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1145220567}
+  - component: {fileID: 1145220568}
   m_Layer: 5
   m_Name: Chapter2
   m_TagString: Untagged
@@ -9510,6 +9498,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1145220568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145220566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8794dfe11df64be1b14313c836a990b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chapter:
+    tittle: "Fun\xE7\xF5es e Par\xEAmetros"
+    content: "Tipos de fun\xE7\xE3o\n\nvoid, int, float, bool\n\n<page> Fun\xE7\xE3o
+      void\nn\xE3o retorna nenhum tipo de valor\n\n<page> Fun\xE7\xE3o Int, Float
+      ou Bool\n- precisam do return para funcionarem\n- retornam o respetivo tipo
+      de vari\xE1vel setada para a fun\xE7\xE3o\n\n<page> Par\xE2metros\nvari\xE1veis
+      que enviamos para a fun\xE7\xE3o trabalhar com"
 --- !u!1 &1160163718
 GameObject:
   m_ObjectHideFlags: 0
@@ -10978,7 +10985,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5391196352656489464, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.8399999
+      value: 1.8599999
       objectReference: {fileID: 0}
     - target: {fileID: 5391196352656489464, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
@@ -15878,7 +15885,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fddafcbb0f2884306bc4fc1d572bd1dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tittleChapter: {fileID: 1997856913}
+  titleChapter: {fileID: 1997856913}
   contentChapter: {fileID: 1141425402}
   currentpage: 1
 --- !u!1 &2099870703

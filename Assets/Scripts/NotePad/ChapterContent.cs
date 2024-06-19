@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using Unity.VisualScripting;
 
-public class NotePadTrigger : MonoBehaviour
+public class ChapterContent : MonoBehaviour
 {
     public Chapter chapter;
-    private ChapterManager cm;
+    //private ChapterManager cm;
 
-    // Start is called before the first frame update
+    /*
     void Start()
     {
         cm = FindObjectOfType<ChapterManager>();
@@ -17,4 +17,5 @@ public class NotePadTrigger : MonoBehaviour
     public void TriggerChapter() {
         cm.ShowChapter(chapter);
     }
+    */
 }
