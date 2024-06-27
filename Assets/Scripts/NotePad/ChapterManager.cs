@@ -9,7 +9,7 @@ public class ChapterManager : MonoBehaviour
     public TextMeshProUGUI titleChapter;
     public TextMeshProUGUI contentChapter;
 
-    public int currentpage = 1;
+    public int currentpage;
 
     // Start is called before the first frame update
     void Start()
@@ -17,14 +17,7 @@ public class ChapterManager : MonoBehaviour
         currentpage = 1;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void ShowChapter(Chapter chapter) {
-        Debug.Log(chapter.tittle);
         titleChapter.text = chapter.tittle;
         contentChapter.text = chapter.content;
     }

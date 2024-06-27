@@ -51,7 +51,7 @@ public class DataPersistenceManager : MonoBehaviour
     }
 
     public void OnSceneLoaded(Scene scene, LoadSceneMode mode){
-        Debug.Log("lastscene before if: " + lastScene);
+        //Debug.Log("lastscene before if: " + lastScene);
         this.dataPersistenceObjects = FindAllDataPersistenceObjects();
         if(lastScene == "GameSelection"){
             LoadGame();
@@ -59,7 +59,7 @@ public class DataPersistenceManager : MonoBehaviour
         }
 
         lastScene = scene.name;
-        Debug.Log("lastscene after if: " + lastScene);
+        //Debug.Log("lastscene after if: " + lastScene);
         SaveGame();
     }
 

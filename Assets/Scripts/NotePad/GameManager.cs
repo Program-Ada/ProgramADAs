@@ -5,6 +5,7 @@ using UnityEngine.Rendering;
 
 public class GameManager : MonoBehaviour
 {
+    /*
     public static GameManager instance;
     public int level;
 
@@ -26,4 +27,5 @@ public class GameManager : MonoBehaviour
     public void NextLevel() {
         level++;
     }
+    */
 }
