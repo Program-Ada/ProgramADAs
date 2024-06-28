@@ -13,9 +13,9 @@ public class NotePadManager : MonoBehaviour, IDataPersistence
         public GameObject NotePadCanvas;
         public GameObject ChapterSelectionMenu;
         public GameObject ChapterCanvas;
-        public GameObject NotePadNotification;
+        public GameObject NotePadNotification; // Notificação do icone no canto da tela
 
-    [Header("Chapters Contents")]
+    [Header("Chapters")]
         //public GameObject Chapter1;
         //public GameObject Chapter2;
         public GameObject[] Chapter_Buttons;
@@ -27,9 +27,9 @@ public class NotePadManager : MonoBehaviour, IDataPersistence
     [Header("Outros")]
         //public int fase;
         private GameObject Player;
-        public bool[] isChapterUnlocked;
-        public bool[] isChapterNotificationOn;
-        public bool isUpdated;
+        private bool[] isChapterUnlocked;
+        private bool[] isChapterNotificationOn;
+        private bool isUpdated;
 
     public static NotePadManager Instance {get; private set;}
 
@@ -174,7 +174,7 @@ public class NotePadManager : MonoBehaviour, IDataPersistence
 
     // Lembrar de colocar a tag nos novos Chapter_Btn criados
     public void LoadData(GameData data){
-        
+
         for(int i = 0; i < Chapter_Buttons.Length; i++){
 
             UpdateChapterBtn(i, data.unlockFases[i]); // bloqueia ou desbloqueia o capítulo
@@ -185,7 +185,7 @@ public class NotePadManager : MonoBehaviour, IDataPersistence
 
     public void SaveData(ref GameData data){
 
-        if(isUpdated){
+        if(isUpdated){ // como não é um sigleton os dados sempre resetam, então só deixa salvar se estiver atualizado
             for(int i = 0; i < Chapter_Buttons.Length; i++){
 
                 data.isNotificationOn[i] = isChapterNotificationOn[i];

@@ -9,14 +9,17 @@ public class MouseManager : MonoBehaviour
     public CursorMode cursorMode = CursorMode.Auto;
     public Vector2 hotSpot = Vector2.zero;
 
-    /*void OnMouseDown() {
-      Cursor.SetCursor(cursorClick, hotSpot, cursorMode); 
+    public static MouseManager Instance;
+
+    void Awake(){
+        if(Instance != null){
+            Destroy(this.gameObject);
+            return;
+        }
+        Instance = this;
+
+        DontDestroyOnLoad(this.gameObject);
     }
-
-    void OnMouseUp() {
-      Cursor.SetCursor(cursorDefault, hotSpot, cursorMode); 
-    }*/
-
     void Update(){
       
       if(Input.GetMouseButtonDown(0)){
