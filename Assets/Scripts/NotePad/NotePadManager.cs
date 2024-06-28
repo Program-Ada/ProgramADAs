@@ -32,8 +32,9 @@ public class NotePadManager : MonoBehaviour, IDataPersistence
 
     public static NotePadManager Instance {get; private set;}
 
-    void Awake(){
+    //void Awake(){
 
+        /*
         if(Instance != null){
             Debug.Log("Existe mais de um Note Pad Manager na scena. Destruindo o arquivo novo");
             Destroy(this.gameObject);
@@ -42,18 +43,19 @@ public class NotePadManager : MonoBehaviour, IDataPersistence
         Instance = this;
 
         DontDestroyOnLoad(this.gameObject);
+        */
 
-        isChapterUnlocked = new bool[5];
-        isChapterNotificationOn = new bool[5];
-        
-        Debug.Log("Awake NotePadManager");
-    }
+        //Debug.Log("Awake NotePadManager");
+    //}
+
     void Start()
     {
         //SceneManager.sceneLoaded += OnSceneLoaded;
         Player = GameObject.FindGameObjectWithTag("Player");
         //gameManager = FindObjectOfType<GameManager>();
         cm = FindObjectOfType<ChapterManager>();
+        isChapterUnlocked = new bool[5];
+        isChapterNotificationOn = new bool[5];
 
         //fase = gameManager.level;
  
@@ -164,26 +166,21 @@ public class NotePadManager : MonoBehaviour, IDataPersistence
     // Lembrar de colocar a tag nos novos Chapter_Btn criados
     public void LoadData(GameData data){
 
-        if(Instance != null){
+        for(int i = 0; i < Chapter_Buttons.Length; i++){
 
-            for(int i = 0; i < Chapter_Buttons.Length; i++){
+            UpdateChapterBtn(i, data.unlockFases[i]); // bloqueia ou desbloqueia o capítulo
+            UpdateChapterNotification(i, data.isNotificationOn[i]); // ativa ou desativa a notificação
 
-                UpdateChapterBtn(i, data.unlockFases[i]); // bloqueia ou desbloqueia o capítulo
-                UpdateChapterNotification(i, data.isNotificationOn[i]); // ativa ou desativa a notificação
-
-            }
         }
     }
 
     public void SaveData(ref GameData data){
 
-        if(Instance != null){
-            for(int i = 0; i < Chapter_Buttons.Length; i++){
+        for(int i = 0; i < Chapter_Buttons.Length; i++){
 
-                data.isNotificationOn[i] = isChapterNotificationOn[i];
-                data.unlockFases[i] = isChapterUnlocked[i];
+            data.isNotificationOn[i] = isChapterNotificationOn[i];
+            data.unlockFases[i] = isChapterUnlocked[i];
 
-            }
         }
     }
 
