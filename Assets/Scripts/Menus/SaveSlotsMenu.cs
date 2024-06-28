@@ -77,7 +77,6 @@ public class SaveSlotsMenu : MonoBehaviour, IDataPersistence
     }
 
     public void SaveData(ref GameData data){
-        Debug.Log("Salvando com o nome: " + saveSlotNameInput.text);
         if(createdNow){
             data.saveSlotName = saveSlotNameInput.text;
         }

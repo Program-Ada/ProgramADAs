@@ -29,6 +29,7 @@ public class NotePadManager : MonoBehaviour, IDataPersistence
         private GameObject Player;
         public bool[] isChapterUnlocked;
         public bool[] isChapterNotificationOn;
+        public bool isUpdated;
 
     public static NotePadManager Instance {get; private set;}
 
@@ -48,7 +49,7 @@ public class NotePadManager : MonoBehaviour, IDataPersistence
         //Debug.Log("Awake NotePadManager");
     //}
 
-    void Start()
+    void Awake()
     {
         //SceneManager.sceneLoaded += OnSceneLoaded;
         Player = GameObject.FindGameObjectWithTag("Player");
@@ -56,6 +57,7 @@ public class NotePadManager : MonoBehaviour, IDataPersistence
         cm = FindObjectOfType<ChapterManager>();
         isChapterUnlocked = new bool[5];
         isChapterNotificationOn = new bool[5];
+        isUpdated = false;
 
         //fase = gameManager.level;
  
@@ -72,7 +74,7 @@ public class NotePadManager : MonoBehaviour, IDataPersistence
         //Chapter1.SetActive(false); 
         //Chapter2.SetActive(false);
 
-        DataPersistenceManager.Instance.LoadGame();
+        //DataPersistenceManager.Instance.LoadGame();
  
     }
 
@@ -150,22 +152,29 @@ public class NotePadManager : MonoBehaviour, IDataPersistence
     }
     */ 
 
+    public void SaveNewData(){
+        isUpdated = true;
+        DataPersistenceManager.Instance.SaveGame();
+        isUpdated = false;
+    }
+
     public void UpdateChapterBtn(int chapterNumber, bool isUnlocked){
-        Debug.Log("Is Chapter Unlocked: " + isChapterUnlocked.Length);
         isChapterUnlocked[chapterNumber] = isUnlocked;
         Chapter_Buttons[chapterNumber].transform.Find("Locked").gameObject.SetActive(!isUnlocked);
         Chapter_Buttons[chapterNumber].transform.Find("Unlocked").gameObject.SetActive(isUnlocked);
         Chapter_Buttons[chapterNumber].GetComponent<Button>().interactable = isUnlocked;
+        SaveNewData();
     }
 
     public void UpdateChapterNotification(int chapterNumber, bool isNotificationOn){
         isChapterNotificationOn[chapterNumber] = isNotificationOn;
         Chapter_Buttons[chapterNumber].transform.Find("Notification").gameObject.SetActive(isNotificationOn);
+        SaveNewData();
     }
 
     // Lembrar de colocar a tag nos novos Chapter_Btn criados
     public void LoadData(GameData data){
-
+        
         for(int i = 0; i < Chapter_Buttons.Length; i++){
 
             UpdateChapterBtn(i, data.unlockFases[i]); // bloqueia ou desbloqueia o capítulo
@@ -176,11 +185,13 @@ public class NotePadManager : MonoBehaviour, IDataPersistence
 
     public void SaveData(ref GameData data){
 
-        for(int i = 0; i < Chapter_Buttons.Length; i++){
+        if(isUpdated){
+            for(int i = 0; i < Chapter_Buttons.Length; i++){
 
-            data.isNotificationOn[i] = isChapterNotificationOn[i];
-            data.unlockFases[i] = isChapterUnlocked[i];
+                data.isNotificationOn[i] = isChapterNotificationOn[i];
+                data.unlockFases[i] = isChapterUnlocked[i];
 
+            }
         }
     }
 
