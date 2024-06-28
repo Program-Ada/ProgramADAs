@@ -996,6 +996,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 886794080}
+  - {fileID: 1562881199}
   - {fileID: 229842031}
   - {fileID: 633041278}
   - {fileID: 875268567}
@@ -1266,7 +1267,7 @@ GameObject:
   - component: {fileID: 1562881199}
   - component: {fileID: 1562881198}
   m_Layer: 0
-  m_Name: Menu_Title_0
+  m_Name: Title_img
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1332,12 +1333,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1562881197}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.92, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 207.35999, z: -9719.999}
+  m_LocalScale: {x: 161.99998, y: 161.99998, z: 108}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 964793356}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1646604387 stripped
 MonoBehaviour:
@@ -1911,4 +1912,3 @@ SceneRoots:
   - {fileID: 1141535242}
   - {fileID: 964793356}
   - {fileID: 360065609}
-  - {fileID: 1562881199}
