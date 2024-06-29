@@ -81,6 +81,12 @@ public class QuizManager : MonoBehaviour, IDataPersistence
         ScorePanel.SetActive(true);  
         ScoreTxt.text = media.ToString() + "%";
         quizDone = true;
+        if(media < 75){
+            FindObjectOfType<QuestManager>().UpdateQuestText(3);
+        }
+        if(media >= 75){
+            FindObjectOfType<QuestManager>().UpdateQuestText(4);
+        }
         DataPersistenceManager.Instance.SaveGame();
     }
 

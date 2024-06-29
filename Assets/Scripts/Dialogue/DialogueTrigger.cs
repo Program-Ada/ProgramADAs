@@ -28,6 +28,10 @@ public class DialogueTrigger : MonoBehaviour
         playerIsChatting = true;
         dm.StartDialogue(dialogue);
         toolTip.SetActive(false);
+        
+        if(dialogue.name == "Bárbara"){
+            GameManager.Instance.UnlockChapterOne();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other){

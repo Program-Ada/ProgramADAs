@@ -12,7 +12,7 @@ public class GameData
     public int totalCompleted;
     public string saveSlotName;
     public int[] pointFases;
-    public bool[] unlockFases;
+    public bool[] unlockedFases;
     public bool[] isNotificationOn;
 
     // os valores nesse constructor serão os valores iniciais que o jogo irá iniciar
@@ -26,8 +26,7 @@ public class GameData
         saveSlotName = "Insira um Nome";
         scene = "Game";
         pointFases = new int[5];
-        unlockFases = new bool[5];
+        unlockedFases = new bool[5];
         isNotificationOn = new bool[5];
-        isNotificationOn[0] = true;
     }
 }

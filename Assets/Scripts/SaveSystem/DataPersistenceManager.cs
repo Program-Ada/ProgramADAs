@@ -95,7 +95,6 @@ public class DataPersistenceManager : MonoBehaviour
         // envia os dados carregados aos arquivos que precisam dessa atualização de informações
         foreach(IDataPersistence dataPersistenceObj in dataPersistenceObjects){
             dataPersistenceObj.LoadData(gameData);
-            Debug.Log("DataPersistenceOBJ: " + dataPersistenceObj);
         }
 
         Debug.Log("Game Loaded");

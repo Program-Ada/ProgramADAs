@@ -27,7 +27,7 @@ public class NotePadManager : MonoBehaviour, IDataPersistence
     [Header("Outros")]
         //public int fase;
         private GameObject Player;
-        private bool[] isChapterUnlocked;
+        public bool[] isChapterUnlocked;
         private bool[] isChapterNotificationOn;
         private bool isUpdated;
 
@@ -65,7 +65,7 @@ public class NotePadManager : MonoBehaviour, IDataPersistence
         //NotePadNotification = GameObject.FindGameObjectWithTag("NotePadNotification");
 
         NotePadCanvas.SetActive(false);
-        NotePadNotification.SetActive(true);
+        NotePadNotification.SetActive(false);
 
         ChapterSelectionMenu.SetActive(true);
         ChapterCanvas.SetActive(false);
@@ -158,18 +158,28 @@ public class NotePadManager : MonoBehaviour, IDataPersistence
         isUpdated = false;
     }
 
-    public void UpdateChapterBtn(int chapterNumber, bool isUnlocked){
+    public void UpdateChapterBtn(int chapterNumber, bool isUnlocked, bool isNew){
         isChapterUnlocked[chapterNumber] = isUnlocked;
         Chapter_Buttons[chapterNumber].transform.Find("Locked").gameObject.SetActive(!isUnlocked);
         Chapter_Buttons[chapterNumber].transform.Find("Unlocked").gameObject.SetActive(isUnlocked);
         Chapter_Buttons[chapterNumber].GetComponent<Button>().interactable = isUnlocked;
-        SaveNewData();
+
+        if(isNew == true){
+            SaveNewData();
+        }
     }
 
-    public void UpdateChapterNotification(int chapterNumber, bool isNotificationOn){
+    public void UpdateChapterNotification(int chapterNumber, bool isNotificationOn, bool isNew){
         isChapterNotificationOn[chapterNumber] = isNotificationOn;
         Chapter_Buttons[chapterNumber].transform.Find("Notification").gameObject.SetActive(isNotificationOn);
-        SaveNewData();
+
+        if(isNew == true){
+            SaveNewData();
+        }
+    }
+
+    public void UpdateNotePadNotification(bool isOn){
+        NotePadNotification.SetActive(isOn);
     }
 
     // Lembrar de colocar a tag nos novos Chapter_Btn criados
@@ -177,9 +187,12 @@ public class NotePadManager : MonoBehaviour, IDataPersistence
 
         for(int i = 0; i < Chapter_Buttons.Length; i++){
 
-            UpdateChapterBtn(i, data.unlockFases[i]); // bloqueia ou desbloqueia o capítulo
-            UpdateChapterNotification(i, data.isNotificationOn[i]); // ativa ou desativa a notificação
+            UpdateChapterBtn(i, data.unlockedFases[i], false); // bloqueia ou desbloqueia o capítulo
+            UpdateChapterNotification(i, data.isNotificationOn[i], false); // ativa ou desativa a notificação
 
+            if(data.isNotificationOn[i]){
+                UpdateNotePadNotification(true);
+            }
         }
     }
 
@@ -189,7 +202,7 @@ public class NotePadManager : MonoBehaviour, IDataPersistence
             for(int i = 0; i < Chapter_Buttons.Length; i++){
 
                 data.isNotificationOn[i] = isChapterNotificationOn[i];
-                data.unlockFases[i] = isChapterUnlocked[i];
+                data.unlockedFases[i] = isChapterUnlocked[i];
 
             }
         }

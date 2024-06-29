@@ -6,11 +6,14 @@ public class QuizTrigger : MonoBehaviour
 {
     public bool playerIsClose;
     public QuizManager Qm;
-    [SerializeField]GameObject toolTip;
+    public static QuizTrigger Instance;
+    public GameObject toolTip;
+    public GameObject exclamation;
 
     void Start(){
         Qm = FindObjectOfType<QuizManager>();
         toolTip.SetActive(false);
+        exclamation.SetActive(false);
     }
 
     void Update(){
@@ -20,6 +23,7 @@ public class QuizTrigger : MonoBehaviour
     }
     public void TriggerQuiz(){
         Qm.InicialPage();
+        exclamation.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D other){
@@ -34,5 +38,9 @@ public class QuizTrigger : MonoBehaviour
             playerIsClose = false;
             toolTip.SetActive(false);
         }
+    }
+
+    public void ActivateQuizExclamation(){
+        exclamation.SetActive(true);
     }
 }
