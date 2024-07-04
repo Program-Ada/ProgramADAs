@@ -38,7 +38,6 @@ public class SaveSlot : MonoBehaviour
             hasData = true;
 
             saveSlotName.text = data.saveSlotName;
-            Debug.Log("nome" + data.saveSlotName);
             percentageCompleteText.text = data.totalCompleted + "% Completo";
             lastScene = data.scene;
         }

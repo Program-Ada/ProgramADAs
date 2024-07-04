@@ -46,6 +46,8 @@ public class QuizManager : MonoBehaviour, IDataPersistence
 
     public void InicialPage(){
         InicialPanel.SetActive(true);
+        Player.GetComponent<PlayerMovement>().enabled = false;
+        FindObjectOfType<QuestManager>().animator.SetBool("isOpen", false);
     }
 
     public void StartQuiz(){
@@ -53,7 +55,7 @@ public class QuizManager : MonoBehaviour, IDataPersistence
         totalQuestions = QnA.Count;
         InicialPanel.SetActive(false);
         QuizPanel.SetActive(true);
-        Player.SetActive(false);
+        Player.GetComponent<PlayerMovement>().enabled = false;
         GenerateQuestion();
     }
 
@@ -66,13 +68,16 @@ public class QuizManager : MonoBehaviour, IDataPersistence
     public void Sair(){
         InicialPanel.SetActive(false);
         ScorePanel.SetActive(false);
-        Player.SetActive(true);
+        Player.GetComponent<PlayerMovement>().enabled = true;
         if(totalQuestions != 0 && (float)score/totalQuestions >= 0.75f){
             passed = true;
         }else{
             passed = false;
         }
         score = 0;
+
+        FindObjectOfType<QuestManager>().animator.SetBool("isOpen", true);
+        GameManager.Instance.UpdateExclamation();
     }
 
     public void GameOver(){
@@ -81,6 +86,12 @@ public class QuizManager : MonoBehaviour, IDataPersistence
         ScorePanel.SetActive(true);  
         ScoreTxt.text = media.ToString() + "%";
         quizDone = true;
+        if(media < 75){
+            FindObjectOfType<QuestManager>().UpdateQuestText(3);
+        }
+        if(media >= 75){
+            FindObjectOfType<QuestManager>().UpdateQuestText(4);
+        }
         DataPersistenceManager.Instance.SaveGame();
     }
 
@@ -136,7 +147,6 @@ public class QuizManager : MonoBehaviour, IDataPersistence
         // empty
     }
     public void SaveData(ref GameData data){
-        Debug.Log("quizDone: " + quizDone);
         if(quizDone){
             data.pointFases[0] = (int)media;
         }

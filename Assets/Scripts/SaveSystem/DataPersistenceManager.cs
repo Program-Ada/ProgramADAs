@@ -29,7 +29,6 @@ public class DataPersistenceManager : MonoBehaviour
     private void Awake()
     {
         if(Instance != null){
-            Debug.Log("Existe mais de um Data Persistence Manager na scena. Destruindo o arquivo novo");
             Destroy(this.gameObject);
             return;
         }
@@ -51,24 +50,24 @@ public class DataPersistenceManager : MonoBehaviour
     }
 
     public void OnSceneLoaded(Scene scene, LoadSceneMode mode){
-        Debug.Log("lastscene before if: " + lastScene);
         this.dataPersistenceObjects = FindAllDataPersistenceObjects();
-        if(lastScene == "GameSelection"){
+
+        if(scene.name != "Menu" && scene.name != "GameSelection"){
             LoadGame();
+            SaveGame();
+        }
+
+        if(lastScene == "GameSelection"){
             Tutorial.Instance.OpenTutorial();
         }
 
-        lastScene = scene.name;
-        Debug.Log("lastscene after if: " + lastScene);
-        SaveGame();
+        lastScene = scene.name; 
     }
 
     public void ChangeSelectedProfileId(string newProfileId){
         // Função responsável por mudar o perfil de jogador utilizado para o novo selecionado e carregar o jogo
         this.selectedProfileId = newProfileId;
-        Debug.Log("GameData no change profile: " + gameData);
         if(this.gameData != null){
-            Debug.Log("change profile game data null");
             LoadGame();
         }
 
@@ -98,7 +97,7 @@ public class DataPersistenceManager : MonoBehaviour
             dataPersistenceObj.LoadData(gameData);
         }
 
-        Debug.Log("Loaded position = " + gameData.playerPosition);
+        Debug.Log("Game Loaded");
     }
 
     public void SaveGame(){
@@ -113,7 +112,7 @@ public class DataPersistenceManager : MonoBehaviour
             dataPersistenceObj.SaveData(ref gameData);
         }
 
-        Debug.Log("Saved position = " + gameData.playerPosition);
+        Debug.Log("Game Saved");
 
         // Salva esses dados em um arquivo usando o data handler
         dataHandler.Save(gameData, selectedProfileId);

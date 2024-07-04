@@ -6,7 +6,9 @@ using UnityEngine.SceneManagement;
 public class PlayerData : MonoBehaviour, IDataPersistence
 {
     public void LoadData(GameData data){
-        this.transform.position = data.playerPosition;
+        if(DataPersistenceManager.Instance.lastScene == "GameSelection"){
+            this.transform.position = data.playerPosition;
+        }
     }
     public void SaveData(ref GameData data){
         // Salva a posição do personagem

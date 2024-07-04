@@ -8,12 +8,15 @@ public class DialogueTrigger : MonoBehaviour
     public Dialogue dialogue;
     public bool playerIsClose;
     public bool playerIsChatting;
+    public bool isExclamationActive;
+    public GameObject barbaraExclamation;
     public DialogueManager dm;
     [SerializeField]GameObject toolTip;
 
     void Start(){
         dm = FindObjectOfType<DialogueManager>();
         toolTip.SetActive(false);
+        barbaraExclamation = GameObject.Find("Barbara/Exclamation");
     }
 
     void Update(){
@@ -28,12 +31,22 @@ public class DialogueTrigger : MonoBehaviour
         playerIsChatting = true;
         dm.StartDialogue(dialogue);
         toolTip.SetActive(false);
+        
+        if(dialogue.name == "Bárbara"){
+            GameManager.Instance.UnlockChapterOne();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other){
         if(other.CompareTag("Player")){
             playerIsClose = true;
             toolTip.SetActive(true);
+
+            if(GameObject.Find("Barbara/Exclamation") != null){
+                isExclamationActive = true;
+                barbaraExclamation = GameObject.Find("Barbara/Exclamation").gameObject;
+                barbaraExclamation.SetActive(false);
+            }
         }
     }
 
@@ -43,6 +56,11 @@ public class DialogueTrigger : MonoBehaviour
             playerIsChatting = false;
             toolTip.SetActive(false);
             dm.EndDialogue();
+
+            if(isExclamationActive){
+                isExclamationActive = false;
+                barbaraExclamation.SetActive(true);
+            }
         }
     }
 }
