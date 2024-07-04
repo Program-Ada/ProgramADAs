@@ -88,7 +88,9 @@ public class NotePadManager : MonoBehaviour, IDataPersistence
     {
         Player.GetComponent<PlayerMovement>().enabled = false;
         NotePadCanvas.SetActive(true);
-        NotePadNotification.SetActive(false);
+        //NotePadNotification.SetActive(false);
+
+        FindObjectOfType<QuestManager>().animator.SetBool("isOpen", false);
 
         /*
         if(Chapter_Buttons.Length == 0) {
@@ -105,6 +107,8 @@ public class NotePadManager : MonoBehaviour, IDataPersistence
     {
         Player.GetComponent<PlayerMovement>().enabled = true;
         NotePadCanvas.SetActive(false);
+
+        FindObjectOfType<QuestManager>().animator.SetBool("isOpen", true);
     }
 
     public void Screen_ChapterSelectionMenu()
@@ -127,13 +131,16 @@ public class NotePadManager : MonoBehaviour, IDataPersistence
 
     public void Screen_Chapter(GameObject chapterObject)
     {
-        GameObject notification = EventSystem.current.currentSelectedGameObject.transform.Find("Notification").gameObject;
-        notification.SetActive(false);
+        Chapter chapterContent = chapterObject.GetComponent<ChapterContent>().chapter;
+
+        UpdateChapterNotification(chapterContent.chapterID, false, true);
+        //GameObject notification = EventSystem.current.currentSelectedGameObject.transform.Find("Notification").gameObject;
+        //notification.SetActive(false);
+        UpdateNotePadNotification(false); // Solução temporária até a fase 2 ficar desbloqueável
 
         ChapterSelectionMenu.SetActive(false);
         ChapterCanvas.SetActive(true);
 
-        Chapter chapterContent = chapterObject.GetComponent<ChapterContent>().chapter;
         cm.ShowChapter(chapterContent);
     }
 

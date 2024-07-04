@@ -17,11 +17,15 @@ public class Tutorial : MonoBehaviour
     public void OkButton(){
         Player.GetComponent<PlayerMovement>().enabled = true;
         TutorialCanvas.SetActive(false);
+
+        FindObjectOfType<QuestManager>().animator.SetBool("isOpen", true);
     }
 
     public void OpenTutorial(){
         Player.GetComponent<PlayerMovement>().enabled = false;
-        TutorialCanvas.SetActive(true);       
+        TutorialCanvas.SetActive(true); 
+
+        FindObjectOfType<QuestManager>().animator.SetBool("isOpen", false);     
     }
 
 }

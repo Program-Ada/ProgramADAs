@@ -47,6 +47,12 @@ public class SaveSlotsMenu : MonoBehaviour, IDataPersistence
         SceneManager.LoadSceneAsync("Game");
     }
 
+    public void CancelNewSaveCreation(){
+        saveSlotNameMenu.SetActive(false);
+        this.gameObject.SetActive(true);
+        EnableSaveSlotsButtons();
+    }
+
     private void Start(){
         ActivateMenu();
     }
@@ -74,6 +80,13 @@ public class SaveSlotsMenu : MonoBehaviour, IDataPersistence
             saveSlot.SetInteractable(false);
         }
         backButton.interactable = false;
+    }
+
+    private void EnableSaveSlotsButtons(){
+        foreach(SaveSlot saveSlot in saveSlots){
+            saveSlot.SetInteractable(true);
+        }
+        backButton.interactable = true;
     }
 
     public void SaveData(ref GameData data){

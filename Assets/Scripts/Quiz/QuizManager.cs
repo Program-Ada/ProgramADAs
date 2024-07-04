@@ -46,6 +46,8 @@ public class QuizManager : MonoBehaviour, IDataPersistence
 
     public void InicialPage(){
         InicialPanel.SetActive(true);
+        Player.GetComponent<PlayerMovement>().enabled = false;
+        FindObjectOfType<QuestManager>().animator.SetBool("isOpen", false);
     }
 
     public void StartQuiz(){
@@ -73,6 +75,9 @@ public class QuizManager : MonoBehaviour, IDataPersistence
             passed = false;
         }
         score = 0;
+
+        FindObjectOfType<QuestManager>().animator.SetBool("isOpen", true);
+        GameManager.Instance.UpdateExclamation();
     }
 
     public void GameOver(){

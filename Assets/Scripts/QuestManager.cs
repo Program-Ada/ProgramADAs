@@ -9,17 +9,20 @@ public class QuestManager : MonoBehaviour, IDataPersistence
         public TextMeshProUGUI questText;
         public Animator animator;
 
+        //public static QuestManager Instance;
+
         private bool[] isChapterUnlocked;
         private int[] pointFases;
 
     // Start is called before the first frame update
     void Start()
     {
-        animator.SetBool("isOpen", true);
+        if(!FindObjectOfType<Tutorial>().TutorialCanvas.activeSelf){ 
+            animator.SetBool("isOpen", true);
+        }
     }
 
     public void DisplayNextSentence(string sentence){
-        Debug.Log("Display Next Sentence: " + sentence);
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
     }

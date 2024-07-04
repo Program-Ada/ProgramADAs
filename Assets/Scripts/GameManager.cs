@@ -11,7 +11,20 @@ public class GameManager : MonoBehaviour, IDataPersistence
     public static GameManager Instance;
     private int level;
     private bool[] isChapterUnlocked;
+
+    private int QuizScore;
     public bool talkedToBarbara = false;
+    public GameObject barbaraExclamation;
+    public bool isBarbaraExclamationActive;
+    public GameObject doorExclamation;
+
+
+    [Header("Scripts")]
+    private DialogueTrigger dialogueTrigger;
+    private QuizTrigger quizTrigger;
+    private NotePadManager notepadManager;
+    private QuestManager questManager;
+
 
     void Awake () {
         if(Instance != null){
@@ -23,24 +36,40 @@ public class GameManager : MonoBehaviour, IDataPersistence
         DontDestroyOnLoad(this.gameObject);
     }
 
-    public void UpdateExclamation(){
+    public void FindScriptsAndObjects(){
+        dialogueTrigger = FindObjectOfType<DialogueTrigger>();
+        notepadManager = FindObjectOfType<NotePadManager>();
+        questManager = FindObjectOfType<QuestManager>();
+
         if(SceneManager.GetActiveScene().name == "Game"){
-            GameObject.Find("Barbara/Exclamation").gameObject.SetActive(!isChapterUnlocked[0]);
-            if(isChapterUnlocked[0]){
-               FindObjectOfType<QuizTrigger>().ActivateQuizExclamation(); 
-            }
+            quizTrigger = FindObjectOfType<QuizTrigger>();
+            doorExclamation = GameObject.Find("Door/Exclamation").gameObject;
+            barbaraExclamation = GameObject.Find("Barbara/Exclamation").gameObject;
+        }
+    }
+
+    public void UpdateExclamation(){ // chama toda vez que muda de cena
+        if(SceneManager.GetActiveScene().name == "Game"){
+
+            barbaraExclamation.SetActive(!isChapterUnlocked[0]);
+            isBarbaraExclamationActive = barbaraExclamation;
+            quizTrigger.UpdateQuizExclamation(isChapterUnlocked[0] && QuizScore < 75); 
+            doorExclamation.SetActive(isChapterUnlocked[0] && (QuizScore > 75));
         }
     }
 
     public void UnlockChapterOne(){
         if(!talkedToBarbara && !isChapterUnlocked[0] && SceneManager.GetActiveScene().name == "Game"){
             talkedToBarbara = true;
-            GameObject.Find("Barbara/Exclamation").gameObject.SetActive(false);
-            FindObjectOfType<QuizTrigger>().ActivateQuizExclamation();
-            FindObjectOfType<NotePadManager>().UpdateNotePadNotification(true);
-            FindObjectOfType<NotePadManager>().UpdateChapterBtn(0,true, true);
-            FindObjectOfType<NotePadManager>().UpdateChapterNotification(0,true, true);
-            FindObjectOfType<QuestManager>().UpdateQuestText(2);
+            barbaraExclamation.SetActive(false);
+            isBarbaraExclamationActive = false;
+            //dialogueTrigger.isExclamationActive = false;
+            //dialogueTrigger.UpdateBarbaraExclamation(false);
+            quizTrigger.UpdateQuizExclamation(true);
+            notepadManager.UpdateNotePadNotification(true);
+            notepadManager.UpdateChapterBtn(0,true, true);
+            notepadManager.UpdateChapterNotification(0,true, true);
+            questManager.UpdateQuestText(2);
         }
     }
 
@@ -52,6 +81,9 @@ public class GameManager : MonoBehaviour, IDataPersistence
             isChapterUnlocked[i] = data.unlockedFases[i];
         }
 
+        QuizScore = data.pointFases[0];
+
+        FindScriptsAndObjects();
         UpdateExclamation();
     }
 
