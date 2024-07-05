@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
     private int level;
     private bool[] isChapterUnlocked;
 
-    private int QuizScore;
+    public float QuizScore;
     public bool talkedToBarbara = false;
     public GameObject barbaraExclamation;
     public bool isBarbaraExclamationActive;
@@ -52,14 +52,19 @@ public class GameManager : MonoBehaviour, IDataPersistence
         if(SceneManager.GetActiveScene().name == "Game"){
 
             barbaraExclamation.SetActive(!isChapterUnlocked[0]);
-            isBarbaraExclamationActive = barbaraExclamation;
+            isBarbaraExclamationActive = !isChapterUnlocked[0];
             quizTrigger.UpdateQuizExclamation(isChapterUnlocked[0] && QuizScore < 75); 
             doorExclamation.SetActive(isChapterUnlocked[0] && (QuizScore > 75));
+
+            if(doorExclamation.activeSelf){
+                FindObjectOfType<ExitDoor>().isFaseCompleted = true;
+            }
         }
     }
 
     public void UnlockChapterOne(){
         if(!talkedToBarbara && !isChapterUnlocked[0] && SceneManager.GetActiveScene().name == "Game"){
+            isChapterUnlocked[0] = true;
             talkedToBarbara = true;
             barbaraExclamation.SetActive(false);
             isBarbaraExclamationActive = false;

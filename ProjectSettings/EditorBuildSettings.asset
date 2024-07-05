@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Hall.unity
     guid: 4d74c83670b27cb418170604ec19143f
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 701e0a7836cc54b4c95f6734f98ebfe6
   m_configObjects: {}
