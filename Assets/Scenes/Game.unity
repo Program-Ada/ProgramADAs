@@ -8473,8 +8473,35 @@ MonoBehaviour:
   chapter:
     chapterID: 0
     tittle: "Vari\xE1veis"
-    content: "int \xE9 um numero inteiro\n\n<page>bool \xE9 falso ou verdadeiro\n\n<page>float
-      \xE9 um numero com ,"
+    content: "O processador realiza as instru\xE7\xF5es de um programa de computador,
+      controla o uso\r\nda entrada, da mem\xF3ria e da sa\xEDda e da comunica\xE7\xE3o
+      entre estes, controla a\r\nmem\xF3ria alocando espa\xE7o, gravando informa\xE7\xF5es
+      e buscando informa\xE7\xF5es.\n\r\nA mem\xF3ria s\xE3o valores atuais para
+      cada dado.\n\r\nA entrada s\xE3o valores digitados pelo usu\xE1rio.\n\r\nA
+      sa\xEDda s\xE3o textos e valores impressos na tela.\n\n<page>Entrada de dados\n\r\ncin>>seguido
+      \xFAnicamente por vari\xE1veis;\n\r\n>>\xE9 necess\xE1rio ter \u201C>>\u201D;\r\n>>
+      termina com \u201C;\u201D;\n\r\npode ser escrito tanto desse modo:\n\r\ncin>>
+      varA>> varB;\n\r\nquanto como esse:\n\r\ncin>>varA;\r\ncin>>varB;\n\r\n<page>Tipos
+      de Vari\xE1veis\n\nint, float, char-> tipos de dados, vari\xE1veis ou atribui\xE7\xF5es,
+      que podem ser\r\nnecess\xE1rios.\n\r\nint -> valores inteiros.\nex: int idade\r\nidade=18\n\nfloat->
+      valores reais.\r\nex: int altura\r\naltura=1,64\n\r\nchar-> car\xE1cter.\r\nex:
+      char letra\r\nletra=C\n\n<page>Sa\xEDda de dados\n\r\ncout<< o valor a ser
+      impresso sempre vai para a sa\xEDda (tela);\n\r\n<< \xE9 necess\xE1rio ter
+      \u201C<<\u201D;\r\n<< termina com \u201C;\u201D;\n\r\nObs: O caracter \u201C/n\u201D
+      e o comando \u201Cendl\u201D podem ser usados para mudar de linha em\r\num
+      c\xF3digo.\n\r\nEX: cout << \"x\\nxxx\";\r\ncout << \"x\" << endl\r\n<< \"xxx\";\n\n<page>Operadores
+      relacionais\n\r\n== igual;\r\n!+ diferente;\r\n> maior;\r\n< menor;\r\n>= maior
+      ou igual;\r\n<= menor ou igual;\n\n<page>Operadores aritm\xE9ticos\n\r\n! nega\xE7\xE3o;\r\n+
+      adi\xE7\xE3o;\r\n- subtra\xE7\xE3o;\r\n* multiplica\xE7\xE3o;\r\n/ divis\xE3o;\r\n%resto
+      da divis\xE3o;\n\n<page>Operadores l\xF3gicos\n\n&& -> operador AND l\xF3gico,
+      retorna \u201Ctrue\u201D quando os dois casos s\xE3o verdadeiros e\r\n\u201Cfalse\u201D
+      quando um ou ambos os casos s\xE3o falsos.\n\r\n| | -> operador OR l\xF3gico,
+      retorna \u201Ctrue\u201D quando um ou ambos os casos s\xE3o verdadeiros e\r\n\u201Cfalse\u201D
+      quando ambos os casos s\xE3o falsos.\n\n<page> Teste de mesa\n\r\nO teste de
+      mesa \xE9 uma t\xE9cnica usada para testar e garantir que nenhum erro l\xF3gico\r\nocorra
+      com o algoritmo durante a execu\xE7\xE3o.\n\r\r\r\r\n<page>Exemplo de um c\xF3digo
+      simples\n\r\n#include <iostream>\r\nusing namespace std;\r\nint main()\r\n{\r\nint
+      a, b, soma;\r\ncin>> a>>b;\r\nsoma=a+b;\r\ncout<<soma;\r\nreturn 0;\r\n}"
 --- !u!1 &857668563
 GameObject:
   m_ObjectHideFlags: 0
