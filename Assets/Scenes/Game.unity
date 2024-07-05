@@ -7453,6 +7453,327 @@ PrefabInstance:
       propertyPath: dialogue.setences.Array.data[1]
       value: Eu sou a Mari! Tudo bom? :)
       objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.size
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[0].sentence
+      value: Ei! Te vi com uma carinha um pouco perdida durante a aula.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[1].sentence
+      value: "T\xE1 tudo bem?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[2].sentence
+      value: Tudo bem, sim.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[3].sentence
+      value: "Apenas fico me sentindo um pouco atr\xE1s."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[4].sentence
+      value: "Todo mundo parece j\xE1 saber programar."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[5].sentence
+      value: "Liga pra isso n\xE3o, muitos deles est\xE3o fazendo apenas pose pra
+        aparecer."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[6].sentence
+      value: "A verdade \xE9 que a maioria caiu aqui no curso de paraquedas."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[7].sentence
+      value: "No fim estamos todos aprendendo juntos, n\xE3o precisa se preocupar
+        com isso."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[8].sentence
+      value: Acho que faz sentido...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[9].sentence
+      value: Mas ainda fico um pouco perdida nas aulas.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[10].sentence
+      value: "Isso \xE9 normal, os primeiros dias s\xE3o sempre assim."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[11].sentence
+      value: "Mas lembre que voc\xEA pode sempre recorrer aos professores"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[12].sentence
+      value: "Todos os professores tem hor\xE1rios de atendimento toda semana."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[13].sentence
+      value: "Mas tamb\xE9m \xE9 poss\xEDvel agendar com eles caso o hor\xE1rio fique
+        dif\xEDcil pra voc\xEA"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[14].sentence
+      value: "Al\xE9m disso, sempre tem as monitorias!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[15].sentence
+      value: "Elas s\xE3o mais recorrentes. Dependendo da mat\xE9ria existem multiplos
+        monitores"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[16].sentence
+      value: "S\xF3 perguntar pro professor os hor\xE1rios e comparecer para tirar
+        suas d\xFAvidas!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[17].sentence
+      value: Ah que bom saber!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[18].sentence
+      value: Isso me deixa muito mais aliviada!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[19].sentence
+      value: "Alias, n\xE3o perguntei o seu nome..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[20].sentence
+      value: Eu sou a Ada!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[21].sentence
+      value: Muito prazer! Eu sou a Mari!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[22].sentence
+      value: Inclusive, estou atrasada para a minha aula.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[23].sentence
+      value: "Mas eu estou sempre por a\xED caso precise de um rosto familiar!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[24].sentence
+      value: "At\xE9 mais!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[25].sentence
+      value: "At\xE9 mais!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[0].character.name
+      value: ???
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[1].character.name
+      value: ???
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[2].character.name
+      value: Ada
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[3].character.name
+      value: Ada
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[4].character.name
+      value: Ada
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[5].character.name
+      value: ???
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[6].character.name
+      value: ???
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[7].character.name
+      value: ???
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[8].character.name
+      value: Ada
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[9].character.name
+      value: Ada
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[0].character.image
+      value: 
+      objectReference: {fileID: -630386561, guid: 54e4aaf90ca4fdd41915a75381099424, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[10].character.name
+      value: ???
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[11].character.name
+      value: ???
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[12].character.name
+      value: ???
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[13].character.name
+      value: ???
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[14].character.name
+      value: ???
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[15].character.name
+      value: ???
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[16].character.name
+      value: ???
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[17].character.name
+      value: Ada
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[18].character.name
+      value: Ada
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[19].character.name
+      value: Ada
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[1].character.image
+      value: 
+      objectReference: {fileID: -630386561, guid: 54e4aaf90ca4fdd41915a75381099424, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[20].character.name
+      value: Ada
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[21].character.name
+      value: Mari
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[22].character.name
+      value: Mari
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[23].character.name
+      value: Mari
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[24].character.name
+      value: Mari
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[25].character.name
+      value: Mari
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[2].character.image
+      value: 
+      objectReference: {fileID: -616112395, guid: 91d1cb538b6dd3143949e4519d698594, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[3].character.image
+      value: 
+      objectReference: {fileID: 571824731, guid: 91d1cb538b6dd3143949e4519d698594, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[4].character.image
+      value: 
+      objectReference: {fileID: -130582677, guid: 91d1cb538b6dd3143949e4519d698594, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[5].character.image
+      value: 
+      objectReference: {fileID: -630386561, guid: 54e4aaf90ca4fdd41915a75381099424, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[6].character.image
+      value: 
+      objectReference: {fileID: -630386561, guid: 54e4aaf90ca4fdd41915a75381099424, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[7].character.image
+      value: 
+      objectReference: {fileID: -630386561, guid: 54e4aaf90ca4fdd41915a75381099424, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[8].character.image
+      value: 
+      objectReference: {fileID: -130582677, guid: 91d1cb538b6dd3143949e4519d698594, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[9].character.image
+      value: 
+      objectReference: {fileID: -130582677, guid: 91d1cb538b6dd3143949e4519d698594, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[10].character.image
+      value: 
+      objectReference: {fileID: -630386561, guid: 54e4aaf90ca4fdd41915a75381099424, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[11].character.image
+      value: 
+      objectReference: {fileID: -630386561, guid: 54e4aaf90ca4fdd41915a75381099424, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[12].character.image
+      value: 
+      objectReference: {fileID: -630386561, guid: 54e4aaf90ca4fdd41915a75381099424, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[13].character.image
+      value: 
+      objectReference: {fileID: -630386561, guid: 54e4aaf90ca4fdd41915a75381099424, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[14].character.image
+      value: 
+      objectReference: {fileID: -630386561, guid: 54e4aaf90ca4fdd41915a75381099424, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[15].character.image
+      value: 
+      objectReference: {fileID: -630386561, guid: 54e4aaf90ca4fdd41915a75381099424, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[16].character.image
+      value: 
+      objectReference: {fileID: -630386561, guid: 54e4aaf90ca4fdd41915a75381099424, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[17].character.image
+      value: 
+      objectReference: {fileID: 1151450093, guid: 91d1cb538b6dd3143949e4519d698594, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[18].character.image
+      value: 
+      objectReference: {fileID: -616112395, guid: 91d1cb538b6dd3143949e4519d698594, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[19].character.image
+      value: 
+      objectReference: {fileID: 1776885524, guid: 91d1cb538b6dd3143949e4519d698594, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[20].character.image
+      value: 
+      objectReference: {fileID: 1151450093, guid: 91d1cb538b6dd3143949e4519d698594, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[21].character.image
+      value: 
+      objectReference: {fileID: -630386561, guid: 54e4aaf90ca4fdd41915a75381099424, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[22].character.image
+      value: 
+      objectReference: {fileID: -630386561, guid: 54e4aaf90ca4fdd41915a75381099424, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[23].character.image
+      value: 
+      objectReference: {fileID: -630386561, guid: 54e4aaf90ca4fdd41915a75381099424, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[24].character.image
+      value: 
+      objectReference: {fileID: -630386561, guid: 54e4aaf90ca4fdd41915a75381099424, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[25].character.image
+      value: 
+      objectReference: {fileID: -630386561, guid: 54e4aaf90ca4fdd41915a75381099424, type: 3}
     m_RemovedComponents:
     - {fileID: 3486044095752316602, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
     m_RemovedGameObjects: []
@@ -7943,6 +8264,241 @@ PrefabInstance:
       propertyPath: dialogue.setences.Array.data[1]
       value: "Meu nome \xE9 Luana! :)"
       objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.size
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[0].sentence
+      value: "Oi! \xC9 a menina nova n\xE9!?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[1].sentence
+      value: Muito prazer! Eu sou a Luana!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[2].sentence
+      value: "\xC9, ja vi que \xE9 meio dif\xEDcil passar despercebida por aqui."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[3].sentence
+      value: Bom, eu sou a Ada kk.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[4].sentence
+      value: "Pois \xE9, pode parecer que n\xE3o mas na verdade somos bastante meninas."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[5].sentence
+      value: "Inclusive, n\xE3o sei se j\xE1 te apresentaram."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[6].sentence
+      value: "mas temos muitos projetos incr\xEDveis compostos por mulheres aqui
+        no campus."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[7].sentence
+      value: "Caramba, s\xE9rio?!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[8].sentence
+      value: Como eu posso saber mais sobre esses projetos?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[9].sentence
+      value: "Ah, isso \xE9 f\xE1cil! Tem v\xE1rios posts espalhados pelos corredores
+        falando sobre."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[10].sentence
+      value: "Al\xE9m disso, pode nos achar no Instagram!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[11].sentence
+      value: "Eu fa\xE7o parte do projeto ProgramADA junto com as meninas aqui na
+        sala!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[12].sentence
+      value: "N\xF3s estamos desenvolvendo um jogo pra ajudar as calouras em algoritmos."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[13].sentence
+      value: "Segue a gente l\xE1 depois. Nosso insta \xE9 o  @program_ada_ufjf"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[14].sentence
+      value: "Uau que incr\xEDvel! Vou seguir com certeza!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[15].sentence
+      value: Que bom que se interessou!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[16].sentence
+      value: Bom, preciso ir agora. Mas nos vemos por ai!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[17].sentence
+      value: Tchauzinho <3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[18].sentence
+      value: "At\xE9 mais!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[0].character.name
+      value: ???
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[1].character.name
+      value: Luana
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[2].character.name
+      value: Ada
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[3].character.name
+      value: Ada
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[4].character.name
+      value: Luana
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[5].character.name
+      value: Luana
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[6].character.name
+      value: Luana
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[7].character.name
+      value: Ada
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[8].character.name
+      value: Ada
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[9].character.name
+      value: Luana
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[0].character.image
+      value: 
+      objectReference: {fileID: 51029485, guid: 084c1b86f986c0c46ba07dfd060dde12, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[10].character.name
+      value: Luana
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[11].character.name
+      value: Luana
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[12].character.name
+      value: Luana
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[13].character.name
+      value: Luana
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[14].character.name
+      value: Ada
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[15].character.name
+      value: Luana
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[16].character.name
+      value: Luana
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[17].character.name
+      value: Luana
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[18].character.name
+      value: Ada
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[1].character.image
+      value: 
+      objectReference: {fileID: 51029485, guid: 084c1b86f986c0c46ba07dfd060dde12, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[2].character.image
+      value: 
+      objectReference: {fileID: -1487983511, guid: 91d1cb538b6dd3143949e4519d698594, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[3].character.image
+      value: 
+      objectReference: {fileID: -616112395, guid: 91d1cb538b6dd3143949e4519d698594, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[4].character.image
+      value: 
+      objectReference: {fileID: 51029485, guid: 084c1b86f986c0c46ba07dfd060dde12, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[5].character.image
+      value: 
+      objectReference: {fileID: 51029485, guid: 084c1b86f986c0c46ba07dfd060dde12, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[6].character.image
+      value: 
+      objectReference: {fileID: 51029485, guid: 084c1b86f986c0c46ba07dfd060dde12, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[7].character.image
+      value: 
+      objectReference: {fileID: 1816741521, guid: 91d1cb538b6dd3143949e4519d698594, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[8].character.image
+      value: 
+      objectReference: {fileID: 1776885524, guid: 91d1cb538b6dd3143949e4519d698594, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[9].character.image
+      value: 
+      objectReference: {fileID: 51029485, guid: 084c1b86f986c0c46ba07dfd060dde12, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[10].character.image
+      value: 
+      objectReference: {fileID: 51029485, guid: 084c1b86f986c0c46ba07dfd060dde12, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[11].character.image
+      value: 
+      objectReference: {fileID: 51029485, guid: 084c1b86f986c0c46ba07dfd060dde12, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[12].character.image
+      value: 
+      objectReference: {fileID: 51029485, guid: 084c1b86f986c0c46ba07dfd060dde12, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[13].character.image
+      value: 
+      objectReference: {fileID: 51029485, guid: 084c1b86f986c0c46ba07dfd060dde12, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[14].character.image
+      value: 
+      objectReference: {fileID: 1151450093, guid: 91d1cb538b6dd3143949e4519d698594, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[15].character.image
+      value: 
+      objectReference: {fileID: 51029485, guid: 084c1b86f986c0c46ba07dfd060dde12, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[16].character.image
+      value: 
+      objectReference: {fileID: 51029485, guid: 084c1b86f986c0c46ba07dfd060dde12, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[17].character.image
+      value: 
+      objectReference: {fileID: 51029485, guid: 084c1b86f986c0c46ba07dfd060dde12, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[18].character.image
+      value: 
+      objectReference: {fileID: -616112395, guid: 91d1cb538b6dd3143949e4519d698594, type: 3}
     m_RemovedComponents:
     - {fileID: 3486044095752316602, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
     m_RemovedGameObjects: []
@@ -8473,35 +9029,40 @@ MonoBehaviour:
   chapter:
     chapterID: 0
     tittle: "Vari\xE1veis"
-    content: "O processador realiza as instru\xE7\xF5es de um programa de computador,
-      controla o uso\r\nda entrada, da mem\xF3ria e da sa\xEDda e da comunica\xE7\xE3o
-      entre estes, controla a\r\nmem\xF3ria alocando espa\xE7o, gravando informa\xE7\xF5es
-      e buscando informa\xE7\xF5es.\n\r\nA mem\xF3ria s\xE3o valores atuais para
-      cada dado.\n\r\nA entrada s\xE3o valores digitados pelo usu\xE1rio.\n\r\nA
-      sa\xEDda s\xE3o textos e valores impressos na tela.\n\n<page>Entrada de dados\n\r\ncin>>seguido
-      \xFAnicamente por vari\xE1veis;\n\r\n>>\xE9 necess\xE1rio ter \u201C>>\u201D;\r\n>>
+    content: "<u>Introdu\xE7\xE3o</u>\n\n<b>O processador</b> realiza as instru\xE7\xF5es
+      de um programa de computador, controla o uso\r\nda entrada, da mem\xF3ria e
+      da sa\xEDda e da comunica\xE7\xE3o entre estes, controla a\r\nmem\xF3ria alocando
+      espa\xE7o, gravando informa\xE7\xF5es e buscando informa\xE7\xF5es.\n\r\n<page><u>Introdu\xE7\xE3o</u>\n\n<b>A
+      mem\xF3ria</b> s\xE3o valores atuais para cada dado.\n\r\n<b>A entrada</b>
+      s\xE3o valores digitados pelo usu\xE1rio.\n\r\n<b>A sa\xEDda</b> s\xE3o textos
+      e valores impressos na tela.\n\n<page><u>Entrada de dados</u>\n\r\n<b>cin>></b>
+      seguido \xFAnicamente por vari\xE1veis;\n\r\n>>\xE9 necess\xE1rio ter \u201C>>\u201D;\r\n>>
       termina com \u201C;\u201D;\n\r\npode ser escrito tanto desse modo:\n\r\ncin>>
-      varA>> varB;\n\r\nquanto como esse:\n\r\ncin>>varA;\r\ncin>>varB;\n\r\n<page>Tipos
-      de Vari\xE1veis\n\nint, float, char-> tipos de dados, vari\xE1veis ou atribui\xE7\xF5es,
-      que podem ser\r\nnecess\xE1rios.\n\r\nint -> valores inteiros.\nex: int idade\r\nidade=18\n\nfloat->
-      valores reais.\r\nex: int altura\r\naltura=1,64\n\r\nchar-> car\xE1cter.\r\nex:
-      char letra\r\nletra=C\n\n<page>Sa\xEDda de dados\n\r\ncout<< o valor a ser
-      impresso sempre vai para a sa\xEDda (tela);\n\r\n<< \xE9 necess\xE1rio ter
-      \u201C<<\u201D;\r\n<< termina com \u201C;\u201D;\n\r\nObs: O caracter \u201C/n\u201D
-      e o comando \u201Cendl\u201D podem ser usados para mudar de linha em\r\num
-      c\xF3digo.\n\r\nEX: cout << \"x\\nxxx\";\r\ncout << \"x\" << endl\r\n<< \"xxx\";\n\n<page>Operadores
-      relacionais\n\r\n== igual;\r\n!+ diferente;\r\n> maior;\r\n< menor;\r\n>= maior
-      ou igual;\r\n<= menor ou igual;\n\n<page>Operadores aritm\xE9ticos\n\r\n! nega\xE7\xE3o;\r\n+
-      adi\xE7\xE3o;\r\n- subtra\xE7\xE3o;\r\n* multiplica\xE7\xE3o;\r\n/ divis\xE3o;\r\n%resto
-      da divis\xE3o;\n\n<page>Operadores l\xF3gicos\n\n&& -> operador AND l\xF3gico,
-      retorna \u201Ctrue\u201D quando os dois casos s\xE3o verdadeiros e\r\n\u201Cfalse\u201D
-      quando um ou ambos os casos s\xE3o falsos.\n\r\n| | -> operador OR l\xF3gico,
-      retorna \u201Ctrue\u201D quando um ou ambos os casos s\xE3o verdadeiros e\r\n\u201Cfalse\u201D
-      quando ambos os casos s\xE3o falsos.\n\n<page> Teste de mesa\n\r\nO teste de
-      mesa \xE9 uma t\xE9cnica usada para testar e garantir que nenhum erro l\xF3gico\r\nocorra
-      com o algoritmo durante a execu\xE7\xE3o.\n\r\r\r\r\n<page>Exemplo de um c\xF3digo
-      simples\n\r\n#include <iostream>\r\nusing namespace std;\r\nint main()\r\n{\r\nint
-      a, b, soma;\r\ncin>> a>>b;\r\nsoma=a+b;\r\ncout<<soma;\r\nreturn 0;\r\n}"
+      varA>> varB;\n\r\n<page><u>Entrada de dados</u>\n\nquanto como esse:\n\r\ncin>>varA;\r\ncin>>varB;\n\r\n<page><u>Tipos
+      de Vari\xE1veis</u>\n\n<b>int, float, char-></b> tipos de dados, vari\xE1veis
+      ou atribui\xE7\xF5es, que podem ser\r\nnecess\xE1rios.\n\r\n<b>int -></b> valores
+      inteiros.\nex: int idade\r\nidade=18\n\n<page><u>Tipos de Vari\xE1veis</u>\n\n<b>float-></b>
+      valores reais.\r\nex: int altura\r\naltura=1,64\n\r\n<b>char-></b> car\xE1cter.\r\nex:
+      char letra\r\nletra=C\n\n<page><u>Sa\xEDda de dados</u>\n\r\n<b>cout<<</b>
+      o valor a ser impresso sempre vai para a sa\xEDda (tela);\n\r\n<< \xE9 necess\xE1rio
+      ter \u201C<<\u201D;\r\n<< termina com \u201C;\u201D;\n\r\n<page><u>Sa\xEDda
+      de dados</u>\n\n<b>Obs:</b> O caracter \u201C/n\u201D e o comando \u201Cendl\u201D
+      podem ser usados para mudar de linha em\r\num c\xF3digo.\n\r\n<b>EX:</b> cout
+      << \"x\\nxxx\";\r\ncout << \"x\" << endl\r\n<< \"xxx\";\n\n<page><u>Operadores
+      relacionais</u>\n\r\n== igual;\r\n!+ diferente;\r\n> maior;\r\n< menor;\r\n>=
+      maior ou igual;\r\n<= menor ou igual;\n\n<page><u>Operadores aritm\xE9ticos</u>\n\r\n!
+      nega\xE7\xE3o;\r\n+ adi\xE7\xE3o;\r\n- subtra\xE7\xE3o;\r\n* multiplica\xE7\xE3o;\r\n/
+      divis\xE3o;\r\n%resto da divis\xE3o;\n\n<page><u>Operadores l\xF3gicos</u>\n\n<b>&&
+      -></b> operador AND l\xF3gico, retorna \u201Ctrue\u201D quando os dois casos
+      s\xE3o verdadeiros e\r\n\u201Cfalse\u201D quando um ou ambos os casos s\xE3o
+      falsos.\n\r\n<b>| | -></b> operador OR l\xF3gico, retorna \u201Ctrue\u201D
+      quando um ou ambos os casos s\xE3o verdadeiros e\r\n\u201Cfalse\u201D quando
+      ambos os casos s\xE3o falsos.\n\n<page><u>Teste de mesa</u>\n\r\n<b>O teste
+      de mesa</b> \xE9 uma t\xE9cnica usada para testar e garantir que nenhum erro
+      l\xF3gico\r\nocorra com o algoritmo durante a execu\xE7\xE3o.\n\r\r\r\r\n<page><u>Exemplo
+      de um c\xF3digo simples</u>\n\r\n#include <iostream>\r\nusing namespace std;\r\nint
+      main()\r\n{\r\nint a, b, soma;\r\ncin>> a>>b;\r\nsoma=a+b;\r\ncout<<soma;\r\nreturn
+      0;\r\n}"
 --- !u!1 &857668563
 GameObject:
   m_ObjectHideFlags: 0
@@ -12137,11 +12698,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3919617994435948074, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.13
+      value: -2.72
       objectReference: {fileID: 0}
     - target: {fileID: 3919617994435948074, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.37
+      value: 0.19
       objectReference: {fileID: 0}
     - target: {fileID: 3919617994435948074, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12231,6 +12792,229 @@ PrefabInstance:
       propertyPath: dialogue.setences.Array.data[1]
       value: Eu sou a Duda, prazer! :)
       objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.size
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[0].sentence
+      value: Opa, eai. Tudo bom??
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[1].sentence
+      value: "Ol\xE1! Tudo sim kk"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[2].sentence
+      value: "Voc\xEA tem aula agora? Se estiver a toa podiamos jogar uma sinuca!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[3].sentence
+      value: Tem sinuca aqui?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[4].sentence
+      value: "Tem sim, logo ali no Diret\xF3rio Acad\xEAmico."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[5].sentence
+      value: "Ali\xE1s, nem me apresentei. Pode me chamar de Duda!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[6].sentence
+      value: "Ah, eu sou a Ada. Sou nova por aqui ent\xE3o ainda n\xE3o conhe\xE7o
+        tudo."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[7].sentence
+      value: 'Muito legal ter um local assim pra descontrair. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[8].sentence
+      value: Mas nunca joguei sinuca antes... Fico com um pouco de vergonha
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[9].sentence
+      value: Ah, sempre tem uma primeira vez pra tudo.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[10].sentence
+      value: "Voc\xEA deveria ir no pr\xF3ximo Sinuca das Minas!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[11].sentence
+      value: "\xC9 um evento super legal organizado pelos projetos femininos da computa\xE7\xE3o."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[12].sentence
+      value: "\xC9 uma \xF3tima oportunidade pra aprender a jogar e conhecer outras
+        mulheres dos cursos!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[13].sentence
+      value: "Uau! Que legal! Como fa\xE7o pra ir?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[14].sentence
+      value: "\xC9 s\xF3 ficar de olho no instagram do @cafe_das_minas"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[15].sentence
+      value: "Sempre que vamos fazer um evento assim postamos por l\xE1!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[16].sentence
+      value: Nossa muito legal! Vou ficar de olho!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[17].sentence
+      value: "Mas caso queira passar l\xE1 no DA qualquer dia, talvez a gente se
+        encontre!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[0].character.name
+      value: ???
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[1].character.name
+      value: Ada
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[2].character.name
+      value: ???
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[3].character.name
+      value: Ada
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[4].character.name
+      value: ???
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[5].character.name
+      value: Duda
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[6].character.name
+      value: Ada
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[7].character.name
+      value: Ada
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[8].character.name
+      value: Ada
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[9].character.name
+      value: Duda
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[0].character.image
+      value: 
+      objectReference: {fileID: 1907385041, guid: 11c6e37b2aa62e240a1167debb6d4a20, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[10].character.name
+      value: Duda
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[11].character.name
+      value: Duda
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[12].character.name
+      value: Duda
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[13].character.name
+      value: Ada
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[14].character.name
+      value: Duda
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[15].character.name
+      value: Duda
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[16].character.name
+      value: Ada
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[17].character.name
+      value: Duda
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[1].character.image
+      value: 
+      objectReference: {fileID: -616112395, guid: 91d1cb538b6dd3143949e4519d698594, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[2].character.image
+      value: 
+      objectReference: {fileID: 1907385041, guid: 11c6e37b2aa62e240a1167debb6d4a20, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[3].character.image
+      value: 
+      objectReference: {fileID: -616112395, guid: 91d1cb538b6dd3143949e4519d698594, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[4].character.image
+      value: 
+      objectReference: {fileID: 1907385041, guid: 11c6e37b2aa62e240a1167debb6d4a20, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[5].character.image
+      value: 
+      objectReference: {fileID: 1907385041, guid: 11c6e37b2aa62e240a1167debb6d4a20, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[6].character.image
+      value: 
+      objectReference: {fileID: -616112395, guid: 91d1cb538b6dd3143949e4519d698594, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[7].character.image
+      value: 
+      objectReference: {fileID: 1151450093, guid: 91d1cb538b6dd3143949e4519d698594, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[8].character.image
+      value: 
+      objectReference: {fileID: 571824731, guid: 91d1cb538b6dd3143949e4519d698594, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[9].character.image
+      value: 
+      objectReference: {fileID: 1907385041, guid: 11c6e37b2aa62e240a1167debb6d4a20, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[10].character.image
+      value: 
+      objectReference: {fileID: 1907385041, guid: 11c6e37b2aa62e240a1167debb6d4a20, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[11].character.image
+      value: 
+      objectReference: {fileID: 1907385041, guid: 11c6e37b2aa62e240a1167debb6d4a20, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[12].character.image
+      value: 
+      objectReference: {fileID: 1907385041, guid: 11c6e37b2aa62e240a1167debb6d4a20, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[13].character.image
+      value: 
+      objectReference: {fileID: 1151450093, guid: 91d1cb538b6dd3143949e4519d698594, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[14].character.image
+      value: 
+      objectReference: {fileID: 1907385041, guid: 11c6e37b2aa62e240a1167debb6d4a20, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[15].character.image
+      value: 
+      objectReference: {fileID: 1907385041, guid: 11c6e37b2aa62e240a1167debb6d4a20, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[16].character.image
+      value: 
+      objectReference: {fileID: 1151450093, guid: 91d1cb538b6dd3143949e4519d698594, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[17].character.image
+      value: 
+      objectReference: {fileID: 1907385041, guid: 11c6e37b2aa62e240a1167debb6d4a20, type: 3}
     m_RemovedComponents:
     - {fileID: 3486044095752316602, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
     m_RemovedGameObjects: []
@@ -16906,11 +17690,11 @@ PrefabInstance:
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.dialogueLines.Array.data[1].character.image
       value: 
-      objectReference: {fileID: -28441297, guid: fc76156456bd9894aa97165cf90ea51b, type: 3}
+      objectReference: {fileID: -616112395, guid: 91d1cb538b6dd3143949e4519d698594, type: 3}
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.dialogueLines.Array.data[2].character.image
       value: 
-      objectReference: {fileID: 1147751277, guid: fc76156456bd9894aa97165cf90ea51b, type: 3}
+      objectReference: {fileID: 571824731, guid: 91d1cb538b6dd3143949e4519d698594, type: 3}
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.dialogueLines.Array.data[3].character.image
       value: 
@@ -16926,11 +17710,11 @@ PrefabInstance:
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.dialogueLines.Array.data[6].character.image
       value: 
-      objectReference: {fileID: -28441297, guid: fc76156456bd9894aa97165cf90ea51b, type: 3}
+      objectReference: {fileID: -616112395, guid: 91d1cb538b6dd3143949e4519d698594, type: 3}
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.dialogueLines.Array.data[7].character.image
       value: 
-      objectReference: {fileID: -28441297, guid: fc76156456bd9894aa97165cf90ea51b, type: 3}
+      objectReference: {fileID: 1816741521, guid: 91d1cb538b6dd3143949e4519d698594, type: 3}
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.dialogueLines.Array.data[8].character.image
       value: 
@@ -18667,8 +19451,191 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.dialogueLines.Array.size
-      value: 1
+      value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[0].sentence
+      value: Oi Ada! Eai, o que achou da aula?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[1].sentence
+      value: "Achei \xF3tima! "
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[2].sentence
+      value: "Mas sinto que estou um pouco pra tr\xE1s com rela\xE7\xE3o aos outros
+        alunos."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[3].sentence
+      value: "Calma... Como voc\xEA sabe meu nome?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[4].sentence
+      value: Hahaha. Eu gosto de lembrar o nome das meninas da turma.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[5].sentence
+      value: "Bom, vi que voc\xEA fez v\xE1rias anota\xE7\xF5es durante a aula."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[6].sentence
+      value: "Consulte elas sempre que precisar. Tenho certeza que se sair\xE1 bem."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[7].sentence
+      value: "Sim, fazer anota\xE7\xF5es durante a aula sempre me ajuda!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[8].sentence
+      value: "Mas ainda n\xE3o me sinto muito segura..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[9].sentence
+      value: "Bom, o que acha de eu te passar uma lista de exerc\xEDcios para praticar
+        ent\xE3o?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[10].sentence
+      value: Nossa, ajudaria muito!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[11].sentence
+      value: Que bom! Tenho algumas impressas ali na minha mesa.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[12].sentence
+      value: Fique a vontade para fazer quantas vezes quiser!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[13].sentence
+      value: "E lembre-se de consultar suas anota\xE7\xF5es no Tablet sempre que
+        precisar."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[14].sentence
+      value: Muito obrigada, professora!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[0].character.name
+      value: "B\xE1rbara"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[1].character.name
+      value: Ada
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[2].character.name
+      value: Ada
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[3].character.name
+      value: Ada
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[4].character.name
+      value: "B\xE1rbara"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[5].character.name
+      value: "B\xE1rbara"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[6].character.name
+      value: "B\xE1rbara"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[7].character.name
+      value: Ada
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[8].character.name
+      value: Ada
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[9].character.name
+      value: "B\xE1rbara"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[0].character.image
+      value: 
+      objectReference: {fileID: 2019228955, guid: 7310d45053bbe6f46a13729fec63e102, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[10].character.name
+      value: Ada
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[11].character.name
+      value: "B\xE1rbara"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[12].character.name
+      value: "B\xE1rbara"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[13].character.name
+      value: "B\xE1rbara"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[14].character.name
+      value: Ada
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[1].character.image
+      value: 
+      objectReference: {fileID: -616112395, guid: 91d1cb538b6dd3143949e4519d698594, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[2].character.image
+      value: 
+      objectReference: {fileID: 571824731, guid: 91d1cb538b6dd3143949e4519d698594, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[3].character.image
+      value: 
+      objectReference: {fileID: -130582677, guid: 91d1cb538b6dd3143949e4519d698594, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[4].character.image
+      value: 
+      objectReference: {fileID: 2019228955, guid: 7310d45053bbe6f46a13729fec63e102, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[5].character.image
+      value: 
+      objectReference: {fileID: 2019228955, guid: 7310d45053bbe6f46a13729fec63e102, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[6].character.image
+      value: 
+      objectReference: {fileID: 2019228955, guid: 7310d45053bbe6f46a13729fec63e102, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[7].character.image
+      value: 
+      objectReference: {fileID: -616112395, guid: 91d1cb538b6dd3143949e4519d698594, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[8].character.image
+      value: 
+      objectReference: {fileID: 571824731, guid: 91d1cb538b6dd3143949e4519d698594, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[9].character.image
+      value: 
+      objectReference: {fileID: 2019228955, guid: 7310d45053bbe6f46a13729fec63e102, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[10].character.image
+      value: 
+      objectReference: {fileID: 1151450093, guid: 91d1cb538b6dd3143949e4519d698594, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[11].character.image
+      value: 
+      objectReference: {fileID: 2019228955, guid: 7310d45053bbe6f46a13729fec63e102, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[12].character.image
+      value: 
+      objectReference: {fileID: 2019228955, guid: 7310d45053bbe6f46a13729fec63e102, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[13].character.image
+      value: 
+      objectReference: {fileID: 2019228955, guid: 7310d45053bbe6f46a13729fec63e102, type: 3}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.data[14].character.image
+      value: 
+      objectReference: {fileID: -616112395, guid: 91d1cb538b6dd3143949e4519d698594, type: 3}
     m_RemovedComponents:
     - {fileID: 3486044095752316602, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
     m_RemovedGameObjects: []
