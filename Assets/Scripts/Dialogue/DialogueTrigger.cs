@@ -32,7 +32,7 @@ public class DialogueTrigger : MonoBehaviour
         dm.StartDialogue(dialogue);
         toolTip.SetActive(false);
         
-        if(dialogue.name == "Bárbara"){
+        if(this.name == "Barbara"){
             GameManager.Instance.UnlockChapterOne();
         }
     }
@@ -42,7 +42,7 @@ public class DialogueTrigger : MonoBehaviour
             playerIsClose = true;
             toolTip.SetActive(true);
 
-            if(this.dialogue.name == "Bárbara" && GameManager.Instance.barbaraExclamation.activeSelf){
+            if(this.name == "Barbara" && GameManager.Instance.barbaraExclamation.activeSelf){
                 GameManager.Instance.isBarbaraExclamationActive = true;
                 GameManager.Instance.barbaraExclamation.SetActive(false);
             }
