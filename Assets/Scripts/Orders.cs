@@ -7,6 +7,7 @@ using UnityEngine;
 public class Orders : MonoBehaviour
 {
     public List<GameObject> orders;
+    // public Component[] orders;
     public List<GameObject> ordersClones;
     public GameObject pedidoAtual;
     public bool pedidoEmAndamento;
@@ -15,6 +16,9 @@ public class Orders : MonoBehaviour
 
     void Start()
     {
+        //trocar para pegar automaticamente os fillhos ao inves de ter q ligar cada um deles
+        // orders = this.GetComponentsInChildren<Orders>(true);
+        // Debug.Log("AQUI: " + orders.Length);
         ordersClones = new List<GameObject>(orders);
         pedidoEmAndamento = false;
 

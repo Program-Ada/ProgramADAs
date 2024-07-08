@@ -16,6 +16,9 @@ public class ButtonsMiniGame : MonoBehaviour
     public GameObject food_btn;
     public Button[] buttons;
 
+    public GameObject copo;
+    public GameObject prato;
+
     // public DialogueTrigger dialogueTrigger;
     public GameObject aleErroSemCopo;
 
@@ -79,10 +82,12 @@ public class ButtonsMiniGame : MonoBehaviour
 
     public void Pegar_Copo() {
         drinks.containerExists = true;
+        copo.SetActive(true);
     }
 
     public void Pegar_Prato() {
         foods.containerExists = true;
+        prato.SetActive(true);
     }
 
     public void JogarFora_Drink() {

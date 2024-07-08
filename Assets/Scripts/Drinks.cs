@@ -25,6 +25,7 @@ public class Drinks : MonoBehaviour
                 options[i].SetActive(true);
                 containerFull = true;
                 chosenOption = i;
+                buttonsMiniGame.copo.SetActive(false);
             }
         }
         else {
