@@ -21,6 +21,7 @@ public class ButtonsMiniGame : MonoBehaviour
 
     // public DialogueTrigger dialogueTrigger;
     public GameObject aleErroSemCopo;
+    public GameObject[] emojis;
 
     void Start()
     {
@@ -46,10 +47,20 @@ public class ButtonsMiniGame : MonoBehaviour
     }
 
     public void Verifica_Btn() {
-        Verifica_Drink();
-        Verifica_Food();
+        if((pedidos.pedidoAtual.GetComponent<Pedido>().drink == drinks.chosenOption) && (pedidos.pedidoAtual.GetComponent<Pedido>().food == foods.chosenOption)) {
+            Debug.Log("Drink e food corretos");
+            emojis[0].SetActive(true);
+        }
+        else if((pedidos.pedidoAtual.GetComponent<Pedido>().drink == drinks.chosenOption) || (pedidos.pedidoAtual.GetComponent<Pedido>().food == foods.chosenOption)) {
+            Debug.Log("Drink ou food incorreto");
+            emojis[1].SetActive(true);
+        }
+        else {
+            Debug.Log("Drink e food incorretos");
+            emojis[2].SetActive(true);
+        }
+
         ResetOrder();
-        // functionToWait(10);
     }
 
     public void ResetScene() {
@@ -134,10 +145,39 @@ public class ButtonsMiniGame : MonoBehaviour
     }
 
     public void ResetOrder() {
-        pedidos.Stop_Order();
+        // pedidos.Stop_Order();
         JogarFora_Drink();
         drink_btn.SetActive(false);
         JogarFora_Food();
         food_btn.SetActive(false);
+
+        reset_drinkOption();
+        reset_foodOption();
+
+        functionToWait(10);
+        pedidos.Stop_Order();
+        reset_emoji();
+    }
+
+    public void reset_drinkOption() {
+        for (int i = 0; i < drinks.drinkOptions.Length; i++) {
+            if (drinks.drinkOptions[i].activeSelf) {
+                drinks.drinkOptions[i].SetActive(false);
+            }
+        }
+    }
+    public void reset_foodOption() {
+        for (int i = 0; i < foods.foodOptions.Length; i++) {
+            if (foods.foodOptions[i].activeSelf) {
+                foods.foodOptions[i].SetActive(false);
+            }
+        }
+    }
+    public void reset_emoji() {
+        for (int i = 0; i < emojis.Length; i++) {
+            if (emojis[i].activeSelf) {
+                emojis[i].SetActive(false);
+            }
+        }
     }
 }

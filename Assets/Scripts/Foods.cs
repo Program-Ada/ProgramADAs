@@ -10,6 +10,8 @@ public class Foods : MonoBehaviour
     public bool containerExists;
     public ButtonsMiniGame buttonsMiniGame;
 
+    public GameObject[] foodOptions;
+
     void Start()
     {
         // containerFull = false;
@@ -26,6 +28,7 @@ public class Foods : MonoBehaviour
                 containerFull = true;
                 chosenOption = i;
                 buttonsMiniGame.prato.SetActive(false);
+                foodOptions[i].SetActive(true);
             }
         }
         else {

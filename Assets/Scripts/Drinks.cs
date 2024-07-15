@@ -10,6 +10,8 @@ public class Drinks : MonoBehaviour
     public bool containerExists;
     public ButtonsMiniGame buttonsMiniGame;
 
+    public GameObject[] drinkOptions;
+
     void Start()
     {
         // containerFull = false;
@@ -26,6 +28,7 @@ public class Drinks : MonoBehaviour
                 containerFull = true;
                 chosenOption = i;
                 buttonsMiniGame.copo.SetActive(false);
+                drinkOptions[i].SetActive(true);
             }
         }
         else {
