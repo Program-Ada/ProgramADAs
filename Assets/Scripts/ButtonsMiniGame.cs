@@ -122,6 +122,11 @@ public class ButtonsMiniGame : MonoBehaviour
         buttons[3].interactable = true;
     }
 
+    public void Trash() {
+        JogarFora_Drink();
+        JogarFora_Food();
+    }
+
     // public void Verifica_Drink() {
     //     if(pedidos.pedidoAtual.GetComponent<Pedido>().drink == drinks.chosenOption) {
     //         Debug.Log("Drink correto");
