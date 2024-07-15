@@ -41,4 +41,12 @@ public class Foods : MonoBehaviour
         chosenOption = -1;
         containerExists = false;
     }
+
+    public void reset_option() {
+        for (int i = 0; i < foodOptions.Length; i++) {
+            if (foodOptions[i].activeSelf) {
+                foodOptions[i].SetActive(false);
+            }
+        }
+    }
 }

@@ -43,4 +43,12 @@ public class Drinks : MonoBehaviour
         chosenOption = -1;
         containerExists = false;
     }
+
+    public void reset_option() {
+        for (int i = 0; i < drinkOptions.Length; i++) {
+            if (drinkOptions[i].activeSelf) {
+                drinkOptions[i].SetActive(false);
+            }
+        }
+    }
 }

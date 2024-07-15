@@ -9,17 +9,14 @@ using UnityEngine.PlayerLoop;
 public class ButtonsMiniGame : MonoBehaviour
 {
     // public GameObject pedidos;
-    public Orders pedidos;
-    public Drinks drinks;
-    public Foods foods;
+    private Orders pedidos;
+    private Drinks drinks;
+    private Foods foods;
+    private Button[] buttons;
     public GameObject drink_btn;
     public GameObject food_btn;
-    public Button[] buttons;
-
     public GameObject copo;
     public GameObject prato;
-
-    // public DialogueTrigger dialogueTrigger;
     public GameObject aleErroSemCopo;
     public GameObject[] emojis;
 
@@ -60,10 +57,12 @@ public class ButtonsMiniGame : MonoBehaviour
             emojis[2].SetActive(true);
         }
 
+        //preciso colocar um delay para mostrar o resultado, antes q ele reset
         ResetOrder();
     }
 
     public void ResetScene() {
+        //não está funcionando
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
@@ -123,26 +122,23 @@ public class ButtonsMiniGame : MonoBehaviour
         buttons[3].interactable = true;
     }
 
-    public void Verifica_Drink() {
-        if(pedidos.pedidoAtual.GetComponent<Pedido>().drink == drinks.chosenOption) {
-            Debug.Log("Drink correto");
-        }
-        // if(pedidos.GetComponent<Order>().chosenOptionDrink == drinks.chosenOption) {
-        //     Debug.Log("Drink correto ORDER");
-        // }
-        else {
-            Debug.Log("Drink Incorreto");
-        }
-    }
+    // public void Verifica_Drink() {
+    //     if(pedidos.pedidoAtual.GetComponent<Pedido>().drink == drinks.chosenOption) {
+    //         Debug.Log("Drink correto");
+    //     }
+    //     else {
+    //         Debug.Log("Drink Incorreto");
+    //     }
+    // }
 
-    public void Verifica_Food() {
-        if(pedidos.pedidoAtual.GetComponent<Pedido>().food == foods.chosenOption) {
-            Debug.Log("Food correto");
-        }
-        else {
-            Debug.Log("Food Incorreto");
-        }
-    }
+    // public void Verifica_Food() {
+    //     if(pedidos.pedidoAtual.GetComponent<Pedido>().food == foods.chosenOption) {
+    //         Debug.Log("Food correto");
+    //     }
+    //     else {
+    //         Debug.Log("Food Incorreto");
+    //     }
+    // }
 
     public void ResetOrder() {
         // pedidos.Stop_Order();
@@ -151,28 +147,14 @@ public class ButtonsMiniGame : MonoBehaviour
         JogarFora_Food();
         food_btn.SetActive(false);
 
-        reset_drinkOption();
-        reset_foodOption();
+        drinks.reset_option();
+        foods.reset_option();
 
-        functionToWait(10);
+        functionToWait(100); //não esta funcionando
         pedidos.Stop_Order();
         reset_emoji();
     }
 
-    public void reset_drinkOption() {
-        for (int i = 0; i < drinks.drinkOptions.Length; i++) {
-            if (drinks.drinkOptions[i].activeSelf) {
-                drinks.drinkOptions[i].SetActive(false);
-            }
-        }
-    }
-    public void reset_foodOption() {
-        for (int i = 0; i < foods.foodOptions.Length; i++) {
-            if (foods.foodOptions[i].activeSelf) {
-                foods.foodOptions[i].SetActive(false);
-            }
-        }
-    }
     public void reset_emoji() {
         for (int i = 0; i < emojis.Length; i++) {
             if (emojis[i].activeSelf) {
