@@ -2719,6 +2719,88 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &258592927
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 258592928}
+  - component: {fileID: 258592929}
+  - component: {fileID: 258592930}
+  m_Layer: 5
+  m_Name: ScrollArea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &258592928
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258592927}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 697970532}
+  m_Father: {fileID: 349658516}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -54}
+  m_SizeDelta: {x: 1150, y: 720}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &258592929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258592927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Content: {fileID: 697970532}
+  m_Horizontal: 0
+  m_Vertical: 1
+  m_MovementType: 1
+  m_Elasticity: 0.1
+  m_Inertia: 1
+  m_DecelerationRate: 0.135
+  m_ScrollSensitivity: 15
+  m_Viewport: {fileID: 258592928}
+  m_HorizontalScrollbar: {fileID: 0}
+  m_VerticalScrollbar: {fileID: 0}
+  m_HorizontalScrollbarVisibility: 0
+  m_VerticalScrollbarVisibility: 0
+  m_HorizontalScrollbarSpacing: 0
+  m_VerticalScrollbarSpacing: 0
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &258592930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258592927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding: {x: 0, y: 0, z: 0, w: 0}
+  m_Softness: {x: 0, y: 0}
 --- !u!1 &279718026
 GameObject:
   m_ObjectHideFlags: 0
@@ -3453,7 +3535,7 @@ RectTransform:
   m_Children:
   - {fileID: 1273676452}
   - {fileID: 1997856912}
-  - {fileID: 1141425401}
+  - {fileID: 258592928}
   - {fileID: 1172631938}
   - {fileID: 820510249}
   m_Father: {fileID: 204930798}
@@ -7281,6 +7363,84 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &697970531
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 697970532}
+  - component: {fileID: 697970533}
+  - component: {fileID: 697970534}
+  m_Layer: 5
+  m_Name: ScrollContent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &697970532
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697970531}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1141425401}
+  m_Father: {fileID: 258592928}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 359.99997}
+  m_SizeDelta: {x: 1150, y: 0}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &697970533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697970531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 60
+    m_Right: 60
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
+--- !u!114 &697970534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697970531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
 --- !u!1001 &698921368
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9032,34 +9192,33 @@ MonoBehaviour:
     content: "<u>Introdu\xE7\xE3o</u>\n\n<b>O processador</b> realiza as instru\xE7\xF5es
       de um programa de computador, controla o uso\r\nda entrada, da mem\xF3ria e
       da sa\xEDda e da comunica\xE7\xE3o entre estes, controla a\r\nmem\xF3ria alocando
-      espa\xE7o, gravando informa\xE7\xF5es e buscando informa\xE7\xF5es.\n\r\n<page><u>Introdu\xE7\xE3o</u>\n\n<b>A
+      espa\xE7o, gravando informa\xE7\xF5es e buscando informa\xE7\xF5es.\n\r\n<u>Introdu\xE7\xE3o</u>\n\n<b>A
       mem\xF3ria</b> s\xE3o valores atuais para cada dado.\n\r\n<b>A entrada</b>
       s\xE3o valores digitados pelo usu\xE1rio.\n\r\n<b>A sa\xEDda</b> s\xE3o textos
-      e valores impressos na tela.\n\n<page><u>Entrada de dados</u>\n\r\n<b>cin>></b>
-      seguido \xFAnicamente por vari\xE1veis;\n\r\n>>\xE9 necess\xE1rio ter \u201C>>\u201D;\r\n>>
+      e valores impressos na tela.\n\n<u>Entrada de dados</u>\n\r\n<b>cin>></b> seguido
+      \xFAnicamente por vari\xE1veis;\n\r\n>>\xE9 necess\xE1rio ter \u201C>>\u201D;\r\n>>
       termina com \u201C;\u201D;\n\r\npode ser escrito tanto desse modo:\n\r\ncin>>
-      varA>> varB;\n\r\n<page><u>Entrada de dados</u>\n\nquanto como esse:\n\r\ncin>>varA;\r\ncin>>varB;\n\r\n<page><u>Tipos
+      varA>> varB;\n\r\n<u>Entrada de dados</u>\n\nquanto como esse:\n\r\ncin>>varA;\r\ncin>>varB;\n\r\n<u>Tipos
       de Vari\xE1veis</u>\n\n<b>int, float, char-></b> tipos de dados, vari\xE1veis
       ou atribui\xE7\xF5es, que podem ser\r\nnecess\xE1rios.\n\r\n<b>int -></b> valores
-      inteiros.\nex: int idade\r\nidade=18\n\n<page><u>Tipos de Vari\xE1veis</u>\n\n<b>float-></b>
+      inteiros.\nex: int idade\r\nidade=18\n\n<u>Tipos de Vari\xE1veis</u>\n\n<b>float-></b>
       valores reais.\r\nex: int altura\r\naltura=1,64\n\r\n<b>char-></b> car\xE1cter.\r\nex:
-      char letra\r\nletra=C\n\n<page><u>Sa\xEDda de dados</u>\n\r\n<b>cout<<</b>
-      o valor a ser impresso sempre vai para a sa\xEDda (tela);\n\r\n<< \xE9 necess\xE1rio
-      ter \u201C<<\u201D;\r\n<< termina com \u201C;\u201D;\n\r\n<page><u>Sa\xEDda
-      de dados</u>\n\n<b>Obs:</b> O caracter \u201C/n\u201D e o comando \u201Cendl\u201D
-      podem ser usados para mudar de linha em\r\num c\xF3digo.\n\r\n<b>EX:</b> cout
-      << \"x\\nxxx\";\r\ncout << \"x\" << endl\r\n<< \"xxx\";\n\n<page><u>Operadores
-      relacionais</u>\n\r\n== igual;\r\n!+ diferente;\r\n> maior;\r\n< menor;\r\n>=
-      maior ou igual;\r\n<= menor ou igual;\n\n<page><u>Operadores aritm\xE9ticos</u>\n\r\n!
-      nega\xE7\xE3o;\r\n+ adi\xE7\xE3o;\r\n- subtra\xE7\xE3o;\r\n* multiplica\xE7\xE3o;\r\n/
-      divis\xE3o;\r\n%resto da divis\xE3o;\n\n<page><u>Operadores l\xF3gicos</u>\n\n<b>&&
-      -></b> operador AND l\xF3gico, retorna \u201Ctrue\u201D quando os dois casos
-      s\xE3o verdadeiros e\r\n\u201Cfalse\u201D quando um ou ambos os casos s\xE3o
-      falsos.\n\r\n<b>| | -></b> operador OR l\xF3gico, retorna \u201Ctrue\u201D
-      quando um ou ambos os casos s\xE3o verdadeiros e\r\n\u201Cfalse\u201D quando
-      ambos os casos s\xE3o falsos.\n\n<page><u>Teste de mesa</u>\n\r\n<b>O teste
+      char letra\r\nletra=C\n\n<u>Sa\xEDda de dados</u>\n\r\n<b>cout<<</b> o valor
+      a ser impresso sempre vai para a sa\xEDda (tela);\n\r\n<< \xE9 necess\xE1rio
+      ter \u201C<<\u201D;\r\n<< termina com \u201C;\u201D;\n\r\n<u>Sa\xEDda de dados</u>\n\n<b>Obs:</b>
+      O caracter \u201C/n\u201D e o comando \u201Cendl\u201D podem ser usados para
+      mudar de linha em\r\num c\xF3digo.\n\r\n<b>EX:</b> cout << \"x\\nxxx\";\r\ncout
+      << \"x\" << endl\r\n<< \"xxx\";\n\n<u>Operadores relacionais</u>\n\r\n== igual;\r\n!+
+      diferente;\r\n> maior;\r\n< menor;\r\n>= maior ou igual;\r\n<= menor ou igual;\n\n<u>Operadores
+      aritm\xE9ticos</u>\n\r\n! nega\xE7\xE3o;\r\n+ adi\xE7\xE3o;\r\n- subtra\xE7\xE3o;\r\n*
+      multiplica\xE7\xE3o;\r\n/ divis\xE3o;\r\n%resto da divis\xE3o;\n\n<u>Operadores
+      l\xF3gicos</u>\n\n<b>&& -></b> operador AND l\xF3gico, retorna \u201Ctrue\u201D
+      quando os dois casos s\xE3o verdadeiros e\r\n\u201Cfalse\u201D quando um ou
+      ambos os casos s\xE3o falsos.\n\r\n<b>| | -></b> operador OR l\xF3gico, retorna
+      \u201Ctrue\u201D quando um ou ambos os casos s\xE3o verdadeiros e\r\n\u201Cfalse\u201D
+      quando ambos os casos s\xE3o falsos.\n\n<u>Teste de mesa</u>\n\r\n<b>O teste
       de mesa</b> \xE9 uma t\xE9cnica usada para testar e garantir que nenhum erro
-      l\xF3gico\r\nocorra com o algoritmo durante a execu\xE7\xE3o.\n\r\r\r\r\n<page><u>Exemplo
+      l\xF3gico\r\nocorra com o algoritmo durante a execu\xE7\xE3o.\n\r\r\r\r\n<u>Exemplo
       de um c\xF3digo simples</u>\n\r\n#include <iostream>\r\nusing namespace std;\r\nint
       main()\r\n{\r\nint a, b, soma;\r\ncin>> a>>b;\r\nsoma=a+b;\r\ncout<<soma;\r\nreturn
       0;\r\n}"
@@ -10867,6 +11026,7 @@ GameObject:
   - component: {fileID: 1141425401}
   - component: {fileID: 1141425403}
   - component: {fileID: 1141425402}
+  - component: {fileID: 1141425404}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -10881,18 +11041,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1141425400}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 349658516}
+  m_Father: {fileID: 697970532}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1}
-  m_SizeDelta: {x: 940, y: 630}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 575, y: 0}
+  m_SizeDelta: {x: 1030, y: 0}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1141425402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10922,8 +11082,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281473358
-  m_fontColor: {r: 0.30588236, g: 0.098039225, b: 0.19607845, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -10958,7 +11118,7 @@ MonoBehaviour:
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
-  m_overflowMode: 5
+  m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
@@ -10990,6 +11150,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1141425400}
   m_CullTransparentMesh: 1
+--- !u!114 &1141425404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141425400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
 --- !u!1 &1145220566
 GameObject:
   m_ObjectHideFlags: 0
@@ -11307,7 +11481,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1172631938
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12281,8 +12455,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1000, y: 830}
+  m_AnchoredPosition: {x: -1.6508, y: -0.00002265}
+  m_SizeDelta: {x: 1159.7, y: 830}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1273676453
 MonoBehaviour:
@@ -12297,7 +12471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8000001, g: 0.5803922, b: 0.64705884, a: 1}
+  m_Color: {r: 0.03773582, g: 0, b: 0.03327144, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -17219,7 +17393,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1997856911}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -17260,8 +17434,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281473358
-  m_fontColor: {r: 0.30588236, g: 0.098039225, b: 0.19607845, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -19884,7 +20058,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7619920319992243441, guid: de51ef64bd060a9409d4a19cc717149c, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19990,6 +20164,10 @@ PrefabInstance:
     - target: {fileID: 3690822003132288492, guid: 727e918e195a92348a3a5b74124c490f, type: 3}
       propertyPath: m_Name
       value: DialogueBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 3690822003132288492, guid: 727e918e195a92348a3a5b74124c490f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5824891001083722505, guid: 727e918e195a92348a3a5b74124c490f, type: 3}
       propertyPath: m_SizeDelta.x
