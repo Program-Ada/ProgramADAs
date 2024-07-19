@@ -113,10 +113,10 @@ TextureImporter:
       name: PAREDE TRAS_0
       rect:
         serializedVersion: 2
-        x: 1886
+        x: 1898
         y: 2063
-        width: 454
-        height: 1974
+        width: 442
+        height: 1978
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -135,9 +135,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2307
-        y: 3794
-        width: 1187
-        height: 695
+        y: 4207
+        width: 333
+        height: 285
       alignment: 9
       pivot: {x: 0.4959115, y: 0.06357352}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,9 +156,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 4020
+        y: 4034
         width: 2317
-        height: 479
+        height: 476
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +176,10 @@ TextureImporter:
       name: PAREDE TRAS_3
       rect:
         serializedVersion: 2
-        x: 2317
-        y: 4618
-        width: 934
-        height: 66
+        x: 2896
+        y: 3800
+        width: 140
+        height: 515
       alignment: 9
       pivot: {x: 0.6138516, y: 0.5796208}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -403,6 +403,132 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: PAREDE TRAS_14
+      rect:
+        serializedVersion: 2
+        x: 3144
+        y: 4207
+        width: 344
+        height: 275
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 249df70bf83979741850878ced566ddf
+      internalID: 2091751502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAREDE TRAS_15
+      rect:
+        serializedVersion: 2
+        x: 2616
+        y: 4293
+        width: 554
+        height: 196
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17500ab821a95eb4191e4b01711825b0
+      internalID: -523632931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAREDE TRAS_16
+      rect:
+        serializedVersion: 2
+        x: 2617
+        y: 3798
+        width: 556
+        height: 522
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4265bacd6b7052f4a98653153edcd4fe
+      internalID: 970564611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAREDE TRAS_17
+      rect:
+        serializedVersion: 2
+        x: 3147
+        y: 3805
+        width: 332
+        height: 411
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e4ec98ab3b3a2e4886e7a4fd53f7d6c
+      internalID: 338505052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAREDE TRAS_18
+      rect:
+        serializedVersion: 2
+        x: 2307
+        y: 3803
+        width: 334
+        height: 402
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5ae77fc8b477a543a49fa7f044f8099
+      internalID: -287652275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAREDE TRAS_19
+      rect:
+        serializedVersion: 2
+        x: 2749
+        y: 3799
+        width: 144
+        height: 515
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb4b9bcb5b81954e990a7143de4087e
+      internalID: 1425726541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -420,6 +546,12 @@ TextureImporter:
       PAREDE TRAS_11: 918798714
       PAREDE TRAS_12: -2054749292
       PAREDE TRAS_13: -835907851
+      PAREDE TRAS_14: 2091751502
+      PAREDE TRAS_15: -523632931
+      PAREDE TRAS_16: 290541525
+      PAREDE TRAS_17: 338505052
+      PAREDE TRAS_18: -287652275
+      PAREDE TRAS_19: 1425726541
       PAREDE TRAS_2: -317727139
       PAREDE TRAS_3: -1201233933
       PAREDE TRAS_4: -1726383772
