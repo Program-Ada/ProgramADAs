@@ -33,6 +33,7 @@ public class Foods : MonoBehaviour
         }
         else {
             Debug.Log("Não tem Prato = Bolo na mesa");
+            buttonsMiniGame.Feedback_Test();
         }
     }
 

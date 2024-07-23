@@ -57,8 +57,8 @@ public class ButtonsMiniGame : MonoBehaviour
             emojis[2].SetActive(true);
         }
 
-        //preciso colocar um delay para mostrar o resultado, antes q ele reset
-        ResetOrder();
+        Invoke(nameof(ResetOrder), 4);
+        // ResetOrder();
     }
 
     public void ResetScene() {
@@ -68,16 +68,11 @@ public class ButtonsMiniGame : MonoBehaviour
 
     public void Feedback_Test() {
         aleErroSemCopo.SetActive(true);
-        functionToWait(10); //dialogo não abre na primeira vez pq ainda nao existe, mas na segunda abre
-        aleErroSemCopo.GetComponent<DialogueTrigger>().TriggerDialogue();
-        // aleErroSemCopo.SetActive(true);
-        // if(aleErroSemCopo.activeSelf) {
-        //     aleErroSemCopo.GetComponent<DialogueTrigger>().TriggerDialogue();
-        // }
+        Invoke(nameof(Feedback_Test2), 1);
     }
 
-    IEnumerator functionToWait(int duration) {
-        yield return new WaitForSeconds(duration);
+    public void Feedback_Test2() {
+        aleErroSemCopo.GetComponent<DialogueTrigger>().TriggerDialogue();
     }
 
     public void Pegar_Suco() {
@@ -127,24 +122,6 @@ public class ButtonsMiniGame : MonoBehaviour
         JogarFora_Food();
     }
 
-    // public void Verifica_Drink() {
-    //     if(pedidos.pedidoAtual.GetComponent<Pedido>().drink == drinks.chosenOption) {
-    //         Debug.Log("Drink correto");
-    //     }
-    //     else {
-    //         Debug.Log("Drink Incorreto");
-    //     }
-    // }
-
-    // public void Verifica_Food() {
-    //     if(pedidos.pedidoAtual.GetComponent<Pedido>().food == foods.chosenOption) {
-    //         Debug.Log("Food correto");
-    //     }
-    //     else {
-    //         Debug.Log("Food Incorreto");
-    //     }
-    // }
-
     public void ResetOrder() {
         // pedidos.Stop_Order();
         JogarFora_Drink();
@@ -155,7 +132,6 @@ public class ButtonsMiniGame : MonoBehaviour
         drinks.reset_option();
         foods.reset_option();
 
-        functionToWait(100); //não esta funcionando
         pedidos.Stop_Order();
         reset_emoji();
     }

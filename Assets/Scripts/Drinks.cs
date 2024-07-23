@@ -33,8 +33,7 @@ public class Drinks : MonoBehaviour
         }
         else {
             Debug.Log("Não tem Copo = Suco derramado");
-            // buttonsMiniGame.Feedback_Test();
-            // buttonsMiniGame.Feedback_Test();
+            buttonsMiniGame.Feedback_Test();
         }
     }
 
