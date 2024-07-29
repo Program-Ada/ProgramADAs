@@ -9,6 +9,7 @@ public class Drinks : MonoBehaviour
     public int chosenOption;
     public bool containerExists;
     public ButtonsMiniGame buttonsMiniGame;
+    public Feedbacks feedbacks;
 
     public GameObject[] drinkOptions;
 
@@ -19,6 +20,7 @@ public class Drinks : MonoBehaviour
         // containerExists = false;
         Reset_teste();
         buttonsMiniGame = FindAnyObjectByType<ButtonsMiniGame>();
+        feedbacks = FindAnyObjectByType<Feedbacks>();
     }
 
     public void Show_Option(int i) {
@@ -33,7 +35,7 @@ public class Drinks : MonoBehaviour
         }
         else {
             Debug.Log("Não tem Copo = Suco derramado");
-            buttonsMiniGame.Feedback_Test();
+            feedbacks.Feedback_Test("semCopo");
         }
     }
 

@@ -9,6 +9,7 @@ public class Foods : MonoBehaviour
     public int chosenOption = -1;
     public bool containerExists;
     public ButtonsMiniGame buttonsMiniGame;
+    public Feedbacks feedbacks;
 
     public GameObject[] foodOptions;
 
@@ -19,6 +20,7 @@ public class Foods : MonoBehaviour
         // containerExists = false;
         Reset_teste();
         buttonsMiniGame = FindAnyObjectByType<ButtonsMiniGame>();
+        feedbacks = FindAnyObjectByType<Feedbacks>();
     }
 
     public void Show_Option(int i) {
@@ -33,7 +35,7 @@ public class Foods : MonoBehaviour
         }
         else {
             Debug.Log("Não tem Prato = Bolo na mesa");
-            buttonsMiniGame.Feedback_Test();
+            feedbacks.Feedback_Test("erro2");
         }
     }
 

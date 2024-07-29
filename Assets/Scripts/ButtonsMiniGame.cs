@@ -66,15 +66,6 @@ public class ButtonsMiniGame : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    public void Feedback_Test() {
-        aleErroSemCopo.SetActive(true);
-        Invoke(nameof(Feedback_Test2), 1);
-    }
-
-    public void Feedback_Test2() {
-        aleErroSemCopo.GetComponent<DialogueTrigger>().TriggerDialogue();
-    }
-
     public void Pegar_Suco() {
         drink_btn.SetActive(true);
         buttons[2].interactable = false;
