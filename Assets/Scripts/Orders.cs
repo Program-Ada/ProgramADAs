@@ -6,31 +6,25 @@ using UnityEngine;
 
 public class Orders : MonoBehaviour
 {
-    public List<GameObject> orders;
-    // public Component[] orders;
-    public List<GameObject> ordersClones;
+    public Pedido[] orders;
+    public List<Pedido> ordersClones;
     public GameObject pedidoAtual;
     public bool pedidoEmAndamento;
-
-    public GameObject order;
 
     void Start()
     {
         //trocar para pegar automaticamente os fillhos ao inves de ter q ligar cada um deles
-        // orders = this.GetComponentsInChildren<Orders>(true);
-        // Debug.Log("AQUI: " + orders.Length);
-        ordersClones = new List<GameObject>(orders);
+        orders = this.GetComponentsInChildren<Pedido>(true);
+        ordersClones = new List<Pedido>(orders);
         pedidoEmAndamento = false;
-
-        // Create_Order();
     }
 
     public void Show_Order() {
         if(ordersClones.Count > 0) {
             pedidoEmAndamento = true;
             int randomNumber = Random.Range(0, ordersClones.Count);
-            ordersClones[randomNumber].SetActive(true);
-            pedidoAtual = ordersClones[randomNumber];
+            ordersClones[randomNumber].gameObject.SetActive(true);
+            pedidoAtual = ordersClones[randomNumber].gameObject;
             ordersClones.RemoveAt(randomNumber);
         }
         else {
@@ -42,14 +36,4 @@ public class Orders : MonoBehaviour
         pedidoAtual.SetActive(false);
         pedidoEmAndamento = false;
     }
-
-    // public void Create_Order() {
-    //     order = new GameObject();
-    //     order.name = "Order";
-    //     order.transform.SetParent(this.gameObject.transform);
-    //     order.AddComponent<Order>();
-    //     order.AddComponent<RectTransform>();
-    //     RectTransform rt = order.GetComponent<RectTransform>();
-    //     rt.anchoredPosition = Vector3.zero;
-    // }
 }

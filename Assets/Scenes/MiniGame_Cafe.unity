@@ -14931,17 +14931,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6afc41f8830748c38629a6f1e215882, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  orders:
-  - {fileID: 1869119233}
-  - {fileID: 1928761140}
-  - {fileID: 1216368267}
-  - {fileID: 580406822}
-  - {fileID: 840456312}
-  - {fileID: 35066731}
+  orders: []
   ordersClones: []
   pedidoAtual: {fileID: 1926022810}
   pedidoEmAndamento: 0
-  order: {fileID: 0}
 --- !u!1 &2099150609
 GameObject:
   m_ObjectHideFlags: 0
