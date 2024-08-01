@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 93cb22a0d6f24b34aa056d050c399691
+guid: a1ecfcb654cff0e4bbc7b6eaf97c5ce7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -70,8 +70,8 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 1
-    textureFormat: 4
+    resizeAlgorithm: 0
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IDLECOSTAS_0
+      name: ONIBUS_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 42
-        width: 203
-        height: 357
+        x: 152
+        y: 264
+        width: 1831
+        height: 752
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,71 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1ebabbef5323db48b565fedbf7e765b
-      internalID: 45588262
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IDLECOSTAS_1
-      rect:
-        serializedVersion: 2
-        x: 231
-        y: 42
-        width: 203
-        height: 357
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 13852e4c375fc3f4e9057d2cc0086bff
-      internalID: 1010157188
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IDLECOSTAS_2
-      rect:
-        serializedVersion: 2
-        x: 455
-        y: 42
-        width: 203
-        height: 357
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0b029d9c9e3e27d48af61bb86a47a6ca
-      internalID: 57591727
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IDLECOSTAS_3
-      rect:
-        serializedVersion: 2
-        x: 679
-        y: 42
-        width: 203
-        height: 357
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c787af195309eb14485c2f0f8c382350
-      internalID: -2080693531
+      spriteID: fb931868da7cb1840b46fa9dd5a43fa3
+      internalID: 1153178467
       vertices: []
       indices: 
       edges: []
@@ -217,10 +154,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      IDLECOSTAS_0: 45588262
-      IDLECOSTAS_1: 1010157188
-      IDLECOSTAS_2: 57591727
-      IDLECOSTAS_3: -2080693531
+      ONIBUS_0: 1153178467
+      ONIBUS_1: 1921287193
+      ONIBUS_2: 835119596
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 93cb22a0d6f24b34aa056d050c399691
+guid: afb576e4737afeb4980f558966ab0e5b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,91 +121,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: IDLECOSTAS_0
-      rect:
-        serializedVersion: 2
-        x: 7
-        y: 42
-        width: 203
-        height: 357
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a1ebabbef5323db48b565fedbf7e765b
-      internalID: 45588262
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IDLECOSTAS_1
-      rect:
-        serializedVersion: 2
-        x: 231
-        y: 42
-        width: 203
-        height: 357
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 13852e4c375fc3f4e9057d2cc0086bff
-      internalID: 1010157188
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IDLECOSTAS_2
-      rect:
-        serializedVersion: 2
-        x: 455
-        y: 42
-        width: 203
-        height: 357
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0b029d9c9e3e27d48af61bb86a47a6ca
-      internalID: 57591727
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IDLECOSTAS_3
-      rect:
-        serializedVersion: 2
-        x: 679
-        y: 42
-        width: 203
-        height: 357
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c787af195309eb14485c2f0f8c382350
-      internalID: -2080693531
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -216,11 +132,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      IDLECOSTAS_0: 45588262
-      IDLECOSTAS_1: 1010157188
-      IDLECOSTAS_2: 57591727
-      IDLECOSTAS_3: -2080693531
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
