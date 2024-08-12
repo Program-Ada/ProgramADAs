@@ -93,7 +93,6 @@ public class QuizManager : MonoBehaviour, IDataPersistence
             FindObjectOfType<QuestManager>().UpdateQuestText(4);
         }
         DataPersistenceManager.Instance.SaveGame();
-        GameManager.Instance.QuizScore = media;
     }
 
     public void Correct(){
