@@ -60,7 +60,7 @@ public class DataPersistenceManager : MonoBehaviour
         if(lastScene == "GameSelection"){
             Tutorial.Instance.OpenTutorial();
         }
-
+        
         lastScene = scene.name; 
     }
 
