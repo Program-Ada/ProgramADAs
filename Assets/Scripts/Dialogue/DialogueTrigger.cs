@@ -11,10 +11,12 @@ public class DialogueTrigger : MonoBehaviour
     public bool isExclamationActive;
     public GameObject barbaraExclamation;
     public DialogueManager dm;
+    public MiniGameManager miniGameManager;
     [SerializeField]GameObject toolTip;
 
     void Start(){
         dm = FindObjectOfType<DialogueManager>();
+        miniGameManager = FindObjectOfType<MiniGameManager>();
         toolTip.SetActive(false);
         barbaraExclamation = GameObject.Find("Barbara/Exclamation");
     }
@@ -24,7 +26,7 @@ public class DialogueTrigger : MonoBehaviour
             SoundManager.sm.Click();
             TriggerDialogue();
         }else if(Input.GetKeyDown(KeyCode.E) && playerIsClose && playerIsChatting){
-            dm.DisplayNextSentence();
+            dm.DisplayNextSentence(dialogue);
         }
     }
     public void TriggerDialogue(){
@@ -56,11 +58,15 @@ public class DialogueTrigger : MonoBehaviour
             playerIsChatting = false;
             toolTip.SetActive(false);
             dm.EndDialogue();
+<<<<<<< HEAD:Assets/Scripts/Dialogue/DialogueTrigger.cs
 
             if(isExclamationActive){
                 isExclamationActive = false;
                 barbaraExclamation.SetActive(true);
             }
+=======
+            miniGameManager.CloseAskMiniGame();
+>>>>>>> fase_CafeDasMinas:Assets/Scripts/DialogueTrigger.cs
         }
     }
 }

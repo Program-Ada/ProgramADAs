@@ -4,9 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< HEAD
   - NotePadNotification
   - Chapter_Btn
   - NotePadCanvas
+=======
+  - Food_MG
+>>>>>>> fase_CafeDasMinas
   layers:
   - Default
   - TransparentFX

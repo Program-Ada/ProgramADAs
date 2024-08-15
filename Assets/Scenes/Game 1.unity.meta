@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: f8768b9b95ad046ec97899bd5469119e
+<<<<<<<< HEAD:Assets/Scenes/Game 1.unity.meta
+guid: b1c45fbf2530b4cf584468a3132c7630
+========
+guid: 7e64f6739adfc4cf78677b32ae4b0336
+>>>>>>>> fase_CafeDasMinas:Assets/Scenes/MiniGame_Cafe.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

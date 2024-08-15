@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: 701e0a7836cc54b4c95f6734f98ebfe6
+<<<<<<<< HEAD:Assets/Scenes/Credits.unity.meta
+guid: 8c0c406565f334973bf56dd161c115f9
+========
+guid: 1e8d21181d18b41849b5fd788f7e289c
+>>>>>>>> fase_CafeDasMinas:Assets/Scenes/Fase_Cafe.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

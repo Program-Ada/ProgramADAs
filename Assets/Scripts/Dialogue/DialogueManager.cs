@@ -10,18 +10,21 @@ public class DialogueManager : MonoBehaviour{
     public TextMeshProUGUI dialogueText;
     public Image npcImage;
     public bool pularTexto = false;
-
+    
     public Animator animator;
+    // public Animator animatorMiniGame;
 
     private Queue<string> sentences;
 
     // Start is called before the first frame update
     void Start(){
         sentences = new Queue<string>();
-        
     }
 
     public void StartDialogue(Dialogue dialogue){
+        if (dialogue.haveQuestion) {
+            dialogue.question.SetActive(false);
+        }
 
         animator.SetBool("IsOpen", true);
 
@@ -34,17 +37,21 @@ public class DialogueManager : MonoBehaviour{
             sentences.Enqueue(sentence);
         }
 
-        DisplayNextSentence();
+        DisplayNextSentence(dialogue);
     }
 
     string sentence = "";
 
-    public void DisplayNextSentence(){
+    public void DisplayNextSentence(Dialogue dialogue){
         if(pularTexto){
             pularTexto = false;
             StopAllCoroutines();
             dialogueText.text = sentence;
             return;
+        }
+        //gambiarra, se tiver mais uma sentenca (ideal q esteja vazia) e tiver a pergunta, ele vai ativar o gameObject linkado
+        if (dialogue.haveQuestion && sentences.Count == 1) {
+            dialogue.question.SetActive(true);
         }
         if(sentences.Count == 0){
             EndDialogue();
