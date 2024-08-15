@@ -58,15 +58,12 @@ public class DialogueTrigger : MonoBehaviour
             playerIsChatting = false;
             toolTip.SetActive(false);
             dm.EndDialogue();
-<<<<<<< HEAD:Assets/Scripts/Dialogue/DialogueTrigger.cs
 
             if(isExclamationActive){
                 isExclamationActive = false;
                 barbaraExclamation.SetActive(true);
             }
-=======
             miniGameManager.CloseAskMiniGame();
->>>>>>> fase_CafeDasMinas:Assets/Scripts/DialogueTrigger.cs
         }
     }
 }
