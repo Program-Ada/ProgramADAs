@@ -22,13 +22,13 @@ public class GameSelectionMenu : MonoBehaviour
         // Cria um novo jogo - o qual vai iniciar os dados do jogo
         DataPersistenceManager.Instance.NewGame();
         // Carrega a Cena de Gameplay - a qual vai salvar o jogo devido ao OnSCeneUnloaded()
-        SceneManager.LoadSceneAsync("Game");
+        SceneManager.LoadSceneAsync("InicialCutscene");
     }
 
     public void OnContinueGameClicked(){
         DisableMenuButtons();
         // Carrewga a próxima scena - a qual vai carregar os dados do jogo devido ao OnSceneLoaded()
-        SceneManager.LoadSceneAsync("Game");
+        //SceneManager.LoadSceneAsync("Game");
     }
 
     private void DisableMenuButtons(){
