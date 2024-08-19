@@ -12,7 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Game.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-<<<<<<< HEAD
     path: Assets/Scenes/GameSelection.unity
     guid: 02bc9c74e8793d0428e8513bbbe3aac2
   - enabled: 1
@@ -24,7 +23,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 701e0a7836cc54b4c95f6734f98ebfe6
-=======
     path: Assets/Scenes/Fase_Lab.unity
     guid: bb80a1b5d6ef3a10eaf2c85e53d11053
   - enabled: 1
@@ -36,5 +34,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/End.unity
     guid: b8debd2ecf8e6bb4090ffa46e26d5cb7
->>>>>>> fase_CafeDasMinas
   m_configObjects: {}
