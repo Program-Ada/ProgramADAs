@@ -25,8 +25,8 @@ public class MiniGameManager : MonoBehaviour
     }
 
     public void SetUpMiniGame(){
-        nameText.text = dialogueTrigger.dialogue.name;
-        npcImage.sprite = dialogueTrigger.dialogue.image;
+        //nameText.text = dialogueTrigger.dialogue.name;
+        //npcImage.sprite = dialogueTrigger.dialogue.image;
     }
 
     public void OpenAskMiniGame(){

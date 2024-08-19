@@ -39,20 +39,20 @@ public class DialogueFeedback : MonoBehaviour
     }
 
     public void StartDialogue(Dialogue dialogue){
-        if (dialogue.haveQuestion) {
-            dialogue.question.SetActive(false);
-        }
+        //if (dialogue.haveQuestion) {
+        //    dialogue.question.SetActive(false);
+        //}
 
         animator.SetBool("IsOpen", true);
 
-        nameText.text = dialogue.name;
-        npcImage.sprite = dialogue.image;
+        //nameText.text = dialogue.name;
+        //npcImage.sprite = dialogue.image;
 
         sentences.Clear();
 
-        foreach (string sentence in dialogue.setences){
-            sentences.Enqueue(sentence);
-        }
+        //foreach (string sentence in dialogue.setences){
+        //    sentences.Enqueue(sentence);
+        //}
 
         DisplayNextSentence(dialogue);
     }
