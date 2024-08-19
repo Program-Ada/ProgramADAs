@@ -11,8 +11,6 @@ public class ExitDoor : MonoBehaviour
     //public GameObject ExitOptionCanvasFalse;
     public GameObject Player;
     public string nextSceneName;
-    public GameObject ExitConfirmationMenu;
-    public bool isFaseCompleted;
     [SerializeField]GameObject toolTip;
 
     void Start(){
@@ -23,21 +21,8 @@ public class ExitDoor : MonoBehaviour
 
     void Update(){
         if(Input.GetKeyDown(KeyCode.E) && playerIsClose){
-
-            if(!isFaseCompleted){
-                ExitConfirmationMenu.SetActive(true);
-                Player.GetComponent<PlayerMovement>().enabled = false;
-
-            }else{
-                LoadNextScene();
-            }
+            LoadNextScene();
         }
-    }
-
-    public void OkButton(){
-        ExitConfirmationMenu.SetActive(false);
-        Player.GetComponent<PlayerMovement>().enabled = true;
-
     }
     /*public void TriggerExitOption(){
         toolTip.SetActive(false);

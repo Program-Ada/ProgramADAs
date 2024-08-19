@@ -49,6 +49,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                 }
                 if(pointFases[0] >= 75 || index == 4){
                     DisplayNextSentence("Vá ao Centro de Convivência");
+                    GameManager.Instance.doorArrow.SetActive(true);
                 }
             }
         }
