@@ -1,0 +1,338 @@
+fileFormatVersion: 2
+guid: 91d1cb538b6dd3143949e4519d698594
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Portrait_Ada_20
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 1093
+        width: 588
+        height: 751
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f6fb972a6677334eb23fdf2e03ffaff
+      internalID: -616112395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait_Ada_28
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1090
+        width: 834
+        height: 755
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebf48b640982dd545a0d1401bc60d270
+      internalID: 1776885524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait_Ada_32
+      rect:
+        serializedVersion: 2
+        x: 2050
+        y: 1095
+        width: 597
+        height: 713
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e978c58356db5be49a91957cd0c9c9e9
+      internalID: 571824731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait_Ada_44
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 127
+        width: 655
+        height: 804
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7b69405e0b64594d896f415012f3d78
+      internalID: 1816741521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait_Ada_46
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 115
+        width: 684
+        height: 762
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 818e6c79966b561439c123d3b5e2842a
+      internalID: 1151450093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait_Ada_47
+      rect:
+        serializedVersion: 2
+        x: 1724
+        y: 132
+        width: 587
+        height: 718
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff969c13e33314949b84361cbf7068ab
+      internalID: -130582677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portrait_Ada_48
+      rect:
+        serializedVersion: 2
+        x: 2406
+        y: 137
+        width: 553
+        height: 732
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e424f18b4f5801b478abe3d201b1b6fb
+      internalID: -1487983511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Portrait_Ada_0: 805243025
+      Portrait_Ada_1: 586176301
+      Portrait_Ada_10: -1587560618
+      Portrait_Ada_11: 2141482606
+      Portrait_Ada_12: 1340409154
+      Portrait_Ada_13: -1406950655
+      Portrait_Ada_14: 1942172607
+      Portrait_Ada_15: -1769305427
+      Portrait_Ada_16: -1874827389
+      Portrait_Ada_17: 146056291
+      Portrait_Ada_18: -904708509
+      Portrait_Ada_19: 1391341478
+      Portrait_Ada_2: -1910966380
+      Portrait_Ada_20: -616112395
+      Portrait_Ada_21: 544755491
+      Portrait_Ada_22: -308361619
+      Portrait_Ada_23: -90429724
+      Portrait_Ada_24: 1626715441
+      Portrait_Ada_25: 2136360909
+      Portrait_Ada_26: -858309376
+      Portrait_Ada_27: -1218053328
+      Portrait_Ada_28: 1776885524
+      Portrait_Ada_29: -1885106596
+      Portrait_Ada_3: -442736244
+      Portrait_Ada_30: -1333365573
+      Portrait_Ada_31: 1658912771
+      Portrait_Ada_32: 571824731
+      Portrait_Ada_33: 841670623
+      Portrait_Ada_34: -1554048242
+      Portrait_Ada_35: 395111303
+      Portrait_Ada_36: -83327018
+      Portrait_Ada_37: -544872266
+      Portrait_Ada_38: -761832713
+      Portrait_Ada_39: 673833005
+      Portrait_Ada_4: 1540866206
+      Portrait_Ada_40: 1997648567
+      Portrait_Ada_41: 785139285
+      Portrait_Ada_42: 91751855
+      Portrait_Ada_43: -1485934645
+      Portrait_Ada_44: 1816741521
+      Portrait_Ada_45: -113766454
+      Portrait_Ada_46: 1151450093
+      Portrait_Ada_47: -130582677
+      Portrait_Ada_48: -1487983511
+      Portrait_Ada_49: 1397554080
+      Portrait_Ada_5: 767543096
+      Portrait_Ada_50: 475480307
+      Portrait_Ada_6: -759783718
+      Portrait_Ada_7: 1706582110
+      Portrait_Ada_8: 1728504258
+      Portrait_Ada_9: -894171535
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

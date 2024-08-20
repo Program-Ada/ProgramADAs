@@ -46,6 +46,8 @@ public class QuizManager : MonoBehaviour, IDataPersistence
 
     public void InicialPage(){
         InicialPanel.SetActive(true);
+        Player.GetComponent<PlayerMovement>().enabled = false;
+        FindObjectOfType<QuestManager>().animator.SetBool("isOpen", false);
     }
 
     public void StartQuiz(){
@@ -73,6 +75,9 @@ public class QuizManager : MonoBehaviour, IDataPersistence
             passed = false;
         }
         score = 0;
+
+        FindObjectOfType<QuestManager>().animator.SetBool("isOpen", true);
+        GameManager.Instance.UpdateExclamation();
     }
 
     public void GameOver(){
@@ -81,7 +86,14 @@ public class QuizManager : MonoBehaviour, IDataPersistence
         ScorePanel.SetActive(true);  
         ScoreTxt.text = media.ToString() + "%";
         quizDone = true;
+        if(media < 75){
+            FindObjectOfType<QuestManager>().UpdateQuestText(3);
+        }
+        if(media >= 75){
+            FindObjectOfType<QuestManager>().UpdateQuestText(4);
+        }
         DataPersistenceManager.Instance.SaveGame();
+        GameManager.Instance.QuizScore = media;
     }
 
     public void Correct(){

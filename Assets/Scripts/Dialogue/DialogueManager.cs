@@ -1,66 +1,74 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour{
 
-    public TextMeshProUGUI nameText;
-    public TextMeshProUGUI dialogueText;
-    public Image npcImage;
-    public bool pularTexto = false;
+    public static DialogueManager Instance;
 
-    public Animator animator;
+    [Header("DialogueBox Setup")]
+        public Image npcImage;
+        public TextMeshProUGUI nameText;
+        public TextMeshProUGUI dialogueText;
+    
+    [Header("Animation")]
+        public Animator animator;
+        private bool pularTexto = false;
 
-    private Queue<string> sentences;
+    //private Queue<string> sentences;
+    private Queue<DialogueLine> lines;
+    private DialogueLine currentLine;
 
-    // Start is called before the first frame update
-    void Start(){
-        sentences = new Queue<string>();
-        
+    private void Awake()
+    {
+        if (Instance == null)
+            Instance = this;
+ 
+        lines = new Queue<DialogueLine>();
     }
 
     public void StartDialogue(Dialogue dialogue){
-
         animator.SetBool("IsOpen", true);
 
-        nameText.text = dialogue.name;
-        npcImage.sprite = dialogue.image;
+        lines.Clear();
 
-        sentences.Clear();
-
-        foreach (string sentence in dialogue.setences){
-            sentences.Enqueue(sentence);
+        foreach (DialogueLine dialogueLine in dialogue.dialogueLines){
+            lines.Enqueue(dialogueLine);
         }
 
         DisplayNextSentence();
     }
 
-    string sentence = "";
-
     public void DisplayNextSentence(){
+
         if(pularTexto){
             pularTexto = false;
             StopAllCoroutines();
-            dialogueText.text = sentence;
+            dialogueText.text = currentLine.sentence;
             return;
         }
-        if(sentences.Count == 0){
+        if(lines.Count == 0){
             EndDialogue();
             return;
         }
 
+        currentLine = lines.Dequeue();
+
+        nameText.text = currentLine.character.name;
+        npcImage.sprite = currentLine.character.image;
+
         pularTexto = true;
 
-        sentence = sentences.Dequeue();
         StopAllCoroutines();
-        StartCoroutine(TypeSentence(sentence));
+        StartCoroutine(TypeSentence(currentLine));
     }
 
-    IEnumerator TypeSentence (string sentence){
+    IEnumerator TypeSentence (DialogueLine dialogueLine){
         dialogueText.text = "";
-        foreach(char letter in sentence.ToCharArray()){
+        foreach(char letter in dialogueLine.sentence.ToCharArray()){
             dialogueText.text += letter;
             yield return new WaitForSeconds((float)0.05);
         }
