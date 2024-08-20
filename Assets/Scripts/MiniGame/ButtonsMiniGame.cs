@@ -58,12 +58,6 @@ public class ButtonsMiniGame : MonoBehaviour
         }
 
         Invoke(nameof(ResetOrder), 4);
-        // ResetOrder();
-    }
-
-    public void ResetScene() {
-        //não está funcionando
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void Pegar_Suco() {
@@ -111,6 +105,8 @@ public class ButtonsMiniGame : MonoBehaviour
     public void Trash() {
         JogarFora_Drink();
         JogarFora_Food();
+        drinks.reset_option();
+        foods.reset_option();
     }
 
     public void ResetOrder() {
