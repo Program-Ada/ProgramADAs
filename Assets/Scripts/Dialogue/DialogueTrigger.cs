@@ -8,15 +8,15 @@ public class DialogueTrigger : MonoBehaviour
     public Dialogue dialogue;
     public bool playerIsClose;
     public bool playerIsChatting;
-    //public bool isExclamationActive;
-    //public GameObject barbaraExclamation;
+    public bool isExclamationActive;
+    public GameObject barbaraExclamation;
     public DialogueManager dm;
     [SerializeField]GameObject toolTip;
 
-    void Awake(){
+    void Start(){
         dm = FindObjectOfType<DialogueManager>();
         toolTip.SetActive(false);
-        //barbaraExclamation = GameObject.Find("Barbara/Exclamation");
+        barbaraExclamation = GameObject.Find("Barbara/Exclamation");
     }
 
     void Update(){
@@ -32,7 +32,7 @@ public class DialogueTrigger : MonoBehaviour
         dm.StartDialogue(dialogue);
         toolTip.SetActive(false);
         
-        if(this.name == "Barbara"){
+        if(dialogue.name == "Bárbara"){
             GameManager.Instance.UnlockChapterOne();
         }
     }
@@ -42,34 +42,25 @@ public class DialogueTrigger : MonoBehaviour
             playerIsClose = true;
             toolTip.SetActive(true);
 
-            if(this.name == "Barbara" && GameManager.Instance.barbaraExclamation.activeSelf){
-                GameManager.Instance.isBarbaraExclamationActive = true;
-                GameManager.Instance.barbaraExclamation.SetActive(false);
+            if(GameObject.Find("Barbara/Exclamation") != null){
+                isExclamationActive = true;
+                barbaraExclamation = GameObject.Find("Barbara/Exclamation").gameObject;
+                barbaraExclamation.SetActive(false);
             }
         }
     }
 
-    private void OnTriggerExit2D(Collider2D other){
-    if(other.CompareTag("Player")){
-        playerIsClose = false;
-        playerIsChatting = false;
-        toolTip.SetActive(false);
-        dm.EndDialogue();
+        private void OnTriggerExit2D(Collider2D other){
+        if(other.CompareTag("Player")){
+            playerIsClose = false;
+            playerIsChatting = false;
+            toolTip.SetActive(false);
+            dm.EndDialogue();
 
-        if(GameManager.Instance.isBarbaraExclamationActive){
-            GameManager.Instance.isBarbaraExclamationActive = false;
-            GameManager.Instance.barbaraExclamation.SetActive(true);
-        }else{
-            GameManager.Instance.barbaraExclamation.SetActive(false);
+            if(isExclamationActive){
+                isExclamationActive = false;
+                barbaraExclamation.SetActive(true);
+            }
         }
     }
-}
-
-/*
-    public void UpdateBarbaraExclamation(bool isActive){
-        barbaraExclamation.SetActive(isActive);
-        isExclamationActive = isActive;
-        Debug.Log("isActive: " + isActive);
-    }
-*/
 }

@@ -15,6 +15,7 @@ public class QuizTrigger : MonoBehaviour
     void Start(){
         Qm = FindObjectOfType<QuizManager>();
         toolTip.SetActive(false);
+        exclamation.SetActive(false);
     }
 
     void Update(){
@@ -47,14 +48,11 @@ public class QuizTrigger : MonoBehaviour
             if(isExclamationActive){
                 isExclamationActive = false;
                 exclamation.SetActive(true);
-            }else{
-                exclamation.SetActive(false);
             }
         }
     }
 
-    public void UpdateQuizExclamation(bool isActive){
-        exclamation.SetActive(isActive);
-        isExclamationActive = isActive;
+    public void ActivateQuizExclamation(){
+        exclamation.SetActive(true);
     }
 }
