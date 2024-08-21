@@ -19,6 +19,7 @@ public class ButtonsMiniGame : MonoBehaviour
     public GameObject prato;
     public GameObject aleErroSemCopo;
     public GameObject[] emojis;
+    public GameObject[] vidas;
 
     void Start()
     {
@@ -51,10 +52,12 @@ public class ButtonsMiniGame : MonoBehaviour
         else if((pedidos.pedidoAtual.GetComponent<Pedido>().drink == drinks.chosenOption) || (pedidos.pedidoAtual.GetComponent<Pedido>().food == foods.chosenOption)) {
             Debug.Log("Drink ou food incorreto");
             emojis[1].SetActive(true);
+            // perdeVida();
         }
         else {
             Debug.Log("Drink e food incorretos");
             emojis[2].SetActive(true);
+            // perdeVida();
         }
 
         Invoke(nameof(ResetOrder), 4);
@@ -127,6 +130,17 @@ public class ButtonsMiniGame : MonoBehaviour
         for (int i = 0; i < emojis.Length; i++) {
             if (emojis[i].activeSelf) {
                 emojis[i].SetActive(false);
+            }
+        }
+    }
+
+    public void perdeVida() {
+        Debug.Log(vidas.Length);
+        for (int i = vidas.Length - 1; i >= 0; i--) {
+            if (vidas[i].activeSelf) {
+                vidas[i].SetActive(false);
+                // vidas.RemoveAt(i);
+                break;
             }
         }
     }
