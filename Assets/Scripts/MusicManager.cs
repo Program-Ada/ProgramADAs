@@ -16,6 +16,7 @@ public class MusicManager : MonoBehaviour
     	DontDestroyOnLoad(this.gameObject);
 		mm = this; 
 		src = GetComponent<AudioSource>();
+		src.Play();
    }
   
 	private void OnEnable(){
@@ -27,7 +28,7 @@ public class MusicManager : MonoBehaviour
 		if(scene.name == "InicialCutscene"){
 			Debug.Log("oi");
 			src.Stop();
-		}else{
+		}else if(DataPersistenceManager.Instance.lastScene == "InicialCutscene"){
 			src.Play();
 		}
     }
