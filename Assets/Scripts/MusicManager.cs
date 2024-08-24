@@ -12,7 +12,9 @@ public class MusicManager : MonoBehaviour
           return;
      }
      DontDestroyOnLoad(this.gameObject);
-     mm = this; 
-     src = GetComponent<AudioSource>();
+     if(DataPersistenceManager.Instance.lastScene != "Inicial_Cutscene"){
+        mm = this; 
+        src = GetComponent<AudioSource>();
+     }
    }
 }
