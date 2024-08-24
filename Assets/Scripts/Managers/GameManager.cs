@@ -56,9 +56,11 @@ public class GameManager : MonoBehaviour, IDataPersistence
             quizTrigger.UpdateQuizExclamation(isChapterUnlocked[0] && QuizScore < 75); 
             doorExclamation.SetActive(isChapterUnlocked[0] && (QuizScore > 75));
 
+            /*
             if(doorExclamation.activeSelf){
                 FindObjectOfType<ExitDoor>().isFaseCompleted = true;
             }
+            */
         }
     }
 

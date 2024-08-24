@@ -5,24 +5,39 @@ using UnityEngine.SceneManagement;
 
 public class TransitionManager : MonoBehaviour
 {
+    public static TransitionManager Instance { get; private set;}
     public Animator transitionBackground;
-    public Animator topBlackBar;
+    public GameObject topBlackBar;
     public GameObject bottomBlackBar;
 
-    private void OnEnable() {
-        SceneManager.sceneLoaded += OnSceneLoaded;
-    }
-    private void OnDisable() {
-        SceneManager.sceneUnloaded += OnSceneUnloaded;
+    private void Awake() {
+        PlayEnterSceneAnimation();
     }
 
-    private void OnSceneLoaded(Scene scene, LoadSceneMode loadScene){
-        Debug.Log("Loaded");
+    public void PlayEnterSceneAnimation(){
         transitionBackground.SetBool("EnterScene", true);
+
+        if(DataPersistenceManager.Instance.lastScene == "InicialCutscene"){
+            topBlackBar.SetActive(true);
+            bottomBlackBar.SetActive(true);
+
+            StartCoroutine(WaitAnimationEnd(false,""));
+            topBlackBar.GetComponent<Animator>().SetBool("Open", true);
+            bottomBlackBar.GetComponent<Animator>().SetBool("Open", true);
+        }
     }
 
-    private void OnSceneUnloaded(Scene scene){
-        Debug.Log("Unloaded");
+    public void PlayExitSceneAnimation(string SceneName){
         transitionBackground.SetBool("EnterScene", false);
+        StartCoroutine(WaitAnimationEnd(true,SceneName));
+    }
+
+    IEnumerator WaitAnimationEnd(bool ChangeScene, string SceneName)
+    {
+        yield return new WaitForSeconds(2);
+
+        if(ChangeScene){
+            SceneManager.LoadScene(SceneName);
+        }
     }
 }
