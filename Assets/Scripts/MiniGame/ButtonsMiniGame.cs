@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Unity.VisualScripting;
 using UnityEngine.PlayerLoop;
+using UnityEditor.SearchService;
 
 public class ButtonsMiniGame : MonoBehaviour
 {
@@ -16,10 +17,12 @@ public class ButtonsMiniGame : MonoBehaviour
     public GameObject drink_btn;
     public GameObject food_btn;
     public GameObject copo;
-    public GameObject prato;
+    public GameObject pratoLimpo;
+    public GameObject pratoSujo;
     public GameObject aleErroSemCopo;
     public GameObject[] emojis;
-    public GameObject[] vidas;
+    // public GameObject[] vidas;
+    public List<GameObject> vidas;
 
     void Start()
     {
@@ -52,12 +55,12 @@ public class ButtonsMiniGame : MonoBehaviour
         else if((pedidos.pedidoAtual.GetComponent<Pedido>().drink == drinks.chosenOption) || (pedidos.pedidoAtual.GetComponent<Pedido>().food == foods.chosenOption)) {
             Debug.Log("Drink ou food incorreto");
             emojis[1].SetActive(true);
-            // perdeVida();
+            perdeVida();
         }
         else {
             Debug.Log("Drink e food incorretos");
             emojis[2].SetActive(true);
-            // perdeVida();
+            perdeVida();
         }
 
         Invoke(nameof(ResetOrder), 4);
@@ -80,7 +83,7 @@ public class ButtonsMiniGame : MonoBehaviour
 
     public void Pegar_Prato() {
         foods.containerExists = true;
-        prato.SetActive(true);
+        pratoLimpo.SetActive(true);
     }
 
     public void JogarFora_Drink() {
@@ -135,13 +138,17 @@ public class ButtonsMiniGame : MonoBehaviour
     }
 
     public void perdeVida() {
-        Debug.Log(vidas.Length);
-        for (int i = vidas.Length - 1; i >= 0; i--) {
-            if (vidas[i].activeSelf) {
-                vidas[i].SetActive(false);
-                // vidas.RemoveAt(i);
-                break;
-            }
+        vidas[vidas.Count - 1].SetActive(false);
+        vidas.RemoveAt(vidas.Count -1);
+
+        if (vidas.Count == 0) {
+            Debug.Log("morreu! vidas: " + vidas.Count);
+            //implementar recomecar jogo
         }
+    }
+
+    public void buttonSair() {
+        //implementar pergunta de confirmacao
+        SceneManager.LoadScene("Fase_cafe");
     }
 }

@@ -29,7 +29,7 @@ public class Foods : MonoBehaviour
                 options[i].SetActive(true);
                 containerFull = true;
                 chosenOption = i;
-                buttonsMiniGame.prato.SetActive(false);
+                buttonsMiniGame.pratoLimpo.SetActive(false);
                 foodOptions[i].SetActive(true);
             }
         }
