@@ -24,7 +24,7 @@ public class GameData
         playerPosition.y = 4.1f;
         totalCompleted = 0;
         saveSlotName = "Insira um Nome";
-        scene = "Game";
+        scene = "InicialCutscene";
         pointFases = new int[5];
         unlockedFases = new bool[5];
         isNotificationOn = new bool[5];

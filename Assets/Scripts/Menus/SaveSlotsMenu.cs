@@ -44,7 +44,7 @@ public class SaveSlotsMenu : MonoBehaviour, IDataPersistence
         // Salva o nome do saveslot
         DataPersistenceManager.Instance.SaveGame();
         // Carrega a cena - por consequência vai salvar o jogo devido ao OnSceneUnloaded() no DataPersistenceManager
-        SceneManager.LoadSceneAsync("Game");
+        SceneManager.LoadSceneAsync("InicialCutscene");
     }
 
     public void CancelNewSaveCreation(){
