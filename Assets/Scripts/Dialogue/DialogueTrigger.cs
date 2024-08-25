@@ -33,7 +33,7 @@ public class DialogueTrigger : MonoBehaviour
         toolTip.SetActive(false);
         
         if(this.name == "Barbara"){
-            GameManager.Instance.UnlockChapterOne();
+            GameManager.Instance.UnlockQuiz();
         }
     }
 

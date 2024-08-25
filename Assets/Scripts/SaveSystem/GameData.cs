@@ -14,6 +14,7 @@ public class GameData
     public int[] pointFases;
     public bool[] unlockedFases;
     public bool[] isNotificationOn;
+    public int questProgressIndex;
 
     // os valores nesse constructor serão os valores iniciais que o jogo irá iniciar
     // toda vez que não tiver um arquivo de save criado ou começar um jogo novo
@@ -28,5 +29,6 @@ public class GameData
         pointFases = new int[5];
         unlockedFases = new bool[5];
         isNotificationOn = new bool[5];
+        questProgressIndex = 1;
     }
 }

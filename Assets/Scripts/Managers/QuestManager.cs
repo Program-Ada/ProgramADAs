@@ -13,6 +13,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
 
         private bool[] isChapterUnlocked;
         private int[] pointFases;
+        private int progressIndex;
 
     // Start is called before the first frame update
     void Start()
@@ -36,19 +37,25 @@ public class QuestManager : MonoBehaviour, IDataPersistence
     }
 
     public void UpdateQuestText(int index){
-        if(isChapterUnlocked[0] == false || index == 1){
+        Debug.Log("Atualiza");
+        Debug.Log("ProgressIndex: "+progressIndex);
+        if(progressIndex == 1 || index == 1){
             DisplayNextSentence("Fale com a Professora Bárbara");
+            progressIndex = 1;
         }
-        if(isChapterUnlocked[0] == true || index > 1){
+        if(progressIndex > 1 || index > 1){
             if(pointFases[0] == 0 || index == 2){
                 DisplayNextSentence("Realize o Quiz Introdutório");
+                progressIndex = 2;
             }
             if(pointFases[0] != 0 || index > 2){
                 if(pointFases[0] < 75 || index == 3){
                     DisplayNextSentence("Consiga uma nota maior que 75% no Quiz para avançar");
+                    progressIndex = 3;
                 }
                 if(pointFases[0] >= 75 || index == 4){
                     DisplayNextSentence("Vá ao Centro de Convivência");
+                    progressIndex = 4;
                 }
             }
         }
@@ -58,15 +65,18 @@ public class QuestManager : MonoBehaviour, IDataPersistence
 
         isChapterUnlocked = new bool[data.unlockedFases.Length];
         pointFases = new int[data.pointFases.Length];
+        progressIndex = data.questProgressIndex;
 
         for(int i = 0; i < data.unlockedFases.Length; i++){
             isChapterUnlocked[i] = data.unlockedFases[i];
             pointFases[i] = data.pointFases[i];
         }
 
-        UpdateQuestText(0);
+        UpdateQuestText(progressIndex);
     }
     public void SaveData(ref GameData data){
-
+        if(progressIndex != 0){
+            data.questProgressIndex = progressIndex;
+        }
     }
 }

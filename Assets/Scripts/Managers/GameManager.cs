@@ -51,10 +51,11 @@ public class GameManager : MonoBehaviour, IDataPersistence
     public void UpdateExclamation(){ // chama toda vez que muda de cena
         if(SceneManager.GetActiveScene().name == "Game"){
 
-            barbaraExclamation.SetActive(!isChapterUnlocked[0]);
-            isBarbaraExclamationActive = !isChapterUnlocked[0];
-            quizTrigger.UpdateQuizExclamation(isChapterUnlocked[0] && QuizScore < 75); 
-            doorExclamation.SetActive(isChapterUnlocked[0] && (QuizScore > 75));
+            barbaraExclamation.SetActive(!talkedToBarbara);
+            isBarbaraExclamationActive = !talkedToBarbara;
+            quizTrigger.UpdateQuizExclamation(QuizScore < 75 && talkedToBarbara); 
+            doorExclamation.SetActive(QuizScore > 75);
+            UnlockChapterOne();
 
             /*
             if(doorExclamation.activeSelf){
@@ -65,24 +66,31 @@ public class GameManager : MonoBehaviour, IDataPersistence
     }
 
     public void UnlockChapterOne(){
-        if(!talkedToBarbara && !isChapterUnlocked[0] && SceneManager.GetActiveScene().name == "Game"){
+        if(!isChapterUnlocked[0] && SceneManager.GetActiveScene().name == "Game"){
             isChapterUnlocked[0] = true;
-            talkedToBarbara = true;
-            barbaraExclamation.SetActive(false);
-            isBarbaraExclamationActive = false;
-            //dialogueTrigger.isExclamationActive = false;
-            //dialogueTrigger.UpdateBarbaraExclamation(false);
-            quizTrigger.UpdateQuizExclamation(true);
             notepadManager.UpdateNotePadNotification(true);
             notepadManager.UpdateChapterBtn(0,true, true);
             notepadManager.UpdateChapterNotification(0,true, true);
-            questManager.UpdateQuestText(2);
         }
+    }
+
+    public void UnlockQuiz(){
+        talkedToBarbara = true;
+        barbaraExclamation.SetActive(false);
+        isBarbaraExclamationActive = false;
+        //dialogueTrigger.isExclamationActive = false;
+        //dialogueTrigger.UpdateBarbaraExclamation(false);
+        quizTrigger.UpdateQuizExclamation(true);
+        questManager.UpdateQuestText(2);
     }
 
     public void LoadData(GameData data){
 
         isChapterUnlocked = new bool[5];
+
+        if(data.questProgressIndex > 1){
+            talkedToBarbara = true;
+        }
 
         for(int i = 0; i < data.unlockedFases.Length; i++){
             isChapterUnlocked[i] = data.unlockedFases[i];

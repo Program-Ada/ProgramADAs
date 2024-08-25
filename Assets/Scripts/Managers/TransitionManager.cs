@@ -12,6 +12,8 @@ public class TransitionManager : MonoBehaviour
 
     private void Awake() {
         PlayEnterSceneAnimation();
+
+        Instance = this;
     }
 
     public void PlayEnterSceneAnimation(){
