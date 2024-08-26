@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cead90e0b47ee3547973ddc0e21211d9
+guid: ef467cda064991941982d808d75d2599
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -49,7 +49,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 41, y: 0, z: 0, w: 29}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -70,22 +70,9 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 0
+    resizeAlgorithm: 1
     textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -123,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: alessandreia_0
+      name: ale_0
       rect:
         serializedVersion: 2
-        x: 21
-        y: 28
-        width: 217
-        height: 371
+        x: 36
+        y: 29
+        width: 686
+        height: 692
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,71 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca5119019a0a0d14fb2c7da137ac021f
-      internalID: -711046619
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alessandreia_1
-      rect:
-        serializedVersion: 2
-        x: 287
-        y: 28
-        width: 217
-        height: 364
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c2d1bc7e00fcb3749800cb6805edc5be
-      internalID: 2005210897
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alessandreia_2
-      rect:
-        serializedVersion: 2
-        x: 553
-        y: 28
-        width: 217
-        height: 371
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e824bf9dc989d3c43bb496ea592d7d6e
-      internalID: -1026856248
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alessandreia_3
-      rect:
-        serializedVersion: 2
-        x: 819
-        y: 28
-        width: 217
-        height: 378
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f3251632bd41fba4eb77330358d6afec
-      internalID: 286788091
+      spriteID: 82034c1bc87ac42438ded438451ced08
+      internalID: -141864929
       vertices: []
       indices: 
       edges: []
@@ -210,17 +134,29 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      alessandreia_0: -711046619
-      alessandreia_1: 2005210897
-      alessandreia_2: -1026856248
-      alessandreia_3: 286788091
+      ale_0: -141864929
+      ale_1: 325157510
+      ale_10: 612261189
+      ale_11: -1506861402
+      ale_12: 1863797967
+      ale_13: 1451424514
+      ale_14: 457494963
+      ale_15: -1868823811
+      ale_2: -921855893
+      ale_3: -1085344794
+      ale_4: -552339591
+      ale_5: 960491765
+      ale_6: -546323209
+      ale_7: -996834499
+      ale_8: 1278890416
+      ale_9: -590175478
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

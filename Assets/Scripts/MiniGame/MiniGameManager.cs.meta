@@ -3,7 +3,13 @@ guid: 67b5eed2c11e945cca52db80ac812dd2
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - nameText: {instanceID: 0}
+  - npcImage: {instanceID: 0}
+  - dialogueTextFalse: {instanceID: 0}
+  - buttonFalse: {instanceID: 0}
+  - buttonTrue: {instanceID: 0}
+  - animator: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
