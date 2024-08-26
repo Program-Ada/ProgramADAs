@@ -134,9 +134,9 @@ TextureImporter:
       name: ada novos_1
       rect:
         serializedVersion: 2
-        x: 673
+        x: 694
         y: 0
-        width: 869
+        width: 669
         height: 680
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
