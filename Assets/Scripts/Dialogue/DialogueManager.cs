@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
+using Unity.VisualScripting.Dependencies.Sqlite;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -31,6 +32,12 @@ public class DialogueManager : MonoBehaviour{
     }
 
     public void StartDialogue(Dialogue dialogue){
+    
+       if(dialogue.haveQuestion)
+       {
+        dialogue.ask.SetActive(true);
+       }
+       
         animator.SetBool("IsOpen", true);
 
         lines.Clear();
@@ -39,10 +46,10 @@ public class DialogueManager : MonoBehaviour{
             lines.Enqueue(dialogueLine);
         }
 
-        DisplayNextSentence();
+        DisplayNextSentence(dialogue);
     }
 
-    public void DisplayNextSentence(){
+    public void DisplayNextSentence(Dialogue dialogue){
 
         if(pularTexto){
             pularTexto = false;
@@ -50,6 +57,12 @@ public class DialogueManager : MonoBehaviour{
             dialogueText.text = currentLine.sentence;
             return;
         }
+
+        if(dialogue.haveQuestion)
+        {
+            dialogue.ask.SetActive(true);
+        }
+
         if(lines.Count == 0){
             EndDialogue();
             return;

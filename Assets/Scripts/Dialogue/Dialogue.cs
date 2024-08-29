@@ -22,6 +22,9 @@ using UnityEngine;
 public class Dialogue{
 
     public List<DialogueLine> dialogueLines = new List<DialogueLine>();
+  //  public string []setences;
+    public bool haveQuestion;
+    public GameObject ask;
 
 }
 
