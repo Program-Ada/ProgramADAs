@@ -33,11 +33,12 @@ public class DialogueManager : MonoBehaviour{
 
     public void StartDialogue(Dialogue dialogue){
     
+    /*
        if(dialogue.haveQuestion)
        {
-        dialogue.ask.SetActive(true);
+            dialogue.ask.SetActive(false);
        }
-       
+    */   
         animator.SetBool("IsOpen", true);
 
         lines.Clear();
@@ -58,9 +59,11 @@ public class DialogueManager : MonoBehaviour{
             return;
         }
 
-        if(dialogue.haveQuestion)
+        if(dialogue.haveQuestion && lines.Count == 0)
         {
+            EndDialogue();
             dialogue.ask.SetActive(true);
+            return;
         }
 
         if(lines.Count == 0){

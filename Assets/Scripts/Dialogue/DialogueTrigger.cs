@@ -56,7 +56,7 @@ public class DialogueTrigger : MonoBehaviour
         toolTip.SetActive(false);
         dm.EndDialogue();
 
-        if(GameManager.Instance.isBarbaraExclamationActive){
+        if(this.name == "Barbara" && GameManager.Instance.isBarbaraExclamationActive){
             GameManager.Instance.isBarbaraExclamationActive = false;
             GameManager.Instance.barbaraExclamation.SetActive(true);
         }else{

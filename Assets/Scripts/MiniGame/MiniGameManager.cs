@@ -15,13 +15,14 @@ public class MiniGameManager : MonoBehaviour
     private DialogueTrigger dialogueTrigger;
     private DialogueManager dialogueManager;
     public Animator animator;
+    //public Animator animatorMiniGame;
 
     void Start()
     {
         dialogueTrigger = FindObjectOfType<DialogueTrigger>();
         dialogueManager = FindObjectOfType<DialogueManager>();
-        SetUpMiniGame();
-        dialogueTextFalse.enabled = false;
+        //SetUpMiniGame();
+        //dialogueTextFalse.enabled = false;
     }
 
     public void SetUpMiniGame(){
@@ -30,10 +31,10 @@ public class MiniGameManager : MonoBehaviour
     }
 
     public void OpenAskMiniGame(){
-        SetUpMiniGame();
-        buttonFalse.SetActive(true);
-        buttonTrue.SetActive(true);
-        dialogueTextFalse.enabled = false;
+        //SetUpMiniGame();
+        //buttonFalse.SetActive(true);
+        //buttonTrue.SetActive(true);
+        //dialogueTextFalse.enabled = false;
         animator.SetBool("IsOpen", true);
     }
 
@@ -42,14 +43,15 @@ public class MiniGameManager : MonoBehaviour
     }
     
     public void AnwserFalse() {
-        dialogueTextFalse.enabled = true;
-        buttonFalse.SetActive(false);
-        buttonTrue.SetActive(false);
-        // dialogueManager.animatorMiniGame.SetBool("IsOpen", false);
+        //dialogueTextFalse.enabled = true;
+        //buttonFalse.SetActive(false);
+        //buttonTrue.SetActive(false);
+        //animatorMiniGame.SetBool("IsOpen", false);
+        CloseAskMiniGame();
     }
 
     public void AnwserTrue(){
-        // SceneManager.LoadScene("MiniGame_Cafe");    //adicionar proxima cena
+         SceneManager.LoadScene("MiniGame_Cafe");    //adicionar proxima cena
     }
 
     public void funtionTesteDebug() {
