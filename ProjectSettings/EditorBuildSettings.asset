@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 701e0a7836cc54b4c95f6734f98ebfe6
+  - enabled: 1
+    path: Assets/Scenes/Fase_Cafe.unity
+    guid: 8be26f77059c2b040b961b2e6dc1c8fe
+  - enabled: 1
+    path: Assets/Scenes/MiniGame_Cafe.unity
+    guid: 18b7393cdd555e241af1735eae62842b
   m_configObjects: {}

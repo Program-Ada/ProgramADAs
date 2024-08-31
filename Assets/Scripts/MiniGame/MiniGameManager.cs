@@ -35,11 +35,11 @@ public class MiniGameManager : MonoBehaviour
         //buttonFalse.SetActive(true);
         //buttonTrue.SetActive(true);
         //dialogueTextFalse.enabled = false;
-        animator.SetBool("IsOpen", true);
+        animator.SetBool("isOpen", true);
     }
 
     public void CloseAskMiniGame(){
-        animator.SetBool("IsOpen", false);
+        animator.SetBool("isOpen", false);
     }
     
     public void AnwserFalse() {
