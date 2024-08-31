@@ -71,6 +71,8 @@ public class DialogueManager : MonoBehaviour{
             return;
         }
 
+        dialogue.ask.SetActive(false);
+        
         currentLine = lines.Dequeue();
 
         nameText.text = currentLine.character.name;
