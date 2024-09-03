@@ -42,9 +42,11 @@ public class DialogueTrigger : MonoBehaviour
             playerIsClose = true;
             toolTip.SetActive(true);
 
-            if(this.name == "Barbara" && GameManager.Instance.barbaraExclamation.activeSelf){
-                GameManager.Instance.isBarbaraExclamationActive = true;
-                GameManager.Instance.barbaraExclamation.SetActive(false);
+            if(this.name == "Barbara"){
+                if(GameManager.Instance.barbaraExclamation.activeSelf){
+                    GameManager.Instance.isBarbaraExclamationActive = true;
+                    GameManager.Instance.barbaraExclamation.SetActive(false);
+                }
             }
         }
     }
@@ -56,11 +58,13 @@ public class DialogueTrigger : MonoBehaviour
         toolTip.SetActive(false);
         dm.EndDialogue();
 
-        if(this.name == "Barbara" && GameManager.Instance.isBarbaraExclamationActive){
-            GameManager.Instance.isBarbaraExclamationActive = false;
-            GameManager.Instance.barbaraExclamation.SetActive(true);
-        }else{
-            GameManager.Instance.barbaraExclamation.SetActive(false);
+        if(this.name == "Barbara"){
+            if(GameManager.Instance.isBarbaraExclamationActive){
+                GameManager.Instance.isBarbaraExclamationActive = false;
+                GameManager.Instance.barbaraExclamation.SetActive(true);
+            }else{
+                GameManager.Instance.barbaraExclamation.SetActive(false);
+            }
         }
     }
 }

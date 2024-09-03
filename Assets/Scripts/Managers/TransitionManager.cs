@@ -11,9 +11,8 @@ public class TransitionManager : MonoBehaviour
     public GameObject bottomBlackBar;
 
     private void Awake() {
-        PlayEnterSceneAnimation();
-
         Instance = this;
+        PlayEnterSceneAnimation();
     }
 
     public void PlayEnterSceneAnimation(){
