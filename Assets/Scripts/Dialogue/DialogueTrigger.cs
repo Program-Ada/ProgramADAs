@@ -6,11 +6,11 @@ using UnityEngine;
 public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
-    public bool playerIsClose;
-    public bool playerIsChatting;
+    private bool playerIsClose;
+    private bool playerIsChatting;
     //public bool isExclamationActive;
     //public GameObject barbaraExclamation;
-    public DialogueManager dm;
+    private DialogueManager dm;
     [SerializeField]GameObject toolTip;
 
     void Awake(){
