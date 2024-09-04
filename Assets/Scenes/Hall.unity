@@ -8997,7 +8997,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 802806789608427348, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: m_Name
-      value: Post MP (1)
+      value: Post MP
       objectReference: {fileID: 0}
     - target: {fileID: 802806789608427348, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: m_IsActive
@@ -12417,6 +12417,14 @@ PrefabInstance:
     - target: {fileID: 6814690500548080466, guid: 396fe85d21553b84c84012b8912d718f, type: 3}
       propertyPath: nextSceneName
       value: Game
+      objectReference: {fileID: 0}
+    - target: {fileID: 7726080091886609290, guid: 396fe85d21553b84c84012b8912d718f, type: 3}
+      propertyPath: m_Size.y
+      value: 1.2882488
+      objectReference: {fileID: 0}
+    - target: {fileID: 7726080091886609290, guid: 396fe85d21553b84c84012b8912d718f, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.613315
       objectReference: {fileID: 0}
     - target: {fileID: 7980630031285413577, guid: 396fe85d21553b84c84012b8912d718f, type: 3}
       propertyPath: m_LocalPosition.x
