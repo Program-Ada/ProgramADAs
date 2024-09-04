@@ -517,7 +517,7 @@ TextureImporter:
         width: 144
         height: 515
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -525,6 +525,48 @@ TextureImporter:
       bones: []
       spriteID: ffb4b9bcb5b81954e990a7143de4087e
       internalID: 1425726541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAREDE TRAS_20
+      rect:
+        serializedVersion: 2
+        x: 5264
+        y: 4733
+        width: 175
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 157bef2b87aff384e945a3eac139578a
+      internalID: -1951916497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAREDE TRAS_21
+      rect:
+        serializedVersion: 2
+        x: 4677
+        y: 4733
+        width: 175
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d46407aa6fe5d46428d892dc349eb164
+      internalID: 1101871902
       vertices: []
       indices: 
       edges: []
@@ -553,6 +595,8 @@ TextureImporter:
       PAREDE TRAS_18: -287652275
       PAREDE TRAS_19: 1425726541
       PAREDE TRAS_2: -317727139
+      PAREDE TRAS_20: -1951916497
+      PAREDE TRAS_21: 1101871902
       PAREDE TRAS_3: -1201233933
       PAREDE TRAS_4: -1726383772
       PAREDE TRAS_5: 1794775728
