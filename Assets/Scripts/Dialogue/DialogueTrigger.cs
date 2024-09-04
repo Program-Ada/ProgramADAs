@@ -6,8 +6,8 @@ using UnityEngine;
 public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
-    public bool playerIsClose;
-    public bool playerIsChatting;
+    private bool playerIsClose;
+    private bool playerIsChatting;
     //public bool isExclamationActive;
     //public GameObject barbaraExclamation;
     public DialogueManager dm;
@@ -24,7 +24,7 @@ public class DialogueTrigger : MonoBehaviour
             SoundManager.sm.Click();
             TriggerDialogue();
         }else if(Input.GetKeyDown(KeyCode.E) && playerIsClose && playerIsChatting){
-            dm.DisplayNextSentence();
+            dm.DisplayNextSentence(dialogue);
         }
     }
     public void TriggerDialogue(){
@@ -42,9 +42,11 @@ public class DialogueTrigger : MonoBehaviour
             playerIsClose = true;
             toolTip.SetActive(true);
 
-            if(this.name == "Barbara" && GameManager.Instance.barbaraExclamation.activeSelf){
-                GameManager.Instance.isBarbaraExclamationActive = true;
-                GameManager.Instance.barbaraExclamation.SetActive(false);
+            if(this.name == "Barbara"){
+                if(GameManager.Instance.barbaraExclamation.activeSelf){
+                    GameManager.Instance.isBarbaraExclamationActive = true;
+                    GameManager.Instance.barbaraExclamation.SetActive(false);
+                }
             }
         }
     }
@@ -56,11 +58,13 @@ public class DialogueTrigger : MonoBehaviour
         toolTip.SetActive(false);
         dm.EndDialogue();
 
-        if(GameManager.Instance.isBarbaraExclamationActive){
-            GameManager.Instance.isBarbaraExclamationActive = false;
-            GameManager.Instance.barbaraExclamation.SetActive(true);
-        }else{
-            GameManager.Instance.barbaraExclamation.SetActive(false);
+        if(this.name == "Barbara"){
+            if(GameManager.Instance.isBarbaraExclamationActive){
+                GameManager.Instance.isBarbaraExclamationActive = false;
+                GameManager.Instance.barbaraExclamation.SetActive(true);
+            }else{
+                GameManager.Instance.barbaraExclamation.SetActive(false);
+            }
         }
     }
 }
