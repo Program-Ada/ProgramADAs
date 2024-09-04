@@ -7,9 +7,9 @@ using UnityEngine.SceneManagement;
 
 public class MiniGameManager : MonoBehaviour
 {
-    public TextMeshProUGUI nameText;
+    //public TextMeshProUGUI nameText;
     public Image npcImage;
-    public TextMeshProUGUI dialogueTextFalse;
+    //public TextMeshProUGUI dialogueTextFalse;
     public GameObject buttonFalse;
     public GameObject buttonTrue;
     private DialogueTrigger dialogueTrigger;
@@ -21,7 +21,7 @@ public class MiniGameManager : MonoBehaviour
         dialogueTrigger = FindObjectOfType<DialogueTrigger>();
         dialogueManager = FindObjectOfType<DialogueManager>();
         SetUpMiniGame();
-        dialogueTextFalse.enabled = false;
+        //dialogueTextFalse.enabled = false;
     }
 
     public void SetUpMiniGame(){
@@ -33,7 +33,7 @@ public class MiniGameManager : MonoBehaviour
         SetUpMiniGame();
         buttonFalse.SetActive(true);
         buttonTrue.SetActive(true);
-        dialogueTextFalse.enabled = false;
+        //dialogueTextFalse.enabled = false;
         animator.SetBool("IsOpen", true);
     }
 
@@ -42,14 +42,14 @@ public class MiniGameManager : MonoBehaviour
     }
     
     public void AnwserFalse() {
-        dialogueTextFalse.enabled = true;
-        buttonFalse.SetActive(false);
-        buttonTrue.SetActive(false);
-        // dialogueManager.animatorMiniGame.SetBool("IsOpen", false);
+        //dialogueTextFalse.enabled = true;
+        //buttonFalse.SetActive(false);
+        //buttonTrue.SetActive(false);
+        CloseAskMiniGame();
     }
 
     public void AnwserTrue(){
-        // SceneManager.LoadScene("MiniGame_Cafe");    //adicionar proxima cena
+        SceneManager.LoadScene("MiniGame_Cafe");    //adicionar proxima cena
     }
 
     public void funtionTesteDebug() {

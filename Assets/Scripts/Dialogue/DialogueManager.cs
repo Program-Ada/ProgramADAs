@@ -71,7 +71,9 @@ public class DialogueManager : MonoBehaviour{
             return;
         }
 
-        dialogue.ask.SetActive(false);
+        if(dialogue.haveQuestion){
+            dialogue.ask.SetActive(false);
+        }
         
         currentLine = lines.Dequeue();
 
