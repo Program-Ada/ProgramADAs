@@ -6,11 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class ExitDoor : MonoBehaviour
 {
-    public bool playerIsClose;
+    private bool playerIsClose;
     //public GameObject ExitOptionCanvas;
     //public GameObject ExitOptionCanvasFalse;
-    public GameObject Player;
+    //private GameObject Player;
     public string nextSceneName;
+    public TransitionManager tm;
     //public GameObject ExitConfirmationMenu;
     //public bool isFaseCompleted;
     [SerializeField]GameObject toolTip;
@@ -33,8 +34,26 @@ public class ExitDoor : MonoBehaviour
                 LoadNextScene();
             }
             */
-            TransitionManager.Instance.PlayExitSceneAnimation(nextSceneName);
+            tm.PlayExitSceneAnimation(nextSceneName);
             //LoadNextScene();
+        }
+    }
+
+    public void LoadNextScene(){
+        SceneManager.LoadScene(nextSceneName);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other){
+        if(other.CompareTag("Player")){
+            playerIsClose = true;
+            toolTip.SetActive(true);
+        }
+    }
+
+        private void OnTriggerExit2D(Collider2D other){
+        if(other.CompareTag("Player")){
+            playerIsClose = false;
+            toolTip.SetActive(false);
         }
     }
 
@@ -65,22 +84,4 @@ public class ExitDoor : MonoBehaviour
     /*public void ExitTrue(){
         SceneManager.LoadScene("End");
     }*/
-
-    public void LoadNextScene(){
-        SceneManager.LoadScene(nextSceneName);
-    }
-
-    private void OnTriggerEnter2D(Collider2D other){
-        if(other.CompareTag("Player")){
-            playerIsClose = true;
-            toolTip.SetActive(true);
-        }
-    }
-
-        private void OnTriggerExit2D(Collider2D other){
-        if(other.CompareTag("Player")){
-            playerIsClose = false;
-            toolTip.SetActive(false);
-        }
-    }
 }
