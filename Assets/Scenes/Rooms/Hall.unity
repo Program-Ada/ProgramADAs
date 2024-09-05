@@ -759,6 +759,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TransitionManager
       objectReference: {fileID: 0}
+    - target: {fileID: 5657223037712817308, guid: effd06d65a431524887f3d16da48219b, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 519420031}
     - target: {fileID: 6502587600570111543, guid: effd06d65a431524887f3d16da48219b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
