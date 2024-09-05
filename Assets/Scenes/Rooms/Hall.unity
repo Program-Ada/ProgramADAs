@@ -10762,7 +10762,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6573093483970486413, guid: 396fe85d21553b84c84012b8912d718f, type: 3}
       propertyPath: m_Name
-      value: DoorCaminho
+      value: DoorCaminhoICE
       objectReference: {fileID: 0}
     - target: {fileID: 6573093483970486413, guid: 396fe85d21553b84c84012b8912d718f, type: 3}
       propertyPath: m_IsActive
@@ -10774,7 +10774,7 @@ PrefabInstance:
       objectReference: {fileID: 1371747145}
     - target: {fileID: 6814690500548080466, guid: 396fe85d21553b84c84012b8912d718f, type: 3}
       propertyPath: nextSceneName
-      value: Caminho
+      value: CaminhoICE
       objectReference: {fileID: 0}
     - target: {fileID: 7726080091886609290, guid: 396fe85d21553b84c84012b8912d718f, type: 3}
       propertyPath: m_Size.x
