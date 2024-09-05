@@ -28,7 +28,7 @@ public class MusicManager : MonoBehaviour
 		if(scene.name == "InicialCutscene"){
 			Debug.Log("oi");
 			src.Stop();
-		}else if(SceneManager.GetActiveScene().name == "Game" && DataPersistenceManager.Instance.lastScene == "InicialCutscene"){
+		}else if(SceneManager.GetActiveScene().name == "S404" && DataPersistenceManager.Instance.lastScene == "InicialCutscene"){
 			src.Play();
 		}
     }
