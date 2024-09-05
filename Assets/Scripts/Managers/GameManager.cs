@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
         notepadManager = FindObjectOfType<NotePadManager>();
         questManager = FindObjectOfType<QuestManager>();
 
-        if(SceneManager.GetActiveScene().name == "Game"){
+        if(SceneManager.GetActiveScene().name == "S404"){
             quizTrigger = FindObjectOfType<QuizTrigger>();
             doorExclamation = GameObject.Find("Door/Exclamation").gameObject;
             barbaraExclamation = GameObject.Find("Barbara/Exclamation").gameObject;
@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
     }
 
     public void UpdateExclamation(){ // chama toda vez que muda de cena
-        if(SceneManager.GetActiveScene().name == "Game"){
+        if(SceneManager.GetActiveScene().name == "S404"){
 
             barbaraExclamation.SetActive(!talkedToBarbara);
             isBarbaraExclamationActive = !talkedToBarbara;
@@ -66,7 +66,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
     }
 
     public void UnlockChapterOne(){
-        if(!isChapterUnlocked[0] && SceneManager.GetActiveScene().name == "Game"){
+        if(!isChapterUnlocked[0] && SceneManager.GetActiveScene().name == "S404"){
             isChapterUnlocked[0] = true;
             notepadManager.UpdateNotePadNotification(true);
             notepadManager.UpdateChapterBtn(0,true, true);
