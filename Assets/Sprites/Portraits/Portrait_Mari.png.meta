@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 54e4aaf90ca4fdd41915a75381099424
+guid: 730b144558b839a4cb46625b3268e1da
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -81,19 +81,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -126,19 +113,19 @@ TextureImporter:
       name: Portrait_Mari_0
       rect:
         serializedVersion: 2
-        x: 112
-        y: 86
-        width: 677
-        height: 740
+        x: 113
+        y: 87
+        width: 667
+        height: 753
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66af977b5971629418c2cce7913821fc
-      internalID: -630386561
+      spriteID: 66e96455d6485114c8a8ace2132246d8
+      internalID: -1756795682
       vertices: []
       indices: 
       edges: []
@@ -154,7 +141,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Portrait_Mari_0: -630386561
+      Portrait_Mari_0: -1756795682
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
