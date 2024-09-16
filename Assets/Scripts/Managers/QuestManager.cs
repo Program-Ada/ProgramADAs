@@ -18,7 +18,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
     // Start is called before the first frame update
     void Start()
     {
-        if(!FindObjectOfType<Tutorial>().TutorialCanvas.activeSelf){ 
+        if(!FindObjectOfType<Tutorial>()){ 
             animator.SetBool("isOpen", true);
         }
     }
