@@ -37,8 +37,8 @@ public class QuestManager : MonoBehaviour, IDataPersistence
     }
 
     public void UpdateQuestText(int index){
-        Debug.Log("Atualiza");
-        Debug.Log("ProgressIndex: "+progressIndex);
+        //Debug.Log("Atualiza");
+        //Debug.Log("ProgressIndex: "+progressIndex);
         if(progressIndex == 1 || index == 1){
             DisplayNextSentence("Fale com a Professora Bárbara");
             progressIndex = 1;

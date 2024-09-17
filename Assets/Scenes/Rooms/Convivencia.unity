@@ -2321,6 +2321,14 @@ PrefabInstance:
       propertyPath: tm
       value: 
       objectReference: {fileID: 968045971}
+    - target: {fileID: 6814690500548080466, guid: 396fe85d21553b84c84012b8912d718f, type: 3}
+      propertyPath: SpawnNextScene.x
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6814690500548080466, guid: 396fe85d21553b84c84012b8912d718f, type: 3}
+      propertyPath: SpawnNextScene.y
+      value: -11.11
+      objectReference: {fileID: 0}
     - target: {fileID: 7726080091886609290, guid: 396fe85d21553b84c84012b8912d718f, type: 3}
       propertyPath: m_Size.x
       value: 1.6655102
@@ -5958,7 +5966,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 85871854991311040, guid: effd06d65a431524887f3d16da48219b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5657223037712817308, guid: effd06d65a431524887f3d16da48219b, type: 3}
       propertyPath: m_Camera

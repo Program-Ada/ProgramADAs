@@ -15765,6 +15765,14 @@ PrefabInstance:
       value: Hall
       objectReference: {fileID: 0}
     - target: {fileID: 6814690500548080466, guid: 396fe85d21553b84c84012b8912d718f, type: 3}
+      propertyPath: SpawnNextScene.x
+      value: -0.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 6814690500548080466, guid: 396fe85d21553b84c84012b8912d718f, type: 3}
+      propertyPath: SpawnNextScene.y
+      value: -11.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 6814690500548080466, guid: 396fe85d21553b84c84012b8912d718f, type: 3}
       propertyPath: ExitConfirmationMenu
       value: 
       objectReference: {fileID: 807160503}
