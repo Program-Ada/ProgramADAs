@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 51884dbe82bc8954f9ce794625691963
+guid: 323244b9f9856d3438b4650350658437
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,9 +69,9 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -108,7 +108,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: deco_8
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 448
+        width: 109
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb457da4038ddac4ea27159278228964
+      internalID: 2071379314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deco_0
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 900
+        width: 51
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1d2c15a8cedb1d40bcd15d533979a44
+      internalID: 805665834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deco_1
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 900
+        width: 51
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf9d126fefd27c84687a14aa0deb6cfb
+      internalID: 4600544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deco_3
+      rect:
+        serializedVersion: 2
+        x: 2439
+        y: 575
+        width: 103
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f90b7c15b1443534e8153f15f6708cb4
+      internalID: -557272053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deco_5
+      rect:
+        serializedVersion: 2
+        x: 2797
+        y: 576
+        width: 109
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34bcf2b095a89074b8e195650f3f352a
+      internalID: -332235791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deco_9
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 282
+        width: 106
+        height: 144
+      alignment: 9
+      pivot: {x: 0.48876724, y: 0.035241023}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ebb5136692b79348a11b1149e37a476
+      internalID: 1907168922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +245,20 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      deco_0: 805665834
+      deco_1: 4600544
+      deco_10: -1388863483
+      deco_11: -72523597
+      deco_12: 1104808103
+      deco_2: 1615922931
+      deco_3: -557272053
+      deco_4: -1588718457
+      deco_5: -332235791
+      deco_6: 1420878403
+      deco_7: -1080687131
+      deco_8: 2071379314
+      deco_9: 1907168922
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

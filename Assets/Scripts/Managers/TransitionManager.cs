@@ -24,8 +24,8 @@ public class TransitionManager : MonoBehaviour
             bottomBlackBar.SetActive(true);
 
             StartCoroutine(WaitAnimationEnd(false,""));
-            topBlackBar.GetComponent<Animator>().SetBool("Open", true);
-            bottomBlackBar.GetComponent<Animator>().SetBool("Open", true);
+            //topBlackBar.GetComponent<Animator>().SetBool("Open", true);
+            //bottomBlackBar.GetComponent<Animator>().SetBool("Open", true);
         }
     }
 

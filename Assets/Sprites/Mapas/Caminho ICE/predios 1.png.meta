@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3c9cc279c3f45cd42a6bbe8e2d7dd220
+guid: f251538a56e108841995697569af9e34
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -108,7 +108,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: predios 1_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 278
+        width: 1094
+        height: 583
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26bdbe4e3d231754fa0b6c87cba692b4
+      internalID: 908438094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: predios 1_1
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 33
+        width: 11
+        height: 7
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98b7609367673d3478cf9747d57f726e
+      internalID: -691584515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: predios 1_2
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 742
+        width: 591
+        height: 333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7072f46a878f8e45b3bc2396230aa0b
+      internalID: 1893822268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: predios 1_3
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 296
+        width: 852
+        height: 446
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e31f44920d88142488d7328f8e59f4b4
+      internalID: -1169047146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: predios 1_4
+      rect:
+        serializedVersion: 2
+        x: 2258
+        y: 734
+        width: 791
+        height: 341
+      alignment: 9
+      pivot: {x: 0.4908344, y: 0.12793219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be02d82164daf33488aa4dae8708cccc
+      internalID: 1811692161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: predios 1_5
+      rect:
+        serializedVersion: 2
+        x: 2918
+        y: 274
+        width: 838
+        height: 449
+      alignment: 9
+      pivot: {x: 0.50865126, y: 0.6453227}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1185c7bd84dde22438d38ec96b61afc9
+      internalID: -2129447076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: predios 1_6
+      rect:
+        serializedVersion: 2
+        x: 3592
+        y: 730
+        width: 1076
+        height: 370
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a79e573f516b4384190aeb9dd56c3759
+      internalID: 1814895807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: predios 1_7
+      rect:
+        serializedVersion: 2
+        x: 4270
+        y: 307
+        width: 398
+        height: 431
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a36ad346c91ea5438334cf8a13b7d73
+      internalID: 866262078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +287,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      predios 1_0: 908438094
+      predios 1_1: -691584515
+      predios 1_2: 1893822268
+      predios 1_3: -1169047146
+      predios 1_4: 1811692161
+      predios 1_5: -2129447076
+      predios 1_6: 1814895807
+      predios 1_7: 866262078
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3147208342317099092}
   - component: {fileID: 28311399946943264}
   - component: {fileID: 4218591696739867521}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Toolltip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,8 +71,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -764966921
+  m_SortingLayer: 1
   m_SortingOrder: 3
   m_Sprite: {fileID: -4138361, guid: 5b39181197b0770498274a9bf17615d9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_Size: {x: 0.32, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &4218591696739867521
@@ -197,7 +197,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23dc4151537bd184882d7278d495452f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerIsClose: 0
-  Player: {fileID: 0}
   nextSceneName: Hall
+  tm: {fileID: 0}
   toolTip: {fileID: 2600038351378781217}
