@@ -57,7 +57,7 @@ public class DataPersistenceManager : MonoBehaviour
             SaveGame();
         }
 
-        if(SceneManager.GetActiveScene().name != "Menu" && (lastScene == "GameSelection" || lastScene == "InicialCutscene")){
+        if(FindObjectOfType<Tutorial>() && (lastScene == "GameSelection" || lastScene == "InicialCutscene")){
             Tutorial.Instance.OpenTutorial();
         }
         

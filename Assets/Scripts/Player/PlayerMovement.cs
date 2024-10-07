@@ -22,6 +22,14 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("Speed", movement.sqrMagnitude);
 
         rb.velocity = Vector2.zero;
+
+        if(Input.GetKey(KeyCode.LeftShift) && (movement.x != 0 || movement.y != 0)){
+            moveSpeed = 6f;
+            animator.SetBool("isRunning", true);
+        }else{
+            moveSpeed = 3f;
+            animator.SetBool("isRunning", false);
+        }
     }
 
     void FixedUpdate(){

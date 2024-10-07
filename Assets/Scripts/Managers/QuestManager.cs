@@ -18,7 +18,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
     // Start is called before the first frame update
     void Start()
     {
-        if(!FindObjectOfType<Tutorial>().TutorialCanvas.activeSelf){ 
+        if(!FindObjectOfType<Tutorial>()){ 
             animator.SetBool("isOpen", true);
         }
     }
@@ -37,8 +37,8 @@ public class QuestManager : MonoBehaviour, IDataPersistence
     }
 
     public void UpdateQuestText(int index){
-        Debug.Log("Atualiza");
-        Debug.Log("ProgressIndex: "+progressIndex);
+        //Debug.Log("Atualiza");
+        //Debug.Log("ProgressIndex: "+progressIndex);
         if(progressIndex == 1 || index == 1){
             DisplayNextSentence("Fale com a Professora Bárbara");
             progressIndex = 1;

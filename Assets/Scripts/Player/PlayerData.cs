@@ -6,8 +6,11 @@ using UnityEngine.SceneManagement;
 public class PlayerData : MonoBehaviour, IDataPersistence
 {
     public void LoadData(GameData data){
-        if(DataPersistenceManager.Instance.lastScene == "GameSelection"){
+        if(DataPersistenceManager.Instance.lastScene == "GameSelection" || DataPersistenceManager.Instance.lastScene == "InicialCutscene"){
             this.transform.position = data.playerPosition;
+        }else{
+            Debug.Log("Seta Posição SpawnManager");
+            this.transform.position = SpawnManager.Instance.playerSpawnPosition;
         }
     }
     public void SaveData(ref GameData data){
