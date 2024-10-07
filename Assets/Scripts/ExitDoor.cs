@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TreeEditor;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -11,7 +12,9 @@ public class ExitDoor : MonoBehaviour
     //public GameObject ExitOptionCanvasFalse;
     //private GameObject Player;
     public string nextSceneName;
+    public Vector2 SpawnNextScene;
     public TransitionManager tm;
+    public SpawnManager sm;
     //public GameObject ExitConfirmationMenu;
     //public bool isFaseCompleted;
     [SerializeField]GameObject toolTip;
@@ -20,6 +23,7 @@ public class ExitDoor : MonoBehaviour
         //ExitOptionCanvas.SetActive(false);
         //ExitOptionCanvasFalse.SetActive(false);
         toolTip.SetActive(false);
+        sm = SpawnManager.Instance;
     }
 
     void Update(){
@@ -34,6 +38,8 @@ public class ExitDoor : MonoBehaviour
                 LoadNextScene();
             }
             */
+            sm.playerSpawnPosition.x = SpawnNextScene.x;
+            sm.playerSpawnPosition.y = SpawnNextScene.y;
             tm.PlayExitSceneAnimation(nextSceneName);
             //LoadNextScene();
         }

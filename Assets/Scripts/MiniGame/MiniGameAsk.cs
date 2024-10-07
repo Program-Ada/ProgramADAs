@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 
 public class MiniGameAsk : MonoBehaviour
 {
+    /*
     public GameObject buttonFalse;
     public GameObject buttonTrue;
     public GameObject dialogueTextFalse;
@@ -36,4 +37,5 @@ public class MiniGameAsk : MonoBehaviour
     public void AnwserTrue(){
         SceneManager.LoadScene("MiniGame_Cafe");    //adicionar proxima cena
     }
+*/
 }
