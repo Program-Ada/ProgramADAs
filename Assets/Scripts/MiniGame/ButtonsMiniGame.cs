@@ -14,8 +14,8 @@ public class ButtonsMiniGame : MonoBehaviour
     private Drinks drinks;
     private Foods foods;
     private Button[] buttons;
-    public GameObject drink_btn;
-    public GameObject food_btn;
+    //public GameObject drink_btn;
+    //public GameObject food_btn;
     public GameObject copo;
     public GameObject pratoLimpo;
     //public GameObject pratoSujo;
@@ -67,13 +67,13 @@ public class ButtonsMiniGame : MonoBehaviour
     }
 
     public void Pegar_Suco() {
-        drink_btn.SetActive(true);
-        buttons[2].interactable = false;
+        //drink_btn.SetActive(true);
+        //buttons[2].interactable = false;
     }
 
     public void Pegar_Bolo() {
-        food_btn.SetActive(true);
-        buttons[3].interactable = false;
+        //food_btn.SetActive(true);
+        //buttons[3].interactable = false;
     }
 
     public void Pegar_Copo() {
@@ -93,8 +93,8 @@ public class ButtonsMiniGame : MonoBehaviour
             }
         }
         drinks.Reset_teste();
-        drink_btn.SetActive(false);
-        buttons[2].interactable = true;
+        //drink_btn.SetActive(false);
+        //buttons[2].interactable = true;
     }
 
     public void JogarFora_Food() {
@@ -104,23 +104,23 @@ public class ButtonsMiniGame : MonoBehaviour
             }
         }
         foods.Reset_teste();
-        food_btn.SetActive(false);
-        buttons[3].interactable = true;
+        //food_btn.SetActive(false);
+        //buttons[3].interactable = true;
     }
 
     public void Trash() {
         JogarFora_Drink();
         JogarFora_Food();
-        drinks.reset_option();
-        foods.reset_option();
+        //drinks.reset_option();
+        //foods.reset_option();
     }
 
     public void ResetOrder() {
         // pedidos.Stop_Order();
         JogarFora_Drink();
-        drink_btn.SetActive(false);
+        //drink_btn.SetActive(false);
         JogarFora_Food();
-        food_btn.SetActive(false);
+        //food_btn.SetActive(false);
 
         drinks.reset_option();
         foods.reset_option();
