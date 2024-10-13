@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Order : MonoBehaviour
 {
+/*
     public Drinks drinks;
     public Foods foods;
     public List<GameObject> optionsDrinks;
@@ -66,4 +67,5 @@ public class Order : MonoBehaviour
             return false;
         }
     }
+*/
 }

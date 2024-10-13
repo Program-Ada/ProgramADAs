@@ -18,7 +18,7 @@ public class ButtonsMiniGame : MonoBehaviour
     public GameObject food_btn;
     public GameObject copo;
     public GameObject pratoLimpo;
-    public GameObject pratoSujo;
+    //public GameObject pratoSujo;
     public GameObject aleErroSemCopo;
     public GameObject[] emojis;
     // public GameObject[] vidas;
