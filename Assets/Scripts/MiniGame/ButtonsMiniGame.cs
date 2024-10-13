@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 using Unity.VisualScripting;
 using UnityEngine.PlayerLoop;
 using UnityEditor.SearchService;
+using TMPro;
 
 public class ButtonsMiniGame : MonoBehaviour
 {
@@ -24,6 +25,9 @@ public class ButtonsMiniGame : MonoBehaviour
     // public GameObject[] vidas;
     public List<GameObject> vidas;
 
+    private int orderCount = 0;
+    public TextMeshProUGUI orderCountText;
+
     void Start()
     {
         pedidos = FindObjectOfType<Orders>();
@@ -41,6 +45,8 @@ public class ButtonsMiniGame : MonoBehaviour
             for (int i = 0; i < buttons.Length; i++) {
                 buttons[i].interactable = true;
             }
+            orderCount++;
+            orderCountText.text = orderCount.ToString() + "/6";
         }
         else {
             Debug.Log("Já tem um pedido em andamento, não pode iniciar outro");
@@ -55,15 +61,22 @@ public class ButtonsMiniGame : MonoBehaviour
         else if((pedidos.pedidoAtual.GetComponent<Pedido>().drink == drinks.chosenOption) || (pedidos.pedidoAtual.GetComponent<Pedido>().food == foods.chosenOption)) {
             Debug.Log("Drink ou food incorreto");
             emojis[1].SetActive(true);
-            perdeVida();
+            PerdeVida();
         }
         else {
             Debug.Log("Drink e food incorretos");
             emojis[2].SetActive(true);
-            perdeVida();
+            PerdeVida();
         }
 
         Invoke(nameof(ResetOrder), 4);
+
+        if(orderCount < 6){
+            Start_Btn();
+        }else{
+            Finish_Game();
+        }
+        
     }
 
     public void Pegar_Suco() {
@@ -111,25 +124,26 @@ public class ButtonsMiniGame : MonoBehaviour
     public void Trash() {
         JogarFora_Drink();
         JogarFora_Food();
-        //drinks.reset_option();
-        //foods.reset_option();
+        drinks.reset_option();
+        foods.reset_option();
     }
 
     public void ResetOrder() {
         // pedidos.Stop_Order();
-        JogarFora_Drink();
         //drink_btn.SetActive(false);
-        JogarFora_Food();
         //food_btn.SetActive(false);
+
+        JogarFora_Drink();
+        JogarFora_Food();
 
         drinks.reset_option();
         foods.reset_option();
 
         pedidos.Stop_Order();
-        reset_emoji();
+        Reset_emoji();
     }
 
-    public void reset_emoji() {
+    public void Reset_emoji() {
         for (int i = 0; i < emojis.Length; i++) {
             if (emojis[i].activeSelf) {
                 emojis[i].SetActive(false);
@@ -137,7 +151,7 @@ public class ButtonsMiniGame : MonoBehaviour
         }
     }
 
-    public void perdeVida() {
+    public void PerdeVida() {
         vidas[vidas.Count - 1].SetActive(false);
         vidas.RemoveAt(vidas.Count -1);
 
@@ -147,8 +161,12 @@ public class ButtonsMiniGame : MonoBehaviour
         }
     }
 
-    public void buttonSair() {
+    public void ButtonSair() {
         //implementar pergunta de confirmacao
         SceneManager.LoadScene("Fase_cafe");
+    }
+
+    public void Finish_Game(){
+        // implementar tela final
     }
 }
