@@ -6,8 +6,4 @@ public class Pedido : MonoBehaviour
 {
     public int food;
     public int drink;
-    void Start()
-    {
-        
-    }
 }

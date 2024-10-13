@@ -20,17 +20,10 @@ public class MiniGameManager : MonoBehaviour
     {
         dialogueTrigger = FindObjectOfType<DialogueTrigger>();
         dialogueManager = FindObjectOfType<DialogueManager>();
-        SetUpMiniGame();
         dialogueTextFalse.enabled = false;
     }
 
-    public void SetUpMiniGame(){
-        //nameText.text = dialogueTrigger.dialogue.name;
-        //npcImage.sprite = dialogueTrigger.dialogue.image;
-    }
-
     public void OpenAskMiniGame(){
-        SetUpMiniGame();
         buttonFalse.SetActive(true);
         buttonTrue.SetActive(true);
         dialogueTextFalse.enabled = false;
