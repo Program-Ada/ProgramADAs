@@ -27,9 +27,11 @@ public class ButtonsMiniGame : MonoBehaviour
 
     private int orderCount = 0;
     public TextMeshProUGUI orderCountText;
+    public static ButtonsMiniGame instance;
 
     void Start()
     {
+        instance = this;
         pedidos = FindObjectOfType<Orders>();
         drinks = FindAnyObjectByType<Drinks>();
         foods = FindAnyObjectByType<Foods>();
@@ -161,12 +163,15 @@ public class ButtonsMiniGame : MonoBehaviour
         }
     }
 
-    public void ButtonSair() {
-        //implementar pergunta de confirmacao
-        SceneManager.LoadScene("Fase_cafe");
-    }
-
     public void Finish_Game(){
         // implementar tela final
+    }
+
+    public void Disable_Buttons(){
+
+    }
+
+    public void Enable_Buttons(){
+
     }
 }
