@@ -59,11 +59,13 @@ public class ButtonsMiniGame : MonoBehaviour
             Debug.Log("Drink ou food incorreto");
             emojis[1].SetActive(true);
             PerdeVida();
+            ScoreCafe.instance.Update_Score(1);
         }
         else {
             Debug.Log("Drink e food incorretos");
             emojis[2].SetActive(true);
             PerdeVida();
+            ScoreCafe.instance.Update_Score(2);
         }
 
         Invoke(nameof(ResetOrder), 4);
@@ -73,7 +75,6 @@ public class ButtonsMiniGame : MonoBehaviour
         }else{
             Finish_Game();
         }
-        
     }
 
     public void Pegar_Suco() {
