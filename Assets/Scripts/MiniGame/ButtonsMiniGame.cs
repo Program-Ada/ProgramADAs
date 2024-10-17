@@ -68,12 +68,19 @@ public class ButtonsMiniGame : MonoBehaviour
             ScoreCafe.instance.Update_Score(2);
         }
 
-        Invoke(nameof(ResetOrder), 4);
+        Invoke(nameof(ResetOrder), 2);
+        Invoke(nameof(IsGameFinished), 3);
 
-        if(orderCount < 6){
-            Start_Btn();
+    }
+    public void IsGameFinished(){
+        if(vidas.Count > 0){
+            if(orderCount < 6){
+                Start_Btn();
+            }else{
+                Finish_Game(true);
+            }
         }else{
-            Finish_Game();
+            Finish_Game(false);
         }
     }
 
@@ -155,8 +162,13 @@ public class ButtonsMiniGame : MonoBehaviour
 
         if (vidas.Count == 0) {
             Debug.Log("morreu! vidas: " + vidas.Count);
-            //implementar recomecar jogo
+            Finish_Game(false);
         }
+    }
+
+    public void Reset_Counter(){
+        orderCount = 0;
+        orderCountText.text = orderCount.ToString() + "/6";
     }
 
     public void Update_Counter(){
@@ -164,8 +176,12 @@ public class ButtonsMiniGame : MonoBehaviour
         orderCountText.text = orderCount.ToString() + "/6";
     }
 
-    public void Finish_Game(){
-        // implementar tela final
+    public void Finish_Game(bool finish){
+        if(finish){
+            ScoreCafe.instance.Show_Score();
+        }else{
+            ScoreCafe.instance.Show_Loose();
+        }
     }
 
     public void Disable_Buttons(){
