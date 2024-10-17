@@ -11,18 +11,18 @@ using TMPro;
 public class ButtonsMiniGame : MonoBehaviour
 {
     // public GameObject pedidos;
+    // public GameObject drink_btn;
+    // public GameObject food_btn;
+    // public GameObject pratoSujo;
+    // public GameObject[] vidas;
     private Orders pedidos;
     private Drinks drinks;
     private Foods foods;
     private Button[] buttons;
-    //public GameObject drink_btn;
-    //public GameObject food_btn;
     public GameObject copo;
     public GameObject pratoLimpo;
-    //public GameObject pratoSujo;
     public GameObject aleErroSemCopo;
     public GameObject[] emojis;
-    // public GameObject[] vidas;
     public List<GameObject> vidas;
 
     private int orderCount = 0;
@@ -36,19 +36,14 @@ public class ButtonsMiniGame : MonoBehaviour
         drinks = FindAnyObjectByType<Drinks>();
         foods = FindAnyObjectByType<Foods>();
         buttons = GetComponentsInChildren<Button>();
-        for (int i = 0; i < buttons.Length; i++) {
-            buttons[i].interactable = false;
-        }
+        Disable_Buttons();
     }
 
     public void Start_Btn() {
         if (!pedidos.pedidoEmAndamento) {  
             pedidos.Show_Order();
-            for (int i = 0; i < buttons.Length; i++) {
-                buttons[i].interactable = true;
-            }
-            orderCount++;
-            orderCountText.text = orderCount.ToString() + "/6";
+            Enable_Buttons();
+            Update_Counter();
         }
         else {
             Debug.Log("Já tem um pedido em andamento, não pode iniciar outro");
@@ -163,15 +158,24 @@ public class ButtonsMiniGame : MonoBehaviour
         }
     }
 
+    public void Update_Counter(){
+        orderCount++;
+        orderCountText.text = orderCount.ToString() + "/6";
+    }
+
     public void Finish_Game(){
         // implementar tela final
     }
 
     public void Disable_Buttons(){
-
+        for (int i = 0; i < buttons.Length; i++) {
+            buttons[i].interactable = false;
+        }
     }
 
     public void Enable_Buttons(){
-
+        for (int i = 0; i < buttons.Length; i++) {
+            buttons[i].interactable = true;
+        }
     }
 }
