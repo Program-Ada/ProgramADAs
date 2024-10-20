@@ -40,10 +40,10 @@ public class ButtonsMiniGame : MonoBehaviour
 
     public void Start_Btn() {
         if (!pedidos.pedidoEmAndamento) {  
-            pedidos.Show_Order();
             Enable_Buttons();
             Update_Counter();
             Clients.instance.CallClient();
+            Orders.instance.Invoke("Show_Order", 1); // espera a animação da personagem entrando terminar (por algum motivo 1s só é o suficiente ao invés de 3s)
         }
         else {
             Debug.Log("Já tem um pedido em andamento, não pode iniciar outro");
