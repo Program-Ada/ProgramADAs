@@ -12,7 +12,6 @@ public class Clients : MonoBehaviour
     {
         instance = this;
         CreateList();
-        CallClient();
     }
 
     public void CreateList(){
@@ -41,7 +40,21 @@ public class Clients : MonoBehaviour
         if(clients.Count > 0){
             currentClient = clients[0];
             currentClient.SetActive(true);
-            currentClient.GetComponent<Animator>().SetBool("isEntering", true);
         }
+    }
+
+    public void ExitClient(){
+        if(clients.Count > 0){
+            StartCoroutine(PlayLeavingAnimation());
+        }
+    }
+
+    private IEnumerator PlayLeavingAnimation(){
+
+        currentClient.GetComponent<Animator>().SetBool("isLeaving", true);
+        yield return new WaitForSeconds(3); // tempo da animação
+
+        currentClient.SetActive(false);
+        clients.Remove(currentClient);
     }
 }

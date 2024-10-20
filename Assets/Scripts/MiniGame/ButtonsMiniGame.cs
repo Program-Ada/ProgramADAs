@@ -43,6 +43,7 @@ public class ButtonsMiniGame : MonoBehaviour
             pedidos.Show_Order();
             Enable_Buttons();
             Update_Counter();
+            Clients.instance.CallClient();
         }
         else {
             Debug.Log("Já tem um pedido em andamento, não pode iniciar outro");
@@ -74,7 +75,8 @@ public class ButtonsMiniGame : MonoBehaviour
     public void IsGameFinished(){
         if(vidas.Count > 0){
             if(orderCount < 6){
-                Start_Btn();
+                Clients.instance.ExitClient();
+                Invoke(nameof(Start_Btn),4);
             }else{
                 Finish_Game(true);
             }
