@@ -24,7 +24,6 @@ public class ButtonsMiniGame : MonoBehaviour
     public GameObject aleErroSemCopo;
     public GameObject[] emojis;
     public List<GameObject> vidas;
-
     private int orderCount = 0;
     public TextMeshProUGUI orderCountText;
     public static ButtonsMiniGame instance;
