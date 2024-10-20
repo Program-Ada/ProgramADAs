@@ -72,16 +72,16 @@ public class ButtonsMiniGame : MonoBehaviour
         Invoke(nameof(IsGameFinished), 3);
 
     }
-    public void IsGameFinished(){
+    public void IsGameFinished(){ // verifica se o jogo acabou ou não
         if(vidas.Count > 0){
-            if(orderCount < 6){
+            if(orderCount < CafeManager.instance.maxOrders){
                 Clients.instance.ExitClient();
-                Invoke(nameof(Start_Btn),4);
+                Invoke(nameof(Start_Btn), 4); // tempo da animação de saída (3) + 1 para evitar bugs
             }else{
-                Finish_Game(true);
+                CafeManager.instance.Finish_Game(true);
             }
         }else{
-            Finish_Game(false);
+            CafeManager.instance.Finish_Game(false);
         }
     }
 
@@ -163,7 +163,7 @@ public class ButtonsMiniGame : MonoBehaviour
 
         if (vidas.Count == 0) {
             Debug.Log("morreu! vidas: " + vidas.Count);
-            Finish_Game(false);
+            CafeManager.instance.Finish_Game(false);
         }
     }
 
@@ -175,14 +175,6 @@ public class ButtonsMiniGame : MonoBehaviour
     public void Update_Counter(){
         orderCount++;
         orderCountText.text = orderCount.ToString() + "/6";
-    }
-
-    public void Finish_Game(bool finish){
-        if(finish){
-            ScoreCafe.instance.Show_Score();
-        }else{
-            ScoreCafe.instance.Show_Loose();
-        }
     }
 
     public void Disable_Buttons(){

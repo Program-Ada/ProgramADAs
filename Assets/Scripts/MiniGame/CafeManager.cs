@@ -11,4 +11,12 @@ public class CafeManager : MonoBehaviour
         instance = this;
         maxOrders = 6;
     }
+
+    public void Finish_Game(bool finish){
+        if(finish){
+            ScoreCafe.instance.Show_Score();
+        }else{
+            ScoreCafe.instance.Show_Loose();
+        }
+    }
 }
