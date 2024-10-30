@@ -15,11 +15,6 @@ public class Feedbacks : MonoBehaviour
         errorAtual = -1;
     }
 
-    void Update()
-    {
-
-    }
-
     public void Feedback_Test(string errorName)
     {
         errorAtual = verificaErrorName(errorName);

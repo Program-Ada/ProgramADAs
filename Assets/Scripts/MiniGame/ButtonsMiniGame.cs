@@ -5,7 +5,6 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Unity.VisualScripting;
 using UnityEngine.PlayerLoop;
-using UnityEditor.SearchService;
 using TMPro;
 
 public class ButtonsMiniGame : MonoBehaviour
