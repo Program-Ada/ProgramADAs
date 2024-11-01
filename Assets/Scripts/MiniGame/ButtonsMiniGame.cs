@@ -129,8 +129,8 @@ public class ButtonsMiniGame : MonoBehaviour
     public void Trash() {
         JogarFora_Drink();
         JogarFora_Food();
-        drinks.reset_option();
-        foods.reset_option();
+        drinks.Reset_option();
+        foods.Reset_option();
     }
 
     public void ResetOrder() {
@@ -141,8 +141,8 @@ public class ButtonsMiniGame : MonoBehaviour
         JogarFora_Drink();
         JogarFora_Food();
 
-        drinks.reset_option();
-        foods.reset_option();
+        drinks.Reset_option();
+        foods.Reset_option();
 
         pedidos.Stop_Order();
         Reset_emoji();

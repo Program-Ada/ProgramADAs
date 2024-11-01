@@ -8,8 +8,6 @@ public class Drinks : MonoBehaviour
     public bool containerFull;
     public int chosenOption;
     public bool containerExists;
-    public ButtonsMiniGame buttonsMiniGame;
-    public Feedbacks feedbacks;
 
     public GameObject[] drinkOptions;
 
@@ -19,8 +17,6 @@ public class Drinks : MonoBehaviour
         // chosenOption = -1;
         // containerExists = false;
         Reset_teste();
-        buttonsMiniGame = FindAnyObjectByType<ButtonsMiniGame>();
-        feedbacks = FindAnyObjectByType<Feedbacks>();
     }
 
     public void Show_Option(int i) {
@@ -29,13 +25,13 @@ public class Drinks : MonoBehaviour
                 options[i].SetActive(true);
                 containerFull = true;
                 chosenOption = i;
-                buttonsMiniGame.copo.SetActive(false);
+                ButtonsMiniGame.instance.copo.SetActive(false);
                 drinkOptions[i].SetActive(true);
             }
         }
         else {
             Debug.Log("Não tem Copo = Suco derramado");
-            feedbacks.Feedback_Test("semCopo");
+            FeedbackManager.Instance.Feedback_Test("semCopo");
         }
     }
 
@@ -45,7 +41,7 @@ public class Drinks : MonoBehaviour
         containerExists = false;
     }
 
-    public void reset_option() {
+    public void Reset_option() {
         for (int i = 0; i < drinkOptions.Length; i++) {
             if (drinkOptions[i].activeSelf) {
                 drinkOptions[i].SetActive(false);

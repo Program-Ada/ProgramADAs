@@ -1,38 +1,36 @@
+/*
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Feedbacks : MonoBehaviour
+public class FeedbackCheck : MonoBehaviour
 {
-    public GameObject withoutContainer;
-    public DialogueFeedback[] feedbacks;
+    public FeedbackTrigger[] feedbacks;
     public GameObject feedbackAtual;
     public int errorAtual;
     void Start()
     {
-        feedbacks = GetComponentsInChildren<DialogueFeedback>(true);
+        feedbacks = GetComponentsInChildren<FeedbackTrigger>(true);
         errorAtual = -1;
     }
 
     public void Feedback_Test(string errorName)
     {
-        errorAtual = verificaErrorName(errorName);
+        errorAtual = VerificaErrorName(errorName);
         if(errorAtual != -1) {
             feedbackAtual = feedbacks[errorAtual].gameObject;
             feedbackAtual.SetActive(true);
-            // Debug.Log("entrou feedback");
-            // withoutContainer.SetActive(true);
-            Invoke(nameof(activeDialogue),(float)0.5);
+            Invoke(nameof(ActiveDialogue),(float)0.5);
         }
     }
 
-    public void activeDialogue()
+    public void ActiveDialogue()
     {
-        feedbackAtual.GetComponent<DialogueFeedback>().TriggerDialogue();
+        FeedbackManager.Instance.ShowFeedback(feedbackAtual.GetComponent<Feedback>());
     }
 
-    public int verificaErrorName(string errorName) {
+    public int VerificaErrorName(string errorName) {
         switch (errorName)
         {
             case "semCopo":
@@ -44,3 +42,4 @@ public class Feedbacks : MonoBehaviour
         }
     }
 }
+*/
