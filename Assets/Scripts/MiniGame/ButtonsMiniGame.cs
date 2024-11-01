@@ -26,6 +26,8 @@ public class ButtonsMiniGame : MonoBehaviour
     private int orderCount = 0;
     public TextMeshProUGUI orderCountText;
     public static ButtonsMiniGame instance;
+    private bool isFoodFunctionActive;
+    private bool isDrinkFunctionActive;
 
     void Start()
     {
@@ -85,13 +87,13 @@ public class ButtonsMiniGame : MonoBehaviour
     }
 
     public void Pegar_Suco() {
-        //drink_btn.SetActive(true);
-        //buttons[2].interactable = false;
+        isFoodFunctionActive = false;
+        isDrinkFunctionActive = true;
     }
 
     public void Pegar_Bolo() {
-        //food_btn.SetActive(true);
-        //buttons[3].interactable = false;
+        isDrinkFunctionActive = false;
+        isFoodFunctionActive = true;
     }
 
     public void Pegar_Copo() {

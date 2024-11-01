@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class Drinks : MonoBehaviour
 {
+    [Header("Static Instance")]
+        public static Drinks Instance;
     public GameObject[] options;
     public bool containerFull;
     public int chosenOption;
     public bool containerExists;
-
     public GameObject[] drinkOptions;
+
+    [Header("Booleans")]
+    public bool isFunctionActive;
 
     void Start()
     {

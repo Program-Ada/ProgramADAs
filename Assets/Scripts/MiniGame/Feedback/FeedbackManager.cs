@@ -47,6 +47,12 @@ public class FeedbackManager : MonoBehaviour
                 return 0;
             case "semPrato":
                 return 1;
+            case "semParametro":
+                return 2;
+            case "parametroSuco":
+                return 3;
+            case "parametroBolo":
+                return 4;
             default:
                 return -1;
         }
