@@ -87,13 +87,13 @@ public class ButtonsMiniGame : MonoBehaviour
     }
 
     public void Pegar_Suco() {
-        isFoodFunctionActive = false;
-        isDrinkFunctionActive = true;
+        Foods.Instance.isFoodFunctionSelected = false;
+        Drinks.Instance.isDrinkFunctionSelected = true;
     }
 
     public void Pegar_Bolo() {
-        isDrinkFunctionActive = false;
-        isFoodFunctionActive = true;
+        Drinks.Instance.isDrinkFunctionSelected = false;
+        Foods.Instance.isFoodFunctionSelected = true;
     }
 
     public void Pegar_Copo() {

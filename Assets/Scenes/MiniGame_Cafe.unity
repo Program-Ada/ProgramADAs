@@ -2045,6 +2045,7 @@ MonoBehaviour:
   foodOptions:
   - {fileID: 1319678553}
   - {fileID: 1174530853}
+  isFoodFunctionSelected: 0
 --- !u!1 &211204927
 GameObject:
   m_ObjectHideFlags: 0
@@ -4538,7 +4539,7 @@ MonoBehaviour:
   - {fileID: 1225080364}
   - {fileID: 763935650}
   - {fileID: 464417109}
-  isFunctionActive: 0
+  isDrinkFunctionSelected: 0
 --- !u!95 &561127757
 Animator:
   serializedVersion: 5
@@ -20473,9 +20474,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -28441297, guid: fc76156456bd9894aa97165cf90ea51b, type: 3}
+  m_Sprite: {fileID: -141864929, guid: ef467cda064991941982d808d75d2599, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 1
   m_FillAmount: 0.8

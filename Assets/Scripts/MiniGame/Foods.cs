@@ -4,35 +4,43 @@ using UnityEngine;
 
 public class Foods : MonoBehaviour
 {
+    [Header("Static Instance")]
+        public static Foods Instance;
     public GameObject[] options;
     public bool containerFull = false;
     public int chosenOption = -1;
     public bool containerExists;
     public ButtonsMiniGame buttonsMiniGame;
     public GameObject[] foodOptions;
+    public bool isFoodFunctionSelected = false;
 
     void Start()
     {
         // containerFull = false;
         // chosenOption = -1;
         // containerExists = false;
+        Instance = this;
         Reset_teste();
         buttonsMiniGame = FindAnyObjectByType<ButtonsMiniGame>();
     }
 
     public void Show_Option(int i) {
-        if(containerExists) {
-            if (!containerFull) { 
-                options[i].SetActive(true);
-                containerFull = true;
-                chosenOption = i;
-                buttonsMiniGame.pratoLimpo.SetActive(false);
-                foodOptions[i].SetActive(true);
+        if(isFoodFunctionSelected) {
+            if (containerExists) { 
+                if(!containerFull){
+                    options[i].SetActive(true);
+                    containerFull = true;
+                    chosenOption = i;
+                    buttonsMiniGame.pratoLimpo.SetActive(false);
+                    foodOptions[i].SetActive(true);
+                }
+            }else{
+                Debug.Log("Não tem Prato = Bolo na mesa");
+                FeedbackManager.Instance.Feedback_Test("semPrato");  
             }
         }
         else {
-            Debug.Log("Não tem Prato = Bolo na mesa");
-            FeedbackManager.Instance.Feedback_Test("semPrato");
+            FeedbackManager.Instance.Feedback_Test("semParametro");
         }
     }
 

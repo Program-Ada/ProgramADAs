@@ -13,29 +13,35 @@ public class Drinks : MonoBehaviour
     public GameObject[] drinkOptions;
 
     [Header("Booleans")]
-    public bool isFunctionActive;
+    public bool isDrinkFunctionSelected = false;
 
     void Start()
     {
         // containerFull = false;
         // chosenOption = -1;
         // containerExists = false;
+        Instance = this;
         Reset_teste();
     }
 
     public void Show_Option(int i) {
-        if(containerExists) {
-            if (!containerFull) { 
-                options[i].SetActive(true);
-                containerFull = true;
-                chosenOption = i;
-                ButtonsMiniGame.instance.copo.SetActive(false);
-                drinkOptions[i].SetActive(true);
+        if(isDrinkFunctionSelected) {
+            if (containerExists) { 
+                if(!containerFull){
+                    options[i].SetActive(true);
+                    containerFull = true;
+                    chosenOption = i;
+                    ButtonsMiniGame.instance.copo.SetActive(false);
+                    drinkOptions[i].SetActive(true);
+                } 
+            }else{
+                Debug.Log("Não tem Copo = Suco derramado");
+                FeedbackManager.Instance.Feedback_Test("semCopo");
+                // implementar sprite do suco derramando
             }
         }
         else {
-            Debug.Log("Não tem Copo = Suco derramado");
-            FeedbackManager.Instance.Feedback_Test("semCopo");
+            FeedbackManager.Instance.Feedback_Test("semParametro");
         }
     }
 
