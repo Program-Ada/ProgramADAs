@@ -2236,7 +2236,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: morango
+  m_text: melancia
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3955,7 +3955,7 @@ GameObject:
   - component: {fileID: 473527609}
   - component: {fileID: 473527608}
   m_Layer: 5
-  m_Name: Morango
+  m_Name: Melancia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4057,7 +4057,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -756604225, guid: 99b4628ab54a1491bafc0d98474a27f1, type: 3}
+  m_Sprite: {fileID: -2182335, guid: 04531ec057e02a142ab9bcf93dde8114, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4538,6 +4538,7 @@ MonoBehaviour:
   - {fileID: 1225080364}
   - {fileID: 763935650}
   - {fileID: 464417109}
+  isFunctionActive: 0
 --- !u!95 &561127757
 Animator:
   serializedVersion: 5
@@ -8561,7 +8562,7 @@ GameObject:
   - component: {fileID: 1225080367}
   - component: {fileID: 1225080366}
   m_Layer: 5
-  m_Name: Morango
+  m_Name: Melancia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8663,7 +8664,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -756604225, guid: 99b4628ab54a1491bafc0d98474a27f1, type: 3}
+  m_Sprite: {fileID: -2182335, guid: 04531ec057e02a142ab9bcf93dde8114, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9524,7 +9525,7 @@ GameObject:
   - component: {fileID: 1327510454}
   - component: {fileID: 1327510455}
   m_Layer: 5
-  m_Name: Morango
+  m_Name: Melancia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
