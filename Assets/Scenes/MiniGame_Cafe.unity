@@ -4026,16 +4026,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 531739913}
-        m_TargetAssemblyTypeName: Drinks, Assembly-CSharp
-        m_MethodName: Show_Option
-        m_Mode: 3
+      - m_Target: {fileID: 81854879}
+        m_TargetAssemblyTypeName: CafeManager, Assembly-CSharp
+        m_MethodName: CheckParameter
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: melancia
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &473527609
@@ -4427,16 +4427,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 531739913}
-        m_TargetAssemblyTypeName: Drinks, Assembly-CSharp
-        m_MethodName: Show_Option
-        m_Mode: 3
+      - m_Target: {fileID: 81854879}
+        m_TargetAssemblyTypeName: CafeManager, Assembly-CSharp
+        m_MethodName: CheckParameter
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 2
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: laranja
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &529656164
@@ -7857,16 +7857,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 531739913}
-        m_TargetAssemblyTypeName: Drinks, Assembly-CSharp
-        m_MethodName: Show_Option
-        m_Mode: 3
+      - m_Target: {fileID: 81854879}
+        m_TargetAssemblyTypeName: CafeManager, Assembly-CSharp
+        m_MethodName: CheckParameter
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: uva
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1130971662
@@ -10162,16 +10162,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 186192515}
-        m_TargetAssemblyTypeName: Foods, Assembly-CSharp
-        m_MethodName: Show_Option
-        m_Mode: 3
+      - m_Target: {fileID: 81854879}
+        m_TargetAssemblyTypeName: CafeManager, Assembly-CSharp
+        m_MethodName: CheckParameter
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: chocolate
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1408230816
@@ -10666,16 +10666,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 186192515}
-        m_TargetAssemblyTypeName: Foods, Assembly-CSharp
-        m_MethodName: Show_Option
-        m_Mode: 3
+      - m_Target: {fileID: 81854879}
+        m_TargetAssemblyTypeName: CafeManager, Assembly-CSharp
+        m_MethodName: CheckParameter
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: morango
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1462420144

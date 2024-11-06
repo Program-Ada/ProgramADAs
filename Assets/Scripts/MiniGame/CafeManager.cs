@@ -19,4 +19,39 @@ public class CafeManager : MonoBehaviour
             ScoreCafe.instance.Show_Loose();
         }
     }
+
+    public void CheckParameter(string flavor){
+        if(Foods.Instance.isFoodFunctionSelected){
+            switch (flavor)
+            {
+                case "chocolate":
+                    Foods.Instance.Show_Option(0);
+                    break;
+                case "morango":
+                    Foods.Instance.Show_Option(1);
+                    break;
+                default:
+                    FeedbackManager.Instance.Feedback_Test("boloParametro");
+                    break;
+                    
+            }
+        }else if(Drinks.Instance.isDrinkFunctionSelected){
+            switch (flavor)
+            {
+                case "melancia":
+                    Drinks.Instance.Show_Option(0);
+                    break;
+                case "uva":
+                    Drinks.Instance.Show_Option(1);
+                    break;
+                case "laranja":
+                    Drinks.Instance.Show_Option(2);
+                    break;
+                default:
+                    FeedbackManager.Instance.Feedback_Test("sucoParametro");
+                    break;
+                    
+            }
+        }
+    }
 }
