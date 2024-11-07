@@ -31,7 +31,7 @@ public class CafeManager : MonoBehaviour
                     Foods.Instance.Show_Option(1);
                     break;
                 default:
-                    FeedbackManager.Instance.Feedback_Test("boloParametro");
+                    FeedbackManager.Instance.Feedback_Test("parametroBolo");
                     break;
                     
             }
@@ -48,7 +48,7 @@ public class CafeManager : MonoBehaviour
                     Drinks.Instance.Show_Option(2);
                     break;
                 default:
-                    FeedbackManager.Instance.Feedback_Test("sucoParametro");
+                    FeedbackManager.Instance.Feedback_Test("parametroSuco");
                     break;
                     
             }
