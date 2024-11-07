@@ -35,6 +35,7 @@ public class FeedbackManager : MonoBehaviour
     {
         errorAtual = VerificaErrorName(errorName);
         if(errorAtual != -1) {
+            ButtonsMiniGame.instance.Disable_Buttons();
             feedbackAtual = feedbacks[errorAtual].gameObject;
             feedbackAtual.SetActive(true);
         }
@@ -107,5 +108,6 @@ public class FeedbackManager : MonoBehaviour
     public void EndFeedback(){
         animator.SetBool("IsOpen", false);
         feedbackAtual.SetActive(false);
+        ButtonsMiniGame.instance.Enable_Buttons();
     }
 }
