@@ -75,7 +75,7 @@ public class ButtonsMiniGame : MonoBehaviour
         if(vidas.Count > 0){
             if(orderCount < CafeManager.instance.maxOrders){
                 Clients.instance.ExitClient();
-                Invoke(nameof(Start_Btn), 2); // tempo da animação de saída (3) + 1 para evitar bugs
+                Invoke(nameof(Start_Btn), 4); // tempo da animação de saída (3) + 1 para evitar bugs
             }else{
                 CafeManager.instance.Finish_Game(true);
             }
