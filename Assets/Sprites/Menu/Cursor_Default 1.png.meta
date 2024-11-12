@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: aaa8a14e52ec5cd4fb5a113e63e85721
+guid: 58fde2598e9c666439695f395aaaf879
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -21,7 +21,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -71,7 +71,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -121,70 +121,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: DialogueBox_0
-      rect:
-        serializedVersion: 2
-        x: 455
-        y: 1015
-        width: 434
-        height: 147
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 14, y: 15, z: 16, w: 15}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: df95732f9ad304340895cb8305e56876
-      internalID: -1132595296
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DialogueBox_1
-      rect:
-        serializedVersion: 2
-        x: 175
-        y: 588
-        width: 1666
-        height: 343
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 160, y: 160, z: 84, w: 79}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b2b0503e2ed261547af81ca24d5115e4
-      internalID: -927396190
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DialogueBox_2
-      rect:
-        serializedVersion: 2
-        x: 252
-        y: 98
-        width: 1589
-        height: 343
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 87, y: 52, z: 82, w: 54}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 64f06a4eef62e1245be0154145c04696
-      internalID: 763449237
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -195,10 +132,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      DialogueBox_0: -1132595296
-      DialogueBox_1: -927396190
-      DialogueBox_2: 763449237
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
