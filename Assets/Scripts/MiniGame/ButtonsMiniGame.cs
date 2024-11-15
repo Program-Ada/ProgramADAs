@@ -50,6 +50,9 @@ public class ButtonsMiniGame : MonoBehaviour
     }
 
     public void Verifica_Btn() {
+
+        Disable_Buttons();
+
         if((pedidos.pedidoAtual.GetComponent<Pedido>().drink == drinks.chosenOption) && (pedidos.pedidoAtual.GetComponent<Pedido>().food == foods.chosenOption)) {
             Debug.Log("Drink e food corretos");
             emojis[0].SetActive(true);
@@ -71,6 +74,7 @@ public class ButtonsMiniGame : MonoBehaviour
         Invoke(nameof(IsGameFinished), 3);
 
     }
+
     public void IsGameFinished(){ // verifica se o jogo acabou ou não
         if(vidas.Count > 0){
             if(orderCount < CafeManager.instance.maxOrders){
