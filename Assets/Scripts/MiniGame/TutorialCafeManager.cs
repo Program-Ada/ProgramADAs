@@ -18,28 +18,29 @@ public class TutorialCafeManager : MonoBehaviour
             child.gameObject.SetActive(false); // garantindo que todos estão desabilitados
         }
 
-        DisplayNextStep();
+        DisplayTutorial();
     }
 
     public void DisplayNextStep(){
-        Debug.Log("Next");
-        Debug.Log(atualStep);
         if(atualStep >= 0){
             steps[atualStep].SetActive(false);
         }
         if(atualStep < steps.Count-1){
             steps[++atualStep].SetActive(true);
         }else{
+            atualStep = -1;
             ButtonsMiniGame.instance.Start_Btn();
         }
     }
 
     public void DisplayPreviousStep(){
-        Debug.Log("Previous");
-        Debug.Log(atualStep);
         if(atualStep > 0){
             steps[atualStep--].SetActive(false);
         }
         steps[atualStep].SetActive(true);
-    } 
+    }
+
+    public void DisplayTutorial(){
+        DisplayNextStep();
+    }
 }
