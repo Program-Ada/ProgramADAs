@@ -115,6 +115,7 @@ public class ButtonsMiniGame : MonoBehaviour
             }
         }
         drinks.Reset_teste();
+        copo.SetActive(false);
         //drink_btn.SetActive(false);
         //buttons[2].interactable = true;
     }
@@ -126,6 +127,7 @@ public class ButtonsMiniGame : MonoBehaviour
             }
         }
         foods.Reset_teste();
+        pratoLimpo.SetActive(false);
         //food_btn.SetActive(false);
         //buttons[3].interactable = true;
     }
@@ -182,6 +184,7 @@ public class ButtonsMiniGame : MonoBehaviour
 
     public void Disable_Buttons(){
         for (int i = 0; i < buttons.Length; i++) {
+            Debug.Log(buttons[i].name);
             buttons[i].interactable = false;
         }
     }
