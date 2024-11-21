@@ -52,6 +52,8 @@ public class CafeManager : MonoBehaviour
                     break;
                     
             }
+        }else{
+            FeedbackManager.Instance.Feedback_Test("semParametro");  
         }
     }
 }
