@@ -6,7 +6,7 @@ public class FeedbackTrigger : MonoBehaviour
 {
     public Feedback feedback;
 
-    void Start() {
+    void OnEnable() {
         FeedbackManager.Instance.ShowFeedback(feedback);
     }
     void Update(){
