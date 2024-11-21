@@ -33,6 +33,7 @@ public class Drinks : MonoBehaviour
                     chosenOption = i;
                     ButtonsMiniGame.instance.copo.SetActive(false);
                     drinkOptions[i].SetActive(true);
+                    isDrinkFunctionSelected = false;
                 } 
             }else{
                 Debug.Log("Não tem Copo = Suco derramado");

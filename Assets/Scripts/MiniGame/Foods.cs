@@ -33,6 +33,7 @@ public class Foods : MonoBehaviour
                     chosenOption = i;
                     buttonsMiniGame.pratoLimpo.SetActive(false);
                     foodOptions[i].SetActive(true);
+                    isFoodFunctionSelected = false;
                 }
             }else{
                 Debug.Log("Não tem Prato = Bolo na mesa");
