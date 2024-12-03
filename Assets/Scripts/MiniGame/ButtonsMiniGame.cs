@@ -24,6 +24,7 @@ public class ButtonsMiniGame : MonoBehaviour
     public GameObject[] emojis;
     public List<GameObject> vidas;
     private int orderCount = 0;
+    private int errorCount = -1;
     public TextMeshProUGUI orderCountText;
     public static ButtonsMiniGame instance;
 
@@ -76,7 +77,7 @@ public class ButtonsMiniGame : MonoBehaviour
     }
 
     public void IsGameFinished(){ // verifica se o jogo acabou ou não
-        if(vidas.Count > 0){
+        if(errorCount < 3){
             if(orderCount < CafeManager.instance.maxOrders){
                 Clients.instance.ExitClient();
                 Invoke(nameof(Start_Btn), 4); // tempo da animação de saída (3) + 1 para evitar bugs
@@ -163,10 +164,10 @@ public class ButtonsMiniGame : MonoBehaviour
     }
 
     public void PerdeVida() {
-        vidas[vidas.Count - 1].SetActive(false);
-        vidas.RemoveAt(vidas.Count -1);
+        errorCount++;
+        vidas[errorCount].SetActive(true);
 
-        if (vidas.Count == 0) {
+        if (errorCount == 2) { // 2 erros pois começa em 0
             Debug.Log("morreu! vidas: " + vidas.Count);
             CafeManager.instance.Finish_Game(false);
         }
