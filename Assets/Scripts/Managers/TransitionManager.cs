@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -19,7 +20,7 @@ public class TransitionManager : MonoBehaviour
     public void PlayEnterSceneAnimation(){
         transitionBackground.SetBool("EnterScene", true);
 
-        if(DataPersistenceManager.Instance.lastScene == "InicialCutscene"){
+        if(SceneManager.GetActiveScene().name != "Menu" && DataPersistenceManager.Instance.lastScene == "InicialCutscene"){
             topBlackBar.SetActive(true);
             bottomBlackBar.SetActive(true);
 

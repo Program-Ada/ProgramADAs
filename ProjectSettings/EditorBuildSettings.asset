@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Rooms/CaminhoICE.unity
     guid: 870bc592bd38e4d4c836d08fcebba65b
+  - enabled: 1
+    path: Assets/Scenes/MiniGame_Cafe.unity
+    guid: 18b7393cdd555e241af1735eae62842b
   m_configObjects: {}
