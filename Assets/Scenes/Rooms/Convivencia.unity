@@ -3174,6 +3174,8 @@ MonoBehaviour:
   buttonFalse: {fileID: 1601896487}
   buttonTrue: {fileID: 5774475639908229859}
   animator: {fileID: 6475865935210764198}
+  alessandreiaUnlocked: {fileID: 780728388}
+  alessandreiaLocked: {fileID: 1869771723}
 --- !u!4 &968045970 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6502587600570111543, guid: effd06d65a431524887f3d16da48219b, type: 3}
@@ -3473,7 +3475,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 802806789608427348, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: m_Name
-      value: Alessandreia(yes)
+      value: Alessandreia(Unlocked)
+      objectReference: {fileID: 0}
+    - target: {fileID: 802806789608427348, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2828481404245613530, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: m_Size.x
@@ -5952,7 +5958,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 802806789608427348, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: m_Name
-      value: Alessandreia(no)
+      value: Alessandreia(Locked)
       objectReference: {fileID: 0}
     - target: {fileID: 802806789608427348, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: m_IsActive
