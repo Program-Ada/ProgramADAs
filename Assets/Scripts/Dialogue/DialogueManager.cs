@@ -62,6 +62,7 @@ public class DialogueManager : MonoBehaviour{
         {
             EndDialogue();
             dialogue.ask.SetActive(true);
+            StartMiniGameManager.Instance.OpenAskMiniGame();
             return;
         }
 
