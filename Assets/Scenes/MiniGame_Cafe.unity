@@ -26531,9 +26531,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Algum texto de introdu\xE7\xE3o, como: Oi, animada? Vem comigo que irei
-    te ensinar como jogar esse miigame (da\xED temos que escolher se vamos quebrar
-    a quarta parede ou n\xE3o)"
+  m_text: "Ei, Ada! Animada para ajudar no seu primeiro Caf\xE9 das Minas?\n\nVem
+    comigo, vou te ensinar o passo a passo."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9cb3d968203fcfa47b3f25f81d2ebb13, type: 2}
   m_sharedMaterial: {fileID: 2348706102305327995, guid: 9cb3d968203fcfa47b3f25f81d2ebb13, type: 2}
