@@ -5,15 +5,27 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class StartMiniGameManager : MonoBehaviour
+public class StartMiniGameManager : MonoBehaviour, IDataPersistence
 {
     public static StartMiniGameManager Instance;
     public GameObject buttonFalse;
     public GameObject buttonTrue;
     public Animator animator;
+    public GameObject alessandreiaUnlocked;
+    public GameObject alessandreiaLocked;
+    private bool isLevelUnlocked = false;
 
     void Start(){
         Instance = this;
+
+        alessandreiaUnlocked.SetActive(false);
+        alessandreiaLocked.SetActive(false);    
+
+        if(isLevelUnlocked){
+            alessandreiaUnlocked.SetActive(true);
+        }else{
+            alessandreiaLocked.SetActive(true);
+        }
     }
 
     public void OpenAskMiniGame(){
@@ -43,5 +55,14 @@ public class StartMiniGameManager : MonoBehaviour
     public void Enable_Buttons(){
         buttonFalse.SetActive(true);
         buttonTrue.SetActive(true);
+    }
+
+    public void LoadData(GameData data){
+        if(data.unlockedFases[1]){
+            isLevelUnlocked = true;
+        }
+    }
+    public void SaveData(ref GameData data){
+        // empty
     }
 }
