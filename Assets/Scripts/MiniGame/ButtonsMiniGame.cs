@@ -100,11 +100,17 @@ public class ButtonsMiniGame : MonoBehaviour
     }
 
     public void Pegar_Copo() {
+        Drinks.Instance.isDrinkFunctionSelected = false;
+        Foods.Instance.isFoodFunctionSelected = false;
+
         drinks.containerExists = true;
         copo.SetActive(true);
     }
 
     public void Pegar_Prato() {
+        Drinks.Instance.isDrinkFunctionSelected = false;
+        Foods.Instance.isFoodFunctionSelected = false;
+        
         foods.containerExists = true;
         pratoLimpo.SetActive(true);
     }
