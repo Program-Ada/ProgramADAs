@@ -6,6 +6,7 @@ using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using System.Diagnostics;
 
 public class NotePadManager : MonoBehaviour, IDataPersistence
 {
@@ -34,7 +35,7 @@ public class NotePadManager : MonoBehaviour, IDataPersistence
         Instance = this;
         Player = GameObject.FindGameObjectWithTag("Player");
 
-        cm = FindObjectOfType<ChapterManager>();
+        //cm = FindObjectOfType<ChapterManager>();
         isChapterUnlocked = new bool[5];
         isChapterNotificationOn = new bool[5];
         isUpdated = false;
@@ -69,7 +70,7 @@ public class NotePadManager : MonoBehaviour, IDataPersistence
         ChapterCanvas.SetActive(false);
         ChapterSelectionMenu.SetActive(true);
         
-        cm.ResetPage();
+        ChapterManager.instance.ResetPage();
     }
 
     public void Screen_Chapter(GameObject chapterObject)
@@ -81,7 +82,7 @@ public class NotePadManager : MonoBehaviour, IDataPersistence
         ChapterCanvas.SetActive(true);
 
         Chapter chapterContent = chapterObject.GetComponent<ChapterContent>().chapter;
-        cm.ShowChapter(chapterContent);
+        ChapterManager.instance.ShowChapter(chapterContent);
     }
 
     public void SaveNewData(){
@@ -118,6 +119,9 @@ public class NotePadManager : MonoBehaviour, IDataPersistence
     public void LoadData(GameData data){
 
         for(int i = 0; i < Chapter_Buttons.Length; i++){
+
+            UnityEngine.Debug.Log("Chapter: " + i);
+            UnityEngine.Debug.Log("unlocked fases: " + data.unlockedFases[i]);
 
             UpdateChapterBtn(i, data.unlockedFases[i], false); // bloqueia ou desbloqueia o capítulo
             UpdateChapterNotification(i, data.isNotificationOn[i], false); // ativa ou desativa a notificação

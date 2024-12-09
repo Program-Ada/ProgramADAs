@@ -8,13 +8,12 @@ public class ChapterManager : MonoBehaviour
 {
     public TextMeshProUGUI titleChapter;
     public TextMeshProUGUI contentChapter;
-
-    public int currentpage;
+    public int currentpage = 1;
+    public static ChapterManager instance;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        currentpage = 1;
+    void Awake(){
+        instance = this;
     }
 
     public void ShowChapter(Chapter chapter) {

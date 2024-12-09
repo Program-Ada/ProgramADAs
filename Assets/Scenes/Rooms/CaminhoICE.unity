@@ -4599,6 +4599,16 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46c95daed309b464da558f9dbbb03288, type: 3}
+--- !u!1 &942156002 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4193703967476061075, guid: 46c95daed309b464da558f9dbbb03288, type: 3}
+  m_PrefabInstance: {fileID: 942156001}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &942156003 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6042573170928650191, guid: 46c95daed309b464da558f9dbbb03288, type: 3}
+  m_PrefabInstance: {fileID: 942156001}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &993406220 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3919617994435948074, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
@@ -7167,6 +7177,18 @@ PrefabInstance:
       propertyPath: ChapterSelectionMenu
       value: 
       objectReference: {fileID: 340330206}
+    - target: {fileID: 2140030645810219111, guid: 91adb6ea8c9f886498830e2dd3c6e0ae, type: 3}
+      propertyPath: Chapter_Buttons.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140030645810219111, guid: 91adb6ea8c9f886498830e2dd3c6e0ae, type: 3}
+      propertyPath: Chapter_Buttons.Array.data[0]
+      value: 
+      objectReference: {fileID: 942156003}
+    - target: {fileID: 2140030645810219111, guid: 91adb6ea8c9f886498830e2dd3c6e0ae, type: 3}
+      propertyPath: Chapter_Buttons.Array.data[1]
+      value: 
+      objectReference: {fileID: 942156002}
     - target: {fileID: 2604335448477254622, guid: 91adb6ea8c9f886498830e2dd3c6e0ae, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
