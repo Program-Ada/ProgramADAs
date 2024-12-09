@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CafeManager : MonoBehaviour
+public class CafeManager : MonoBehaviour, IDataPersistence
 {
     public static CafeManager instance;
     public int maxOrders;
+    private bool isGameFinished = false;
     void Start()
     {
         instance = this;
@@ -13,6 +14,7 @@ public class CafeManager : MonoBehaviour
     }
 
     public void Finish_Game(bool finish){
+        isGameFinished = finish;
         if(finish){
             ScoreCafe.instance.Show_Score();
         }else{
@@ -55,5 +57,15 @@ public class CafeManager : MonoBehaviour
         }else{
             FeedbackManager.Instance.Feedback_Test("semParametro");  
         }
+    }
+
+    public void LoadData(GameData data){
+        // empty
+    }
+    public void SaveData(ref GameData data){
+        if(isGameFinished){
+            data.pointFases[1] = ScoreCafe.instance.score;
+        }
+
     }
 }

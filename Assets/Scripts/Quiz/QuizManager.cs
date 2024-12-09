@@ -90,7 +90,10 @@ public class QuizManager : MonoBehaviour, IDataPersistence
             FindObjectOfType<QuestManager>().UpdateQuestText(3);
         }
         if(media >= 75){
-            FindObjectOfType<QuestManager>().UpdateQuestText(4);
+            NotePadManager.Instance.UpdateChapterBtn(1, true, true); // desbloqueia o próximo capítulo
+            NotePadManager.Instance.UpdateChapterNotification(1, true, true); // ativa a notificação do novo capítulo
+            NotePadManager.Instance.UpdateNotePadNotification(true);
+            FindObjectOfType<QuestManager>().UpdateQuestText(4); // atualiza objetivo
         }
         DataPersistenceManager.Instance.SaveGame();
     }
@@ -150,7 +153,6 @@ public class QuizManager : MonoBehaviour, IDataPersistence
         if(quizDone){
             data.pointFases[0] = (int)media;
         }
-
     }
 
 }

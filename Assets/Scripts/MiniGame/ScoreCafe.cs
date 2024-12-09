@@ -8,7 +8,7 @@ using UnityEngine.SocialPlatforms.Impl;
 public class ScoreCafe : MonoBehaviour
 {
     public static ScoreCafe instance;
-    private int score;
+    public int score;
     public TextMeshProUGUI scoreTxt;
     public GameObject scoreCanvas;
     public GameObject looseCanvas;
@@ -36,6 +36,7 @@ public class ScoreCafe : MonoBehaviour
         ButtonsMiniGame.instance.Disable_Buttons();
         scoreTxt.text = score.ToString() + "%";
         scoreCanvas.SetActive(true);
+        DataPersistenceManager.Instance.SaveGame();
     }
 
     public void Show_Loose(){
