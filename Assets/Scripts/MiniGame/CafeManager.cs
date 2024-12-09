@@ -65,6 +65,11 @@ public class CafeManager : MonoBehaviour, IDataPersistence
     public void SaveData(ref GameData data){
         if(isGameFinished){
             data.pointFases[1] = ScoreCafe.instance.score;
+            if(ScoreCafe.instance.score >=75){
+                data.questProgressIndex = 6;
+            }else{
+                data.questProgressIndex = 5;
+            }
         }
 
     }
