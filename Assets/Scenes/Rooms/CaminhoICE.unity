@@ -5867,8 +5867,7 @@ Transform:
   m_LocalPosition: {x: -0.37845176, y: -0.27214167, z: 551.88495}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1711184929}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1329348868 stripped
@@ -7502,96 +7501,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!1001 &1711184928
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1325769258}
-    m_Modifications:
-    - target: {fileID: 802806789608427348, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
-      propertyPath: m_Name
-      value: Lara
-      objectReference: {fileID: 0}
-    - target: {fileID: 3919617994435948074, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 58.99845
-      objectReference: {fileID: 0}
-    - target: {fileID: 3919617994435948074, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -8.612284
-      objectReference: {fileID: 0}
-    - target: {fileID: 3919617994435948074, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -551.88495
-      objectReference: {fileID: 0}
-    - target: {fileID: 3919617994435948074, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3919617994435948074, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3919617994435948074, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3919617994435948074, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3919617994435948074, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3919617994435948074, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3919617994435948074, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
-      propertyPath: dialogue.dialogueLines.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
-      propertyPath: dialogue.dialogueLines.Array.data[0].sentence
-      value: Teste 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
-      propertyPath: dialogue.dialogueLines.Array.data[1].sentence
-      value: Teste 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
-      propertyPath: dialogue.dialogueLines.Array.data[0].character.name
-      value: Ada
-      objectReference: {fileID: 0}
-    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
-      propertyPath: dialogue.dialogueLines.Array.data[1].character.name
-      value: Luana
-      objectReference: {fileID: 0}
-    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
-      propertyPath: dialogue.dialogueLines.Array.data[0].character.image
-      value: 
-      objectReference: {fileID: -616112395, guid: 91d1cb538b6dd3143949e4519d698594, type: 3}
-    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
-      propertyPath: dialogue.dialogueLines.Array.data[1].character.image
-      value: 
-      objectReference: {fileID: 51029485, guid: 084c1b86f986c0c46ba07dfd060dde12, type: 3}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
---- !u!4 &1711184929 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3919617994435948074, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
-  m_PrefabInstance: {fileID: 1711184928}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1747540928
 GameObject:
   m_ObjectHideFlags: 0
