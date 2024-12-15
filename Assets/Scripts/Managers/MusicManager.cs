@@ -25,10 +25,7 @@ public class MusicManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode arg1)
     {
-		Debug.Log("scene name: " + SceneManager.GetActiveScene().name);
-		Debug.Log("lastcene: " + DataPersistenceManager.Instance.lastScene);
-		if(scene.name == "InicialCutscene"){
-			Debug.Log("oi");
+		if(scene.name == "InicialCutscene"){ // adicionar aqui o do minigame
 			src.Stop();
 		}else if(!src.isPlaying){
 			src.Play();

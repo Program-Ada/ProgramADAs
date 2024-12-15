@@ -174,7 +174,6 @@ public class ButtonsMiniGame : MonoBehaviour
         vidas[errorCount].SetActive(true);
 
         if (errorCount == 2) { // 2 erros pois começa em 0
-            Debug.Log("morreu! vidas: " + vidas.Count);
             CafeManager.instance.Finish_Game(false);
         }
     }
@@ -191,7 +190,6 @@ public class ButtonsMiniGame : MonoBehaviour
 
     public void Disable_Buttons(){
         for (int i = 0; i < buttons.Length; i++) {
-            Debug.Log(buttons[i].name);
             buttons[i].interactable = false;
         }
     }

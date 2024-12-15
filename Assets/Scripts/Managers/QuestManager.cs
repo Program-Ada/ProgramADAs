@@ -37,8 +37,6 @@ public class QuestManager : MonoBehaviour, IDataPersistence
     }
 
     public void UpdateQuestText(int index){
-        //Debug.Log("Atualiza");
-        //Debug.Log("ProgressIndex: "+progressIndex);
         if(progressIndex == 1 || index == 1){
             DisplayNextSentence("Fale com a Professora Bárbara");
             progressIndex = 1;
@@ -58,17 +56,13 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                     progressIndex = 4;
                 }
             }
-            Debug.Log("pointFases: " + pointFases[1]);
-            Debug.Log("index: " + index);
             if(pointFases[1] != 0 || index > 4){
                 if(pointFases[0] < 75 || index == 5){
-                    Debug.Log("Entrou no index = 5");
                     DisplayNextSentence("Consiga uma nota maior que 75% no minigame para avançar");
                     progressIndex = 5;
                     return;
                 }
                 if(pointFases[0] >= 75 || index == 6){
-                    Debug.Log("Entrou no index = 6");
                     DisplayNextSentence("Fase 3 em Construção. Obrigada por jogar!");
                     progressIndex = 6;
                 }

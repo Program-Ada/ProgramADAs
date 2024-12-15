@@ -120,9 +120,6 @@ public class NotePadManager : MonoBehaviour, IDataPersistence
 
         for(int i = 0; i < Chapter_Buttons.Length; i++){
 
-            UnityEngine.Debug.Log("Chapter: " + i);
-            UnityEngine.Debug.Log("unlocked fases: " + data.unlockedFases[i]);
-
             UpdateChapterBtn(i, data.unlockedFases[i], false); // bloqueia ou desbloqueia o capítulo
             UpdateChapterNotification(i, data.isNotificationOn[i], false); // ativa ou desativa a notificação
 
