@@ -14,6 +14,7 @@ public class StartMiniGameManager : MonoBehaviour, IDataPersistence
     public GameObject alessandreiaUnlocked;
     public GameObject alessandreiaLocked;
     private bool isLevelUnlocked = false;
+    private bool isTrueClicked = false;
 
     void Start(){
         Instance = this;
@@ -43,6 +44,8 @@ public class StartMiniGameManager : MonoBehaviour, IDataPersistence
     }
 
     public void AnwserTrue(){
+        isTrueClicked = true;
+        DataPersistenceManager.Instance.SaveGame();
         CloseAskMiniGame();
         SceneManager.LoadScene("MiniGame_Cafe");
     }
@@ -63,6 +66,9 @@ public class StartMiniGameManager : MonoBehaviour, IDataPersistence
         }
     }
     public void SaveData(ref GameData data){
-        // empty
+        if(isTrueClicked && data.questProgressIndex == 4){
+            isTrueClicked = false;
+            data.questProgressIndex = 5;
+        }
     }
 }
