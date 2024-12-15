@@ -25,10 +25,12 @@ public class MusicManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode arg1)
     {
+		Debug.Log("scene name: " + SceneManager.GetActiveScene().name);
+		Debug.Log("lastcene: " + DataPersistenceManager.Instance.lastScene);
 		if(scene.name == "InicialCutscene"){
 			Debug.Log("oi");
 			src.Stop();
-		}else if(SceneManager.GetActiveScene().name == "S404" && DataPersistenceManager.Instance.lastScene == "InicialCutscene"){
+		}else if(!src.isPlaying){
 			src.Play();
 		}
     }
