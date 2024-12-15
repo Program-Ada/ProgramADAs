@@ -663,7 +663,7 @@ PrefabInstance:
     - target: {fileID: 7779287173629434553, guid: 46c95daed309b464da558f9dbbb03288, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 1272907412}
+      objectReference: {fileID: 63583202}
     - target: {fileID: 7779287173629434553, guid: 46c95daed309b464da558f9dbbb03288, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
@@ -680,6 +680,11 @@ PrefabInstance:
 --- !u!1 &63583201 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4193703967476061075, guid: 46c95daed309b464da558f9dbbb03288, type: 3}
+  m_PrefabInstance: {fileID: 63583200}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &63583202 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2943424436297064363, guid: 46c95daed309b464da558f9dbbb03288, type: 3}
   m_PrefabInstance: {fileID: 63583200}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &76752247 stripped
