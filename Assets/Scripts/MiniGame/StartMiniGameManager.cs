@@ -66,7 +66,7 @@ public class StartMiniGameManager : MonoBehaviour, IDataPersistence
         }
     }
     public void SaveData(ref GameData data){
-        if(isTrueClicked && data.questProgressIndex == 4){
+        if(isTrueClicked){
             isTrueClicked = false;
             data.questProgressIndex = 5;
         }

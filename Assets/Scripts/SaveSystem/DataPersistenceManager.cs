@@ -53,8 +53,8 @@ public class DataPersistenceManager : MonoBehaviour
         this.dataPersistenceObjects = FindAllDataPersistenceObjects();
 
         if(scene.name != "Menu" && scene.name != "GameSelection"){
-            LoadGame();
             SaveGame();
+            LoadGame();
         }
 
         if(FindObjectOfType<Tutorial>() && (lastScene == "GameSelection" || lastScene == "InicialCutscene")){
