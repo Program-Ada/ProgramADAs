@@ -2447,7 +2447,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 98705940}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 109758487}
+        m_TargetAssemblyTypeName: Fase3Manager, Assembly-CSharp
+        m_MethodName: CheckOperadores
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: <=
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &98705940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2644,6 +2656,7 @@ GameObject:
   m_Component:
   - component: {fileID: 109758488}
   - component: {fileID: 109758487}
+  - component: {fileID: 109758489}
   m_Layer: 0
   m_Name: Fase3 Manager
   m_TagString: Untagged
@@ -2718,6 +2731,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &109758489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109758486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c352e56ebd9722458aa4e68a58d6ab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  operadorSelecionado: 0
+  condicionalSelecionado: 0
 --- !u!1 &109783682
 GameObject:
   m_ObjectHideFlags: 0
@@ -5528,7 +5555,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 217940598}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 109758486}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &217940598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5993,7 +6032,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 237288526}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 109758487}
+        m_TargetAssemblyTypeName: Fase3Manager, Assembly-CSharp
+        m_MethodName: CheckOperadores
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ==
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &237288526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6398,7 +6449,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 261901003}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &261901003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6826,7 +6889,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 282441796}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &282441796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14662,7 +14737,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 621894683}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &621894683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17106,7 +17193,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 743518328}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &743518328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17683,7 +17782,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 766112830}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 109758487}
+        m_TargetAssemblyTypeName: Fase3Manager, Assembly-CSharp
+        m_MethodName: CheckOperadores
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: '>='
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &766112830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19971,7 +20082,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 885694012}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 109758487}
+        m_TargetAssemblyTypeName: Fase3Manager, Assembly-CSharp
+        m_MethodName: CheckOperadores
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: '>'
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &885694012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21291,7 +21414,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 958740301}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &958740301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22597,7 +22732,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1014800587}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1014800587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31292,7 +31439,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1370750053}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 109758487}
+        m_TargetAssemblyTypeName: Fase3Manager, Assembly-CSharp
+        m_MethodName: CheckOperadores
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: <
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1370750053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31831,7 +31990,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1380228891}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 109758487}
+        m_TargetAssemblyTypeName: Fase3Manager, Assembly-CSharp
+        m_MethodName: CheckOperadores
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: '!='
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1380228891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32541,7 +32712,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1407255663}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1407255663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38025,7 +38208,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1540872116}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1540872116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45510,7 +45705,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1829853968}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1829853968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50992,7 +51199,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2030347336}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2030347336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53093,7 +53312,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2129304034}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 109758486}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2129304034
 MonoBehaviour:
   m_ObjectHideFlags: 0

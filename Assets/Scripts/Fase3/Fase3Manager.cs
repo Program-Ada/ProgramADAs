@@ -18,7 +18,7 @@ public class Fase3Manager : MonoBehaviour
     {
 
     }
-    void fasePar(){
+    public void fasePar(){
         sinais[0].transform.position = posicaoIgualPar.transform.position;
         sinais[1].transform.position = posicaoDiferentePar.transform.position;
         foreach (Button numero in numeros)
@@ -38,7 +38,7 @@ public class Fase3Manager : MonoBehaviour
             sinais[i].gameObject.SetActive(true);
         }
     }
-    void faseNumeros(){
+    public void faseNumeros(){
         foreach(Button cor in cores){
             cor.gameObject.SetActive(false);
         }
@@ -53,6 +53,28 @@ public class Fase3Manager : MonoBehaviour
         }
         for(int i=0; i<sinais.Length; i++){
             sinais[i].gameObject.SetActive(true);
+        }
+    }
+    public void CheckParameterPar(string par){
+
+    }
+    public void CheckParameterNumero(string numero){
+
+    }
+    public void CheckOperadores(string operador){
+        switch(operador){
+            case "==":
+                break;
+            case "!=":
+                break;
+            case ">":
+                break;
+            case "<":
+                break;
+            case ">=":
+                break;
+            case "<=":
+                break;
         }
     }
     // Update is called once per frame
