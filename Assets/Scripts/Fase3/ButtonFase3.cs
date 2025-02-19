@@ -4,11 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 public class ButtonFase3 : MonoBehaviour
 {   
+    public static ButtonFase3 Instance;
     public bool tipoFase;
     public bool funcaoOperador = false;
     public bool funcaoCondicao = false;
     public bool operadorEscolhido = false;
+    public bool condicaoEscolhida = false;
     public GameObject[] spriteOperador;
+    public Button[] botoesCondicional;
     public Button[] operador;
     public Button[] numeros;
     public GameObject[] spriteNumero;
@@ -23,6 +26,7 @@ public class ButtonFase3 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Instance = this;
         desativarSprites();
     }
     public void fasePar(){
@@ -76,6 +80,7 @@ public class ButtonFase3 : MonoBehaviour
             spriteNumero[i].SetActive(false);
         }
     }
+    
     public void Button_funcaoOperador(){
         funcaoOperador = true;
         funcaoCondicao = false;
@@ -99,6 +104,7 @@ public class ButtonFase3 : MonoBehaviour
                 }
             }
             spriteOperador[i].SetActive(true);
+            botoesCondicional[0].gameObject.SetActive(false);
             operadorEscolhido = true;
         }else{
             Debug.Log("Primeiro precisa ativar a funcao do Operador");
@@ -114,6 +120,8 @@ public class ButtonFase3 : MonoBehaviour
             interactableNo(cores);
             interactableNo(parOuImpar);
             spriteNumero[i].SetActive(true);
+            botoesCondicional[1].gameObject.SetActive(false);
+            condicaoEscolhida = true;
         }else{
             if(!funcaoOperador && funcaoCondicao){
             Debug.Log("Primeiro precisa escolher o operador");
@@ -132,6 +140,8 @@ public class ButtonFase3 : MonoBehaviour
             interactableNo(numeros);
             interactableNo(cores);
             spriteParOuImpar[i].SetActive(true);
+            botoesCondicional[1].gameObject.SetActive(false);
+            condicaoEscolhida = true;
         }else{
             if(!funcaoOperador && funcaoCondicao){
             Debug.Log("Primeiro precisa escolher o operador");
@@ -149,7 +159,9 @@ public class ButtonFase3 : MonoBehaviour
             }
             interactableNo(parOuImpar);
             interactableNo(numeros);
+            botoesCondicional[1].gameObject.SetActive(false);
             spriteCores[i].SetActive(true);
+            condicaoEscolhida = true;
         }else{
             if(!funcaoOperador && funcaoCondicao){
             Debug.Log("Primeiro precisa escolher o operador");
@@ -178,18 +190,21 @@ public class ButtonFase3 : MonoBehaviour
         }
     }
     public void Button_X(){
+        botoesCondicional[0].gameObject.SetActive(true);
+        botoesCondicional[1].gameObject.SetActive(true);
         desativarSprites();
         funcaoOperador = false;
         funcaoCondicao = false;
         operadorEscolhido = false;
+        condicaoEscolhida = false;
         interactableAllYes();
     }
     // Update is called once per frame
     void Update()
     {
-        Button operadorEscolhido = operador[2];
+        /*Button operadorEscolhido = operador[2];
         ButtonQuadro2Fase3 scriptOperador = operadorEscolhido.GetComponent<ButtonQuadro2Fase3>();
-        Debug.Log(scriptOperador.operador);
+        Debug.Log(scriptOperador.operador);*/
         if(!tipoFase){
             fasePar();
         }else{
