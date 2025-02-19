@@ -1,0 +1,3757 @@
+fileFormatVersion: 2
+guid: d85d15ec6ebcf064580477694399200a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bola rolando-export_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 791
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 899faae24b719654f93ed54631b69191
+      internalID: -267529804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 791
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b8d231250450c94d93ef8800ee54bbc
+      internalID: 613929744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_2
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 791
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 498edb574e220e54c9b6f7c19a94c800
+      internalID: -1970436635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_3
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 791
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47682b0fda54b81428e902d381595159
+      internalID: 505073619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_4
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 791
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1de30fedb90c0ac4f8153063e8844be8
+      internalID: -332116925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_5
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 791
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1533238068b0f084088fda7bd6fa3e4c
+      internalID: 1659676734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_6
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 791
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a99494bd2eadecf42a1dd6bfd5d644e2
+      internalID: -648182025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_7
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 791
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe10b2f5236a7c147a1208f25df54029
+      internalID: -1013125401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_8
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 791
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05711a44f15f6ae468ec4d7ebf952fec
+      internalID: -1883361926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_9
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 791
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b655ac4a3306e44d9bf026e16814df1
+      internalID: -1892315970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_10
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 791
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f38dd59a9480b542882358cc410b8d4
+      internalID: -731993787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_11
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 735
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d69804ed611b6364c9c790bd350fb170
+      internalID: 1541238928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_12
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 735
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 620a2c7fd95fa704e8e2c6ee1d1adf03
+      internalID: 1631415892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_13
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 735
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 742c799ed5c219c488f14236a1ede387
+      internalID: 132399700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_14
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 735
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65194cdddc093194b8c706a2b1430929
+      internalID: 1505519959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_15
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 735
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8b8bee42990da14b8ab6bd2472e8a44
+      internalID: -2063842370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_16
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 735
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a22d8cabe21ad348a853d9addb82313
+      internalID: 28627330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_17
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 735
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b59785df5830acb4087b56618f06628a
+      internalID: 1415334866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_18
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 735
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 184f5d6029cf6a44ba41c44afd8051b5
+      internalID: 1193461767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_19
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 735
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d973475b553834195030d6cc014f27
+      internalID: -1292402446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_20
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 735
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e70228b029756248836c98fe9246550
+      internalID: -1765713608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_21
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 735
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e028915394beaab4f87c2f79e37193b0
+      internalID: 529353202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_22
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 679
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27fbfb5bf76719f4ea1d3b619ad12366
+      internalID: 1106761146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_23
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 679
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7cfe0778f8ffc144a9af4413872f033
+      internalID: 1225335472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_24
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 679
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be1695ebbe899104d961d06fbae71368
+      internalID: 1950121022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_25
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 679
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95218d5b885ee2e4880a3e20c60c72f5
+      internalID: 733224513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_26
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 679
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6fd72b46b52d5645973a7bc8b887ab5
+      internalID: 263838678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_27
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 679
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc03116caf48ce047bc95c2b1cc17ab3
+      internalID: -1849370197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_28
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 679
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 008affcbf90516b44b42551102d35e25
+      internalID: 1978942299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_29
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 679
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e98ae53fe5263864f839523be6254f39
+      internalID: -426592923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_30
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 679
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00a93dc1d53194245bcd33c5af431278
+      internalID: -1868082458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_31
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 679
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f26322db9ece6e4f842bb47b252e0dd
+      internalID: -700470019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_32
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 679
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d29259e3ed460840bd64dff49bd7301
+      internalID: 1626682002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_33
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 623
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d308d59929cfd754588a1f5d65cfae62
+      internalID: -1733844652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_34
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 623
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 814f0b5c84a0ce74480400bfecaafd2a
+      internalID: -1275756950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_35
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 623
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35a30a8c9d6aefa45a5ea4f308fa9393
+      internalID: -711233129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_36
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 623
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31b0873077c1fde4681d9f7c047568be
+      internalID: -1401869426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_37
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 623
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 518e982356aea8a4d9900f9d29c5087b
+      internalID: 1373546423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_38
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 623
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a06f5042df6527740acf734605e3cf82
+      internalID: -64082457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_39
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 623
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba4b70c96d8373845832d5d45c6ddf0d
+      internalID: 443006693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_40
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 623
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 846d74bd97cba1d46849388a7730266e
+      internalID: -2072182232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_41
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 623
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4999e3aeaab09004796a113219d4c1f1
+      internalID: 1975752924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_42
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 623
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d69df526bdfd5854ba9630b3b25d7617
+      internalID: -1429789274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_43
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 623
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ac73cb2d183314478c47a13b3fb1732
+      internalID: -56913000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_44
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 567
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d7ad0769c1a64744b9c3eaa3071c0a6
+      internalID: -1454419330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_45
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 567
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cc87fd1fb103684caa5dc6a0b21c19c
+      internalID: 1115099124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_46
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 567
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 623733e3ffe432a4eaa7038be6a5dd72
+      internalID: 724040121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_47
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 567
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37430a1c104365043b0c5fc2a5102f80
+      internalID: 119907283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_48
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 567
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78830e478c2190e49bfae213487f98ae
+      internalID: -592701838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_49
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 567
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 200eae791c0949542a8ef39fc76882ea
+      internalID: 339066597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_50
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 567
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a499f056bd0c744484963b456cb7b72
+      internalID: 513428090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_51
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 567
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 681dfb4b01ea9884982caf70ab177951
+      internalID: -303136583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_52
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 567
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa42b1f80e586b648bcf4eedc9788bad
+      internalID: -1059901425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_53
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 567
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f28abf3fecf20e340a72fffe95ed3f9c
+      internalID: 900983692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_54
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 567
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4c93c55312b643458015bb214120e2c
+      internalID: -1557153259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_55
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 511
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 072d825797ca35e449ed34ca3bf900cd
+      internalID: 1779442846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_56
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 511
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7610aff8a182bf04aa30e3a220eaf5f3
+      internalID: -1372270887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_57
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 511
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30af687ee0c5b0848afa4b7d3a803a00
+      internalID: -603502406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_58
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 511
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6fdc02567cf7414ba09017c2b08a39b
+      internalID: -31905753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_59
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 511
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12aefcb6c8e62534c82ab5b6debed925
+      internalID: -370839872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_60
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 511
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d95b1157997919d44aa5a49fa60aed25
+      internalID: -1085106274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_61
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 511
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bb76a3cd206dab4aa7515b6c9cab026
+      internalID: 888389544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_62
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 511
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0089203d8ffcbf41a2b05f66773a6ec
+      internalID: -694793955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_63
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 511
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34bb17fc7e083e448958bdb58302d1a3
+      internalID: 485472896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_64
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 511
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b571ba52891481540a2f71b2ba7ed465
+      internalID: -713564524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_65
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 511
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a090b455a0f43844b7312fb2af1f1d4
+      internalID: 890095443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_66
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 455
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae974d49966aa04881e1b86e78435d0
+      internalID: 478403441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_67
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 455
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0760b424bbdc215428271c8dbb27396e
+      internalID: -1116045038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_68
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 455
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb56771e3a9dc05408a3699e0f0fe0e4
+      internalID: -1968251075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_69
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 455
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 522f7cd9750c5084eaa954c85a6113ea
+      internalID: 325529205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_70
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 455
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b98719e604677db459e2365bf0bf66bc
+      internalID: 253353153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_71
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 455
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e3b7183a1b56304b8c35b9f2c31d171
+      internalID: -898695510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_72
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 455
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfe6f13228b133740bbad22b77cd0ca4
+      internalID: 449042681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_73
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 455
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e958ac14dcbff684e95061f9af0247b1
+      internalID: 379997031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_74
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 455
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d074572d9de154f448d148f22223590a
+      internalID: -510484218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_75
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 455
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c7ec8995a1250f4cb44b365d396e26b
+      internalID: 1114070849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_76
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 455
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73e2d0b1f5a8f5844b7d6d0baf3fcfbd
+      internalID: 424516618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_77
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 399
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d4219aaff3c7404da581ab487f6ecb3
+      internalID: 1674033144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_78
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 399
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f96c672afbaeee0498d6cac2c7075e4a
+      internalID: -1934224435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_79
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 399
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c13abc3d8c3d9489e0b23f12aa853a
+      internalID: -1403933419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_80
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 399
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee7c09ade9a3c4f4ab6ac519e3f96a28
+      internalID: 573612564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_81
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 399
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ca5cbf04cd8cdd4aa41ca23f4d2d624
+      internalID: 1208142662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_82
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 399
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae8b1bf78cdd684c8a346e2a7434223
+      internalID: -392761357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_83
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 399
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fc5617708796954a866a0e731272973
+      internalID: -704308199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_84
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 399
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ae91e54fc3e1d4187c9666bbc635f9
+      internalID: 53726722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_85
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 399
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e9169471df85e14881e3ec33c8c8514
+      internalID: 1701567402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_86
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 399
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 336a63e186dbc434185fb05f8284bdc8
+      internalID: 1906566626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_87
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 399
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 000fad327b249aa47991907be2c2bf3d
+      internalID: 1492874882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_88
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 343
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c430e590e3f210439c76eda7fb01997
+      internalID: -896373275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_89
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 343
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aa8f541911fe914a854b368d8a0aff1
+      internalID: -962095222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_90
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 343
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d154e05ff55c79f4d9e94b411ba8c8b3
+      internalID: -1124144794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_91
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 343
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc664a2e53e36249b2b5f8d3dd40d5b
+      internalID: -1380012741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_92
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 343
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55948d43bdc894e4a8e42cfd8f0361d7
+      internalID: 486823312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_93
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 343
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c62e8b35671f95d44afa9a2e6b6a99df
+      internalID: 1671302232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_94
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 343
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc26fdc078f91e4d87ab25e8353bd6c
+      internalID: 516792185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_95
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 343
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7df4841ee6394c4da006246cc256d24
+      internalID: 92435336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_96
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 343
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da8555ce554c25d4696ec9549f4405cd
+      internalID: -1416140725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_97
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 343
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 830f5767eec2b6841a361fdf7a7a32dc
+      internalID: 1281845684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_98
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 343
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58b56666060a47c4db19b36d6cd808d3
+      internalID: 845317526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_99
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 287
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3deb81f3a66a913429e257246d0a946b
+      internalID: 625501945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_100
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 287
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46a8b14d6c0f02249bc05bf064ecd32f
+      internalID: 539081009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_101
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 287
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93559ec3d2bf4dc4eaa066e6bfca6a50
+      internalID: 397683893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_102
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 287
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41b55a10002c7144684711dac27bae40
+      internalID: 689845542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_103
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 287
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0876b541f2f98645b3144ec19867460
+      internalID: -990879929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_104
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 287
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f689c2c63f005bd48b6fa82a3eed562f
+      internalID: -202473237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_105
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 287
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b58c1d087db4b74f93d065b5438da7d
+      internalID: 1619786343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_106
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 287
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11c1a62564457344ea7688de938cbdcc
+      internalID: 336665348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_107
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 287
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49d9d785b82e11347afe39e280edc276
+      internalID: -1047534692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_108
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 287
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a32a8d31d987d040b95a7b09f30e54b
+      internalID: -1565015755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_109
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 287
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e844791754509224484eab68255967a8
+      internalID: 1698010981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_110
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 231
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aef3f1de8334964f993ed96db695131
+      internalID: -618861397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_111
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 231
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5f1793fded81124294fe74b398dcddc
+      internalID: -1031820693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_112
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 231
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df17b8f750fef1c4d95bb42e7f269920
+      internalID: -1624019446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_113
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 231
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52b3c394750bb7a4eb69df77718658ba
+      internalID: -1190944489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_114
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 231
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b23e6a24dfe19b40b3f78372ed7c234
+      internalID: -1088301412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_115
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 231
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9d1243a9fb366f46b7cf448eed17c37
+      internalID: -1623992554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_116
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 231
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d22164b73d509b64690e7005ecacfb4c
+      internalID: -477881542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_117
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 231
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3a670d20b956ed45a081a34f4eeadcc
+      internalID: 223752922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_118
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 231
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3265ff73f608cc84a921d07fd08cc73c
+      internalID: 797850215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_119
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 231
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00d02165cf79b2a4eb8522db660d950a
+      internalID: -1064680276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_120
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 231
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9510a671042f38a459ff01e85e8c315a
+      internalID: -268766111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_121
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 175
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27ea0f7d25e862e4cbe407af9314a443
+      internalID: -350765555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_122
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 175
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8efe4d86334cf2648895cec9fb4124de
+      internalID: 43336052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_123
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 175
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fffa1310d4003e48b0f5ef9a2c8249a
+      internalID: -35955027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_124
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 175
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8718d60f7db8b8d49b70196d6f22419c
+      internalID: 821383300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_125
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 175
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46571672a0d4a0146b374a10b4ff7ed9
+      internalID: 32230715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_126
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 175
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcdfc0fd9b9869d4481219efe8fb3e81
+      internalID: -1550908406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_127
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 175
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 720a34d2f1056f442941f1acc99a54c3
+      internalID: 1917304658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_128
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 175
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8987f5f8fb1e73c4781ab9a3a942fba5
+      internalID: -133248202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_129
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 175
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9bf94d5f9f9e074daa2473fb7dbb7af
+      internalID: 811695474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_130
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 175
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d86df028e0492549b5d30e82cad19a1
+      internalID: -1305389969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_131
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 175
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ee808616a9daab478e571f9ef55e262
+      internalID: -886005266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_132
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 119
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8669b34dd01e5a543bacb9c139a21daf
+      internalID: -469698151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_133
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 119
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7919215b727379745b0a3ea15ba1e45b
+      internalID: -1567907040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_134
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 119
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7056a76a104332c48a204bb400404c7e
+      internalID: -707829902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_135
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 119
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68307e6ffe0cf3e40b7acbf862364c1c
+      internalID: -1894927777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_136
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 119
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d931323e0112779479638790948c4a6f
+      internalID: -947402477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_137
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 119
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4049110673f081246b11d21ad969a0d7
+      internalID: 2061617344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_138
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 119
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d13d8cc1f0bdd3459ac753deb63730a
+      internalID: 1231551247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_139
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 119
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ef790ef9d8348a439c55234e01433a3
+      internalID: -227887120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_140
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 119
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf55e781b153b444bae21564bb4693b2
+      internalID: 1519480904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_141
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 119
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4274eaa5b7a8d1a4e802edcfcc3b7ea5
+      internalID: -299148987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_142
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 119
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5393c31456089341a436b0f89ef407f
+      internalID: -1776116338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_143
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 63
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dca2e0c556664e343813ed4224bcc015
+      internalID: 1207694033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_144
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 63
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40050a5df870d7a44be2bcbf41eb7d1a
+      internalID: 3422811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_145
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 63
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4462a176e8ad4b64597682651d22c1d1
+      internalID: 39168426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_146
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 63
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7290ccb2d3921a49835732312975dae
+      internalID: -1701353355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_147
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 63
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a12d2b526ef83f440988b3c8b3cbab75
+      internalID: -1585138913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_148
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 63
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a6915ad7e6afb74bbb13e35861c8e4d
+      internalID: 1405399961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_149
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 63
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f48382eed68044d91f66b8c2045ffb
+      internalID: 1642742995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_150
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 63
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8139ca571e2eab468b1bef4d9fcda0f
+      internalID: -838300099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_151
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 63
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c22e3686a8b4004195175174cf52180
+      internalID: -2063789443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_152
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 63
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 279c1d21f90412240877f67af4455fdf
+      internalID: -27582254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_153
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 63
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b9f05735d390a643b3a8830e4eec460
+      internalID: 1296763490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_154
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 7
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 619ed378a9efb1245b2b3463bfb957e1
+      internalID: -1652014218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_155
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 7
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 664646c3d52c5c3489c76e0dce7c7bce
+      internalID: 1041891567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_156
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 7
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93faf177ed8a33a44a7da16a37e951a3
+      internalID: -2030203284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_157
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 7
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9079effddf059e944b314eec88a96c25
+      internalID: 120580772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_158
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 7
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a17ff307e342184b98027d7e5a5e9ea
+      internalID: -1713034814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_159
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 7
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41185db9c5df5834b961735273c5543f
+      internalID: -407590096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_160
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 7
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3b80e5c822411241a5ffdd7fed44bbf
+      internalID: 662043693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_161
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 7
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dffe1f9a559f39f418a2830343d37d96
+      internalID: 1339357133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_162
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 7
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f0e419e538fd34e81ac90168fe1dfd
+      internalID: 589838966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_163
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 7
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ce552080837a64f9e54dba014f932f
+      internalID: 847630828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bola rolando-export_164
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 7
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1dd38f1587fc5044b85c6edaed0bb02
+      internalID: -1569131832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      bola rolando-export_0: -267529804
+      bola rolando-export_1: 613929744
+      bola rolando-export_10: -731993787
+      bola rolando-export_100: 539081009
+      bola rolando-export_101: 397683893
+      bola rolando-export_102: 689845542
+      bola rolando-export_103: -990879929
+      bola rolando-export_104: -202473237
+      bola rolando-export_105: 1619786343
+      bola rolando-export_106: 336665348
+      bola rolando-export_107: -1047534692
+      bola rolando-export_108: -1565015755
+      bola rolando-export_109: 1698010981
+      bola rolando-export_11: 1541238928
+      bola rolando-export_110: -618861397
+      bola rolando-export_111: -1031820693
+      bola rolando-export_112: -1624019446
+      bola rolando-export_113: -1190944489
+      bola rolando-export_114: -1088301412
+      bola rolando-export_115: -1623992554
+      bola rolando-export_116: -477881542
+      bola rolando-export_117: 223752922
+      bola rolando-export_118: 797850215
+      bola rolando-export_119: -1064680276
+      bola rolando-export_12: 1631415892
+      bola rolando-export_120: -268766111
+      bola rolando-export_121: -350765555
+      bola rolando-export_122: 43336052
+      bola rolando-export_123: -35955027
+      bola rolando-export_124: 821383300
+      bola rolando-export_125: 32230715
+      bola rolando-export_126: -1550908406
+      bola rolando-export_127: 1917304658
+      bola rolando-export_128: -133248202
+      bola rolando-export_129: 811695474
+      bola rolando-export_13: 132399700
+      bola rolando-export_130: -1305389969
+      bola rolando-export_131: -886005266
+      bola rolando-export_132: -469698151
+      bola rolando-export_133: -1567907040
+      bola rolando-export_134: -707829902
+      bola rolando-export_135: -1894927777
+      bola rolando-export_136: -947402477
+      bola rolando-export_137: 2061617344
+      bola rolando-export_138: 1231551247
+      bola rolando-export_139: -227887120
+      bola rolando-export_14: 1505519959
+      bola rolando-export_140: 1519480904
+      bola rolando-export_141: -299148987
+      bola rolando-export_142: -1776116338
+      bola rolando-export_143: 1207694033
+      bola rolando-export_144: 3422811
+      bola rolando-export_145: 39168426
+      bola rolando-export_146: -1701353355
+      bola rolando-export_147: -1585138913
+      bola rolando-export_148: 1405399961
+      bola rolando-export_149: 1642742995
+      bola rolando-export_15: -2063842370
+      bola rolando-export_150: -838300099
+      bola rolando-export_151: -2063789443
+      bola rolando-export_152: -27582254
+      bola rolando-export_153: 1296763490
+      bola rolando-export_154: -1652014218
+      bola rolando-export_155: 1041891567
+      bola rolando-export_156: -2030203284
+      bola rolando-export_157: 120580772
+      bola rolando-export_158: -1713034814
+      bola rolando-export_159: -407590096
+      bola rolando-export_16: 28627330
+      bola rolando-export_160: 662043693
+      bola rolando-export_161: 1339357133
+      bola rolando-export_162: 589838966
+      bola rolando-export_163: 847630828
+      bola rolando-export_164: -1569131832
+      bola rolando-export_17: 1415334866
+      bola rolando-export_18: 1193461767
+      bola rolando-export_19: -1292402446
+      bola rolando-export_2: -1970436635
+      bola rolando-export_20: -1765713608
+      bola rolando-export_21: 529353202
+      bola rolando-export_22: 1106761146
+      bola rolando-export_23: 1225335472
+      bola rolando-export_24: 1950121022
+      bola rolando-export_25: 733224513
+      bola rolando-export_26: 263838678
+      bola rolando-export_27: -1849370197
+      bola rolando-export_28: 1978942299
+      bola rolando-export_29: -426592923
+      bola rolando-export_3: 505073619
+      bola rolando-export_30: -1868082458
+      bola rolando-export_31: -700470019
+      bola rolando-export_32: 1626682002
+      bola rolando-export_33: -1733844652
+      bola rolando-export_34: -1275756950
+      bola rolando-export_35: -711233129
+      bola rolando-export_36: -1401869426
+      bola rolando-export_37: 1373546423
+      bola rolando-export_38: -64082457
+      bola rolando-export_39: 443006693
+      bola rolando-export_4: -332116925
+      bola rolando-export_40: -2072182232
+      bola rolando-export_41: 1975752924
+      bola rolando-export_42: -1429789274
+      bola rolando-export_43: -56913000
+      bola rolando-export_44: -1454419330
+      bola rolando-export_45: 1115099124
+      bola rolando-export_46: 724040121
+      bola rolando-export_47: 119907283
+      bola rolando-export_48: -592701838
+      bola rolando-export_49: 339066597
+      bola rolando-export_5: 1659676734
+      bola rolando-export_50: 513428090
+      bola rolando-export_51: -303136583
+      bola rolando-export_52: -1059901425
+      bola rolando-export_53: 900983692
+      bola rolando-export_54: -1557153259
+      bola rolando-export_55: 1779442846
+      bola rolando-export_56: -1372270887
+      bola rolando-export_57: -603502406
+      bola rolando-export_58: -31905753
+      bola rolando-export_59: -370839872
+      bola rolando-export_6: -648182025
+      bola rolando-export_60: -1085106274
+      bola rolando-export_61: 888389544
+      bola rolando-export_62: -694793955
+      bola rolando-export_63: 485472896
+      bola rolando-export_64: -713564524
+      bola rolando-export_65: 890095443
+      bola rolando-export_66: 478403441
+      bola rolando-export_67: -1116045038
+      bola rolando-export_68: -1968251075
+      bola rolando-export_69: 325529205
+      bola rolando-export_7: -1013125401
+      bola rolando-export_70: 253353153
+      bola rolando-export_71: -898695510
+      bola rolando-export_72: 449042681
+      bola rolando-export_73: 379997031
+      bola rolando-export_74: -510484218
+      bola rolando-export_75: 1114070849
+      bola rolando-export_76: 424516618
+      bola rolando-export_77: 1674033144
+      bola rolando-export_78: -1934224435
+      bola rolando-export_79: -1403933419
+      bola rolando-export_8: -1883361926
+      bola rolando-export_80: 573612564
+      bola rolando-export_81: 1208142662
+      bola rolando-export_82: -392761357
+      bola rolando-export_83: -704308199
+      bola rolando-export_84: 53726722
+      bola rolando-export_85: 1701567402
+      bola rolando-export_86: 1906566626
+      bola rolando-export_87: 1492874882
+      bola rolando-export_88: -896373275
+      bola rolando-export_89: -962095222
+      bola rolando-export_9: -1892315970
+      bola rolando-export_90: -1124144794
+      bola rolando-export_91: -1380012741
+      bola rolando-export_92: 486823312
+      bola rolando-export_93: 1671302232
+      bola rolando-export_94: 516792185
+      bola rolando-export_95: 92435336
+      bola rolando-export_96: -1416140725
+      bola rolando-export_97: 1281845684
+      bola rolando-export_98: 845317526
+      bola rolando-export_99: 625501945
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
