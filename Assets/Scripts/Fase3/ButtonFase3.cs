@@ -187,6 +187,9 @@ public class ButtonFase3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Button operadorEscolhido = operador[2];
+        ButtonQuadro2Fase3 scriptOperador = operadorEscolhido.GetComponent<ButtonQuadro2Fase3>();
+        Debug.Log(scriptOperador.operador);
         if(!tipoFase){
             fasePar();
         }else{

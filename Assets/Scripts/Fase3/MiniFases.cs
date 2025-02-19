@@ -13,81 +13,79 @@ public class MiniFases : MonoBehaviour
         
     }
 
-    /*public bool verificaCondicional(GameObject BolaEscolhida){
+    public bool verificaCondicional(GameObject BolaEscolhida){
         GameObject[] todasBolas = GameObject.FindGameObjectsWithTag("Bola");
         GameObject[] bolasAtivas = todasBolas.Where(bola => bola.activeInHierarchy).ToArray();
-        GameObject operadorInteractable = GameObject.FindGameObjectsWithTag("Operador").Where(op => op.GetComponent<Button>()?.interactable == true).FirstOrDefault();
-        GameObject condicaoEscolhida = GameObject.FindGameObjectsWithTag("Numero").Where(cond => cond.GetComponent<Button>()?.interactable == true).FirstOrDefault();
-        if(condicaoEscolhida == null){
-            condicaoEscolhida = GameObject.FindGameObjectsWithTag("Cor").Where(cond => cond.GetComponent<Button>()?.interactable == true).FirstOrDefault();
-            if(condicaoEscolhida == null){
-                condicaoEscolhida = GameObject.FindGameObjectsWithTag("ParOuImpar").Where(cond => cond.GetComponent<Button>()?.interactable == true).FirstOrDefault();
-            }
-        }
+        GameObject[] operadoresObjetos = GameObject.FindGameObjectsWithTag("Operador");
+        Button operadorInteractable = operadoresObjetos.Select(op => op.GetComponent<Button>()).Where(btn => btn.interactable).FirstOrDefault();
+        GameObject[] condicaoObjetos = GameObject.FindGameObjectsWithTag("Numero").Concat(GameObject.FindGameObjectsWithTag("Cor")).Concat(GameObject.FindGameObjectsWithTag("ParOuImpar")).ToArray();
+        Button condicaoEscolhida = condicaoObjetos.Select(cond => cond.GetComponent<Button>()).Where(btn => btn.interactable).FirstOrDefault();
+        Bola bolaEscolhida = BolaEscolhida.GetComponent<Bola>(); 
+        ButtonQuadro2Fase3 condicaoEscolhidaButton = condicaoEscolhida.GetComponent<ButtonQuadro2Fase3>();
+        ButtonQuadro2Fase3 operadorInteractableButton = operadorInteractable.GetComponent<ButtonQuadro2Fase3>();
         if(condicaoEscolhida.CompareTag("Numero")){
-            int condicaoNumero = condicaoEscolhida.GetComponent<Button>().numero;
-            switch(operadorInteractable.operador){
+            switch(operadorInteractableButton.operador){
                 case "==":
-                    if(!(BolaEscolhida.numero == condicaoNumero)){
+                    if(!(bolaEscolhida.numero == condicaoEscolhidaButton.numero)){
                         return false;
                     }
                     break;
                 case "!=":
-                    if(!(BolaEscolhida.numero != condicaoNumero)){
+                    if(!(bolaEscolhida.numero != condicaoEscolhidaButton.numero)){
                         return false;
                     }
                     break;
                 case ">":  
-                    if(!(BolaEscolhida.numero > condicaoNumero)){
+                    if(!(bolaEscolhida.numero > condicaoEscolhidaButton.numero)){
                         return false;
                     }
                     break;
                 case "<":
-                    if(!(BolaEscolhida.numero < condicaoNumero)){
+                    if(!(bolaEscolhida.numero < condicaoEscolhidaButton.numero)){
                         return false;
                     }
                     break;
                 case ">=":
-                    if(!(BolaEscolhida.numero >= condicaoNumero)){
+                    if(!(bolaEscolhida.numero >= condicaoEscolhidaButton.numero)){
                         return false;
                     }
                     break;
                 case "<=":
-                    if(!(BolaEscolhida.numero <= condicaoNumero)){
+                    if(!(bolaEscolhida.numero <= condicaoEscolhidaButton.numero)){
                         return false;
                     }
                     break;
             }
             for(int i=0; i<bolasAtivas.Length; i++){
-                if(bolasAtivas[i] != BolaEscolhida){
-                    switch(operadorInteractable.operador){
+                if(bolasAtivas[i] != bolaEscolhida){
+                    switch(operadorInteractableButton.operador){
                         case "==":
-                            if(bolasAtivas[i].GetComponent<Bola>().numero == condicaoNumero){
+                            if(bolasAtivas[i].GetComponent<Bola>().numero == condicaoEscolhidaButton.numero){
                                 return false;
                             }
                             break;
                         case "!=":
-                            if(bolasAtivas[i].GetComponent<Bola>().numero != condicaoNumero){
+                            if(bolasAtivas[i].GetComponent<Bola>().numero != condicaoEscolhidaButton.numero){
                                 return false;
                             }
                             break;
                         case ">":
-                            if(bolasAtivas[i].GetComponent<Bola>().numero > condicaoNumero){
+                            if(bolasAtivas[i].GetComponent<Bola>().numero > condicaoEscolhidaButton.numero){
                                 return false;
                             }
                             break;
                         case "<":
-                            if(bolasAtivas[i].GetComponent<Bola>().numero < condicaoNumero){
+                            if(bolasAtivas[i].GetComponent<Bola>().numero < condicaoEscolhidaButton.numero){
                                 return false;
                             }
                             break;
                         case ">=":
-                            if(bolasAtivas[i].GetComponent<Bola>().numero >= condicaoNumero){
+                            if(bolasAtivas[i].GetComponent<Bola>().numero >= condicaoEscolhidaButton.numero){
                                 return false;
                             }
                             break;
                         case "<=":
-                            if(bolasAtivas[i].GetComponent<Bola>().numero <= condicaoNumero){
+                            if(bolasAtivas[i].GetComponent<Bola>().numero <= condicaoEscolhidaButton.numero){
                                 return false;
                             }
                             break;
@@ -96,29 +94,28 @@ public class MiniFases : MonoBehaviour
             }
         }
         if(condicaoEscolhida.CompareTag("Cor")){
-            string condicaoCor = condicaoEscolhida.GetComponent<Button>().cor;
-            switch(operadorInteractable.operador){
+            switch(operadorInteractableButton.operador){
                 case "==":
-                    if(!(BolaEscolhida.cor == condicaoCor)){
+                    if(!(bolaEscolhida.cor == condicaoEscolhidaButton.cor)){
                         return false;
                     }
                     break;
                 case "!=":
-                    if(!(BolaEscolhida.cor != condicaoCor)){
+                    if(!(bolaEscolhida.cor != condicaoEscolhidaButton.cor)){
                         return false;
                     }
                     break;
             }
             for(int i=0; i<bolasAtivas.Length; i++){
-                if(bolasAtivas[i] != BolaEscolhida){
-                    switch(operadorInteractable.operador){
+                if(bolasAtivas[i] != bolaEscolhida){
+                    switch(operadorInteractableButton.operador){
                         case "==":
-                            if(bolasAtivas[i].GetComponent<Bola>().cor == condicaoCor){
+                            if(bolasAtivas[i].GetComponent<Bola>().cor == condicaoEscolhidaButton.cor){
                                 return false;
                             }
                             break;
                         case "!=":
-                            if(bolasAtivas[i].GetComponent<Bola>().cor != condicaoCor){
+                            if(bolasAtivas[i].GetComponent<Bola>().cor != condicaoEscolhidaButton.cor){
                                 return false;
                             }
                             break;
@@ -127,29 +124,28 @@ public class MiniFases : MonoBehaviour
             }
         }
         if(condicaoEscolhida.CompareTag("ParOuImpar")){
-            string condicaoParOuImpar = condicaoEscolhida.GetComponent<Button>().parOuImpar;
-            switch(operadorInteractable.operador){
+            switch(operadorInteractableButton.operador){
                 case "==":
-                    if(!(BolaEscolhida.parOuImpar == condicaoParOuImpar)){
+                    if(!(bolaEscolhida.parOuImpar == condicaoEscolhidaButton.parOuImpar)){
                         return false;
                     }
                     break;
                 case "!=":
-                    if(!(BolaEscolhida.parOuImpar != condicaoParOuImpar)){
+                    if(!(bolaEscolhida.parOuImpar != condicaoEscolhidaButton.parOuImpar)){
                         return false;
                     }
                     break;
             }
             for(int i=0; i<bolasAtivas.Length; i++){
-                if(bolasAtivas[i] != BolaEscolhida){
-                    switch(operadorInteractable.operador){
+                if(bolasAtivas[i] != bolaEscolhida){
+                    switch(operadorInteractableButton.operador){
                         case "==":
-                            if(bolasAtivas[i].GetComponent<Bola>().parOuImpar == condicaoParOuImpar){
+                            if(bolasAtivas[i].GetComponent<Bola>().parOuImpar == condicaoEscolhidaButton.parOuImpar){
                                 return false;
                             }
                             break;
                         case "!=":
-                            if(bolasAtivas[i].GetComponent<Bola>().parOuImpar != condicaoParOuImpar){
+                            if(bolasAtivas[i].GetComponent<Bola>().parOuImpar != condicaoEscolhidaButton.parOuImpar){
                                 return false;
                             }
                             break;
@@ -158,7 +154,7 @@ public class MiniFases : MonoBehaviour
             }
         }
         return true;
-    }*/
+    }
     // Update is called once per frame
     void Update()
     {
