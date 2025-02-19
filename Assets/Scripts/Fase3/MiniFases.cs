@@ -16,11 +16,15 @@ public class MiniFases : MonoBehaviour
     public bool verificaCondicional(GameObject BolaEscolhida){
         GameObject[] todasBolas = GameObject.FindGameObjectsWithTag("Bola");
         GameObject[] bolasAtivas = todasBolas.Where(bola => bola.activeInHierarchy).ToArray();
+
         GameObject[] operadoresObjetos = GameObject.FindGameObjectsWithTag("Operador");
         Button operadorInteractable = operadoresObjetos.Select(op => op.GetComponent<Button>()).Where(btn => btn.interactable).FirstOrDefault();
+
         GameObject[] condicaoObjetos = GameObject.FindGameObjectsWithTag("Numero").Concat(GameObject.FindGameObjectsWithTag("Cor")).Concat(GameObject.FindGameObjectsWithTag("ParOuImpar")).ToArray();
         Button condicaoEscolhida = condicaoObjetos.Select(cond => cond.GetComponent<Button>()).Where(btn => btn.interactable).FirstOrDefault();
-        Bola bolaEscolhida = BolaEscolhida.GetComponent<Bola>(); 
+
+        Bola bolaEscolhida = BolaEscolhida.GetComponent<Bola>();
+         
         ButtonQuadro2Fase3 condicaoEscolhidaButton = condicaoEscolhida.GetComponent<ButtonQuadro2Fase3>();
         ButtonQuadro2Fase3 operadorInteractableButton = operadorInteractable.GetComponent<ButtonQuadro2Fase3>();
         if(condicaoEscolhida.CompareTag("Numero")){
