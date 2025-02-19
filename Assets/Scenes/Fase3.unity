@@ -3085,9 +3085,10 @@ GameObject:
   - component: {fileID: 98705940}
   - component: {fileID: 98705939}
   - component: {fileID: 98705942}
+  - component: {fileID: 98705943}
   m_Layer: 5
   m_Name: Button "<="
-  m_TagString: Untagged
+  m_TagString: Operador
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3220,6 +3221,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   operador: <=
   buttonOperador: 0
+--- !u!114 &98705943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 98705937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d7fae9301150c44b3d960d37db0055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero: -1
+  cor: -1
+  parOuImpar: -1
+  operador: <=
 --- !u!1 &99114728
 GameObject:
   m_ObjectHideFlags: 0
@@ -5560,9 +5577,10 @@ GameObject:
   - component: {fileID: 162631252}
   - component: {fileID: 162631251}
   - component: {fileID: 162631250}
+  - component: {fileID: 162631253}
   m_Layer: 5
   m_Name: Button "7"
-  m_TagString: Untagged
+  m_TagString: Numero
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5681,6 +5699,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 162631248}
   m_CullTransparentMesh: 1
+--- !u!114 &162631253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162631248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d7fae9301150c44b3d960d37db0055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero: 7
+  cor: -1
+  parOuImpar: -1
+  operador: -1
 --- !u!1 &166578470
 GameObject:
   m_ObjectHideFlags: 0
@@ -7261,9 +7295,10 @@ GameObject:
   - component: {fileID: 237288526}
   - component: {fileID: 237288525}
   - component: {fileID: 237288528}
+  - component: {fileID: 237288529}
   m_Layer: 5
   m_Name: Button "=="
-  m_TagString: Untagged
+  m_TagString: Operador
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7396,6 +7431,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   operador: ==
   buttonOperador: 0
+--- !u!114 &237288529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 237288523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d7fae9301150c44b3d960d37db0055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero: -1
+  cor: -1
+  parOuImpar: -1
+  operador: ==
 --- !u!1 &239699441
 GameObject:
   m_ObjectHideFlags: 0
@@ -7902,9 +7953,10 @@ GameObject:
   - component: {fileID: 261901004}
   - component: {fileID: 261901003}
   - component: {fileID: 261901002}
+  - component: {fileID: 261901005}
   m_Layer: 5
   m_Name: Button Impar
-  m_TagString: Untagged
+  m_TagString: ParOuImpar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8023,6 +8075,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 261901000}
   m_CullTransparentMesh: 1
+--- !u!114 &261901005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261901000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d7fae9301150c44b3d960d37db0055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero: -1
+  cor: -1
+  parOuImpar: impar
+  operador: -1
 --- !u!1 &262484986
 GameObject:
   m_ObjectHideFlags: 0
@@ -8342,9 +8410,10 @@ GameObject:
   - component: {fileID: 282441797}
   - component: {fileID: 282441796}
   - component: {fileID: 282441795}
+  - component: {fileID: 282441798}
   m_Layer: 5
   m_Name: Button Par
-  m_TagString: Untagged
+  m_TagString: ParOuImpar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8463,6 +8532,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 282441793}
   m_CullTransparentMesh: 1
+--- !u!114 &282441798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282441793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d7fae9301150c44b3d960d37db0055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero: -1
+  cor: -1
+  parOuImpar: par
+  operador: -1
 --- !u!1 &287346188
 GameObject:
   m_ObjectHideFlags: 0
@@ -10505,9 +10590,10 @@ GameObject:
   - component: {fileID: 372245694}
   - component: {fileID: 372245693}
   - component: {fileID: 372245692}
+  - component: {fileID: 372245695}
   m_Layer: 5
   m_Name: Button "1"
-  m_TagString: Untagged
+  m_TagString: Numero
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10626,6 +10712,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 372245690}
   m_CullTransparentMesh: 1
+--- !u!114 &372245695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372245690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d7fae9301150c44b3d960d37db0055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero: 1
+  cor: -1
+  parOuImpar: -1
+  operador: -1
 --- !u!1 &376746438
 GameObject:
   m_ObjectHideFlags: 0
@@ -11040,9 +11142,10 @@ GameObject:
   - component: {fileID: 392362290}
   - component: {fileID: 392362289}
   - component: {fileID: 392362288}
+  - component: {fileID: 392362291}
   m_Layer: 5
   m_Name: Button "6"
-  m_TagString: Untagged
+  m_TagString: Numero
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11161,6 +11264,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 392362286}
   m_CullTransparentMesh: 1
+--- !u!114 &392362291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392362286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d7fae9301150c44b3d960d37db0055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero: 6
+  cor: -1
+  parOuImpar: -1
+  operador: -1
 --- !u!1 &397655096
 GameObject:
   m_ObjectHideFlags: 0
@@ -11518,7 +11637,7 @@ GameObject:
   - component: {fileID: 406041164}
   m_Layer: 0
   m_Name: Bola 8
-  m_TagString: Untagged
+  m_TagString: Bola
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11552,6 +11671,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numero: 8
   cor: preta
+  parOuImpar: par
 --- !u!212 &406041165
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12495,7 +12615,7 @@ GameObject:
   - component: {fileID: 451448433}
   m_Layer: 0
   m_Name: Bola 15
-  m_TagString: Untagged
+  m_TagString: Bola
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12529,6 +12649,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numero: 15
   cor: vermelha
+  parOuImpar: impar
 --- !u!212 &451448434
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17178,9 +17299,10 @@ GameObject:
   - component: {fileID: 621894684}
   - component: {fileID: 621894683}
   - component: {fileID: 621894682}
+  - component: {fileID: 621894685}
   m_Layer: 5
   m_Name: Button Roxa
-  m_TagString: Untagged
+  m_TagString: Cor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17299,6 +17421,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 621894680}
   m_CullTransparentMesh: 1
+--- !u!114 &621894685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621894680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d7fae9301150c44b3d960d37db0055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero: -1
+  cor: roxa
+  parOuImpar: -1
+  operador: -1
 --- !u!1 &622031755
 GameObject:
   m_ObjectHideFlags: 0
@@ -18171,9 +18309,10 @@ GameObject:
   - component: {fileID: 658909099}
   - component: {fileID: 658909098}
   - component: {fileID: 658909097}
+  - component: {fileID: 658909100}
   m_Layer: 5
   m_Name: Button "11"
-  m_TagString: Untagged
+  m_TagString: Numero
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18292,6 +18431,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 658909095}
   m_CullTransparentMesh: 1
+--- !u!114 &658909100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658909095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d7fae9301150c44b3d960d37db0055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero: 11
+  cor: -1
+  parOuImpar: -1
+  operador: -1
 --- !u!1 &666674683
 GameObject:
   m_ObjectHideFlags: 0
@@ -20034,9 +20189,10 @@ GameObject:
   - component: {fileID: 743518329}
   - component: {fileID: 743518328}
   - component: {fileID: 743518327}
+  - component: {fileID: 743518330}
   m_Layer: 5
   m_Name: Button Vermelho
-  m_TagString: Untagged
+  m_TagString: Cor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20155,6 +20311,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 743518325}
   m_CullTransparentMesh: 1
+--- !u!114 &743518330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743518325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d7fae9301150c44b3d960d37db0055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero: -1
+  cor: vermelha
+  parOuImpar: -1
+  operador: -1
 --- !u!1 &753949587
 GameObject:
   m_ObjectHideFlags: 0
@@ -20700,9 +20872,10 @@ GameObject:
   - component: {fileID: 766112830}
   - component: {fileID: 766112829}
   - component: {fileID: 766112832}
+  - component: {fileID: 766112833}
   m_Layer: 5
   m_Name: Button ">="
-  m_TagString: Untagged
+  m_TagString: Operador
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20835,6 +21008,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   operador: '>='
   buttonOperador: 0
+--- !u!114 &766112833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766112827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d7fae9301150c44b3d960d37db0055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero: -1
+  cor: -1
+  parOuImpar: -1
+  operador: '>='
 --- !u!1 &768378655
 GameObject:
   m_ObjectHideFlags: 0
@@ -23377,9 +23566,10 @@ GameObject:
   - component: {fileID: 885694012}
   - component: {fileID: 885694011}
   - component: {fileID: 885694014}
+  - component: {fileID: 885694015}
   m_Layer: 5
   m_Name: Button ">"
-  m_TagString: Untagged
+  m_TagString: Operador
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23512,6 +23702,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   operador: '>'
   buttonOperador: 0
+--- !u!114 &885694015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885694009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d7fae9301150c44b3d960d37db0055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero: -1
+  cor: -1
+  parOuImpar: -1
+  operador: '>'
 --- !u!1001 &893786950
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24395,7 +24601,7 @@ GameObject:
   - component: {fileID: 936438299}
   m_Layer: 0
   m_Name: Bola 7
-  m_TagString: Untagged
+  m_TagString: Bola
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24429,6 +24635,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numero: 7
   cor: vermelha
+  parOuImpar: impar
 --- !u!212 &936438300
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24833,7 +25040,7 @@ GameObject:
   m_Component:
   - component: {fileID: 949204639}
   m_Layer: 0
-  m_Name: Cores e Par/ImparFinal
+  m_Name: Cores
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25034,9 +25241,10 @@ GameObject:
   - component: {fileID: 958740302}
   - component: {fileID: 958740301}
   - component: {fileID: 958740300}
+  - component: {fileID: 958740303}
   m_Layer: 5
   m_Name: Button Laranja
-  m_TagString: Untagged
+  m_TagString: Cor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25155,6 +25363,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 958740298}
   m_CullTransparentMesh: 1
+--- !u!114 &958740303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958740298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d7fae9301150c44b3d960d37db0055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero: -1
+  cor: laranja
+  parOuImpar: -1
+  operador: -1
 --- !u!1 &962205201
 GameObject:
   m_ObjectHideFlags: 0
@@ -25167,9 +25391,10 @@ GameObject:
   - component: {fileID: 962205205}
   - component: {fileID: 962205204}
   - component: {fileID: 962205203}
+  - component: {fileID: 962205206}
   m_Layer: 5
   m_Name: Button "9"
-  m_TagString: Untagged
+  m_TagString: Numero
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25288,6 +25513,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 962205201}
   m_CullTransparentMesh: 1
+--- !u!114 &962205206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962205201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d7fae9301150c44b3d960d37db0055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero: 9
+  cor: -1
+  parOuImpar: -1
+  operador: -1
 --- !u!1 &967920591
 GameObject:
   m_ObjectHideFlags: 0
@@ -26146,7 +26387,7 @@ GameObject:
   - component: {fileID: 1005750212}
   m_Layer: 0
   m_Name: Bola 11
-  m_TagString: Untagged
+  m_TagString: Bola
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26180,6 +26421,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numero: 11
   cor: rosa
+  parOuImpar: impar
 --- !u!212 &1005750213
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26609,9 +26851,10 @@ GameObject:
   - component: {fileID: 1014800588}
   - component: {fileID: 1014800587}
   - component: {fileID: 1014800586}
+  - component: {fileID: 1014800589}
   m_Layer: 5
   m_Name: Button Azul
-  m_TagString: Untagged
+  m_TagString: Cor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26730,6 +26973,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1014800584}
   m_CullTransparentMesh: 1
+--- !u!114 &1014800589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014800584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d7fae9301150c44b3d960d37db0055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero: -1
+  cor: azul
+  parOuImpar: -1
+  operador: -1
 --- !u!1 &1019385351
 GameObject:
   m_ObjectHideFlags: 0
@@ -29592,7 +29851,7 @@ GameObject:
   - component: {fileID: 1122575606}
   m_Layer: 0
   m_Name: Bola 9
-  m_TagString: Untagged
+  m_TagString: Bola
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29626,6 +29885,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numero: 9
   cor: amarela
+  parOuImpar: impar
 --- !u!212 &1122575607
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31091,7 +31351,7 @@ GameObject:
   - component: {fileID: 1182307542}
   m_Layer: 0
   m_Name: Bola 6
-  m_TagString: Untagged
+  m_TagString: Bola
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31125,6 +31385,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numero: 6
   cor: verde
+  parOuImpar: par
 --- !u!212 &1182307543
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31488,9 +31749,10 @@ GameObject:
   - component: {fileID: 1190993394}
   - component: {fileID: 1190993393}
   - component: {fileID: 1190993392}
+  - component: {fileID: 1190993395}
   m_Layer: 5
   m_Name: Button "12"
-  m_TagString: Untagged
+  m_TagString: Numero
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31609,6 +31871,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1190993390}
   m_CullTransparentMesh: 1
+--- !u!114 &1190993395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190993390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d7fae9301150c44b3d960d37db0055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero: 12
+  cor: -1
+  parOuImpar: -1
+  operador: -1
 --- !u!1 &1191610474
 GameObject:
   m_ObjectHideFlags: 0
@@ -32513,7 +32791,7 @@ GameObject:
   - component: {fileID: 1218026614}
   m_Layer: 0
   m_Name: Bola 4
-  m_TagString: Untagged
+  m_TagString: Bola
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32547,6 +32825,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numero: 4
   cor: roxa
+  parOuImpar: par
 --- !u!212 &1218026615
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33313,9 +33592,10 @@ GameObject:
   - component: {fileID: 1234899719}
   - component: {fileID: 1234899718}
   - component: {fileID: 1234899717}
+  - component: {fileID: 1234899720}
   m_Layer: 5
   m_Name: Button "4"
-  m_TagString: Untagged
+  m_TagString: Numero
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33434,6 +33714,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1234899715}
   m_CullTransparentMesh: 1
+--- !u!114 &1234899720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234899715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d7fae9301150c44b3d960d37db0055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero: 4
+  cor: -1
+  parOuImpar: -1
+  operador: -1
 --- !u!1 &1235078512
 GameObject:
   m_ObjectHideFlags: 0
@@ -34747,9 +35043,10 @@ GameObject:
   - component: {fileID: 1284500685}
   - component: {fileID: 1284500684}
   - component: {fileID: 1284500683}
+  - component: {fileID: 1284500686}
   m_Layer: 5
   m_Name: Button "15"
-  m_TagString: Untagged
+  m_TagString: Numero
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34868,6 +35165,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1284500681}
   m_CullTransparentMesh: 1
+--- !u!114 &1284500686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284500681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d7fae9301150c44b3d960d37db0055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero: 15
+  cor: -1
+  parOuImpar: -1
+  operador: -1
 --- !u!1 &1285622375
 GameObject:
   m_ObjectHideFlags: 0
@@ -35295,7 +35608,7 @@ GameObject:
   - component: {fileID: 1304282733}
   m_Layer: 0
   m_Name: Bola 5
-  m_TagString: Untagged
+  m_TagString: Bola
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35329,6 +35642,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numero: 5
   cor: laranja
+  parOuImpar: impar
 --- !u!212 &1304282734
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37050,9 +37364,10 @@ GameObject:
   - component: {fileID: 1370750053}
   - component: {fileID: 1370750052}
   - component: {fileID: 1370750055}
+  - component: {fileID: 1370750056}
   m_Layer: 5
   m_Name: Button "<"
-  m_TagString: Untagged
+  m_TagString: Operador
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37185,6 +37500,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   operador: <
   buttonOperador: 0
+--- !u!114 &1370750056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370750050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d7fae9301150c44b3d960d37db0055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero: -1
+  cor: -1
+  parOuImpar: -1
+  operador: <
 --- !u!1 &1371036616
 GameObject:
   m_ObjectHideFlags: 0
@@ -37762,9 +38093,10 @@ GameObject:
   - component: {fileID: 1377021664}
   - component: {fileID: 1377021663}
   - component: {fileID: 1377021662}
+  - component: {fileID: 1377021665}
   m_Layer: 5
   m_Name: Button "10"
-  m_TagString: Untagged
+  m_TagString: Numero
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37883,6 +38215,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1377021660}
   m_CullTransparentMesh: 1
+--- !u!114 &1377021665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377021660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d7fae9301150c44b3d960d37db0055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero: 10
+  cor: -1
+  parOuImpar: -1
+  operador: -1
 --- !u!1 &1380228888
 GameObject:
   m_ObjectHideFlags: 0
@@ -37896,9 +38244,10 @@ GameObject:
   - component: {fileID: 1380228891}
   - component: {fileID: 1380228890}
   - component: {fileID: 1380228893}
+  - component: {fileID: 1380228894}
   m_Layer: 5
   m_Name: Button "!="
-  m_TagString: Untagged
+  m_TagString: Operador
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38031,6 +38380,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   operador: '!='
   buttonOperador: 0
+--- !u!114 &1380228894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380228888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d7fae9301150c44b3d960d37db0055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero: -1
+  cor: -1
+  parOuImpar: -1
+  operador: '!='
 --- !u!1 &1381313892
 GameObject:
   m_ObjectHideFlags: 0
@@ -38428,9 +38793,10 @@ GameObject:
   - component: {fileID: 1403111720}
   - component: {fileID: 1403111719}
   - component: {fileID: 1403111718}
+  - component: {fileID: 1403111721}
   m_Layer: 5
   m_Name: Button "14"
-  m_TagString: Untagged
+  m_TagString: Numero
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38549,6 +38915,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1403111716}
   m_CullTransparentMesh: 1
+--- !u!114 &1403111721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403111716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d7fae9301150c44b3d960d37db0055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero: 14
+  cor: -1
+  parOuImpar: -1
+  operador: -1
 --- !u!1 &1403325652
 GameObject:
   m_ObjectHideFlags: 0
@@ -38644,9 +39026,10 @@ GameObject:
   - component: {fileID: 1407255664}
   - component: {fileID: 1407255663}
   - component: {fileID: 1407255662}
+  - component: {fileID: 1407255665}
   m_Layer: 5
   m_Name: Button Amarelo
-  m_TagString: Untagged
+  m_TagString: Cor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38765,6 +39148,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1407255660}
   m_CullTransparentMesh: 1
+--- !u!114 &1407255665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407255660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d7fae9301150c44b3d960d37db0055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero: -1
+  cor: amarela
+  parOuImpar: -1
+  operador: -1
 --- !u!1 &1408230813
 GameObject:
   m_ObjectHideFlags: 0
@@ -41816,9 +42215,10 @@ GameObject:
   - component: {fileID: 1485706895}
   - component: {fileID: 1485706894}
   - component: {fileID: 1485706893}
+  - component: {fileID: 1485706896}
   m_Layer: 5
   m_Name: Button "2"
-  m_TagString: Untagged
+  m_TagString: Numero
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41937,6 +42337,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1485706891}
   m_CullTransparentMesh: 1
+--- !u!114 &1485706896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485706891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d7fae9301150c44b3d960d37db0055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero: 2
+  cor: -1
+  parOuImpar: -1
+  operador: -1
 --- !u!1 &1485771977
 GameObject:
   m_ObjectHideFlags: 0
@@ -41949,9 +42365,10 @@ GameObject:
   - component: {fileID: 1485771981}
   - component: {fileID: 1485771980}
   - component: {fileID: 1485771979}
+  - component: {fileID: 1485771982}
   m_Layer: 5
   m_Name: Button "13"
-  m_TagString: Untagged
+  m_TagString: Numero
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42070,6 +42487,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1485771977}
   m_CullTransparentMesh: 1
+--- !u!114 &1485771982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485771977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d7fae9301150c44b3d960d37db0055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero: 13
+  cor: -1
+  parOuImpar: -1
+  operador: -1
 --- !u!1 &1487650491
 GameObject:
   m_ObjectHideFlags: 0
@@ -42540,7 +42973,7 @@ GameObject:
   - component: {fileID: 1507380500}
   m_Layer: 0
   m_Name: Bola 1
-  m_TagString: Untagged
+  m_TagString: Bola
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42574,6 +43007,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numero: 1
   cor: amarela
+  parOuImpar: impar
 --- !u!212 &1507380501
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44549,9 +44983,10 @@ GameObject:
   - component: {fileID: 1540872117}
   - component: {fileID: 1540872116}
   - component: {fileID: 1540872115}
+  - component: {fileID: 1540872118}
   m_Layer: 5
   m_Name: Button Preto
-  m_TagString: Untagged
+  m_TagString: Cor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44670,6 +45105,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1540872113}
   m_CullTransparentMesh: 1
+--- !u!114 &1540872118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540872113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d7fae9301150c44b3d960d37db0055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero: -1
+  cor: preto
+  parOuImpar: -1
+  operador: -1
 --- !u!1 &1541522302
 GameObject:
   m_ObjectHideFlags: 0
@@ -49394,7 +49845,7 @@ GameObject:
   - component: {fileID: 1698166527}
   m_Layer: 0
   m_Name: Bola 12
-  m_TagString: Untagged
+  m_TagString: Bola
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49428,6 +49879,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numero: 12
   cor: roxa
+  parOuImpar: par
 --- !u!212 &1698166528
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -49492,9 +49944,10 @@ GameObject:
   - component: {fileID: 1700237437}
   - component: {fileID: 1700237436}
   - component: {fileID: 1700237435}
+  - component: {fileID: 1700237438}
   m_Layer: 5
   m_Name: Button "5"
-  m_TagString: Untagged
+  m_TagString: Numero
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49613,6 +50066,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1700237433}
   m_CullTransparentMesh: 1
+--- !u!114 &1700237438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700237433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d7fae9301150c44b3d960d37db0055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero: 5
+  cor: -1
+  parOuImpar: -1
+  operador: -1
 --- !u!1 &1701040506
 GameObject:
   m_ObjectHideFlags: 0
@@ -53015,9 +53484,10 @@ GameObject:
   - component: {fileID: 1829853969}
   - component: {fileID: 1829853968}
   - component: {fileID: 1829853967}
+  - component: {fileID: 1829853970}
   m_Layer: 5
   m_Name: Button Verde
-  m_TagString: Untagged
+  m_TagString: Cor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53136,6 +53606,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1829853965}
   m_CullTransparentMesh: 1
+--- !u!114 &1829853970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829853965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d7fae9301150c44b3d960d37db0055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero: -1
+  cor: verde
+  parOuImpar: -1
+  operador: -1
 --- !u!1 &1833712764
 GameObject:
   m_ObjectHideFlags: 0
@@ -56641,9 +57127,10 @@ GameObject:
   - component: {fileID: 1949035024}
   - component: {fileID: 1949035023}
   - component: {fileID: 1949035022}
+  - component: {fileID: 1949035025}
   m_Layer: 5
   m_Name: Button "8"
-  m_TagString: Untagged
+  m_TagString: Numero
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56762,6 +57249,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1949035020}
   m_CullTransparentMesh: 1
+--- !u!114 &1949035025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1949035020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d7fae9301150c44b3d960d37db0055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero: 8
+  cor: -1
+  parOuImpar: -1
+  operador: -1
 --- !u!1 &1953240974
 GameObject:
   m_ObjectHideFlags: 0
@@ -58752,7 +59255,7 @@ GameObject:
   - component: {fileID: 2024355678}
   m_Layer: 0
   m_Name: Bola 3
-  m_TagString: Untagged
+  m_TagString: Bola
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58786,6 +59289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numero: 3
   cor: rosa
+  parOuImpar: impar
 --- !u!212 &2024355679
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -59058,9 +59562,10 @@ GameObject:
   - component: {fileID: 2030347337}
   - component: {fileID: 2030347336}
   - component: {fileID: 2030347335}
+  - component: {fileID: 2030347338}
   m_Layer: 5
   m_Name: Button Marrom
-  m_TagString: Untagged
+  m_TagString: Cor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59179,6 +59684,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2030347333}
   m_CullTransparentMesh: 1
+--- !u!114 &2030347338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2030347333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d7fae9301150c44b3d960d37db0055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero: -1
+  cor: marrom
+  parOuImpar: -1
+  operador: -1
 --- !u!1 &2038979397
 GameObject:
   m_ObjectHideFlags: 0
@@ -59632,7 +60153,7 @@ GameObject:
   - component: {fileID: 2051511376}
   m_Layer: 0
   m_Name: Bola 14
-  m_TagString: Untagged
+  m_TagString: Bola
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59666,6 +60187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numero: 14
   cor: verde
+  parOuImpar: par
 --- !u!212 &2051511377
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -59864,9 +60386,10 @@ GameObject:
   - component: {fileID: 2053399348}
   - component: {fileID: 2053399347}
   - component: {fileID: 2053399346}
+  - component: {fileID: 2053399349}
   m_Layer: 5
   m_Name: Button "3"
-  m_TagString: Untagged
+  m_TagString: Numero
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59985,6 +60508,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2053399344}
   m_CullTransparentMesh: 1
+--- !u!114 &2053399349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053399344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d7fae9301150c44b3d960d37db0055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numero: 3
+  cor: -1
+  parOuImpar: -1
+  operador: -1
 --- !u!1 &2054537897
 GameObject:
   m_ObjectHideFlags: 0
@@ -59998,7 +60537,7 @@ GameObject:
   - component: {fileID: 2054537899}
   m_Layer: 0
   m_Name: Bola 2
-  m_TagString: Untagged
+  m_TagString: Bola
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60032,6 +60571,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numero: 2
   cor: azul
+  parOuImpar: par
 --- !u!212 &2054537900
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -60449,7 +60989,7 @@ GameObject:
   - component: {fileID: 2074645991}
   m_Layer: 0
   m_Name: Bola 13
-  m_TagString: Untagged
+  m_TagString: Bola
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60483,6 +61023,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numero: 13
   cor: laranja
+  parOuImpar: impar
 --- !u!212 &2074645992
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -61523,7 +62064,7 @@ GameObject:
   - component: {fileID: 2110886168}
   m_Layer: 0
   m_Name: Bola 10
-  m_TagString: Untagged
+  m_TagString: Bola
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61557,6 +62098,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numero: 10
   cor: azul
+  parOuImpar: par
 --- !u!212 &2110886169
 SpriteRenderer:
   m_ObjectHideFlags: 0

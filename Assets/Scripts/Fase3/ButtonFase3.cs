@@ -111,6 +111,8 @@ public class ButtonFase3 : MonoBehaviour
                     numeros[j].interactable = false;
                 }
             }
+            interactableNo(cores);
+            interactableNo(parOuImpar);
             spriteNumero[i].SetActive(true);
         }else{
             if(!funcaoOperador && funcaoCondicao){
@@ -122,12 +124,13 @@ public class ButtonFase3 : MonoBehaviour
     }
     public void Button_EscolheParOuImpar(int i){
         if(funcaoCondicao && funcaoOperador){
-            for(int j =0; j<cores.Length; j++){
-                if(j != i && j<2){
-                    parOuImpar[j].interactable = false;
-                }
-                cores[j].interactable = false;
+            if(i ==0){
+                parOuImpar[1].interactable = false;
+            }else{
+                parOuImpar[0].interactable = false;
             }
+            interactableNo(numeros);
+            interactableNo(cores);
             spriteParOuImpar[i].SetActive(true);
         }else{
             if(!funcaoOperador && funcaoCondicao){
@@ -143,10 +146,9 @@ public class ButtonFase3 : MonoBehaviour
                 if(j != i){
                     cores[j].interactable = false;
                 }
-                if(j<2){
-                    parOuImpar[j].interactable = false;
-                }
             }
+            interactableNo(parOuImpar);
+            interactableNo(numeros);
             spriteCores[i].SetActive(true);
         }else{
             if(!funcaoOperador && funcaoCondicao){
@@ -156,11 +158,12 @@ public class ButtonFase3 : MonoBehaviour
             }
         }
     }
-    public void Button_X(){
-        desativarSprites();
-        funcaoOperador = false;
-        funcaoCondicao = false;
-        operadorEscolhido = false;
+    public void interactableNo(Button[] button){
+        for(int i=0; i<button.Length; i++){
+            button[i].interactable = false;
+        }
+    }
+    public void interactableAllYes(){
         for(int i=0; i<numeros.Length; i++){
             numeros[i].interactable = true;
             if(i<cores.Length){
@@ -173,6 +176,13 @@ public class ButtonFase3 : MonoBehaviour
                 operador[i].interactable = true;
             }
         }
+    }
+    public void Button_X(){
+        desativarSprites();
+        funcaoOperador = false;
+        funcaoCondicao = false;
+        operadorEscolhido = false;
+        interactableAllYes();
     }
     // Update is called once per frame
     void Update()
