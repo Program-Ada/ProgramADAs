@@ -2,8 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+using System;
 public class ButtonFase3 : MonoBehaviour
 {   
+    public GameObject[] bola;
     public static ButtonFase3 Instance;
     public bool tipoFase;
     public bool funcaoOperador = false;
@@ -23,11 +26,26 @@ public class ButtonFase3 : MonoBehaviour
     public GameObject posicaoDiferentePar;
     public GameObject posicaoIgualNumero;
     public GameObject posicaoDiferenteNumero;
+    public TextMeshProUGUI objetivoDaFase;
+    private Func<int>[] miniFases;
+    private bool[] miniFasesChamadas;
+    public int bolaDoMomento;
     // Start is called before the first frame update
     void Start()
     {
         Instance = this;
         desativarSprites();
+        miniFases = new Func<int>[]
+        {
+            MiniFases.Instance.fase1a,
+            MiniFases.Instance.fase1b,
+            MiniFases.Instance.fase1c,
+            MiniFases.Instance.fase1d,
+            MiniFases.Instance.fase1e,
+            MiniFases.Instance.fase1f
+        };
+        miniFasesChamadas = new bool[6];
+        bolaDoMomento = escolheFase();
     }
     public void fasePar(){
         operador[0].transform.position = posicaoIgualPar.transform.position;
@@ -189,6 +207,10 @@ public class ButtonFase3 : MonoBehaviour
             }
         }
     }
+    public void Button_Ok(){
+        //verificaCondicional(bola(faseDoMomento));
+
+    }
     public void Button_X(){
         botoesCondicional[0].gameObject.SetActive(true);
         botoesCondicional[1].gameObject.SetActive(true);
@@ -198,6 +220,204 @@ public class ButtonFase3 : MonoBehaviour
         operadorEscolhido = false;
         condicaoEscolhida = false;
         interactableAllYes();
+    }
+    public bool verificaCondicional(GameObject bolaEscolhida){
+        /*GameObject[] todasBolas = GameObject.FindGameObjectsWithTag("Bola");
+        GameObject[] bolasAtivas = todasBolas.Where(bola => bola.activeInHierarchy).ToArray();
+
+        GameObject[] operadoresObjetos = GameObject.FindGameObjectsWithTag("Operador");
+        Button operadorInteractable = operadoresObjetos.Select(op => op.GetComponent<Button>()).Where(btn => btn.interactable).FirstOrDefault();
+
+        GameObject[] condicaoObjetos = GameObject.FindGameObjectsWithTag("Numero").Concat(GameObject.FindGameObjectsWithTag("Cor")).Concat(GameObject.FindGameObjectsWithTag("ParOuImpar")).ToArray();
+        Button condicaoEscolhida = condicaoObjetos.Select(cond => cond.GetComponent<Button>()).Where(btn => btn.interactable).FirstOrDefault();*/
+        List<GameObject> bolasAtivas = new List<GameObject>();
+        for(int i=0; i<bola.Length; i++){
+            if(bola[i].activeSelf){
+                bolasAtivas.Add(bola[i]);
+            }
+        }
+        Button operadorEscolhido = null;
+        for(int i = 0; i<operador.Length; i++){
+            if(operador[i].interactable){
+                operadorEscolhido = operador[i];
+                break;
+            }
+        }
+        Button condicaoEscolhida = null;
+        if(tipoFase){
+            for(int i =0; i<numeros.Length; i++){
+                if(numeros[i].interactable){
+                    condicaoEscolhida = numeros[i];
+                    break;
+                }
+            }
+        }else{
+            for(int i = 0; i<parOuImpar.Length; i++){
+                if(parOuImpar[i].interactable){
+                    condicaoEscolhida = parOuImpar[i];
+                    break;
+                }
+            }
+            if(condicaoEscolhida == null){
+                for(int i = 0; i<cores.Length; i++){
+                    if(cores[i].interactable){
+                        condicaoEscolhida = cores[i];
+                        break;
+                    }
+                }
+            }
+        }
+        Bola bolaEscolhidaScript = bolaEscolhida.GetComponent<Bola>();
+
+        ButtonQuadro2Fase3 condicaoEscolhidaScript = condicaoEscolhida.GetComponent<ButtonQuadro2Fase3>();
+        ButtonQuadro2Fase3 operadorEscolhidoScript = operadorEscolhido.GetComponent<ButtonQuadro2Fase3>();
+        if(condicaoEscolhida.CompareTag("Numero")){
+            switch(operadorEscolhidoScript.operador){
+                case "==":
+                    if(!(bolaEscolhidaScript.numero == condicaoEscolhidaScript.numero)){
+                        return false;
+                    }
+                    break;
+                case "!=":
+                    if(!(bolaEscolhidaScript.numero != condicaoEscolhidaScript.numero)){
+                        return false;
+                    }
+                    break;
+                case ">":  
+                    if(!(bolaEscolhidaScript.numero > condicaoEscolhidaScript.numero)){
+                        return false;
+                    }
+                    break;
+                case "<":
+                    if(!(bolaEscolhidaScript.numero < condicaoEscolhidaScript.numero)){
+                        return false;
+                    }
+                    break;
+                case ">=":
+                    if(!(bolaEscolhidaScript.numero >= condicaoEscolhidaScript.numero)){
+                        return false;
+                    }
+                    break;
+                case "<=":
+                    if(!(bolaEscolhidaScript.numero <= condicaoEscolhidaScript.numero)){
+                        return false;
+                    }
+                    break;
+            }
+            for(int i=0; i<bolasAtivas.Count; i++){
+                if(bolasAtivas[i] != bolaEscolhida){
+                    switch(operadorEscolhidoScript.operador){
+                        case "==":
+                            if(bolasAtivas[i].GetComponent<Bola>().numero == condicaoEscolhidaScript.numero){
+                                return false;
+                            }
+                            break;
+                        case "!=":
+                            if(bolasAtivas[i].GetComponent<Bola>().numero != condicaoEscolhidaScript.numero){
+                                return false;
+                            }
+                            break;
+                        case ">":
+                            if(bolasAtivas[i].GetComponent<Bola>().numero > condicaoEscolhidaScript.numero){
+                                return false;
+                            }
+                            break;
+                        case "<":
+                            if(bolasAtivas[i].GetComponent<Bola>().numero < condicaoEscolhidaScript.numero){
+                                return false;
+                            }
+                            break;
+                        case ">=":
+                            if(bolasAtivas[i].GetComponent<Bola>().numero >= condicaoEscolhidaScript.numero){
+                                return false;
+                            }
+                            break;
+                        case "<=":
+                            if(bolasAtivas[i].GetComponent<Bola>().numero <= condicaoEscolhidaScript.numero){
+                                return false;
+                            }
+                            break;
+                    }
+                }
+            }
+        }
+        if(condicaoEscolhida.CompareTag("Cor")){
+            switch(operadorEscolhidoScript.operador){
+                case "==":
+                    if(!(bolaEscolhidaScript.cor == condicaoEscolhidaScript.cor)){
+                        return false;
+                    }
+                    break;
+                case "!=":
+                    if(!(bolaEscolhidaScript.cor != condicaoEscolhidaScript.cor)){
+                        return false;
+                    }
+                    break;
+            }
+            for(int i=0; i<bolasAtivas.Count; i++){
+                if(bolasAtivas[i] != bolaEscolhida){
+                    switch(operadorEscolhidoScript.operador){
+                        case "==":
+                            if(bolasAtivas[i].GetComponent<Bola>().cor == condicaoEscolhidaScript.cor){
+                                return false;
+                            }
+                            break;
+                        case "!=":
+                            if(bolasAtivas[i].GetComponent<Bola>().cor != condicaoEscolhidaScript.cor){
+                                return false;
+                            }
+                            break;
+                    }
+                }
+            }
+        }
+        if(condicaoEscolhida.CompareTag("ParOuImpar")){
+            switch(operadorEscolhidoScript.operador){
+                case "==":
+                    if(!(bolaEscolhidaScript.parOuImpar == condicaoEscolhidaScript.parOuImpar)){
+                        return false;
+                    }
+                    break;
+                case "!=":
+                    if(!(bolaEscolhidaScript.parOuImpar != condicaoEscolhidaScript.parOuImpar)){
+                        return false;
+                    }
+                    break;
+            }
+            for(int i=0; i<bolasAtivas.Count; i++){
+                if(bolasAtivas[i] != bolaEscolhida){
+                    switch(operadorEscolhidoScript.operador){
+                        case "==":
+                            if(bolasAtivas[i].GetComponent<Bola>().parOuImpar == condicaoEscolhidaScript.parOuImpar){
+                                return false;
+                            }
+                            break;
+                        case "!=":
+                            if(bolasAtivas[i].GetComponent<Bola>().parOuImpar != condicaoEscolhidaScript.parOuImpar){
+                                return false;
+                            }
+                            break;
+                    }
+                }   
+            }
+        }
+        return true;
+    }
+    public int escolheFase(){
+
+        int faseAleatoria, bolaEscolhida;
+        do{
+            faseAleatoria = UnityEngine.Random.Range(0,miniFases.Length);
+            bolaEscolhida = miniFases[faseAleatoria]();
+            if(!miniFasesChamadas[faseAleatoria]){
+                miniFasesChamadas[faseAleatoria] = true;
+                break;
+            }
+        }while(miniFasesChamadas[faseAleatoria]);
+
+        objetivoDaFase.text = "Encasape a bola " + bola[bolaEscolhida];
+
+        return bolaEscolhida;
     }
     // Update is called once per frame
     void Update()
