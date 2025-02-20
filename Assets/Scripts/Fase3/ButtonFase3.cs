@@ -34,7 +34,13 @@ public class ButtonFase3 : MonoBehaviour
     void Start()
     {
         Instance = this;
+        desativarBolas();
         desativarSprites();
+        if (MiniFases.Instance == null)
+        {
+            Debug.LogError("Erro: MiniFases.Instance não foi inicializado!");
+            return;
+        }
         miniFases = new Func<int>[]
         {
             MiniFases.Instance.fase1a,
@@ -46,6 +52,25 @@ public class ButtonFase3 : MonoBehaviour
         };
         miniFasesChamadas = new bool[6];
         bolaDoMomento = escolheFase();
+    }
+    public void desativarBolas(){
+        for(int i=0; i< bola.Length; i++){
+            bola[i].SetActive(false);
+        }
+    }
+    public void desativarSprites(){
+        for(int i = 0; i<spriteNumero.Length; i++){
+            if(i<spriteCores.Length){
+                spriteCores[i].SetActive(false);
+            }
+            if(i<spriteParOuImpar.Length){
+                spriteParOuImpar[i].SetActive(false);
+            }
+            if(i<spriteOperador.Length){
+                spriteOperador[i].SetActive(false);
+            }
+            spriteNumero[i].SetActive(false);
+        }
     }
     public void fasePar(){
         operador[0].transform.position = posicaoIgualPar.transform.position;
@@ -84,21 +109,6 @@ public class ButtonFase3 : MonoBehaviour
             operador[i].gameObject.SetActive(true);
         }
     }
-    public void desativarSprites(){
-        for(int i = 0; i<spriteNumero.Length; i++){
-            if(i<spriteCores.Length){
-                spriteCores[i].SetActive(false);
-            }
-            if(i<spriteParOuImpar.Length){
-                spriteParOuImpar[i].SetActive(false);
-            }
-            if(i<spriteOperador.Length){
-                spriteOperador[i].SetActive(false);
-            }
-            spriteNumero[i].SetActive(false);
-        }
-    }
-    
     public void Button_funcaoOperador(){
         funcaoOperador = true;
         funcaoCondicao = false;

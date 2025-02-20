@@ -3233,6 +3233,7 @@ GameObject:
   - component: {fileID: 109758488}
   - component: {fileID: 109758487}
   - component: {fileID: 109758489}
+  - component: {fileID: 109758490}
   m_Layer: 0
   m_Name: Fase3 Manager
   m_TagString: Untagged
@@ -3373,6 +3374,34 @@ MonoBehaviour:
   posicaoDiferenteNumero: {fileID: 1533731312}
   objetivoDaFase: {fileID: 14238234}
   bolaDoMomento: 0
+--- !u!114 &109758490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109758486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e969346d079d614bbe9fe15e2226fc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bolas:
+  - {fileID: 1507380498}
+  - {fileID: 2054537897}
+  - {fileID: 2024355676}
+  - {fileID: 1218026612}
+  - {fileID: 1304282731}
+  - {fileID: 1182307540}
+  - {fileID: 936438297}
+  - {fileID: 406041162}
+  - {fileID: 1122575604}
+  - {fileID: 2110886166}
+  - {fileID: 1005750210}
+  - {fileID: 1698166525}
+  - {fileID: 2074645989}
+  - {fileID: 2051511374}
+  - {fileID: 451448431}
 --- !u!1 &109783682
 GameObject:
   m_ObjectHideFlags: 0
@@ -30909,8 +30938,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1193647809}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.8862855, y: 0.8274596, z: -0.08321304}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.8862853, y: 0.8274596, z: -0.08321304}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -39628,11 +39657,11 @@ Transform:
   m_GameObject: {fileID: 1450052101}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.2261338, y: -0.02429676, z: -0.013848149}
+  m_LocalPosition: {x: -1.9754338, y: 0.5208032, z: -0.013848149}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2144984487}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1451206540
 GameObject:
@@ -60617,7 +60646,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1450052102}
   - {fileID: 955839284}
   - {fileID: 1614811653}
   - {fileID: 51511850}
@@ -62950,7 +62978,8 @@ SceneRoots:
   - {fileID: 103093259}
   - {fileID: 109758488}
   - {fileID: 1946164164}
-  - {fileID: 1562808419}
   - {fileID: 1193647810}
+  - {fileID: 1450052102}
+  - {fileID: 1562808419}
   - {fileID: 129032908}
   - {fileID: 696398767}
