@@ -39,7 +39,7 @@ public class MiniFases : MonoBehaviour
         bolas[12].SetActive(true);
         bolas[14].SetActive(true);
         Debug.Log("Fase 1c escolhida");
-        return 1;
+        return 0;
     }
 
     public int fase1d(){

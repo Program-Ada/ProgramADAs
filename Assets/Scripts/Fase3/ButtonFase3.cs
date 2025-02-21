@@ -31,10 +31,14 @@ public class ButtonFase3 : MonoBehaviour
     private bool[] miniFasesChamadas;
     public int bolaDoMomento;
     public int partidaJogadas = 0;
+    void Awake()
+    {
+        Instance = this;
+    }
     // Start is called before the first frame update
     void Start()
     {
-        Instance = this;
+        //Instance = this;
         desativarBolas();
         desativarSprites();
         if (MiniFases.Instance == null)
@@ -51,27 +55,40 @@ public class ButtonFase3 : MonoBehaviour
             MiniFases.Instance.fase1e,
             MiniFases.Instance.fase1f
         };
+        if(!tipoFase){
+            fasePar();
+        }else{
+            faseNumeros();
+        }
         miniFasesChamadas = new bool[6];
         bolaDoMomento = escolheFase();
-        partidaJogadas++;
+        //partidaJogadas++;
     }
     public void desativarBolas(){
-        for(int i=0; i< bola.Length; i++){
-            bola[i].SetActive(false);
+        foreach(GameObject b in bola){
+            b.SetActive(false);
         }
+        /*for(int i=0; i< bola.Length; i++){
+            if(bola[i].activeSelf)
+                bola[i].SetActive(false);
+        }*/
     }
     public void desativarSprites(){
         for(int i = 0; i<spriteNumero.Length; i++){
             if(i<spriteCores.Length){
-                spriteCores[i].SetActive(false);
+                if(spriteCores[i].activeSelf)
+                    spriteCores[i].SetActive(false);
             }
             if(i<spriteParOuImpar.Length){
-                spriteParOuImpar[i].SetActive(false);
+                if(spriteParOuImpar[i].activeSelf)
+                    spriteParOuImpar[i].SetActive(false);
             }
             if(i<spriteOperador.Length){
-                spriteOperador[i].SetActive(false);
+                if(spriteOperador[i].activeSelf)
+                    spriteOperador[i].SetActive(false);
             }
-            spriteNumero[i].SetActive(false);
+            if(spriteNumero[i].activeSelf)
+                spriteNumero[i].SetActive(false);
         }
     }
     public void fasePar(){
@@ -202,20 +219,24 @@ public class ButtonFase3 : MonoBehaviour
     }
     public void interactableNo(Button[] button){
         for(int i=0; i<button.Length; i++){
-            button[i].interactable = false;
+            if(button[i].interactable)
+                button[i].interactable = false;
         }
     }
     public void interactableAllYes(){
         for(int i=0; i<numeros.Length; i++){
             numeros[i].interactable = true;
             if(i<cores.Length){
-                cores[i].interactable = true;
+                if(!cores[i].interactable)
+                    cores[i].interactable = true;
             }
             if(i<parOuImpar.Length){
-                parOuImpar[i].interactable = true;
+                if(!parOuImpar[i].interactable)
+                    parOuImpar[i].interactable = true;
             }
             if(i<operador.Length){
-                operador[i].interactable = true;
+                if(!operador[i].interactable)
+                    operador[i].interactable = true;
             }
         }
     }
@@ -288,8 +309,12 @@ public class ButtonFase3 : MonoBehaviour
             }
         }
         Bola bolaEscolhidaScript = bolaEscolhida.GetComponent<Bola>();
-
-        ButtonQuadro2Fase3 condicaoEscolhidaScript = condicaoEscolhida.GetComponent<ButtonQuadro2Fase3>();
+        if(condicaoEscolhida == null){
+            Debug.Log("Condicao Escolhida é null");
+        }else{
+            ButtonQuadro2Fase3 condicaoEscolhidaScript = condicaoEscolhida.GetComponent<ButtonQuadro2Fase3>();
+        
+        //ButtonQuadro2Fase3 condicaoEscolhidaScript = condicaoEscolhida.GetComponent<ButtonQuadro2Fase3>();
         ButtonQuadro2Fase3 operadorEscolhidoScript = operadorEscolhido.GetComponent<ButtonQuadro2Fase3>();
         if(condicaoEscolhida.CompareTag("Numero")){
             switch(operadorEscolhidoScript.operador){
@@ -440,17 +465,18 @@ public class ButtonFase3 : MonoBehaviour
                     }
                 }   
             }
-        }
+        }}
+
         Debug.Log("Certo");
         return true;
     }
     public int escolheFase(){
-
-        int faseAleatoria, bolaEscolhida;
+        //desativarBolas();
+        int faseAleatoria, bolaEscolhida = -2;
         do{
             faseAleatoria = UnityEngine.Random.Range(0,miniFases.Length);
-            bolaEscolhida = miniFases[faseAleatoria]();
             if(!miniFasesChamadas[faseAleatoria]){
+                bolaEscolhida = miniFases[faseAleatoria]();
                 miniFasesChamadas[faseAleatoria] = true;
                 break;
             }
@@ -466,10 +492,5 @@ public class ButtonFase3 : MonoBehaviour
         /*Button operadorEscolhido = operador[2];
         ButtonQuadro2Fase3 scriptOperador = operadorEscolhido.GetComponent<ButtonQuadro2Fase3>();
         Debug.Log(scriptOperador.operador);*/
-        if(!tipoFase){
-            fasePar();
-        }else{
-            faseNumeros();
-        }
     }
 }
