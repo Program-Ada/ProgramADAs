@@ -9,7 +9,7 @@ public class MiniFases : MonoBehaviour
     public GameObject[] bolas;
     public static MiniFases Instance;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         Instance = this;
     }
@@ -45,7 +45,7 @@ public class MiniFases : MonoBehaviour
     public int fase1d(){
         ButtonFase3.Instance.tipoFase = true;
         //bola 2, 5, 7, 9 e tem que encasapar a 2; (por maior que)
-        bolas[2].SetActive(true);
+        bolas[1].SetActive(true);
         bolas[4].SetActive(true);
         bolas[6].SetActive(true);
         bolas[8].SetActive(true);

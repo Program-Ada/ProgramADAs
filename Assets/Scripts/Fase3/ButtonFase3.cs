@@ -30,6 +30,7 @@ public class ButtonFase3 : MonoBehaviour
     private Func<int>[] miniFases;
     private bool[] miniFasesChamadas;
     public int bolaDoMomento;
+    public int partidaJogadas = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -52,6 +53,7 @@ public class ButtonFase3 : MonoBehaviour
         };
         miniFasesChamadas = new bool[6];
         bolaDoMomento = escolheFase();
+        partidaJogadas++;
     }
     public void desativarBolas(){
         for(int i=0; i< bola.Length; i++){
@@ -218,11 +220,14 @@ public class ButtonFase3 : MonoBehaviour
         }
     }
     public void Button_Ok(){
-        if(condicaoEscolhida){
+        if(condicaoEscolhida && partidaJogadas < 6){
             verificaCondicional(bola[bolaDoMomento]);
             Button_X();
             desativarBolas();
             bolaDoMomento = escolheFase();
+            partidaJogadas++;
+        }else{
+            Debug.Log("partidas é maior que 6 ou nao escolheu a condicional totalmente");
         }
 
     }
