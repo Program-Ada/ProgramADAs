@@ -218,7 +218,12 @@ public class ButtonFase3 : MonoBehaviour
         }
     }
     public void Button_Ok(){
-        //verificaCondicional(bola(faseDoMomento));
+        if(condicaoEscolhida){
+            verificaCondicional(bola[bolaDoMomento]);
+            Button_X();
+            desativarBolas();
+            bolaDoMomento = escolheFase();
+        }
 
     }
     public void Button_X(){
@@ -285,31 +290,37 @@ public class ButtonFase3 : MonoBehaviour
             switch(operadorEscolhidoScript.operador){
                 case "==":
                     if(!(bolaEscolhidaScript.numero == condicaoEscolhidaScript.numero)){
+                        Debug.Log("Errado");
                         return false;
                     }
                     break;
                 case "!=":
                     if(!(bolaEscolhidaScript.numero != condicaoEscolhidaScript.numero)){
+                        Debug.Log("Errado");
                         return false;
                     }
                     break;
                 case ">":  
                     if(!(bolaEscolhidaScript.numero > condicaoEscolhidaScript.numero)){
+                        Debug.Log("Errado");
                         return false;
                     }
                     break;
                 case "<":
                     if(!(bolaEscolhidaScript.numero < condicaoEscolhidaScript.numero)){
+                        Debug.Log("Errado");
                         return false;
                     }
                     break;
                 case ">=":
                     if(!(bolaEscolhidaScript.numero >= condicaoEscolhidaScript.numero)){
+                        Debug.Log("Errado");
                         return false;
                     }
                     break;
                 case "<=":
                     if(!(bolaEscolhidaScript.numero <= condicaoEscolhidaScript.numero)){
+                        Debug.Log("Errado");
                         return false;
                     }
                     break;
@@ -319,31 +330,37 @@ public class ButtonFase3 : MonoBehaviour
                     switch(operadorEscolhidoScript.operador){
                         case "==":
                             if(bolasAtivas[i].GetComponent<Bola>().numero == condicaoEscolhidaScript.numero){
+                                Debug.Log("Errado");
                                 return false;
                             }
                             break;
                         case "!=":
                             if(bolasAtivas[i].GetComponent<Bola>().numero != condicaoEscolhidaScript.numero){
+                                Debug.Log("Errado");
                                 return false;
                             }
                             break;
                         case ">":
                             if(bolasAtivas[i].GetComponent<Bola>().numero > condicaoEscolhidaScript.numero){
+                                Debug.Log("Errado");
                                 return false;
                             }
                             break;
                         case "<":
                             if(bolasAtivas[i].GetComponent<Bola>().numero < condicaoEscolhidaScript.numero){
+                                Debug.Log("Errado");
                                 return false;
                             }
                             break;
                         case ">=":
                             if(bolasAtivas[i].GetComponent<Bola>().numero >= condicaoEscolhidaScript.numero){
+                                Debug.Log("Errado");
                                 return false;
                             }
                             break;
                         case "<=":
                             if(bolasAtivas[i].GetComponent<Bola>().numero <= condicaoEscolhidaScript.numero){
+                                Debug.Log("Errado");
                                 return false;
                             }
                             break;
@@ -355,11 +372,13 @@ public class ButtonFase3 : MonoBehaviour
             switch(operadorEscolhidoScript.operador){
                 case "==":
                     if(!(bolaEscolhidaScript.cor == condicaoEscolhidaScript.cor)){
+                        Debug.Log("Errado");
                         return false;
                     }
                     break;
                 case "!=":
                     if(!(bolaEscolhidaScript.cor != condicaoEscolhidaScript.cor)){
+                        Debug.Log("Errado");
                         return false;
                     }
                     break;
@@ -369,11 +388,13 @@ public class ButtonFase3 : MonoBehaviour
                     switch(operadorEscolhidoScript.operador){
                         case "==":
                             if(bolasAtivas[i].GetComponent<Bola>().cor == condicaoEscolhidaScript.cor){
+                                Debug.Log("Errado");
                                 return false;
                             }
                             break;
                         case "!=":
                             if(bolasAtivas[i].GetComponent<Bola>().cor != condicaoEscolhidaScript.cor){
+                                Debug.Log("Errado");
                                 return false;
                             }
                             break;
@@ -385,11 +406,13 @@ public class ButtonFase3 : MonoBehaviour
             switch(operadorEscolhidoScript.operador){
                 case "==":
                     if(!(bolaEscolhidaScript.parOuImpar == condicaoEscolhidaScript.parOuImpar)){
+                        Debug.Log("Errado");
                         return false;
                     }
                     break;
                 case "!=":
                     if(!(bolaEscolhidaScript.parOuImpar != condicaoEscolhidaScript.parOuImpar)){
+                        Debug.Log("Errado");
                         return false;
                     }
                     break;
@@ -399,11 +422,13 @@ public class ButtonFase3 : MonoBehaviour
                     switch(operadorEscolhidoScript.operador){
                         case "==":
                             if(bolasAtivas[i].GetComponent<Bola>().parOuImpar == condicaoEscolhidaScript.parOuImpar){
+                                Debug.Log("Errado");
                                 return false;
                             }
                             break;
                         case "!=":
                             if(bolasAtivas[i].GetComponent<Bola>().parOuImpar != condicaoEscolhidaScript.parOuImpar){
+                                Debug.Log("Errado");
                                 return false;
                             }
                             break;
@@ -411,6 +436,7 @@ public class ButtonFase3 : MonoBehaviour
                 }   
             }
         }
+        Debug.Log("Certo");
         return true;
     }
     public int escolheFase(){
@@ -425,7 +451,7 @@ public class ButtonFase3 : MonoBehaviour
             }
         }while(miniFasesChamadas[faseAleatoria]);
 
-        objetivoDaFase.text = "Encasape a bola " + bola[bolaEscolhida];
+        objetivoDaFase.text = "Encasape a bola " + (bolaEscolhida+1);
 
         return bolaEscolhida;
     }

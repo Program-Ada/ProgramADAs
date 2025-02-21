@@ -19,7 +19,7 @@ public class MiniFases : MonoBehaviour
         bolas[2].SetActive(true);
         bolas[4].SetActive(true);
         bolas[10].SetActive(true);
-
+        Debug.Log("Fase 1a escolhida");
         return 4;
     }
     public int fase1b(){
@@ -28,7 +28,7 @@ public class MiniFases : MonoBehaviour
         bolas[14].SetActive(true);
         bolas[12].SetActive(true);
         bolas[3].SetActive(true);
-
+        Debug.Log("Fase 1b escolhida");
         return 3;
     }
     public int fase1c(){
@@ -38,18 +38,18 @@ public class MiniFases : MonoBehaviour
         bolas[5].SetActive(true);
         bolas[12].SetActive(true);
         bolas[14].SetActive(true);
-
+        Debug.Log("Fase 1c escolhida");
         return 1;
     }
 
     public int fase1d(){
         ButtonFase3.Instance.tipoFase = true;
         //bola 2, 5, 7, 9 e tem que encasapar a 2; (por maior que)
-        bolas[1].SetActive(true);
+        bolas[2].SetActive(true);
         bolas[4].SetActive(true);
         bolas[6].SetActive(true);
         bolas[8].SetActive(true);
-
+        Debug.Log("Fase 1d escolhida");
         return 1;
     }
     public int fase1e(){
@@ -60,7 +60,7 @@ public class MiniFases : MonoBehaviour
         bolas[10].SetActive(true);
         bolas[11].SetActive(true);
         bolas[13].SetActive(true);
-
+        Debug.Log("Fase 1e escolhida");
         return 7;
     }
     public int fase1f(){
@@ -71,7 +71,7 @@ public class MiniFases : MonoBehaviour
         bolas[3].SetActive(true);
         bolas[11].SetActive(true);
         bolas[5].SetActive(true);
-
+        Debug.Log("Fase 1f escolhida");
         return 5;
     }
     
