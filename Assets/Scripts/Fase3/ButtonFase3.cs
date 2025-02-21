@@ -27,10 +27,14 @@ public class ButtonFase3 : MonoBehaviour
     public GameObject posicaoIgualNumero;
     public GameObject posicaoDiferenteNumero;
     public TextMeshProUGUI objetivoDaFase;
+    public GameObject[] emojis;
     private Func<int>[] miniFases;
     private bool[] miniFasesChamadas;
     public int bolaDoMomento;
     public int partidaJogadas = 0;
+    public GameObject[] vidas;
+    public GameObject[] perdeuVida;
+    public int error = -1;
     void Awake()
     {
         Instance = this;
@@ -41,6 +45,8 @@ public class ButtonFase3 : MonoBehaviour
         //Instance = this;
         desativarBolas();
         desativarSprites();
+        desativarEmojis();
+        desativarErros();
         if (MiniFases.Instance == null)
         {
             Debug.LogError("Erro: MiniFases.Instance não foi inicializado!");
@@ -55,14 +61,14 @@ public class ButtonFase3 : MonoBehaviour
             MiniFases.Instance.fase1e,
             MiniFases.Instance.fase1f
         };
-        if(!tipoFase){
-            fasePar();
-        }else{
-            faseNumeros();
-        }
         miniFasesChamadas = new bool[6];
         bolaDoMomento = escolheFase();
         //partidaJogadas++;
+    }
+    public void desativarErros(){
+        for(int i=0; i<perdeuVida.Length; i++){
+            perdeuVida[i].SetActive(false);
+        }
     }
     public void desativarBolas(){
         foreach(GameObject b in bola){
@@ -89,6 +95,11 @@ public class ButtonFase3 : MonoBehaviour
             }
             if(spriteNumero[i].activeSelf)
                 spriteNumero[i].SetActive(false);
+        }
+    }
+    public void desativarEmojis(){
+        for(int i=0; i<emojis.Length; i++){
+            emojis[i].SetActive(false);
         }
     }
     public void fasePar(){
@@ -241,16 +252,31 @@ public class ButtonFase3 : MonoBehaviour
         }
     }
     public void Button_Ok(){
-        if(condicaoEscolhida && partidaJogadas < 6){
-            verificaCondicional(bola[bolaDoMomento]);
-            Button_X();
-            desativarBolas();
-            bolaDoMomento = escolheFase();
-            partidaJogadas++;
+        if(condicaoEscolhida && partidaJogadas < 6 && error <3){
+            if(verificaCondicional(bola[bolaDoMomento])){
+                emojis[0].SetActive(true);
+            }else{
+                emojis[1].SetActive(true);
+                error++;
+                menosVida(error);
+            }
+            Invoke("comecarNovaFase", 2f);
+            
         }else{
             Debug.Log("partidas é maior que 6 ou nao escolheu a condicional totalmente");
         }
 
+    }
+    public void menosVida(int error){
+        perdeuVida[error].SetActive(true);
+        vidas[error].SetActive(false);
+    }
+    public void comecarNovaFase(){
+        desativarEmojis();
+        Button_X();
+        desativarBolas();
+        bolaDoMomento = escolheFase();
+        partidaJogadas++;
     }
     public void Button_X(){
         botoesCondicional[0].gameObject.SetActive(true);
@@ -492,5 +518,10 @@ public class ButtonFase3 : MonoBehaviour
         /*Button operadorEscolhido = operador[2];
         ButtonQuadro2Fase3 scriptOperador = operadorEscolhido.GetComponent<ButtonQuadro2Fase3>();
         Debug.Log(scriptOperador.operador);*/
+        if(!tipoFase){
+            fasePar();
+        }else{
+            faseNumeros();
+        }
     }
 }
