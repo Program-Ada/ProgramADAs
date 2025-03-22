@@ -31,6 +31,7 @@ public class ButtonFase3 : MonoBehaviour
     private Func<int>[] miniFases;
     private bool[] miniFasesChamadas;
     public int bolaDoMomento;
+    public TextMeshProUGUI partidas;
     public int partidaJogadas = 0;
     public GameObject[] vidas;
     public GameObject[] perdeuVida;
@@ -525,6 +526,7 @@ public class ButtonFase3 : MonoBehaviour
         /*Button operadorEscolhido = operador[2];
         ButtonQuadro2Fase3 scriptOperador = operadorEscolhido.GetComponent<ButtonQuadro2Fase3>();
         Debug.Log(scriptOperador.operador);*/
+        partidas.text = partidaJogadas + "/6";
         if(!tipoFase){
             fasePar();
         }else{
