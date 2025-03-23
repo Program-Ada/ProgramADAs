@@ -355,36 +355,42 @@ public class ButtonFase3 : MonoBehaviour
                 case "==":
                     if(!(bolaEscolhidaScript.numero == condicaoEscolhidaScript.numero)){
                         Debug.Log("Errado");
+                        FeedbackManagerFase3.Instance.Feedback_Test("errado");
                         return 0;
                     }
                     break;
                 case "!=":
                     if(!(bolaEscolhidaScript.numero != condicaoEscolhidaScript.numero)){
                         Debug.Log("Errado");
+                        FeedbackManagerFase3.Instance.Feedback_Test("errado");
                         return 0;
                     }
                     break;
                 case ">":  
                     if(!(bolaEscolhidaScript.numero > condicaoEscolhidaScript.numero)){
                         Debug.Log("Errado");
+                        FeedbackManagerFase3.Instance.Feedback_Test("errado");
                         return 0;
                     }
                     break;
                 case "<":
                     if(!(bolaEscolhidaScript.numero < condicaoEscolhidaScript.numero)){
                         Debug.Log("Errado");
+                        FeedbackManagerFase3.Instance.Feedback_Test("errado");
                         return 0;
                     }
                     break;
                 case ">=":
                     if(!(bolaEscolhidaScript.numero >= condicaoEscolhidaScript.numero)){
                         Debug.Log("Errado");
+                        FeedbackManagerFase3.Instance.Feedback_Test("errado");
                         return 0;
                     }
                     break;
                 case "<=":
                     if(!(bolaEscolhidaScript.numero <= condicaoEscolhidaScript.numero)){
                         Debug.Log("Errado");
+                        FeedbackManagerFase3.Instance.Feedback_Test("errado");
                         return 0;
                     }
                     break;
@@ -394,37 +400,43 @@ public class ButtonFase3 : MonoBehaviour
                     switch(operadorEscolhidoScript.operador){
                         case "==":
                             if(bolasAtivas[i].GetComponent<Bola>().numero == condicaoEscolhidaScript.numero){
-                                Debug.Log("Errado");
+                                Debug.Log("Meio Errado");
+                                FeedbackManagerFase3.Instance.Feedback_Test("meioErrado");
                                 return 1;
                             }
                             break;
                         case "!=":
                             if(bolasAtivas[i].GetComponent<Bola>().numero != condicaoEscolhidaScript.numero){
-                                Debug.Log("Errado");
+                                Debug.Log("Meio Errado");
+                                FeedbackManagerFase3.Instance.Feedback_Test("meioErrado");
                                 return 1;
                             }
                             break;
                         case ">":
                             if(bolasAtivas[i].GetComponent<Bola>().numero > condicaoEscolhidaScript.numero){
-                                Debug.Log("Errado");
+                                Debug.Log("Meio Errado");
+                                FeedbackManagerFase3.Instance.Feedback_Test("meioErrado");
                                 return 1;
                             }
                             break;
                         case "<":
                             if(bolasAtivas[i].GetComponent<Bola>().numero < condicaoEscolhidaScript.numero){
-                                Debug.Log("Errado");
+                                Debug.Log("Meio Errado");
+                                FeedbackManagerFase3.Instance.Feedback_Test("meioErrado");
                                 return 1;
                             }
                             break;
                         case ">=":
                             if(bolasAtivas[i].GetComponent<Bola>().numero >= condicaoEscolhidaScript.numero){
-                                Debug.Log("Errado");
+                                Debug.Log("Meio Errado");
+                                FeedbackManagerFase3.Instance.Feedback_Test("meioErrado");
                                 return 1;
                             }
                             break;
                         case "<=":
                             if(bolasAtivas[i].GetComponent<Bola>().numero <= condicaoEscolhidaScript.numero){
-                                Debug.Log("Errado");
+                                Debug.Log("Meio Errado");
+                                FeedbackManagerFase3.Instance.Feedback_Test("meioErrado");
                                 return 1;
                             }
                             break;
@@ -437,12 +449,14 @@ public class ButtonFase3 : MonoBehaviour
                 case "==":
                     if(!(bolaEscolhidaScript.cor == condicaoEscolhidaScript.cor)){
                         Debug.Log("Errado");
+                        FeedbackManagerFase3.Instance.Feedback_Test("errado");
                         return 0;
                     }
                     break;
                 case "!=":
                     if(!(bolaEscolhidaScript.cor != condicaoEscolhidaScript.cor)){
                         Debug.Log("Errado");
+                        FeedbackManagerFase3.Instance.Feedback_Test("errado");
                         return 0;
                     }
                     break;
@@ -452,13 +466,15 @@ public class ButtonFase3 : MonoBehaviour
                     switch(operadorEscolhidoScript.operador){
                         case "==":
                             if(bolasAtivas[i].GetComponent<Bola>().cor == condicaoEscolhidaScript.cor){
-                                Debug.Log("Errado");
+                                Debug.Log("Meio Errado");
+                                FeedbackManagerFase3.Instance.Feedback_Test("meioErrado");
                                 return 1;
                             }
                             break;
                         case "!=":
                             if(bolasAtivas[i].GetComponent<Bola>().cor != condicaoEscolhidaScript.cor){
-                                Debug.Log("Errado");
+                                Debug.Log("Meio Errado");
+                                FeedbackManagerFase3.Instance.Feedback_Test("meioErrado");
                                 return 1;
                             }
                             break;
@@ -471,12 +487,14 @@ public class ButtonFase3 : MonoBehaviour
                 case "==":
                     if(!(bolaEscolhidaScript.parOuImpar == condicaoEscolhidaScript.parOuImpar)){
                         Debug.Log("Errado");
+                        FeedbackManagerFase3.Instance.Feedback_Test("errado");
                         return 0;
                     }
                     break;
                 case "!=":
                     if(!(bolaEscolhidaScript.parOuImpar != condicaoEscolhidaScript.parOuImpar)){
                         Debug.Log("Errado");
+                        FeedbackManagerFase3.Instance.Feedback_Test("errado");
                         return 0;
                     }
                     break;
@@ -486,13 +504,15 @@ public class ButtonFase3 : MonoBehaviour
                     switch(operadorEscolhidoScript.operador){
                         case "==":
                             if(bolasAtivas[i].GetComponent<Bola>().parOuImpar == condicaoEscolhidaScript.parOuImpar){
-                                Debug.Log("Errado");
+                                Debug.Log("Meio Errado");
+                                FeedbackManagerFase3.Instance.Feedback_Test("meioErrado");
                                 return 1;
                             }
                             break;
                         case "!=":
                             if(bolasAtivas[i].GetComponent<Bola>().parOuImpar != condicaoEscolhidaScript.parOuImpar){
-                                Debug.Log("Errado");
+                                Debug.Log("Meio Errado");
+                                FeedbackManagerFase3.Instance.Feedback_Test("meioErrado");
                                 return 1;
                             }
                             break;

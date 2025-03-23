@@ -1,27 +1,39 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-public class Fase3Manager : MonoBehaviour
+
+public class Fase3Manager : MonoBehaviour, IDataPersistence
 {
-    // Start is called before the first frame update
-    public bool tipoFase;
-    public Button[] numeros;
-    public Button[] sinais;
-    public Button[] cores;
-    public Button[] parOuImpar;
-    public GameObject posicaoIgualPar;
-    public GameObject posicaoDiferentePar;
-    public GameObject posicaoIgualNumero;
-    public GameObject posicaoDiferenteNumero;
+    public static Fase3Manager instance;
+    public int maxJogadas;
+    private bool isGameFinished = false;
     void Start()
     {
-
+        instance = this;
+        maxJogadas = 6;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+    public void Finish_Game(bool finish){
+        isGameFinished = finish;
+        if(finish){
+            ScoreCafe.instance.Show_Score();
+        }else{
+            ScoreCafe.instance.Show_Loose();
+        }
+    }
+
+    public void LoadData(GameData data){
+        // empty
+    }
+    public void SaveData(ref GameData data){
+        if(isGameFinished){
+            data.pointFases[1] = ScoreCafe.instance.score;
+            if(ScoreCafe.instance.score >=75){
+                data.questProgressIndex = 6;
+            }else{
+                data.questProgressIndex = 5;
+            }
+        }
 
     }
 }
