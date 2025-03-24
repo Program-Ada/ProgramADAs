@@ -43,10 +43,10 @@ public class ButtonFase3 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //Instance = this;
-        desativarBolas();
+        Instance = this;
+        //desativarBolas();
         desativarSprites();
-        desativarEmojis();
+        //desativarEmojis();
         desativarErros();
         if (MiniFases.Instance == null)
         {
@@ -63,7 +63,7 @@ public class ButtonFase3 : MonoBehaviour
             MiniFases.Instance.fase1f
         };
         miniFasesChamadas = new bool[6];
-        bolaDoMomento = escolheFase();
+        comecarNovaFase();
         //partidaJogadas++;
     }
     public void desativarErros(){
@@ -284,8 +284,8 @@ public class ButtonFase3 : MonoBehaviour
         desativarEmojis();
         Button_X();
         desativarBolas();
-        bolaDoMomento = escolheFase();
         partidaJogadas++;
+        bolaDoMomento = escolheFase();
     }
     public void Button_X(){
         botoesCondicional[0].gameObject.SetActive(true);
