@@ -45,7 +45,7 @@ public class FeedbackManagerFase3 : MonoBehaviour
     public int VerificaErrorName(string errorName) {
         switch (errorName)
         {
-            case "meioCerto":
+            case "meioErrado":
                 return 0;
             case "errado":
                 return 1;

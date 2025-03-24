@@ -5,20 +5,20 @@ using UnityEngine;
 public class Fase3Manager : MonoBehaviour, IDataPersistence
 {
     public static Fase3Manager instance;
-    public int maxJogadas;
+    public int maxPartidas;
     private bool isGameFinished = false;
     void Start()
     {
         instance = this;
-        maxJogadas = 6;
+        maxPartidas = 6;
     }
 
     public void Finish_Game(bool finish){
         isGameFinished = finish;
         if(finish){
-            ScoreCafe.instance.Show_Score();
+            ScoreFase3.instance.Show_Score();
         }else{
-            ScoreCafe.instance.Show_Loose();
+            ScoreFase3.instance.Show_Loose();
         }
     }
 
@@ -27,8 +27,8 @@ public class Fase3Manager : MonoBehaviour, IDataPersistence
     }
     public void SaveData(ref GameData data){
         if(isGameFinished){
-            data.pointFases[1] = ScoreCafe.instance.score;
-            if(ScoreCafe.instance.score >=75){
+            data.pointFases[1] = ScoreFase3.instance.score;
+            if(ScoreFase3.instance.score >=75){
                 data.questProgressIndex = 6;
             }else{
                 data.questProgressIndex = 5;

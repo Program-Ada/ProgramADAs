@@ -267,6 +267,7 @@ public class ButtonFase3 : MonoBehaviour
                     error++;
                     menosVida(error);
                 }
+                ScoreFase3.instance.Update_Score(resultado);
             }
             Invoke("comecarNovaFase", 2f);
             
@@ -536,9 +537,21 @@ public class ButtonFase3 : MonoBehaviour
             }
         }while(miniFasesChamadas[faseAleatoria]);
 
-        objetivoDaFase.text = "Encasape a bola " + (bolaEscolhida+1);
+        objetivoDaFase.text = "Encaçape a bola " + (bolaEscolhida+1);
 
         return bolaEscolhida;
+    }
+    public void IsGameFinished(){ // verifica se o jogo acabou ou não
+        if(error < 3){
+            if(partidaJogadas < Fase3Manager.instance.maxPartidas){
+                Clients.instance.ExitClient();
+                //Invoke(nameof(Start_Btn), 4); // tempo da animação de saída (3) + 1 para evitar bugs
+            }else{
+                Fase3Manager.instance.Finish_Game(true);
+            }
+        }else{
+            Fase3Manager.instance.Finish_Game(false);
+        }
     }
     // Update is called once per frame
     void Update()

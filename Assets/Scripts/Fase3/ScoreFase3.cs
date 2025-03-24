@@ -20,10 +20,10 @@ public class ScoreFase3 : MonoBehaviour
         Reset_Score();
     }
     public void Update_Score(int typeError){
-        if(typeError == 1){
+        if(typeError == 2){
             score -= 8;
         }
-        else if(typeError == 2){
+        else if(typeError == 0){
             score -= 16;
         }
     }
