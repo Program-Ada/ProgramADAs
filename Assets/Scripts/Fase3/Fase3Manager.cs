@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Fase3Manager : MonoBehaviour, IDataPersistence
 {
-    public static Fase3Manager instance;
+    public static Fase3Manager Instance;
     public int maxPartidas;
     private bool isGameFinished = false;
     void Start()
     {
-        instance = this;
+        Instance = this;
         maxPartidas = 6;
     }
 

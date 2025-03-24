@@ -274,7 +274,6 @@ public class ButtonFase3 : MonoBehaviour
         }else{
             Debug.Log("partidas é maior que 6 ou nao escolheu a condicional totalmente");
         }
-
     }
     public void menosVida(int error){
         perdeuVida[error].SetActive(true);
@@ -542,15 +541,10 @@ public class ButtonFase3 : MonoBehaviour
         return bolaEscolhida;
     }
     public void IsGameFinished(){ // verifica se o jogo acabou ou não
-        if(error < 3){
-            if(partidaJogadas < Fase3Manager.instance.maxPartidas){
-                Clients.instance.ExitClient();
-                //Invoke(nameof(Start_Btn), 4); // tempo da animação de saída (3) + 1 para evitar bugs
-            }else{
-                Fase3Manager.instance.Finish_Game(true);
-            }
+        if(error >= 2){
+            Fase3Manager.Instance.Finish_Game(false);
         }else{
-            Fase3Manager.instance.Finish_Game(false);
+            Fase3Manager.Instance.Finish_Game(true);
         }
     }
     // Update is called once per frame
@@ -559,6 +553,10 @@ public class ButtonFase3 : MonoBehaviour
         /*Button operadorEscolhido = operador[2];
         ButtonQuadro2Fase3 scriptOperador = operadorEscolhido.GetComponent<ButtonQuadro2Fase3>();
         Debug.Log(scriptOperador.operador);*/
+        //IsGameFinished();
+        if(partidaJogadas > 5 || error >= 3){
+            IsGameFinished();
+        }
         partidas.text = partidaJogadas + "/6";
         if(!tipoFase){
             fasePar();
