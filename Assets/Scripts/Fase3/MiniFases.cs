@@ -8,6 +8,9 @@ public class MiniFases : MonoBehaviour
 { //amanha tenho que mudar as partes <Button> por <ButtonQuadro2Fase3>
     public GameObject[] bolas;
     public static MiniFases Instance;
+    public GameObject bolaBranca;
+    public GameObject[] buracos;
+    public Animator animator;
     // Start is called before the first frame update
     void Awake()
     {
@@ -73,6 +76,41 @@ public class MiniFases : MonoBehaviour
         bolas[5].SetActive(true);
         Debug.Log("Fase 1f escolhida");
         return 5;
+    }
+
+    public float velocidade = 5f;
+    public Vector3 eixoDeRotacao = Vector3.forward;
+    public void animarFase1a(){
+        StartCoroutine(AnimarFase1a());
+    }
+    IEnumerator AnimarFase1a()
+    {
+        // 1. Move a bola branca até a bola[4]
+        while (Vector3.Distance(bolaBranca.transform.position, bolas[4].transform.position) > 0.1f)
+        {
+            Vector3 direcao = (bolas[4].transform.position - bolaBranca.transform.position).normalized;
+            bolaBranca.transform.position += direcao * velocidade * Time.deltaTime;
+            yield return null; // Espera o próximo frame
+        }
+
+        // 2. Ativa a animação da bola 4
+        animator.SetBool("Bola5", true);
+
+        // 3. Move e gira a bola[4] até o buraco
+        while (Vector3.Distance(bolas[4].transform.position, buraco.transform.position) > 0.1f)
+        {
+            Vector3 direcaoBuraco = (buraco.transform.position - transform.bolas[4].position).normalized;
+            bolas[4].transform.position += direcaoBuraco * velocidade * Time.deltaTime;
+
+            // Rotaciona proporcional ao tempo
+            bolas[4].transform.Rotate(eixoDeRotacao, 90f * Time.deltaTime, Space.Self);
+
+            yield return null;
+        }
+
+        // 4. Finaliza a animação e desativa a bola
+        animator.SetBool("Bola5", false);
+        bolas[4].gameObject.SetActive(false);
     }
     
     // Update is called once per frame

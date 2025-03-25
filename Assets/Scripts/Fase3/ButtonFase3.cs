@@ -56,11 +56,11 @@ public class ButtonFase3 : MonoBehaviour
         miniFases = new Func<int>[]
         {
             MiniFases.Instance.fase1a,
-            MiniFases.Instance.fase1b,
+            /*MiniFases.Instance.fase1b,
             MiniFases.Instance.fase1c,
             MiniFases.Instance.fase1d,
             MiniFases.Instance.fase1e,
-            MiniFases.Instance.fase1f
+            MiniFases.Instance.fase1f*/
         };
         miniFasesChamadas = new bool[6];
         comecarNovaFase();
@@ -253,10 +253,11 @@ public class ButtonFase3 : MonoBehaviour
         }
     }
     public void Button_Ok(){
-        if(condicaoEscolhida && partidaJogadas < 6 && error <3){
+        if(condicaoEscolhida && partidaJogadas < 2 && error <3){
             int resultado = verificaCondicional(bola[bolaDoMomento]);
             if(resultado == 2){
                 emojis[2].SetActive(true);
+                miniFases.Instance.animarFase1a();
             }else{
                 if(resultado == 1){
                     emojis[1].SetActive(true);
