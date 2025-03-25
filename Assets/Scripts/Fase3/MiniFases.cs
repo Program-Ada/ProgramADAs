@@ -11,6 +11,7 @@ public class MiniFases : MonoBehaviour
     public GameObject bolaBranca;
     public GameObject[] buracos;
     public Animator animator;
+    public GameObject[] localizacaoBolas;
     // Start is called before the first frame update
     void Awake()
     {
@@ -18,6 +19,10 @@ public class MiniFases : MonoBehaviour
     }
     public int fase1a(){
         ButtonFase3.Instance.tipoFase = false;
+        bolas[2].transform.position = localizacaoBolas[0].transform.position;
+        bolas[4].transform.position = localizacaoBolas[1].transform.position;
+        bolas[10].transform.position = localizacaoBolas[2].transform.position;
+        bolaBranca.transform.position = localizacaoBolas[3].transform.position;
         //bola 3, 5 , 11 e tem que encasapar a 5
         bolas[2].SetActive(true);
         bolas[4].SetActive(true);
@@ -97,9 +102,9 @@ public class MiniFases : MonoBehaviour
         animator.SetBool("Bola5", true);
 
         // 3. Move e gira a bola[4] até o buraco
-        while (Vector3.Distance(bolas[4].transform.position, buraco.transform.position) > 0.1f)
+        while (Vector3.Distance(bolas[4].transform.position, buracos[0].transform.position) > 0.1f)
         {
-            Vector3 direcaoBuraco = (buraco.transform.position - transform.bolas[4].position).normalized;
+            Vector3 direcaoBuraco = (buracos[0].transform.position - bolas[4].transform.position).normalized;
             bolas[4].transform.position += direcaoBuraco * velocidade * Time.deltaTime;
 
             // Rotaciona proporcional ao tempo

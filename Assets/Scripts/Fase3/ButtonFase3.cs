@@ -257,7 +257,7 @@ public class ButtonFase3 : MonoBehaviour
             int resultado = verificaCondicional(bola[bolaDoMomento]);
             if(resultado == 2){
                 emojis[2].SetActive(true);
-                miniFases.Instance.animarFase1a();
+                MiniFases.Instance.animarFase1a();
             }else{
                 if(resultado == 1){
                     emojis[1].SetActive(true);
@@ -555,7 +555,7 @@ public class ButtonFase3 : MonoBehaviour
         ButtonQuadro2Fase3 scriptOperador = operadorEscolhido.GetComponent<ButtonQuadro2Fase3>();
         Debug.Log(scriptOperador.operador);*/
         //IsGameFinished();
-        if(partidaJogadas > 5 || error >= 3){
+        if(partidaJogadas > 1 || error >= 3){
             IsGameFinished();
         }
         partidas.text = partidaJogadas + "/6";
