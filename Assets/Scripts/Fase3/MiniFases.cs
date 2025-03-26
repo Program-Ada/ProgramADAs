@@ -102,13 +102,15 @@ public class MiniFases : MonoBehaviour
         animator.SetBool("Bola5", true);
 
         // 3. Move e gira a bola[4] até o buraco
-        while (Vector3.Distance(bolas[4].transform.position, buracos[0].transform.position) > 0.1f)
+        while (Vector3.Distance(bolas[4].transform.position, buracos[3].transform.position) > 0.01f)
         {
-            Vector3 direcaoBuraco = (buracos[0].transform.position - bolas[4].transform.position).normalized;
+            Vector3 direcaoBuraco = (buracos[3].transform.position - bolas[4].transform.position).normalized;
             bolas[4].transform.position += direcaoBuraco * velocidade * Time.deltaTime;
 
             // Rotaciona proporcional ao tempo
-            bolas[4].transform.Rotate(eixoDeRotacao, 90f * Time.deltaTime, Space.Self);
+            //bolas[4].transform.Rotate(eixoDeRotacao, 90f * Time.deltaTime, Space.Self);
+            bolas[4].transform.rotation = Quaternion.Euler(0f, 0f, 90f);
+            //aqui apenas para as que precisam girar
 
             yield return null;
         }

@@ -18,4 +18,11 @@ public class Bola : MonoBehaviour
     {
         
     }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Buraco"))
+        {
+            gameObject.SetActive(false);
+        }
+    }
 }

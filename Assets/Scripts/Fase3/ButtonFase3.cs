@@ -56,8 +56,8 @@ public class ButtonFase3 : MonoBehaviour
         miniFases = new Func<int>[]
         {
             MiniFases.Instance.fase1a,
-            /*MiniFases.Instance.fase1b,
-            MiniFases.Instance.fase1c,
+            MiniFases.Instance.fase1b,
+            /*MiniFases.Instance.fase1c,
             MiniFases.Instance.fase1d,
             MiniFases.Instance.fase1e,
             MiniFases.Instance.fase1f*/
@@ -270,7 +270,7 @@ public class ButtonFase3 : MonoBehaviour
                 }
                 ScoreFase3.instance.Update_Score(resultado);
             }
-            Invoke("comecarNovaFase", 2f);
+            Invoke("comecarNovaFase", 50f);
             
         }else{
             Debug.Log("partidas é maior que 6 ou nao escolheu a condicional totalmente");
@@ -555,9 +555,9 @@ public class ButtonFase3 : MonoBehaviour
         ButtonQuadro2Fase3 scriptOperador = operadorEscolhido.GetComponent<ButtonQuadro2Fase3>();
         Debug.Log(scriptOperador.operador);*/
         //IsGameFinished();
-        if(partidaJogadas > 1 || error >= 3){
+        /*if(partidaJogadas > 5 || error >= 3){
             IsGameFinished();
-        }
+        }*/
         partidas.text = partidaJogadas + "/6";
         if(!tipoFase){
             fasePar();

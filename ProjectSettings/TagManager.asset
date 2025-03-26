@@ -12,6 +12,7 @@ TagManager:
   - Numero
   - ParOuImpar
   - Bola
+  - Buraco
   layers:
   - Default
   - TransparentFX
