@@ -150,8 +150,10 @@ public class ButtonFase3 : MonoBehaviour
             funcaoCondicao = true;
         }else{
             if(funcaoOperador && !operadorEscolhido){
+                //FeedbackManagerFase3.Instance.Feedback_Test("escolherOperador");
                 Debug.Log("Primeiro precisa escolher o operador");
             }else{
+                //FeedbackManagerFase3.Instance.Feedback_Test("semFuncaoOperador");
                 Debug.Log("Primeiro precisa ativar a funcao do Operador");
             }
         }
@@ -167,6 +169,7 @@ public class ButtonFase3 : MonoBehaviour
             botoesCondicional[0].gameObject.SetActive(false);
             operadorEscolhido = true;
         }else{
+            //FeedbackManagerFase3.Instance.Feedback_Test("operadorNaoEscolhido");
             Debug.Log("Primeiro precisa ativar a funcao do Operador");
         }
     }
@@ -271,7 +274,7 @@ public class ButtonFase3 : MonoBehaviour
                 }
                 ScoreFase3.instance.Update_Score(resultado);
             }
-            Invoke("comecarNovaFase", 5f);
+            Invoke("comecarNovaFase", 2f);
             
         }else{
             Debug.Log("partidas é maior que 6 ou nao escolheu a condicional totalmente");
