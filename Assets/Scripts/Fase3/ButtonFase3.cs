@@ -57,10 +57,10 @@ public class ButtonFase3 : MonoBehaviour
         {
             MiniFases.Instance.fase1a,
             MiniFases.Instance.fase1b,
-            /*MiniFases.Instance.fase1c,
+            MiniFases.Instance.fase1c,
             MiniFases.Instance.fase1d,
             MiniFases.Instance.fase1e,
-            MiniFases.Instance.fase1f*/
+            MiniFases.Instance.fase1f
         };
         miniFasesChamadas = new bool[6];
         comecarNovaFase();
@@ -73,6 +73,7 @@ public class ButtonFase3 : MonoBehaviour
     }
     public void desativarBolas(){
         foreach(GameObject b in bola){
+            b.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
             b.SetActive(false);
         }
         /*for(int i=0; i< bola.Length; i++){
@@ -253,11 +254,11 @@ public class ButtonFase3 : MonoBehaviour
         }
     }
     public void Button_Ok(){
-        if(condicaoEscolhida && partidaJogadas < 2 && error <3){
+        if(condicaoEscolhida && partidaJogadas < 6 && error <3){
             int resultado = verificaCondicional(bola[bolaDoMomento]);
             if(resultado == 2){
                 emojis[2].SetActive(true);
-                MiniFases.Instance.animarFase1a();
+                MiniFases.Instance.StartCoroutine(MiniFases.Instance.AnimarFase(bola[bolaDoMomento]));
             }else{
                 if(resultado == 1){
                     emojis[1].SetActive(true);
@@ -270,7 +271,7 @@ public class ButtonFase3 : MonoBehaviour
                 }
                 ScoreFase3.instance.Update_Score(resultado);
             }
-            Invoke("comecarNovaFase", 50f);
+            Invoke("comecarNovaFase", 5f);
             
         }else{
             Debug.Log("partidas é maior que 6 ou nao escolheu a condicional totalmente");
@@ -555,9 +556,9 @@ public class ButtonFase3 : MonoBehaviour
         ButtonQuadro2Fase3 scriptOperador = operadorEscolhido.GetComponent<ButtonQuadro2Fase3>();
         Debug.Log(scriptOperador.operador);*/
         //IsGameFinished();
-        /*if(partidaJogadas > 5 || error >= 3){
+        if(partidaJogadas > 5 || error >= 3){
             IsGameFinished();
-        }*/
+        }
         partidas.text = partidaJogadas + "/6";
         if(!tipoFase){
             fasePar();
