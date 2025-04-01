@@ -55,14 +55,23 @@ public class ButtonFase3 : MonoBehaviour
         }
         miniFases = new Func<int>[]
         {
-            MiniFases.Instance.fase1a,
-            MiniFases.Instance.fase1b,
-            MiniFases.Instance.fase1c,
-            MiniFases.Instance.fase1d,
-            MiniFases.Instance.fase1e,
-            MiniFases.Instance.fase1f
+            MiniFases.Instance.fase1,
+            MiniFases.Instance.fase2,
+            MiniFases.Instance.fase3,
+            MiniFases.Instance.fase4,
+            MiniFases.Instance.fase5,
+            MiniFases.Instance.fase6,
+            MiniFases.Instance.fase7,
+            MiniFases.Instance.fase8,
+            MiniFases.Instance.fase9,
+            MiniFases.Instance.fase10,
+            MiniFases.Instance.fase11,
+            MiniFases.Instance.fase12,
+            MiniFases.Instance.fase13,
+            MiniFases.Instance.fase14,
+            MiniFases.Instance.fase15
         };
-        miniFasesChamadas = new bool[6];
+        miniFasesChamadas = new bool[15];
         comecarNovaFase();
         //partidaJogadas++;
     }
@@ -103,6 +112,12 @@ public class ButtonFase3 : MonoBehaviour
         for(int i=0; i<emojis.Length; i++){
             emojis[i].SetActive(false);
         }
+    }
+    public void interactableBotaoOperador(int i){
+        operador[i].interactable = false;   
+    }
+    public void interactableBotaoNumero(int i){
+        numeros[i].interactable = false;
     }
     public void fasePar(){
         operador[0].transform.position = posicaoIgualPar.transform.position;
@@ -283,13 +298,6 @@ public class ButtonFase3 : MonoBehaviour
     public void menosVida(int error){
         perdeuVida[error].SetActive(true);
         vidas[error].SetActive(false);
-    }
-    public void comecarNovaFase(){
-        desativarEmojis();
-        Button_X();
-        desativarBolas();
-        partidaJogadas++;
-        bolaDoMomento = escolheFase();
     }
     public void Button_X(){
         botoesCondicional[0].gameObject.SetActive(true);
@@ -529,15 +537,28 @@ public class ButtonFase3 : MonoBehaviour
         Debug.Log("Certo");
         return 2;
     }
+    public void comecarNovaFase(){
+        desativarEmojis();
+        Button_X();
+        desativarBolas();
+        partidaJogadas++;
+        bolaDoMomento = escolheFase();
+    }
     public int escolheFase(){
         //desativarBolas();
         int faseAleatoria, bolaEscolhida = -2;
         do{
-            faseAleatoria = UnityEngine.Random.Range(0,miniFases.Length);
-            if(!miniFasesChamadas[faseAleatoria]){
+            if(partidaJogadas == 1){
+                faseAleatoria = 8;
                 bolaEscolhida = miniFases[faseAleatoria]();
                 miniFasesChamadas[faseAleatoria] = true;
-                break;
+            }else{
+                faseAleatoria = UnityEngine.Random.Range(0,miniFases.Length);
+                if(!miniFasesChamadas[faseAleatoria]){
+                    bolaEscolhida = miniFases[faseAleatoria]();
+                    miniFasesChamadas[faseAleatoria] = true;
+                    break;
+                }
             }
         }while(miniFasesChamadas[faseAleatoria]);
 
@@ -559,7 +580,7 @@ public class ButtonFase3 : MonoBehaviour
         ButtonQuadro2Fase3 scriptOperador = operadorEscolhido.GetComponent<ButtonQuadro2Fase3>();
         Debug.Log(scriptOperador.operador);*/
         //IsGameFinished();
-        if(partidaJogadas > 5 || error >= 3){
+        if(partidaJogadas > 6 || error >= 3){
             IsGameFinished();
         }
         partidas.text = partidaJogadas + "/6";

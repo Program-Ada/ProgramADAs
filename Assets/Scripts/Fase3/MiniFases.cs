@@ -11,99 +11,114 @@ public class MiniFases : MonoBehaviour
     public GameObject bolaBranca;
     public GameObject[] buracos;
     //public Animator animator;
-    public GameObject[] bolasFase1a;
-    public GameObject[] bolaFase1b;
-    public GameObject[] bolasFase1c;
-    public GameObject[] bolasFase1d;
-    public GameObject[] bolasFase1e;
-    public GameObject[] bolasFase1f;
+    public GameObject[] bolasFase1;
+    public GameObject[] bolasFase2;
+    public GameObject[] bolasFase3;
+    public GameObject[] bolasFase4;
+    public GameObject[] bolasFase5;
+    public GameObject[] bolasFase6;
+    public GameObject[] bolasFase7;
+    public GameObject[] bolasFase8;
+    public GameObject[] bolasFase9;
+    public GameObject[] bolasFase10;
+    public GameObject[] bolasFase11;
+    public GameObject[] bolasFase12;
+    public GameObject[] bolasFase13;
+    public GameObject[] bolasFase14;
+    public GameObject[] bolasFase15;
     // Start is called before the first frame update
     void Awake()
     {
         Instance = this;
     }
-    public int fase1a(){
+    public int fase1(){
         ButtonFase3.Instance.tipoFase = false;
-        bolas[2].transform.position = bolasFase1a[0].transform.position;
-        bolas[4].transform.position = bolasFase1a[1].transform.position;
-        bolas[10].transform.position = bolasFase1a[2].transform.position;
-        bolaBranca.transform.position = bolasFase1a[3].transform.position;
+        bolas[2].transform.position = bolasFase1[0].transform.position;
+        bolas[4].transform.position = bolasFase1[1].transform.position;
+        bolas[10].transform.position = bolasFase1[2].transform.position;
+        bolaBranca.transform.position = bolasFase1[3].transform.position;
         //bola 3, 5 , 11 e tem que encasapar a 5
         bolas[2].SetActive(true);
         bolas[4].SetActive(true);
         bolas[10].SetActive(true);
-        Debug.Log("Fase 1a escolhida");
+        Debug.Log("Fase 1 escolhida");
         return 4;
     }
-    public int fase1b(){
+    public int fase2(){
         ButtonFase3.Instance.tipoFase = true;
-        bolas[3].transform.position = bolaFase1b[0].transform.position;
-        bolas[12].transform.position = bolaFase1b[1].transform.position;
-        bolas[14].transform.position = bolaFase1b[2].transform.position;
-        bolaBranca.transform.position = bolaFase1b[3].transform.position;
+        bolas[3].transform.position = bolasFase2[0].transform.position;
+        bolas[12].transform.position = bolasFase2[1].transform.position;
+        bolas[14].transform.position = bolasFase2[2].transform.position;
+        bolaBranca.transform.position = bolasFase2[3].transform.position;
+        ButtonFase3.Instance.interactableBotaoOperador(0);
+        ButtonFase3.Instance.interactableBotaoNumero(3);
         //15,13,4 e tem que encasapar a 4; (por menor que)
         bolas[14].SetActive(true);
         bolas[12].SetActive(true);
         bolas[3].SetActive(true);
-        Debug.Log("Fase 1b escolhida");
+        Debug.Log("Fase 2 escolhida");
         return 3;
     }
-    public int fase1c(){
+    public int fase3(){
         ButtonFase3.Instance.tipoFase = false;
-        bolas[0].transform.position = bolasFase1c[0].transform.position;
-        bolas[5].transform.position = bolasFase1c[1].transform.position;
-        bolas[12].transform.position = bolasFase1c[2].transform.position;
-        bolas[14].transform.position = bolasFase1c[3].transform.position;
-        bolaBranca.transform.position = bolasFase1c[4].transform.position;
+        bolas[0].transform.position = bolasFase3[0].transform.position;
+        bolas[5].transform.position = bolasFase3[1].transform.position;
+        bolas[12].transform.position = bolasFase3[2].transform.position;
+        bolas[14].transform.position = bolasFase3[3].transform.position;
+        bolaBranca.transform.position = bolasFase3[4].transform.position;
         //bola 1, 6, 13, 15 e tem que encasapar a 2; (por par)
         bolas[0].SetActive(true);
         bolas[5].SetActive(true);
         bolas[12].SetActive(true);
         bolas[14].SetActive(true);
-        Debug.Log("Fase 1c escolhida");
+        Debug.Log("Fase 3 escolhida");
         return 0;
     }
 
-    public int fase1d(){
+    public int fase4(){
         ButtonFase3.Instance.tipoFase = true;
-        bolas[1].transform.position = bolasFase1d[0].transform.position;
-        bolas[4].transform.position = bolasFase1d[1].transform.position;
-        bolas[6].transform.position = bolasFase1d[2].transform.position;
-        bolas[8].transform.position = bolasFase1d[3].transform.position;
-        bolaBranca.transform.position = bolasFase1d[4].transform.position;
+        bolas[1].transform.position = bolasFase4[0].transform.position;
+        bolas[4].transform.position = bolasFase4[1].transform.position;
+        bolas[6].transform.position = bolasFase4[2].transform.position;
+        bolas[8].transform.position = bolasFase4[3].transform.position;
+        bolaBranca.transform.position = bolasFase4[4].transform.position;
+        ButtonFase3.Instance.interactableBotaoOperador(0);
+        ButtonFase3.Instance.interactableBotaoNumero(1);
         //bola 2, 5, 7, 9 e tem que encasapar a 2; (por maior que)
         bolas[1].SetActive(true);
         bolas[4].SetActive(true);
         bolas[6].SetActive(true);
         bolas[8].SetActive(true);
-        Debug.Log("Fase 1d escolhida");
+        Debug.Log("Fase 4 escolhida");
         return 1;
     }
-    public int fase1e(){
+    public int fase5(){
         ButtonFase3.Instance.tipoFase = true;
-        bolas[7].transform.position = bolasFase1e[0].transform.position;
-        bolas[9].transform.position = bolasFase1e[1].transform.position;
-        bolas[10].transform.position = bolasFase1e[2].transform.position;
-        bolas[11].transform.position = bolasFase1e[3].transform.position;
-        bolas[13].transform.position = bolasFase1e[4].transform.position;
-        bolaBranca.transform.position = bolasFase1e[5].transform.position;
+        bolas[7].transform.position = bolasFase5[0].transform.position;
+        bolas[9].transform.position = bolasFase5[1].transform.position;
+        bolas[10].transform.position = bolasFase5[2].transform.position;
+        bolas[11].transform.position = bolasFase5[3].transform.position;
+        bolas[13].transform.position = bolasFase5[4].transform.position;
+        bolaBranca.transform.position = bolasFase5[5].transform.position;
+        ButtonFase3.Instance.interactableBotaoOperador(0);
+        ButtonFase3.Instance.interactableBotaoNumero(7);
         //bola 8, 10, 11, 12, 14 e tem que encasapar 8
         bolas[7].SetActive(true);
         bolas[9].SetActive(true);
         bolas[10].SetActive(true);
         bolas[11].SetActive(true);
         bolas[13].SetActive(true);
-        Debug.Log("Fase 1e escolhida");
+        Debug.Log("Fase 5 escolhida");
         return 7;
     }
-    public int fase1f(){
+    public int fase6(){
         ButtonFase3.Instance.tipoFase = false;
-        bolas[0].transform.position = bolasFase1f[0].transform.position;
-        bolas[3].transform.position = bolasFase1f[1].transform.position;
-        bolas[5].transform.position = bolasFase1f[2].transform.position;
-        bolas[8].transform.position = bolasFase1f[3].transform.position;
-        bolas[11].transform.position = bolasFase1f[4].transform.position;
-        bolaBranca.transform.position = bolasFase1f[5].transform.position;
+        bolas[0].transform.position = bolasFase6[0].transform.position;
+        bolas[3].transform.position = bolasFase6[1].transform.position;
+        bolas[5].transform.position = bolasFase6[2].transform.position;
+        bolas[8].transform.position = bolasFase6[3].transform.position;
+        bolas[11].transform.position = bolasFase6[4].transform.position;
+        bolaBranca.transform.position = bolasFase6[5].transform.position;
 
         //bola 1 , 9, 4,12, 6 e tem que encasapar a 6
         bolas[0].SetActive(true);
@@ -111,10 +126,154 @@ public class MiniFases : MonoBehaviour
         bolas[3].SetActive(true);
         bolas[11].SetActive(true);
         bolas[5].SetActive(true);
-        Debug.Log("Fase 1f escolhida");
+        Debug.Log("Fase 6 escolhida");
         return 5;
     }
+    public int fase7(){
+        ButtonFase3.Instance.tipoFase = true;
+        bolas[1].transform.position = bolasFase7[0].transform.position;
+        bolas[2].transform.position = bolasFase7[1].transform.position;
+        bolas[3].transform.position = bolasFase7[2].transform.position;
+        bolas[14].transform.position = bolasFase7[3].transform.position;
+        bolaBranca.transform.position = bolasFase7[4].transform.position;
+        ButtonFase3.Instance.interactableBotaoOperador(0);
+        ButtonFase3.Instance.interactableBotaoNumero(14);
 
+        bolas[1].SetActive(true);
+        bolas[2].SetActive(true);
+        bolas[3].SetActive(true);
+        bolas[14].SetActive(true);
+        Debug.Log("Fase 7 escolhida");
+        return 14;
+    }
+    public int fase8(){
+        ButtonFase3.Instance.tipoFase = false;
+        bolas[0].transform.position = bolasFase8[0].transform.position;
+        bolas[6].transform.position = bolasFase8[1].transform.position;
+        bolas[8].transform.position = bolasFase8[2].transform.position;
+        bolas[11].transform.position = bolasFase8[3].transform.position;
+        bolas[14].transform.position = bolasFase8[4].transform.position;
+        bolaBranca.transform.position = bolasFase8[5].transform.position;
+
+        bolas[0].SetActive(true);
+        bolas[1].SetActive(true);
+        bolas[2].SetActive(true);
+        bolas[3].SetActive(true);
+        Debug.Log("Fase 8 escolhida");
+        return 11;
+    }
+    public int fase9(){
+        ButtonFase3.Instance.tipoFase = true;
+        bolas[7].transform.position = bolasFase9[0].transform.position;
+        bolas[9].transform.position = bolasFase9[1].transform.position;
+        bolas[13].transform.position = bolasFase9[2].transform.position;
+        bolaBranca.transform.position = bolasFase9[3].transform.position;
+        ButtonFase3.Instance.interactableBotaoOperador(0);
+        ButtonFase3.Instance.interactableBotaoNumero(9);
+
+        bolas[7].SetActive(true);
+        bolas[9].SetActive(true);
+        bolas[13].SetActive(true);
+        Debug.Log("Fase 9 escolhida");
+        return 9;
+    }
+    public int fase10(){
+        ButtonFase3.Instance.tipoFase = false;
+        bolas[1].transform.position = bolasFase10[0].transform.position;
+        bolas[2].transform.position = bolasFase10[1].transform.position;
+        bolas[9].transform.position = bolasFase10[2].transform.position;
+        bolas[12].transform.position = bolasFase10[3].transform.position;
+        bolas[13].transform.position = bolasFase10[4].transform.position;
+        bolaBranca.transform.position = bolasFase10[5].transform.position;
+
+        bolas[1].SetActive(true);
+        bolas[2].SetActive(true);
+        bolas[9].SetActive(true);
+        bolas[12].SetActive(true);
+        bolas[13].SetActive(true);
+        Debug.Log("Fase 10 escolhida");
+        return 2;
+    }
+    public int fase11(){
+        ButtonFase3.Instance.tipoFase = true;
+        bolas[6].transform.position = bolasFase11[0].transform.position;
+        bolas[10].transform.position = bolasFase11[1].transform.position;
+        bolaBranca.transform.position = bolasFase11[2].transform.position;
+        ButtonFase3.Instance.interactableBotaoOperador(0);
+        ButtonFase3.Instance.interactableBotaoNumero(6);
+
+        bolas[6].SetActive(true);
+        bolas[10].SetActive(true);
+        Debug.Log("Fase 11 escolhida");
+        return 6;
+    }
+    public int fase12(){
+        ButtonFase3.Instance.tipoFase = true;
+        bolas[4].transform.position = bolasFase12[0].transform.position;
+        bolas[5].transform.position = bolasFase12[1].transform.position;
+        bolas[7].transform.position = bolasFase12[2].transform.position;
+        bolas[12].transform.position = bolasFase12[3].transform.position;
+        bolaBranca.transform.position = bolasFase12[4].transform.position;
+        ButtonFase3.Instance.interactableBotaoOperador(0);
+        ButtonFase3.Instance.interactableBotaoNumero(12);
+
+        bolas[4].SetActive(true);
+        bolas[5].SetActive(true);
+        bolas[7].SetActive(true);
+        bolas[12].SetActive(true);
+        Debug.Log("Fase 12 escolhida");
+        return 12;
+    }
+    public int fase13(){
+        ButtonFase3.Instance.tipoFase = false;
+        bolas[2].transform.position = bolasFase13[0].transform.position;
+        bolas[6].transform.position = bolasFase13[1].transform.position;
+        bolas[8].transform.position = bolasFase13[2].transform.position;
+        bolas[10].transform.position = bolasFase13[3].transform.position;
+        bolas[13].transform.position = bolasFase13[4].transform.position;
+        bolaBranca.transform.position = bolasFase13[5].transform.position;
+
+        //bola 3, 7, 9, 11, 14 e tem que encasapar a 3; (por maior que)
+        bolas[2].SetActive(true);
+        bolas[6].SetActive(true);
+        bolas[8].SetActive(true);
+        bolas[10].SetActive(true);
+        bolas[13].SetActive(true);
+        Debug.Log("Fase 13 escolhida");
+        return 13;
+    }
+    public int fase14(){
+        ButtonFase3.Instance.tipoFase = false;
+        bolas[3].transform.position = bolasFase14[0].transform.position;
+        bolas[5].transform.position = bolasFase14[1].transform.position;
+        bolas[8].transform.position = bolasFase14[2].transform.position;
+        bolas[11].transform.position = bolasFase14[3].transform.position;
+        bolas[13].transform.position = bolasFase14[4].transform.position;
+        bolaBranca.transform.position = bolasFase14[5].transform.position;
+
+        //bola 4, 6, 9, 12, 14 e tem que encasapar a 4; (por menor que)
+        bolas[3].SetActive(true);
+        bolas[5].SetActive(true);
+        bolas[8].SetActive(true);   
+        bolas[11].SetActive(true);
+        bolas[13].SetActive(true);
+        Debug.Log("Fase 14 escolhida");
+        return 8;
+    }
+    public int fase15(){
+        ButtonFase3.Instance.tipoFase = true;
+        bolas[1].transform.position = bolasFase15[0].transform.position;
+        bolas[10].transform.position = bolasFase15[1].transform.position;
+        bolaBranca.transform.position = bolasFase15[4].transform.position;
+        ButtonFase3.Instance.interactableBotaoOperador(0);
+        ButtonFase3.Instance.interactableBotaoNumero(10);
+
+        //bola 1, 2, 5, 8 e tem que encasapar a 1; (por par)
+        bolas[1].SetActive(true);
+        bolas[10].SetActive(true);
+        Debug.Log("Fase 15 escolhida");
+        return 10;
+    }
     public float velocidade = 5f;
     public Vector3 eixoDeRotacao = Vector3.forward;
     /*public void animarFase1a(){
