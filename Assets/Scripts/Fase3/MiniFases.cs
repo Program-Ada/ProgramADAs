@@ -156,9 +156,10 @@ public class MiniFases : MonoBehaviour
         bolaBranca.transform.position = bolasFase8[5].transform.position;
 
         bolas[0].SetActive(true);
-        bolas[1].SetActive(true);
-        bolas[2].SetActive(true);
-        bolas[3].SetActive(true);
+        bolas[6].SetActive(true);
+        bolas[8].SetActive(true);
+        bolas[11].SetActive(true);
+        bolas[14].SetActive(true);
         Debug.Log("Fase 8 escolhida");
         return 11;
     }
@@ -168,8 +169,8 @@ public class MiniFases : MonoBehaviour
         bolas[9].transform.position = bolasFase9[1].transform.position;
         bolas[13].transform.position = bolasFase9[2].transform.position;
         bolaBranca.transform.position = bolasFase9[3].transform.position;
-        ButtonFase3.Instance.interactableBotaoOperador(0);
-        ButtonFase3.Instance.interactableBotaoNumero(9);
+        //ButtonFase3.Instance.interactableBotaoOperador(0);
+        //ButtonFase3.Instance.interactableBotaoNumero(9);
 
         bolas[7].SetActive(true);
         bolas[9].SetActive(true);

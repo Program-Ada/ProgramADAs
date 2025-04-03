@@ -64,14 +64,14 @@ public class ButtonFase3 : MonoBehaviour
             MiniFases.Instance.fase7,
             MiniFases.Instance.fase8,
             MiniFases.Instance.fase9,
-            MiniFases.Instance.fase10,
-            MiniFases.Instance.fase11,
+            MiniFases.Instance.fase10
+            /*MiniFases.Instance.fase11,
             MiniFases.Instance.fase12,
             MiniFases.Instance.fase13,
             MiniFases.Instance.fase14,
-            MiniFases.Instance.fase15
+            MiniFases.Instance.fase15*/
         };
-        miniFasesChamadas = new bool[15];
+        miniFasesChamadas = new bool[10];
         comecarNovaFase();
         //partidaJogadas++;
     }
@@ -85,10 +85,6 @@ public class ButtonFase3 : MonoBehaviour
             b.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
             b.SetActive(false);
         }
-        /*for(int i=0; i< bola.Length; i++){
-            if(bola[i].activeSelf)
-                bola[i].SetActive(false);
-        }*/
     }
     public void desativarSprites(){
         for(int i = 0; i<spriteNumero.Length; i++){
@@ -156,7 +152,7 @@ public class ButtonFase3 : MonoBehaviour
             operador[i].gameObject.SetActive(true);
         }
     }
-    public void Button_funcaoOperador(){
+    /*public void Button_funcaoOperador(){
         funcaoOperador = true;
         funcaoCondicao = false;
     }
@@ -172,9 +168,9 @@ public class ButtonFase3 : MonoBehaviour
                 Debug.Log("Primeiro precisa ativar a funcao do Operador");
             }
         }
-    }
+    }*/
     public void Button_EscolheOperador(int i){
-        if(funcaoOperador){
+        //if(funcaoOperador){
             for(int j =0; j<spriteOperador.Length; j++){
                 if(j != i){
                     operador[j].interactable = false;
@@ -183,13 +179,13 @@ public class ButtonFase3 : MonoBehaviour
             spriteOperador[i].SetActive(true);
             botoesCondicional[0].gameObject.SetActive(false);
             operadorEscolhido = true;
-        }else{
+        //}else{
             //FeedbackManagerFase3.Instance.Feedback_Test("operadorNaoEscolhido");
             Debug.Log("Primeiro precisa ativar a funcao do Operador");
-        }
+        //}
     }
     public void Button_EscolheNumero(int i){
-        if(funcaoCondicao && funcaoOperador){
+        if(operadorEscolhido){
             for(int j =0; j<numeros.Length; j++){
                 if(j != i){
                     numeros[j].interactable = false;
@@ -201,15 +197,11 @@ public class ButtonFase3 : MonoBehaviour
             botoesCondicional[1].gameObject.SetActive(false);
             condicaoEscolhida = true;
         }else{
-            if(!funcaoOperador && funcaoCondicao){
             Debug.Log("Primeiro precisa escolher o operador");
-            }else{
-                Debug.Log("Primeiro precisa ativar a funcao da condicao");
-            }
         }
     }
     public void Button_EscolheParOuImpar(int i){
-        if(funcaoCondicao && funcaoOperador){
+        if(operadorEscolhido){
             if(i ==0){
                 parOuImpar[1].interactable = false;
             }else{
@@ -221,15 +213,11 @@ public class ButtonFase3 : MonoBehaviour
             botoesCondicional[1].gameObject.SetActive(false);
             condicaoEscolhida = true;
         }else{
-            if(!funcaoOperador && funcaoCondicao){
             Debug.Log("Primeiro precisa escolher o operador");
-            }else{
-                Debug.Log("Primeiro precisa ativar a funcao da condicao");
-            }
         }
     }
     public void Button_EscolherCor(int i){
-        if(funcaoCondicao && funcaoOperador){
+        if(operadorEscolhido){
             for(int j =0; j<cores.Length; j++){
                 if(j != i){
                     cores[j].interactable = false;
@@ -241,11 +229,7 @@ public class ButtonFase3 : MonoBehaviour
             spriteCores[i].SetActive(true);
             condicaoEscolhida = true;
         }else{
-            if(!funcaoOperador && funcaoCondicao){
             Debug.Log("Primeiro precisa escolher o operador");
-            }else{
-                Debug.Log("Primeiro precisa ativar a funcao da condicao");
-            }
         }
     }
     public void interactableNo(Button[] button){
@@ -272,7 +256,7 @@ public class ButtonFase3 : MonoBehaviour
         }
     }
     public void Button_Ok(){
-        if(condicaoEscolhida && partidaJogadas < 6 && error <3){
+        if(condicaoEscolhida && partidaJogadas < 7 && error <3){
             int resultado = verificaCondicional(bola[bolaDoMomento]);
             if(resultado == 2){
                 emojis[2].SetActive(true);
@@ -310,14 +294,6 @@ public class ButtonFase3 : MonoBehaviour
         interactableAllYes();
     }
     public int verificaCondicional(GameObject bolaEscolhida){
-        /*GameObject[] todasBolas = GameObject.FindGameObjectsWithTag("Bola");
-        GameObject[] bolasAtivas = todasBolas.Where(bola => bola.activeInHierarchy).ToArray();
-
-        GameObject[] operadoresObjetos = GameObject.FindGameObjectsWithTag("Operador");
-        Button operadorInteractable = operadoresObjetos.Select(op => op.GetComponent<Button>()).Where(btn => btn.interactable).FirstOrDefault();
-
-        GameObject[] condicaoObjetos = GameObject.FindGameObjectsWithTag("Numero").Concat(GameObject.FindGameObjectsWithTag("Cor")).Concat(GameObject.FindGameObjectsWithTag("ParOuImpar")).ToArray();
-        Button condicaoEscolhida = condicaoObjetos.Select(cond => cond.GetComponent<Button>()).Where(btn => btn.interactable).FirstOrDefault();*/
         List<GameObject> bolasAtivas = new List<GameObject>();
         for(int i=0; i<bola.Length; i++){
             if(bola[i].activeSelf){
@@ -547,20 +523,20 @@ public class ButtonFase3 : MonoBehaviour
     public int escolheFase(){
         //desativarBolas();
         int faseAleatoria, bolaEscolhida = -2;
-        do{
-            if(partidaJogadas == 1){
-                faseAleatoria = 8;
-                bolaEscolhida = miniFases[faseAleatoria]();
-                miniFasesChamadas[faseAleatoria] = true;
-            }else{
+        if(partidaJogadas > 1){
+            do{
                 faseAleatoria = UnityEngine.Random.Range(0,miniFases.Length);
                 if(!miniFasesChamadas[faseAleatoria]){
                     bolaEscolhida = miniFases[faseAleatoria]();
                     miniFasesChamadas[faseAleatoria] = true;
                     break;
                 }
-            }
-        }while(miniFasesChamadas[faseAleatoria]);
+            }while(miniFasesChamadas[faseAleatoria]);
+        }else{
+            faseAleatoria = 8;
+            bolaEscolhida = miniFases[faseAleatoria]();
+            miniFasesChamadas[faseAleatoria] = true;
+        }
 
         objetivoDaFase.text = "Encaçape a bola " + (bolaEscolhida+1);
 

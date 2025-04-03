@@ -51,6 +51,6 @@ public class ScoreFase3 : MonoBehaviour
     }
 
     public void Exit_Btn(){
-        SceneManager.LoadScene("Convivencia");
+        SceneManager.LoadScene("DA");
     }
 }
