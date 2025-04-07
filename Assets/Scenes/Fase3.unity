@@ -73385,6 +73385,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1645239782}
+  - {fileID: 2010898462}
+  - {fileID: 2076227396}
+  - {fileID: 1139921171}
   - {fileID: 3919617995671150290}
   - {fileID: 1373543442}
   m_Father: {fileID: 0}
@@ -103220,6 +103224,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1139444148}
   m_CullTransparentMesh: 1
+--- !u!1 &1139921170
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1139921171}
+  - component: {fileID: 1139921172}
+  m_Layer: 0
+  m_Name: okS/Condicao
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1139921171
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139921170}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.01, y: 0.060000002, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 839405760}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1139921172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139921170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b5c02ce415a63a409c465758314df35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  feedback:
+    image: {fileID: 21300000, guid: 11cfc4109a9637e49a9ce1250db82b35, type: 3}
+    name: "Nat\xE1lia"
+    sentences:
+    - "Escolha a caracter\xEDstica da bola antes de finalizar esta fase."
 --- !u!1 &1140083871
 GameObject:
   m_ObjectHideFlags: 0
@@ -127292,7 +127345,7 @@ MonoBehaviour:
     image: {fileID: 21300000, guid: 11cfc4109a9637e49a9ce1250db82b35, type: 3}
     name: "Nat\xE1lia"
     sentences:
-    - "Essa condicional n\xE3o funciona para a bola escolhida"
+    - "Essa condicional n\xE3o funciona para a bola escolhida."
 --- !u!1 &1373548012
 GameObject:
   m_ObjectHideFlags: 0
@@ -157875,6 +157928,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1644211780}
   m_CullTransparentMesh: 1
+--- !u!1 &1645239781
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1645239782}
+  - component: {fileID: 1645239783}
+  m_Layer: 0
+  m_Name: 1minifase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1645239782
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645239781}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.01, y: 0.060000002, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 839405760}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1645239783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645239781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b5c02ce415a63a409c465758314df35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  feedback:
+    image: {fileID: 21300000, guid: 11cfc4109a9637e49a9ce1250db82b35, type: 3}
+    name: "Nat\xE1lia"
+    sentences:
+    - "Agora que voc\xEA aprendeu as fases com os n\xFAmeros n\xE3o ter\xE3o mais
+      == e o n\xFAmero da bola escolhida."
 --- !u!1 &1647659932
 GameObject:
   m_ObjectHideFlags: 0
@@ -193316,6 +193419,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2010498190}
   m_CullTransparentMesh: 1
+--- !u!1 &2010898461
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2010898462}
+  - component: {fileID: 2010898463}
+  m_Layer: 0
+  m_Name: condS/Operador
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2010898462
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010898461}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.01, y: 0.060000002, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 839405760}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2010898463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010898461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b5c02ce415a63a409c465758314df35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  feedback:
+    image: {fileID: 21300000, guid: 11cfc4109a9637e49a9ce1250db82b35, type: 3}
+    name: "Nat\xE1lia"
+    sentences:
+    - "Antes de escolher a caracter\xEDstica para a bola voc\xEA precisa escolher
+      o operador da condicional."
 --- !u!1 &2011299597
 GameObject:
   m_ObjectHideFlags: 0
@@ -200847,6 +201000,55 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &2076227395
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2076227396}
+  - component: {fileID: 2076227397}
+  m_Layer: 0
+  m_Name: okS/Operador
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2076227396
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076227395}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.01, y: 0.060000002, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 839405760}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2076227397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076227395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b5c02ce415a63a409c465758314df35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  feedback:
+    image: {fileID: 21300000, guid: 11cfc4109a9637e49a9ce1250db82b35, type: 3}
+    name: "Nat\xE1lia"
+    sentences:
+    - "Escolha o operador e a caracter\xEDstica da bola antes de finalizar esta fase."
 --- !u!1 &2077703072
 GameObject:
   m_ObjectHideFlags: 0
@@ -209629,7 +209831,8 @@ MonoBehaviour:
     image: {fileID: 21300000, guid: 11cfc4109a9637e49a9ce1250db82b35, type: 3}
     name: "Nat\xE1lia"
     sentences:
-    - "Cuidado! Essa condicional funciona para a bola mas n\xE3o apenas para ela"
+    - "Cuidado! Essa condicional funciona para a bola mas para outras presentes na
+      mesa tamb\xE9m."
 --- !u!4 &3919617996370359981
 Transform:
   m_ObjectHideFlags: 0

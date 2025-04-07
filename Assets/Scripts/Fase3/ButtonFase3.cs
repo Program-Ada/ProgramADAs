@@ -65,14 +65,14 @@ public class ButtonFase3 : MonoBehaviour
             MiniFases.Instance.fase7,
             MiniFases.Instance.fase8,
             MiniFases.Instance.fase9,
-            MiniFases.Instance.fase10
-            /*MiniFases.Instance.fase11,
+            MiniFases.Instance.fase10,
+            MiniFases.Instance.fase11,
             MiniFases.Instance.fase12,
             MiniFases.Instance.fase13,
             MiniFases.Instance.fase14,
-            MiniFases.Instance.fase15*/
+            MiniFases.Instance.fase15
         };
-        miniFasesChamadas = new bool[10];
+        miniFasesChamadas = new bool[15];
         comecarNovaFase();
         //partidaJogadas++;
     }
