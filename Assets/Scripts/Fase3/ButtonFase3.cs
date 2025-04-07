@@ -256,7 +256,7 @@ public class ButtonFase3 : MonoBehaviour
         }
     }
     public void Button_Ok(){
-        if(condicaoEscolhida && partidaJogadas < 7 && error <3){
+        if(condicaoEscolhida && partidaJogadas < 9 && error <3){
             int resultado = verificaCondicional(bola[bolaDoMomento]);
             if(resultado == 2){
                 emojis[2].SetActive(true);
@@ -556,10 +556,10 @@ public class ButtonFase3 : MonoBehaviour
         ButtonQuadro2Fase3 scriptOperador = operadorEscolhido.GetComponent<ButtonQuadro2Fase3>();
         Debug.Log(scriptOperador.operador);*/
         //IsGameFinished();
-        if(partidaJogadas > 6 || error >= 3){
+        if(partidaJogadas > 8 || error >= 3){
             IsGameFinished();
         }
-        partidas.text = partidaJogadas + "/6";
+        partidas.text = partidaJogadas + "/8";
         if(!tipoFase){
             fasePar();
         }else{
