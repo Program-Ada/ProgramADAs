@@ -15,6 +15,7 @@ public class ButtonFase3 : MonoBehaviour
     public bool operadorEscolhido = false;
     public bool condicaoEscolhida = false;
     public GameObject[] spriteOperador;
+    public Button[] buttonQuadro1;
     public Button[] botoesCondicional;
     public Button[] operador;
     public Button[] numeros;
@@ -65,12 +66,12 @@ public class ButtonFase3 : MonoBehaviour
             MiniFases.Instance.fase7,
             MiniFases.Instance.fase8,
             MiniFases.Instance.fase9,
-            MiniFases.Instance.fase10,
-            MiniFases.Instance.fase11,
+            MiniFases.Instance.fase10
+            /*MiniFases.Instance.fase11,
             MiniFases.Instance.fase12,
             MiniFases.Instance.fase13,
             MiniFases.Instance.fase14,
-            MiniFases.Instance.fase15
+            MiniFases.Instance.fase15*/
         };
         miniFasesChamadas = new bool[15];
         comecarNovaFase();
@@ -198,6 +199,7 @@ public class ButtonFase3 : MonoBehaviour
             botoesCondicional[1].gameObject.SetActive(false);
             condicaoEscolhida = true;
         }else{
+            FeedbackManagerFase3.Instance.Feedback_Test("condS/Operador");
             Debug.Log("Primeiro precisa escolher o operador");
         }
     }
@@ -214,6 +216,7 @@ public class ButtonFase3 : MonoBehaviour
             botoesCondicional[1].gameObject.SetActive(false);
             condicaoEscolhida = true;
         }else{
+            FeedbackManagerFase3.Instance.Feedback_Test("condS/Operador");
             Debug.Log("Primeiro precisa escolher o operador");
         }
     }
@@ -230,6 +233,7 @@ public class ButtonFase3 : MonoBehaviour
             spriteCores[i].SetActive(true);
             condicaoEscolhida = true;
         }else{
+            FeedbackManagerFase3.Instance.Feedback_Test("condS/Operador");
             Debug.Log("Primeiro precisa escolher o operador");
         }
     }
@@ -254,6 +258,33 @@ public class ButtonFase3 : MonoBehaviour
                 if(!operador[i].interactable)
                     operador[i].interactable = true;
             }
+            if(i<buttonQuadro1.Length){
+                if(!buttonQuadro1[i].interactable)
+                    buttonQuadro1[i].interactable = true;
+            }
+        }
+    }
+    public void interactableAllNo(){
+        for(int i=0; i<numeros.Length; i++){
+            numeros[i].interactable = false;
+            if(i<cores.Length){
+                if(cores[i].interactable)
+                    cores[i].interactable = false;
+            }
+            if(i<parOuImpar.Length){
+                if(parOuImpar[i].interactable)
+                    parOuImpar[i].interactable = false;
+            }
+            if(i<operador.Length){
+                if(operador[i].interactable)
+                    operador[i].interactable = false;
+            }
+        }
+    }
+    public void interactableNoButtonQuadro1(){
+        for(int i=0; i<buttonQuadro1.Length; i++){
+            if(buttonQuadro1[i].interactable)
+                buttonQuadro1[i].interactable = false;
         }
     }
     /*public void Button_Ok(){
@@ -281,30 +312,42 @@ public class ButtonFase3 : MonoBehaviour
         }
     }*/
     public void Button_Ok(){
-        if(condicaoEscolhida && partidaJogadas < 9 && error <3){
+        if(condicaoEscolhida){
+            interactableNoButtonQuadro1();
             int typeError = 2;
             GameObject resultado = verificaCondicional(bola[bolaDoMomento]);
             if(resultado == bola[bolaDoMomento]){
                 emojis[2].SetActive(true);
                 MiniFases.Instance.StartCoroutine(MiniFases.Instance.AnimarFase(bola[bolaDoMomento]));
+                Invoke("comecarNovaFase", 2f);
             }else{
                 if(resultado == bolaBranca){
                     emojis[0].SetActive(true);
                     typeError = 0;
                     error++;
                     menosVida(error);
+                    FeedbackManagerFase3.Instance.Feedback_Test("errado");
                 }else{
                     emojis[1].SetActive(true);
                     MiniFases.Instance.StartCoroutine(MiniFases.Instance.AnimarFase(resultado));
                     typeError = 1;
                     error++;
                     menosVida(error);
+                    FeedbackManagerFase3.Instance.Feedback_Test("meioErrado");
                 }
-                ScoreFase3.instance.Update_Score(typeError);
+                if(error >= 2){
+                    Invoke("IsGameFinished", 2f);
+                }else{
+                    Invoke("comecarNovaFase", 5f);
+                    ScoreFase3.instance.Update_Score(typeError);
+                }
             }
-            Invoke("comecarNovaFase", 2f);
-            
         }else{
+            if(operadorEscolhido && !condicaoEscolhida){
+            FeedbackManagerFase3.Instance.Feedback_Test("okS/Condicao");
+            }else{
+                FeedbackManagerFase3.Instance.Feedback_Test("okS/Operador");
+            }
             Debug.Log("partidas é maior que 6 ou nao escolheu a condicional totalmente");
         }
     }
@@ -542,231 +585,11 @@ public class ButtonFase3 : MonoBehaviour
         Debug.Log("Certo");
         return bolaEscolhida;
     }
-
-        /*public int verificaCondicional(GameObject bolaEscolhida){
-        List<GameObject> bolasAtivas = new List<GameObject>();
-        for(int i=0; i<bola.Length; i++){
-            if(bola[i].activeSelf){
-                bolasAtivas.Add(bola[i]);
-            }
-        }
-        Button operadorEscolhido = null;
-        for(int i = 0; i<operador.Length; i++){
-            if(operador[i].interactable){
-                operadorEscolhido = operador[i];
-                break;
-            }
-        }
-        Button condicaoEscolhida = null;
-        if(tipoFase){
-            for(int i =0; i<numeros.Length; i++){
-                if(numeros[i].interactable){
-                    condicaoEscolhida = numeros[i];
-                    break;
-                }
-            }
-        }else{
-            for(int i = 0; i<parOuImpar.Length; i++){
-                if(parOuImpar[i].interactable){
-                    condicaoEscolhida = parOuImpar[i];
-                    break;
-                }
-            }
-            if(condicaoEscolhida == null){
-                for(int i = 0; i<cores.Length; i++){
-                    if(cores[i].interactable){
-                        condicaoEscolhida = cores[i];
-                        break;
-                    }
-                }
-            }
-        }
-        Bola bolaEscolhidaScript = bolaEscolhida.GetComponent<Bola>();
-        if(condicaoEscolhida == null){
-            Debug.Log("Condicao Escolhida é null");
-        }else{
-            ButtonQuadro2Fase3 condicaoEscolhidaScript = condicaoEscolhida.GetComponent<ButtonQuadro2Fase3>();
-        
-        //ButtonQuadro2Fase3 condicaoEscolhidaScript = condicaoEscolhida.GetComponent<ButtonQuadro2Fase3>();
-        ButtonQuadro2Fase3 operadorEscolhidoScript = operadorEscolhido.GetComponent<ButtonQuadro2Fase3>();
-        if(condicaoEscolhida.CompareTag("Numero")){
-            switch(operadorEscolhidoScript.operador){
-                case "==":
-                    if(!(bolaEscolhidaScript.numero == condicaoEscolhidaScript.numero)){
-                        Debug.Log("Errado");
-                        FeedbackManagerFase3.Instance.Feedback_Test("errado");
-                        return 0;
-                    }
-                    break;
-                case "!=":
-                    if(!(bolaEscolhidaScript.numero != condicaoEscolhidaScript.numero)){
-                        Debug.Log("Errado");
-                        FeedbackManagerFase3.Instance.Feedback_Test("errado");
-                        return 0;
-                    }
-                    break;
-                case ">":  
-                    if(!(bolaEscolhidaScript.numero > condicaoEscolhidaScript.numero)){
-                        Debug.Log("Errado");
-                        FeedbackManagerFase3.Instance.Feedback_Test("errado");
-                        return 0;
-                    }
-                    break;
-                case "<":
-                    if(!(bolaEscolhidaScript.numero < condicaoEscolhidaScript.numero)){
-                        Debug.Log("Errado");
-                        FeedbackManagerFase3.Instance.Feedback_Test("errado");
-                        return 0;
-                    }
-                    break;
-                case ">=":
-                    if(!(bolaEscolhidaScript.numero >= condicaoEscolhidaScript.numero)){
-                        Debug.Log("Errado");
-                        FeedbackManagerFase3.Instance.Feedback_Test("errado");
-                        return 0;
-                    }
-                    break;
-                case "<=":
-                    if(!(bolaEscolhidaScript.numero <= condicaoEscolhidaScript.numero)){
-                        Debug.Log("Errado");
-                        FeedbackManagerFase3.Instance.Feedback_Test("errado");
-                        return 0;
-                    }
-                    break;
-            }
-            for(int i=0; i<bolasAtivas.Count; i++){
-                if(bolasAtivas[i] != bolaEscolhida){
-                    switch(operadorEscolhidoScript.operador){
-                        case "==":
-                            if(bolasAtivas[i].GetComponent<Bola>().numero == condicaoEscolhidaScript.numero){
-                                Debug.Log("Meio Errado");
-                                FeedbackManagerFase3.Instance.Feedback_Test("meioErrado");
-                                return 1;
-                            }
-                            break;
-                        case "!=":
-                            if(bolasAtivas[i].GetComponent<Bola>().numero != condicaoEscolhidaScript.numero){
-                                Debug.Log("Meio Errado");
-                                FeedbackManagerFase3.Instance.Feedback_Test("meioErrado");
-                                return 1;
-                            }
-                            break;
-                        case ">":
-                            if(bolasAtivas[i].GetComponent<Bola>().numero > condicaoEscolhidaScript.numero){
-                                Debug.Log("Meio Errado");
-                                FeedbackManagerFase3.Instance.Feedback_Test("meioErrado");
-                                return 1;
-                            }
-                            break;
-                        case "<":
-                            if(bolasAtivas[i].GetComponent<Bola>().numero < condicaoEscolhidaScript.numero){
-                                Debug.Log("Meio Errado");
-                                FeedbackManagerFase3.Instance.Feedback_Test("meioErrado");
-                                return 1;
-                            }
-                            break;
-                        case ">=":
-                            if(bolasAtivas[i].GetComponent<Bola>().numero >= condicaoEscolhidaScript.numero){
-                                Debug.Log("Meio Errado");
-                                FeedbackManagerFase3.Instance.Feedback_Test("meioErrado");
-                                return 1;
-                            }
-                            break;
-                        case "<=":
-                            if(bolasAtivas[i].GetComponent<Bola>().numero <= condicaoEscolhidaScript.numero){
-                                Debug.Log("Meio Errado");
-                                FeedbackManagerFase3.Instance.Feedback_Test("meioErrado");
-                                return 1;
-                            }
-                            break;
-                    }
-                }
-            }
-        }
-        if(condicaoEscolhida.CompareTag("Cor")){
-            switch(operadorEscolhidoScript.operador){
-                case "==":
-                    if(!(bolaEscolhidaScript.cor == condicaoEscolhidaScript.cor)){
-                        Debug.Log("Errado");
-                        FeedbackManagerFase3.Instance.Feedback_Test("errado");
-                        return 0;
-                    }
-                    break;
-                case "!=":
-                    if(!(bolaEscolhidaScript.cor != condicaoEscolhidaScript.cor)){
-                        Debug.Log("Errado");
-                        FeedbackManagerFase3.Instance.Feedback_Test("errado");
-                        return 0;
-                    }
-                    break;
-            }
-            for(int i=0; i<bolasAtivas.Count; i++){
-                if(bolasAtivas[i] != bolaEscolhida){
-                    switch(operadorEscolhidoScript.operador){
-                        case "==":
-                            if(bolasAtivas[i].GetComponent<Bola>().cor == condicaoEscolhidaScript.cor){
-                                Debug.Log("Meio Errado");
-                                FeedbackManagerFase3.Instance.Feedback_Test("meioErrado");
-                                return 1;
-                            }
-                            break;
-                        case "!=":
-                            if(bolasAtivas[i].GetComponent<Bola>().cor != condicaoEscolhidaScript.cor){
-                                Debug.Log("Meio Errado");
-                                FeedbackManagerFase3.Instance.Feedback_Test("meioErrado");
-                                return 1;
-                            }
-                            break;
-                    }
-                }
-            }
-        }
-        if(condicaoEscolhida.CompareTag("ParOuImpar")){
-            switch(operadorEscolhidoScript.operador){
-                case "==":
-                    if(!(bolaEscolhidaScript.parOuImpar == condicaoEscolhidaScript.parOuImpar)){
-                        Debug.Log("Errado");
-                        FeedbackManagerFase3.Instance.Feedback_Test("errado");
-                        return 0;
-                    }
-                    break;
-                case "!=":
-                    if(!(bolaEscolhidaScript.parOuImpar != condicaoEscolhidaScript.parOuImpar)){
-                        Debug.Log("Errado");
-                        FeedbackManagerFase3.Instance.Feedback_Test("errado");
-                        return 0;
-                    }
-                    break;
-            }
-            for(int i=0; i<bolasAtivas.Count; i++){
-                if(bolasAtivas[i] != bolaEscolhida){
-                    switch(operadorEscolhidoScript.operador){
-                        case "==":
-                            if(bolasAtivas[i].GetComponent<Bola>().parOuImpar == condicaoEscolhidaScript.parOuImpar){
-                                Debug.Log("Meio Errado");
-                                FeedbackManagerFase3.Instance.Feedback_Test("meioErrado");
-                                return 1;
-                            }
-                            break;
-                        case "!=":
-                            if(bolasAtivas[i].GetComponent<Bola>().parOuImpar != condicaoEscolhidaScript.parOuImpar){
-                                Debug.Log("Meio Errado");
-                                FeedbackManagerFase3.Instance.Feedback_Test("meioErrado");
-                                return 1;
-                            }
-                            break;
-                    }
-                }   
-            }
-        }}
-
-        Debug.Log("Certo");
-        return 2;
-    }*/
     public void comecarNovaFase(){
         desativarEmojis();
         Button_X();
         desativarBolas();
+        interactableAllYes();
         partidaJogadas++;
         bolaDoMomento = escolheFase();
     }
@@ -802,14 +625,11 @@ public class ButtonFase3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*Button operadorEscolhido = operador[2];
-        ButtonQuadro2Fase3 scriptOperador = operadorEscolhido.GetComponent<ButtonQuadro2Fase3>();
-        Debug.Log(scriptOperador.operador);*/
-        //IsGameFinished();
-        if(partidaJogadas > 8 || error >= 3){
+        if(partidaJogadas > 8){
             IsGameFinished();
+        }else{
+            partidas.text = partidaJogadas + "/8";
         }
-        partidas.text = partidaJogadas + "/8";
         if(!tipoFase){
             fasePar();
         }else{

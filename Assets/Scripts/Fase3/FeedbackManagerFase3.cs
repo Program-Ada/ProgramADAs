@@ -45,18 +45,16 @@ public class FeedbackManagerFase3 : MonoBehaviour
     public int VerificaErrorName(string errorName) {
         switch (errorName)
         {
-            case "1minifase":
-                return 0;
             case "condS/Operador":
-                return 1;
+                return 0;
             case "okS/Operador":
-                return 2;
+                return 1;
             case "okS/Condicao":
-                return 3;
+                return 2;
             case "meioErrado":
-                return 4;
+                return 3;
             case "errado":
-                return 5;
+                return 4;
             default:
                 return -1;
         }
