@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FeedbackTriggerFase3 : MonoBehaviour
 {
-    public Feedback feedback;
+    public FeedbackFase3 feedback;
 
     void OnEnable() {
         FeedbackManagerFase3.Instance.ShowFeedback(feedback);

@@ -60,7 +60,7 @@ public class FeedbackManagerFase3 : MonoBehaviour
         }
     }
 
-    public void ShowFeedback(Feedback feedback){
+    public void ShowFeedback(FeedbackFase3 feedback){
 
         npcName.text = feedback.name;
         npcImage.sprite = feedback.image;
