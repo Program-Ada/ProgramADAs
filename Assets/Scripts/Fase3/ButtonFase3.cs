@@ -55,7 +55,7 @@ public class ButtonFase3 : MonoBehaviour
             Debug.LogError("Erro: MiniFases.Instance não foi inicializado!");
             return;
         }
-        /*miniFases = new Func<int>[]
+        miniFases = new Func<int>[]
         {
             MiniFases.Instance.fase1,
             MiniFases.Instance.fase2,
@@ -73,7 +73,7 @@ public class ButtonFase3 : MonoBehaviour
             MiniFases.Instance.fase14,
             MiniFases.Instance.fase15
         };
-        miniFasesChamadas = new bool[15];*/
+        miniFasesChamadas = new bool[15];
         //comecarNovaFase();
         //partidaJogadas++;
     }
@@ -290,9 +290,9 @@ public class ButtonFase3 : MonoBehaviour
     public void Button_Ok(){
         if(condicaoEscolhida){
             interactableNoButtonQuadro1();
-            emojis[0].SetActive(true);
-            Invoke("comecarNovaFase", 2f);
-            //verificaCondicional(bola[bolaDoMomento]);
+            /*emojis[0].SetActive(true);
+            Invoke("comecarNovaFase", 2f);*/
+            verificaCondicional(bola[bolaDoMomento]);
         }else{
             if(operadorEscolhido && !condicaoEscolhida){
             FeedbackManagerFase3.Instance.Feedback_Test("okS/Condicao");
