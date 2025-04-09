@@ -32,7 +32,7 @@ public class MiniFases : MonoBehaviour
         Instance = this;
     }
     public int fase1(){
-        ButtonFase3.Instance.tipoFase = false;
+        ButtonFase3.Instance.ButtonFase(false);
         bolas[2].transform.position = bolasFase1[0].transform.position;
         bolas[4].transform.position = bolasFase1[1].transform.position;
         bolas[10].transform.position = bolasFase1[2].transform.position;
@@ -45,7 +45,7 @@ public class MiniFases : MonoBehaviour
         return 4;
     }
     public int fase2(){
-        ButtonFase3.Instance.tipoFase = true;
+        ButtonFase3.Instance.ButtonFase(true);
         bolas[3].transform.position = bolasFase2[0].transform.position;
         bolas[12].transform.position = bolasFase2[1].transform.position;
         bolas[14].transform.position = bolasFase2[2].transform.position;
@@ -60,7 +60,7 @@ public class MiniFases : MonoBehaviour
         return 3;
     }
     public int fase3(){
-        ButtonFase3.Instance.tipoFase = false;
+        ButtonFase3.Instance.ButtonFase(false);
         bolas[0].transform.position = bolasFase3[0].transform.position;
         bolas[5].transform.position = bolasFase3[1].transform.position;
         bolas[12].transform.position = bolasFase3[2].transform.position;
@@ -76,7 +76,7 @@ public class MiniFases : MonoBehaviour
     }
 
     public int fase4(){
-        ButtonFase3.Instance.tipoFase = true;
+        ButtonFase3.Instance.ButtonFase(true);
         bolas[1].transform.position = bolasFase4[0].transform.position;
         bolas[4].transform.position = bolasFase4[1].transform.position;
         bolas[6].transform.position = bolasFase4[2].transform.position;
@@ -93,7 +93,7 @@ public class MiniFases : MonoBehaviour
         return 1;
     }
     public int fase5(){
-        ButtonFase3.Instance.tipoFase = true;
+        ButtonFase3.Instance.ButtonFase(true);
         bolas[7].transform.position = bolasFase5[0].transform.position;
         bolas[9].transform.position = bolasFase5[1].transform.position;
         bolas[10].transform.position = bolasFase5[2].transform.position;
@@ -112,7 +112,7 @@ public class MiniFases : MonoBehaviour
         return 7;
     }
     public int fase6(){
-        ButtonFase3.Instance.tipoFase = false;
+        ButtonFase3.Instance.ButtonFase(false);
         bolas[0].transform.position = bolasFase6[0].transform.position;
         bolas[3].transform.position = bolasFase6[1].transform.position;
         bolas[5].transform.position = bolasFase6[2].transform.position;
@@ -130,7 +130,7 @@ public class MiniFases : MonoBehaviour
         return 5;
     }
     public int fase7(){
-        ButtonFase3.Instance.tipoFase = true;
+        ButtonFase3.Instance.ButtonFase(true);
         bolas[1].transform.position = bolasFase7[0].transform.position;
         bolas[2].transform.position = bolasFase7[1].transform.position;
         bolas[3].transform.position = bolasFase7[2].transform.position;
@@ -147,7 +147,7 @@ public class MiniFases : MonoBehaviour
         return 14;
     }
     public int fase8(){
-        ButtonFase3.Instance.tipoFase = false;
+        ButtonFase3.Instance.ButtonFase(false);
         bolas[0].transform.position = bolasFase8[0].transform.position;
         bolas[6].transform.position = bolasFase8[1].transform.position;
         bolas[8].transform.position = bolasFase8[2].transform.position;
@@ -164,7 +164,7 @@ public class MiniFases : MonoBehaviour
         return 11;
     }
     public int fase9(){
-        ButtonFase3.Instance.tipoFase = true;
+        ButtonFase3.Instance.ButtonFase(true);
         bolas[7].transform.position = bolasFase9[0].transform.position;
         bolas[9].transform.position = bolasFase9[1].transform.position;
         bolas[13].transform.position = bolasFase9[2].transform.position;
@@ -179,7 +179,7 @@ public class MiniFases : MonoBehaviour
         return 9;
     }
     public int fase10(){
-        ButtonFase3.Instance.tipoFase = false;
+        ButtonFase3.Instance.ButtonFase(false);
         bolas[1].transform.position = bolasFase10[0].transform.position;
         bolas[2].transform.position = bolasFase10[1].transform.position;
         bolas[9].transform.position = bolasFase10[2].transform.position;
@@ -196,7 +196,7 @@ public class MiniFases : MonoBehaviour
         return 2;
     }
     public int fase11(){
-        ButtonFase3.Instance.tipoFase = true;
+        ButtonFase3.Instance.ButtonFase(true);
         bolas[6].transform.position = bolasFase11[0].transform.position;
         bolas[10].transform.position = bolasFase11[1].transform.position;
         bolaBranca.transform.position = bolasFase11[2].transform.position;
@@ -209,7 +209,7 @@ public class MiniFases : MonoBehaviour
         return 6;
     }
     public int fase12(){
-        ButtonFase3.Instance.tipoFase = true;
+        ButtonFase3.Instance.ButtonFase(true);
         bolas[4].transform.position = bolasFase12[0].transform.position;
         bolas[5].transform.position = bolasFase12[1].transform.position;
         bolas[7].transform.position = bolasFase12[2].transform.position;
@@ -226,7 +226,7 @@ public class MiniFases : MonoBehaviour
         return 12;
     }
     public int fase13(){
-        ButtonFase3.Instance.tipoFase = false;
+        ButtonFase3.Instance.ButtonFase(false);
         bolas[2].transform.position = bolasFase13[0].transform.position;
         bolas[6].transform.position = bolasFase13[1].transform.position;
         bolas[8].transform.position = bolasFase13[2].transform.position;
@@ -244,7 +244,7 @@ public class MiniFases : MonoBehaviour
         return 13;
     }
     public int fase14(){
-        ButtonFase3.Instance.tipoFase = false;
+        ButtonFase3.Instance.ButtonFase(false);
         bolas[3].transform.position = bolasFase14[0].transform.position;
         bolas[5].transform.position = bolasFase14[1].transform.position;
         bolas[8].transform.position = bolasFase14[2].transform.position;
@@ -262,7 +262,7 @@ public class MiniFases : MonoBehaviour
         return 8;
     }
     public int fase15(){
-        ButtonFase3.Instance.tipoFase = true;
+        ButtonFase3.Instance.ButtonFase(true);
         bolas[1].transform.position = bolasFase15[0].transform.position;
         bolas[10].transform.position = bolasFase15[1].transform.position;
         bolaBranca.transform.position = bolasFase15[4].transform.position;
@@ -277,40 +277,6 @@ public class MiniFases : MonoBehaviour
     }
     public float velocidade = 5f;
     public Vector3 eixoDeRotacao = Vector3.forward;
-    /*public void animarFase1a(){
-        StartCoroutine(AnimarFase(bolas[4]));
-    }*/
-    /*IEnumerator AnimarFase1a()
-    {
-        // 1. Move a bola branca até a bola[4]
-        while (Vector3.Distance(bolaBranca.transform.position, bolas[4].transform.position) > 0.1f)
-        {
-            Vector3 direcao = (bolas[4].transform.position - bolaBranca.transform.position).normalized;
-            bolaBranca.transform.position += direcao * velocidade * Time.deltaTime;
-            yield return null; // Espera o próximo frame
-        }
-
-        // 2. Ativa a animação da bola 4
-        animator.SetBool("Bola5", true);
-
-        // 3. Move e gira a bola[4] até o buraco
-        while (Vector3.Distance(bolas[4].transform.position, buracos[3].transform.position) > 0.01f)
-        {
-            Vector3 direcaoBuraco = (buracos[3].transform.position - bolas[4].transform.position).normalized;
-            bolas[4].transform.position += direcaoBuraco * velocidade * Time.deltaTime;
-
-            // Rotaciona proporcional ao tempo
-            //bolas[4].transform.Rotate(eixoDeRotacao, 90f * Time.deltaTime, Space.Self);
-            bolas[4].transform.rotation = Quaternion.Euler(0f, 0f, 90f);
-            //aqui apenas para as que precisam girar
-
-            yield return null;
-        }
-
-        // 4. Finaliza a animação e desativa a bola
-        animator.SetBool("Bola5", false);
-        bolas[4].gameObject.SetActive(false);
-    }*/
     public int buracoMaisPerto(){
         float menorDistancia = 1000f;
         int buracoEscolhido = 0;
@@ -346,42 +312,25 @@ public class MiniFases : MonoBehaviour
     }
     public IEnumerator AnimarFase(GameObject bolaEscolhida)
     {
-        // 1. Move a bola branca até a bola[4]
         while (Vector3.Distance(bolaBranca.transform.position, bolaEscolhida.transform.position) > 0.1f)
         {
             Vector3 direcao = (bolaEscolhida.transform.position - bolaBranca.transform.position).normalized;
             bolaBranca.transform.position += direcao * velocidade * Time.deltaTime;
-            yield return null; // Espera o próximo frame
+            yield return null;
         }
         string animacao = stringAnimacao(bolaEscolhida.GetComponent<Bola>().cor);
         Animator animator = bolaEscolhida.GetComponent<Animator>();
         int i = buracoMaisPerto();
         float grau = grauRotacao(i);
         bolaEscolhida.transform.rotation = Quaternion.Euler(0f, 0f, grau);
-        // 2. Ativa a animação da bola 4
         animator.SetBool(animacao, true);
-
-        // 3. Move e gira a bola[4] até o buraco
         while (Vector3.Distance(bolaEscolhida.transform.position, buracos[i].transform.position) > 0.01f)
         {
             Vector3 direcaoBuraco = (buracos[i].transform.position - bolaEscolhida.transform.position).normalized;
             bolaEscolhida.transform.position += direcaoBuraco * velocidade * Time.deltaTime;
-
-            // Rotaciona proporcional ao tempo
-            //bolaEscolhida.transform.Rotate(eixoDeRotacao, 90f * Time.deltaTime, Space.Self);
-            //aqui apenas para as que precisam girar
-
             yield return null;
         }
-
-        // 4. Finaliza a animação e desativa a bola
         animator.SetBool(animacao, false);
         bolaEscolhida.gameObject.SetActive(false);
-    }
-    
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
