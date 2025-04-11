@@ -74,7 +74,7 @@ public class ButtonFase3 : MonoBehaviour
             MiniFases.Instance.fase15
         };
         miniFasesChamadas = new bool[15];
-        //comecarNovaFase();
+        comecarNovaFase();
         //partidaJogadas++;
     }
     public void desativarErros(){
@@ -290,8 +290,8 @@ public class ButtonFase3 : MonoBehaviour
     public void Button_Ok(){
         if(condicaoEscolhida){
             interactableNoButtonQuadro1();
-            /*emojis[0].SetActive(true);
-            Invoke("comecarNovaFase", 2f);*/
+            emojis[0].SetActive(true);
+            Invoke("comecarNovaFase", 2f);
             verificaCondicional(bola[bolaDoMomento]);
         }else{
             if(operadorEscolhido && !condicaoEscolhida){
