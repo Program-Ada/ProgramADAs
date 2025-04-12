@@ -28,6 +28,7 @@ public class TutorialFase3 : MonoBehaviour
         if(atualStep < steps.Count-1){
             steps[++atualStep].SetActive(true);
         }else{
+            //colocar aqui para desativar todos os botoes
             atualStep = -1;
         }
     }
