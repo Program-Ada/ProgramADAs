@@ -4064,7 +4064,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 99079609}
-        m_TargetAssemblyTypeName: TutorialCafeManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: TutorialFase3, Assembly-CSharp
         m_MethodName: DisplayNextStep
         m_Mode: 1
         m_Arguments:
@@ -6615,7 +6615,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &99079608
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6662,7 +6662,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 99079607}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 947fe453a855d3a4ab9989b62e648614, type: 3}
+  m_Script: {fileID: 11500000, guid: 1c31a844a150e594fbc2916ceaa113aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   steps: []
@@ -11020,7 +11020,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &159560664
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11035,7 +11035,6 @@ RectTransform:
   m_Children:
   - {fileID: 1048693631}
   - {fileID: 342880066}
-  - {fileID: 497161055}
   - {fileID: 2104056755}
   - {fileID: 970093249}
   m_Father: {fileID: 99079608}
@@ -12119,7 +12118,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 99079609}
-        m_TargetAssemblyTypeName: TutorialCafeManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: TutorialFase3, Assembly-CSharp
         m_MethodName: DisplayNextStep
         m_Mode: 1
         m_Arguments:
@@ -13331,7 +13330,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 99079609}
-        m_TargetAssemblyTypeName: TutorialCafeManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: TutorialFase3, Assembly-CSharp
         m_MethodName: DisplayNextStep
         m_Mode: 1
         m_Arguments:
@@ -16798,7 +16797,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 99079609}
-        m_TargetAssemblyTypeName: TutorialCafeManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: TutorialFase3, Assembly-CSharp
         m_MethodName: DisplayPreviousStep
         m_Mode: 1
         m_Arguments:
@@ -25863,7 +25862,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 99079609}
-        m_TargetAssemblyTypeName: TutorialCafeManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: TutorialFase3, Assembly-CSharp
         m_MethodName: DisplayPreviousStep
         m_Mode: 1
         m_Arguments:
@@ -26441,7 +26440,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 99079609}
-        m_TargetAssemblyTypeName: TutorialCafeManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: TutorialFase3, Assembly-CSharp
         m_MethodName: DisplayNextStep
         m_Mode: 1
         m_Arguments:
@@ -28360,7 +28359,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 99079609}
-        m_TargetAssemblyTypeName: TutorialCafeManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: TutorialFase3, Assembly-CSharp
         m_MethodName: DisplayPreviousStep
         m_Mode: 1
         m_Arguments:
@@ -29656,7 +29655,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 99079609}
-        m_TargetAssemblyTypeName: TutorialCafeManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: TutorialFase3, Assembly-CSharp
         m_MethodName: DisplayNextStep
         m_Mode: 1
         m_Arguments:
@@ -32464,81 +32463,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 496945195}
   m_CullTransparentMesh: 1
---- !u!1 &497161054
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 497161055}
-  - component: {fileID: 497161057}
-  - component: {fileID: 497161056}
-  m_Layer: 5
-  m_Name: Natalia (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &497161055
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 497161054}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 159560664}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -317, y: 158}
-  m_SizeDelta: {x: 600, y: 600}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &497161056
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 497161054}
-  m_CullTransparentMesh: 0
---- !u!114 &497161057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 497161054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 498812651, guid: 87f75e6d7a46ac84e9a2dd51365f3988, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 5
 --- !u!1 &497315768
 GameObject:
   m_ObjectHideFlags: 0
@@ -36618,7 +36542,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 99079609}
-        m_TargetAssemblyTypeName: TutorialCafeManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: TutorialFase3, Assembly-CSharp
         m_MethodName: DisplayNextStep
         m_Mode: 1
         m_Arguments:
@@ -37539,7 +37463,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 99079609}
-        m_TargetAssemblyTypeName: TutorialCafeManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: TutorialFase3, Assembly-CSharp
         m_MethodName: DisplayPreviousStep
         m_Mode: 1
         m_Arguments:
@@ -37984,7 +37908,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 99079609}
-        m_TargetAssemblyTypeName: TutorialCafeManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: TutorialFase3, Assembly-CSharp
         m_MethodName: DisplayNextStep
         m_Mode: 1
         m_Arguments:
@@ -38573,7 +38497,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 99079609}
-        m_TargetAssemblyTypeName: TutorialCafeManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: TutorialFase3, Assembly-CSharp
         m_MethodName: DisplayPreviousStep
         m_Mode: 1
         m_Arguments:
@@ -40307,7 +40231,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 99079609}
-        m_TargetAssemblyTypeName: TutorialCafeManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: TutorialFase3, Assembly-CSharp
         m_MethodName: DisplayNextStep
         m_Mode: 1
         m_Arguments:
@@ -48692,7 +48616,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 99079609}
-        m_TargetAssemblyTypeName: TutorialCafeManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: TutorialFase3, Assembly-CSharp
         m_MethodName: DisplayNextStep
         m_Mode: 1
         m_Arguments:
@@ -53963,7 +53887,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 99079609}
-        m_TargetAssemblyTypeName: TutorialCafeManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: TutorialFase3, Assembly-CSharp
         m_MethodName: DisplayNextStep
         m_Mode: 1
         m_Arguments:
@@ -57488,7 +57412,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 99079609}
-        m_TargetAssemblyTypeName: TutorialCafeManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: TutorialFase3, Assembly-CSharp
         m_MethodName: DisplayNextStep
         m_Mode: 1
         m_Arguments:
@@ -58683,7 +58607,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 99079609}
-        m_TargetAssemblyTypeName: TutorialCafeManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: TutorialFase3, Assembly-CSharp
         m_MethodName: DisplayNextStep
         m_Mode: 1
         m_Arguments:
@@ -61979,7 +61903,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 99079609}
-        m_TargetAssemblyTypeName: TutorialCafeManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: TutorialFase3, Assembly-CSharp
         m_MethodName: DisplayNextStep
         m_Mode: 1
         m_Arguments:
@@ -66167,7 +66091,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 99079609}
-        m_TargetAssemblyTypeName: TutorialCafeManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: TutorialFase3, Assembly-CSharp
         m_MethodName: DisplayNextStep
         m_Mode: 1
         m_Arguments:
@@ -73558,7 +73482,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 99079609}
-        m_TargetAssemblyTypeName: TutorialCafeManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: TutorialFase3, Assembly-CSharp
         m_MethodName: DisplayPreviousStep
         m_Mode: 1
         m_Arguments:
@@ -80146,7 +80070,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 99079609}
-        m_TargetAssemblyTypeName: TutorialCafeManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: TutorialFase3, Assembly-CSharp
         m_MethodName: DisplayPreviousStep
         m_Mode: 1
         m_Arguments:
@@ -83382,7 +83306,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 99079609}
-        m_TargetAssemblyTypeName: TutorialCafeManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: TutorialFase3, Assembly-CSharp
         m_MethodName: DisplayPreviousStep
         m_Mode: 1
         m_Arguments:
@@ -88495,7 +88419,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 99079609}
-        m_TargetAssemblyTypeName: TutorialCafeManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: TutorialFase3, Assembly-CSharp
         m_MethodName: DisplayPreviousStep
         m_Mode: 1
         m_Arguments:
@@ -90685,7 +90609,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 99079609}
-        m_TargetAssemblyTypeName: TutorialCafeManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: TutorialFase3, Assembly-CSharp
         m_MethodName: DisplayNextStep
         m_Mode: 1
         m_Arguments:
@@ -90829,7 +90753,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 99079609}
-        m_TargetAssemblyTypeName: TutorialCafeManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: TutorialFase3, Assembly-CSharp
         m_MethodName: DisplayPreviousStep
         m_Mode: 1
         m_Arguments:
@@ -92216,7 +92140,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 99079609}
-        m_TargetAssemblyTypeName: TutorialCafeManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: TutorialFase3, Assembly-CSharp
         m_MethodName: DisplayPreviousStep
         m_Mode: 1
         m_Arguments:
@@ -92542,7 +92466,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 99079609}
-        m_TargetAssemblyTypeName: TutorialCafeManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: TutorialFase3, Assembly-CSharp
         m_MethodName: DisplayNextStep
         m_Mode: 1
         m_Arguments:
@@ -96836,7 +96760,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 99079609}
-        m_TargetAssemblyTypeName: TutorialCafeManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: TutorialFase3, Assembly-CSharp
         m_MethodName: DisplayPreviousStep
         m_Mode: 1
         m_Arguments:
@@ -98432,7 +98356,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 99079609}
-        m_TargetAssemblyTypeName: TutorialCafeManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: TutorialFase3, Assembly-CSharp
         m_MethodName: DisplayPreviousStep
         m_Mode: 1
         m_Arguments:
@@ -99480,7 +99404,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 99079609}
-        m_TargetAssemblyTypeName: TutorialCafeManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: TutorialFase3, Assembly-CSharp
         m_MethodName: DisplayNextStep
         m_Mode: 1
         m_Arguments:
@@ -102331,7 +102255,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 99079609}
-        m_TargetAssemblyTypeName: TutorialCafeManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: TutorialFase3, Assembly-CSharp
         m_MethodName: DisplayPreviousStep
         m_Mode: 1
         m_Arguments:
@@ -102914,7 +102838,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 99079609}
-        m_TargetAssemblyTypeName: TutorialCafeManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: TutorialFase3, Assembly-CSharp
         m_MethodName: DisplayTutorial
         m_Mode: 1
         m_Arguments:
@@ -110271,7 +110195,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 99079609}
-        m_TargetAssemblyTypeName: TutorialCafeManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: TutorialFase3, Assembly-CSharp
         m_MethodName: DisplayNextStep
         m_Mode: 1
         m_Arguments:
@@ -112979,7 +112903,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 99079609}
-        m_TargetAssemblyTypeName: TutorialCafeManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: TutorialFase3, Assembly-CSharp
         m_MethodName: DisplayPreviousStep
         m_Mode: 1
         m_Arguments:
@@ -120858,7 +120782,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 99079609}
-        m_TargetAssemblyTypeName: TutorialCafeManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: TutorialFase3, Assembly-CSharp
         m_MethodName: DisplayPreviousStep
         m_Mode: 1
         m_Arguments:
@@ -121841,7 +121765,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 99079609}
-        m_TargetAssemblyTypeName: TutorialCafeManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: TutorialFase3, Assembly-CSharp
         m_MethodName: DisplayPreviousStep
         m_Mode: 1
         m_Arguments:
