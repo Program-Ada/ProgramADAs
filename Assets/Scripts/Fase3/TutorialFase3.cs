@@ -8,7 +8,7 @@ public class TutorialFase3 : MonoBehaviour
 {
     public static TutorialFase3 Instance;
     public List<GameObject> steps;
-    private int atualStep = -1;
+    public int atualStep = -1;
 
     void Start()
     {
@@ -23,10 +23,10 @@ public class TutorialFase3 : MonoBehaviour
 
     public void DisplayNextStep(){
         if(atualStep >= 0){
-            steps[atualStep].SetActive(false);
+            steps[atualStep].SetActive(false); // desativar o passo atual 
         }
         if(atualStep < steps.Count-1){
-            steps[++atualStep].SetActive(true);
+            steps[++atualStep].SetActive(true); // ativar o próximo passo
         }else{
             //colocar aqui para desativar todos os botoes
             atualStep = -1;
@@ -42,5 +42,12 @@ public class TutorialFase3 : MonoBehaviour
 
     public void DisplayTutorial(){
         DisplayNextStep();
+    }
+
+    public void SkipTutorial(){
+        atualStep = -1;
+        foreach(GameObject step in steps){
+            step.SetActive(false); // desativar todos os passos
+        }
     }
 }
