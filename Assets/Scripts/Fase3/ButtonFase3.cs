@@ -262,7 +262,6 @@ public class ButtonFase3 : MonoBehaviour
                         operador[i].interactable = true;
                 }
             }
-
         }else{
             interactableAllYes();
         }
@@ -539,7 +538,7 @@ public class ButtonFase3 : MonoBehaviour
                 FeedbackManagerFase3.Instance.Feedback_Test("errado");
             }
             if(error >= 2){
-                Invoke("IsGameFinished", 2f);
+                Invoke("IsGameFinished", 3f);
             }else{
                 Invoke("comecarNovaFase", 4f);
                 ScoreFase3.instance.Update_Score(resultadoInt);
