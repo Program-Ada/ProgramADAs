@@ -26,15 +26,15 @@ AnimationClip:
       value: {fileID: 613929744, guid: d85d15ec6ebcf064580477694399200a, type: 3}
     - time: 0.16666667
       value: {fileID: -1970436635, guid: d85d15ec6ebcf064580477694399200a, type: 3}
-    - time: 0.23333333
+    - time: 0.25
       value: {fileID: 505073619, guid: d85d15ec6ebcf064580477694399200a, type: 3}
     - time: 0.33333334
       value: {fileID: -332116925, guid: d85d15ec6ebcf064580477694399200a, type: 3}
-    - time: 0.43333334
+    - time: 0.41666666
       value: {fileID: 1659676734, guid: d85d15ec6ebcf064580477694399200a, type: 3}
     - time: 0.5
       value: {fileID: -648182025, guid: d85d15ec6ebcf064580477694399200a, type: 3}
-    - time: 0.6
+    - time: 0.5833333
       value: {fileID: -1013125401, guid: d85d15ec6ebcf064580477694399200a, type: 3}
     - time: 0.6666667
       value: {fileID: -1883361926, guid: d85d15ec6ebcf064580477694399200a, type: 3}
