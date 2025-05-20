@@ -61,8 +61,8 @@ public class StartFase3 : MonoBehaviour, IDataPersistence
     }
 
     public void LoadData(GameData data){
-        //colcar a Fase3 no unlocked Fase e mudar o mudar o i
-        if(data.unlockedFases[1]){
+        //i mudado mas precisa direcionar em algum lugar
+        if(data.unlockedFases[2]){
             isLevelUnlocked = true;
         }
     }
