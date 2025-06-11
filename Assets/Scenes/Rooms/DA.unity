@@ -2878,7 +2878,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -243658215, guid: 771935f471f02284b9608866aecc703d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5256,11 +5256,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3919617994435948074, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.08
+      value: -0.66
       objectReference: {fileID: 0}
     - target: {fileID: 3919617994435948074, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.43
+      value: 1.94
       objectReference: {fileID: 0}
     - target: {fileID: 3919617994435948074, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5442,7 +5442,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.dialogueLines.Array.data[1].sentence
-      value: Quer jogar sinuca?
+      value: "Quer jogar sinuca? (Voc\xEA pode voltar depois)"
       objectReference: {fileID: 0}
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.dialogueLines.Array.data[2].sentence
@@ -9766,11 +9766,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3919617994435948074, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.08
+      value: -0.65999997
       objectReference: {fileID: 0}
     - target: {fileID: 3919617994435948074, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.43
+      value: 1.9399999
       objectReference: {fileID: 0}
     - target: {fileID: 3919617994435948074, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9948,7 +9948,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.dialogueLines.Array.data[0].sentence
-      value: Apenas depois de jogar a fase 2
+      value: "Ela est\xE1 jogando sinca, mais tarde falo com ela"
       objectReference: {fileID: 0}
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.dialogueLines.Array.data[1].sentence
