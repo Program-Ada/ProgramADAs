@@ -61,16 +61,15 @@ public class StartFase3 : MonoBehaviour, IDataPersistence
     }
 
     public void LoadData(GameData data){
-        //i mudado mas precisa direcionar em algum lugar
-        if(data.unlockedFases[2]){
+        if(data.pointFases[1] >= 75){
             isLevelUnlocked = true;
         }
     }
     public void SaveData(ref GameData data){
         if(isTrueClicked){
             isTrueClicked = false;
-            //entender o que é esse questProgressIndex
-            data.questProgressIndex = 5;
+            //coloquei 7 porque o ult ta 6 mas n sei se eh certo
+            data.questProgressIndex = 7;
         }
     }
 }

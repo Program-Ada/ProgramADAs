@@ -41,30 +41,52 @@ public class QuestManager : MonoBehaviour, IDataPersistence
             DisplayNextSentence("Fale com a Professora Bárbara");
             progressIndex = 1;
         }
-        if(progressIndex > 1 || index > 1){
-            if(pointFases[0] == 0 || index == 2){
+        if (progressIndex > 1 || index > 1)
+        {
+            if (pointFases[0] == 0 || index == 2)
+            {
                 DisplayNextSentence("Realize o Quiz Introdutório");
                 progressIndex = 2;
             }
-            if(pointFases[0] != 0 || index > 2){
-                if(pointFases[0] < 75 || index == 3){
+            if (pointFases[0] != 0 || index > 2)
+            {
+                if (pointFases[0] < 75 || index == 3)
+                {
                     DisplayNextSentence("Consiga uma nota maior que 75% no Quiz para avançar");
                     progressIndex = 3;
                 }
-                if(pointFases[0] >= 75 || index == 4){
+                if (pointFases[0] >= 75 || index == 4)
+                {
                     DisplayNextSentence("Vá ao Centro de Convivência");
                     progressIndex = 4;
                 }
             }
-            if(pointFases[1] != 0 || index > 4){
-                if(pointFases[0] < 75 || index == 5){
+            if (pointFases[1] != 0 || index > 4)
+            {
+                if (pointFases[0] < 75 || index == 5)
+                {
                     DisplayNextSentence("Consiga uma nota maior que 75% no minigame para avançar");
                     progressIndex = 5;
                     return;
                 }
-                if(pointFases[0] >= 75 || index == 6){
-                    DisplayNextSentence("Fase 3 em Construção. Obrigada por jogar!");
+                if (pointFases[0] >= 75 || index == 6)
+                {
+                    DisplayNextSentence("Vá ao DA");
                     progressIndex = 6;
+                }
+            }
+            if (pointFases[2] != 0 || index > 6)
+            {
+                if (pointFases[1] < 75 || index == 7)
+                {
+                    DisplayNextSentence("Consiga uma nota maior que 75% no minigame para avançar");
+                    progressIndex = 7;
+                    return;
+                }
+                if (pointFases[1] >= 75 || index == 8)
+                {
+                    DisplayNextSentence("Fase 4 está em construção");
+                    progressIndex = 8;
                 }
             }
         }

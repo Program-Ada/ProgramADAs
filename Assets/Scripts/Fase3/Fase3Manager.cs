@@ -27,9 +27,9 @@ public class Fase3Manager : MonoBehaviour, IDataPersistence
         if(isGameFinished){
             data.pointFases[2] = ScoreFase3.instance.score;
             if(ScoreFase3.instance.score >=75){
-                data.questProgressIndex = 6;
+                data.questProgressIndex = 8;
             }else{
-                data.questProgressIndex = 5;
+                data.questProgressIndex = 7;
             }
         }
 
