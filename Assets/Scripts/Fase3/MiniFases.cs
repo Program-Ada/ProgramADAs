@@ -330,7 +330,7 @@ public class MiniFases : MonoBehaviour
             bolaEscolhida.transform.position += direcaoBuraco * velocidade * Time.deltaTime;
             yield return null;
         }
-        desativarComAtraso(0.5f, animator, animacao);
+        desativarComAtraso(0.2f, animator, animacao);
         //bolaEscolhida.gameObject.SetActive(false);
     }
     IEnumerator desativarComAtraso(float tempo, Animator animator, string animacao)
