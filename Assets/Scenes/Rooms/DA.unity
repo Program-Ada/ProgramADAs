@@ -310,7 +310,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1758142866}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: QuizManager, Assembly-CSharp
         m_MethodName: Retry
         m_Mode: 1
@@ -1182,7 +1182,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 85871854991311040, guid: effd06d65a431524887f3d16da48219b, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6502587600570111543, guid: effd06d65a431524887f3d16da48219b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1245,156 +1245,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 550e057ffc6a3fe459545f954fe3c550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &79727599
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 79727600}
-  - component: {fileID: 79727603}
-  - component: {fileID: 79727602}
-  - component: {fileID: 79727601}
-  m_Layer: 0
-  m_Name: QuizObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &79727600
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 79727599}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.24, y: -0.86, z: 5.9949794}
-  m_LocalScale: {x: 0.25, y: 0.3, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1110334143}
-  - {fileID: 603736216}
-  m_Father: {fileID: 1747540929}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &79727601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 79727599}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f93cacfc124a9084c98f9b1c226eed32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerIsClose: 0
-  Qm: {fileID: 1758142866}
-  toolTip: {fileID: 603736215}
-  exclamation: {fileID: 0}
-  isExclamationActive: 0
---- !u!61 &79727602
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 79727599}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.08520031, y: -1.2076325}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 9.237638, y: 8.415264}
-  m_EdgeRadius: 0
---- !u!212 &79727603
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 79727599}
-  m_Enabled: 0
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.6670046, g: 0, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &88823997
 GameObject:
   m_ObjectHideFlags: 0
@@ -1430,7 +1280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startColor: {r: 0, g: 0, b: 0, a: 0}
   isCorrect: 0
-  quizManager: {fileID: 1758142866}
+  quizManager: {fileID: 0}
 --- !u!114 &88823999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2552,7 +2402,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1758142866}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: QuizManager, Assembly-CSharp
         m_MethodName: StartQuiz
         m_Mode: 1
@@ -4688,112 +4538,6 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!1 &603736215
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 603736216}
-  - component: {fileID: 603736218}
-  - component: {fileID: 603736217}
-  m_Layer: 0
-  m_Name: Press_E
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &603736216
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 603736215}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.92, y: 3.93, z: 551.88495}
-  m_LocalScale: {x: 9, y: 7.5, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 79727600}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &603736217
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 603736215}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3ebebe1a9315ddb458c0f436d14ceee0, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!212 &603736218
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 603736215}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 3
-  m_Sprite: {fileID: -4138361, guid: 5b39181197b0770498274a9bf17615d9, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.32, y: 0.32}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &620293620
 GameObject:
   m_ObjectHideFlags: 0
@@ -4849,7 +4593,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startColor: {r: 0, g: 0, b: 0, a: 0}
   isCorrect: 0
-  quizManager: {fileID: 1758142866}
+  quizManager: {fileID: 0}
 --- !u!114 &620293623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5867,6 +5611,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mari
       objectReference: {fileID: 0}
+    - target: {fileID: 802806789608427348, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2828481404245613530, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: m_Size.x
       value: 0.32
@@ -6022,6 +5770,10 @@ PrefabInstance:
     - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: dialogue.setences.Array.data[1]
       value: Eu sou a Mari! Tudo bom? :)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924769569328728860, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
+      propertyPath: dialogue.dialogueLines.Array.size
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3486044095752316602, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
@@ -6814,7 +6566,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1454815459}
-  - {fileID: 1758142867}
   - {fileID: 151978816}
   - {fileID: 2042484712}
   - {fileID: 1270372833}
@@ -7302,103 +7053,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c321c3bdecdde147bd371b951b2b1ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1110334142
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1110334143}
-  - component: {fileID: 1110334145}
-  - component: {fileID: 1110334144}
-  m_Layer: 0
-  m_Name: Prancheta
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1110334143
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1110334142}
-  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.4, y: 3, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 79727600}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.02, y: 0.05}
-  m_SizeDelta: {x: 1, y: 1}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!212 &1110334144
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1110334142}
-  m_Enabled: 0
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: -1000
-  m_Sprite: {fileID: 21300000, guid: 206116c8065a73b4fa0c0b15be701c43, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.88, y: 0.37}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!222 &1110334145
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1110334142}
-  m_CullTransparentMesh: 1
 --- !u!1 &1111872557
 GameObject:
   m_ObjectHideFlags: 0
@@ -7434,7 +7088,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startColor: {r: 0, g: 0, b: 0, a: 0}
   isCorrect: 0
-  quizManager: {fileID: 1758142866}
+  quizManager: {fileID: 0}
 --- !u!114 &1111872559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9690,7 +9344,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 802806789608427348, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2828481404245613530, guid: 6f7218c0e85817f45a002a8b3ae4c06e, type: 3}
       propertyPath: m_Size.x
@@ -10742,7 +10396,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startColor: {r: 0, g: 0, b: 0, a: 0}
   isCorrect: 0
-  quizManager: {fileID: 1758142866}
+  quizManager: {fileID: 0}
 --- !u!114 &1715445445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11136,7 +10790,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 79727600}
   - {fileID: 723628165}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11309,145 +10962,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!1 &1758142865
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1758142867}
-  - component: {fileID: 1758142866}
-  m_Layer: 0
-  m_Name: QuizManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1758142866
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1758142865}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53394f04160d084408f88ad1bf8d66e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Qn:
-  - Question: "O que est\xE1 faltando no c\xF3digo a seguir?\n\n#include <iostream>
-      \nusing namespace std;  \nint main( ) {\n\n}"
-    Answers:
-    - "Uma vari\xE1vel"
-    - return 0;
-    - cin >> x;
-    - cout << "Hello World";
-    correctAnswer: 2
-  - Question: "Qual o erro presente nesse c\xF3digo?\n\n1 #include <iostream>\r\n2
-      using namespace std;\r\n3 int main()\r\n4 {\r\n5     cout << \"Erros devem
-      ser ;\r\n6     cout << \"corrigidos na ordem em que sao identificados,\";\r\n7    
-      out << \" pois ao corrigir \";\r\n8     cout << \"um erro \\nOutros podem ser
-      identificados\";\r\n9     return 0;\r\n10 }"
-    Answers:
-    - '"\n" na linha 8'
-    - '"um erro" na linha 8'
-    - '"out" na linha 7'
-    - return 0; na linha 9
-    correctAnswer: 3
-  - Question: "Dadas as entradas:\n\na) 3\nb) false\nc) 2.7\nd) 'a'\n\nQual o tipo
-      de vari\xE1vel de cada uma delas, respectivamente?\n"
-    Answers:
-    - int, char, float e bool
-    - int, bool, float e char
-    - float, bool, int, char
-    - char, int, float e bool
-    correctAnswer: 2
-  - Question: "Dados os operadores l\xF3gicos e relacionais a seguir identifique,
-      respectivamente, cada um deles:\n\na) !\nb) !=\nc) &&\nd) | | "
-    Answers:
-    - "nega\xE7\xE3o, diferente, conjun\xE7\xE3o e disjun\xE7\xE3o"
-    - "diferente, nega\xE7\xE3o, disjun\xE7\xE3o e conjun\xE7\xE3o"
-    - "igual, nega\xE7\xE3o, conjun\xE7\xE3o e nega\xE7\xE3o"
-    - "disjun\xE7\xE3o, conjun\xE7\xE3o, nega\xE7\xE3o e igual"
-    correctAnswer: 1
-  - Question: "Dadas as seguintes declara\xE7\xF5es:\n\r\n    int a = 9, b = 4, c
-      = -2;\n \r\nQual o resultado da express\xE3o (a + c) / (2 * b)?"
-    Answers:
-    - 0
-    - 1
-    - 0.8
-    - 0.7
-    correctAnswer: 1
-  - Question: "Dadas as seguintes declara\xE7\xF5es:\r\n    \r\n    int a = 9, b
-      = 4, c = -2; \r\n    float r = 3.5, s = 2.0, t = 0.5;\n\r\nQual o resultado
-      da express\xE3o: !(a <= b * 2 + 1) || (r >= s + t)?"
-    Answers:
-    - 0
-    - true
-    - 2
-    - false
-    correctAnswer: 2
-  - Question: Para que eu preciso aprender a fazer um teste de mesa?
-    Answers:
-    - "Para ter mais autonomia para conferir meu pr\xF3prio algoritmo."
-    - "Para conseguir identificar problemas na ordem das instru\xE7\xF5es antes de
-      precisar executar."
-    - "As letras a. e b. est\xE3o certas. "
-    - "N\xE3o \xE9 nada disso."
-    correctAnswer: 3
-  - Question: "A declara\xE7\xE3o de vari\xE1veis separa um espa\xE7o na mem\xF3ria
-      para armazenar um valor do tipo informado no inicio da instru\xE7\xE3o. Por
-      exemplo, as instru\xE7\xF5es a seguir significam:\n\nint cont;\r\nfloat soma;\n"
-    Answers:
-    - "Separa\xE7\xE3o de espa\xE7o na mem\xF3ria para dois valores inteiros."
-    - "Separa\xE7\xE3o de espa\xE7o na mem\xF3ria para um valor inteiro chamado cont
-      e outro valor ponto flutuante chamado soma. "
-    - "Separa\xE7\xE3o de espa\xE7o para dois valores do mesmo tipo."
-    - "Separa\xE7\xE3o de espa\xE7o para um n\xFAmero ponto flutuante e um n\xFAmero
-      inteiro, respectivamente."
-    correctAnswer: 2
-  - Question: "Sobre declara\xE7\xF5es de vari\xE1veis escolha a op\xE7\xE3o v\xE1lida:"
-    Answers:
-    - "char endere\xE7o;"
-    - 'int valor1, valor2; '
-    - char a, b, char;
-    - 'int 21; '
-    correctAnswer: 2
-  options:
-  - {fileID: 88823997}
-  - {fileID: 1715445443}
-  - {fileID: 1111872557}
-  - {fileID: 620293620}
-  currentQuestion: 0
-  QuizPanel: {fileID: 1284145659}
-  ScorePanel: {fileID: 354734418}
-  InicialPanel: {fileID: 142025076}
-  Player: {fileID: 453369648}
-  QuestionTxt: {fileID: 361753696}
-  ScoreTxt: {fileID: 2021755155}
-  score: 0
-  passed: 0
-  media: 0
-  quizDone: 0
---- !u!4 &1758142867
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1758142865}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.7767067, y: -4.5729656, z: -5.46397}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 915265965}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1787604180
 GameObject:
   m_ObjectHideFlags: 0
@@ -12370,7 +11884,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1758142866}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: QuizManager, Assembly-CSharp
         m_MethodName: Sair
         m_Mode: 1
@@ -12432,63 +11946,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2021857315}
   m_CullTransparentMesh: 1
---- !u!1001 &2026063556
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5959681669225987379, guid: b70dd7aeb6df1ba48822c6acc92065e9, type: 3}
-      propertyPath: m_Name
-      value: GameManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 8006734619424542643, guid: b70dd7aeb6df1ba48822c6acc92065e9, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.6668421
-      objectReference: {fileID: 0}
-    - target: {fileID: 8006734619424542643, guid: b70dd7aeb6df1ba48822c6acc92065e9, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.38128835
-      objectReference: {fileID: 0}
-    - target: {fileID: 8006734619424542643, guid: b70dd7aeb6df1ba48822c6acc92065e9, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.1949773
-      objectReference: {fileID: 0}
-    - target: {fileID: 8006734619424542643, guid: b70dd7aeb6df1ba48822c6acc92065e9, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8006734619424542643, guid: b70dd7aeb6df1ba48822c6acc92065e9, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8006734619424542643, guid: b70dd7aeb6df1ba48822c6acc92065e9, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8006734619424542643, guid: b70dd7aeb6df1ba48822c6acc92065e9, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8006734619424542643, guid: b70dd7aeb6df1ba48822c6acc92065e9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8006734619424542643, guid: b70dd7aeb6df1ba48822c6acc92065e9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8006734619424542643, guid: b70dd7aeb6df1ba48822c6acc92065e9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b70dd7aeb6df1ba48822c6acc92065e9, type: 3}
 --- !u!1 &2042484709
 GameObject:
   m_ObjectHideFlags: 0
@@ -12870,7 +12327,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1758142866}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: QuizManager, Assembly-CSharp
         m_MethodName: Sair
         m_Mode: 1
@@ -14232,4 +13689,3 @@ SceneRoots:
   - {fileID: 1325769258}
   - {fileID: 1511280004}
   - {fileID: 1747540929}
-  - {fileID: 2026063556}

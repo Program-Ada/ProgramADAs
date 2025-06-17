@@ -68,7 +68,6 @@ public class StartFase3 : MonoBehaviour, IDataPersistence
     public void SaveData(ref GameData data){
         if(isTrueClicked){
             isTrueClicked = false;
-            //coloquei 7 porque o ult ta 6 mas n sei se eh certo
             data.questProgressIndex = 7;
         }
     }
