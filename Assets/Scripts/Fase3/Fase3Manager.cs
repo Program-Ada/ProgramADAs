@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Fase3Manager : MonoBehaviour, IDataPersistence
 {
-    public static Fase3Manager Instance;
+    public static Fase3Manager instance;
     private bool isGameFinished = false;
     void Start()
     {
-        Instance = this;
+        instance = this;
     }
 
     public void Finish_Game(bool finish){

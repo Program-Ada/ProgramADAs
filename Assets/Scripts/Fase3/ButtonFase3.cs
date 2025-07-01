@@ -577,9 +577,9 @@ public class ButtonFase3 : MonoBehaviour
     }
     public void IsGameFinished(){ // verifica se o jogo acabou ou não
         if(error >= 2){
-            Fase3Manager.Instance.Finish_Game(false);
+            Fase3Manager.instance.Finish_Game(false);
         }else{
-            Fase3Manager.Instance.Finish_Game(true);
+            Fase3Manager.instance.Finish_Game(true);
         }
     }
     public void ButtonFase(bool fase){

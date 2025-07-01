@@ -79,7 +79,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
             {
                 if (pointFases[1] < 75 || index == 7)
                 {
-                    DisplayNextSentence("Consiga uma nota maior que 75% no minigame para avançar");
+                    DisplayNextSentence("Consiga uma nota maior que 75% no minigame de sinuca para avançar");
                     progressIndex = 7;
                     return;
                 }
