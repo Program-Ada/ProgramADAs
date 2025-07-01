@@ -310,28 +310,38 @@ public class MiniFases : MonoBehaviour
                 return 0f;
         }
     }
+    private IEnumerator MoverAte(GameObject origem, Vector3 destino)
+    {
+        while (Vector3.Distance(origem.transform.position, destino) > 0.01f)
+        {
+            origem.transform.position = Vector3.MoveTowards(origem.transform.position, destino, velocidade * Time.deltaTime);
+            yield return null;
+        }
+    }
     public IEnumerator AnimarFase(GameObject bolaEscolhida)
     {
-        while (Vector3.Distance(bolaBranca.transform.position, bolaEscolhida.transform.position) > 0.1f)
+        /*while (Vector3.Distance(bolaBranca.transform.position, bolaEscolhida.transform.position) > 0.1f)
         {
             Vector3 direcao = (bolaEscolhida.transform.position - bolaBranca.transform.position).normalized;
             bolaBranca.transform.position += direcao * velocidade * Time.deltaTime;
             yield return null;
-        }
+        }*/
+        yield return MoverAte(bolaBranca, bolaEscolhida.transform.position);
         string animacao = stringAnimacao(bolaEscolhida.GetComponent<Bola>().cor);
         Animator animator = bolaEscolhida.GetComponent<Animator>();
         int i = buracoMaisPerto();
         float grau = grauRotacao(i);
         bolaEscolhida.transform.rotation = Quaternion.Euler(0f, 0f, grau);
         animator.SetBool(animacao, true);
-        while (Vector3.Distance(bolaEscolhida.transform.position, buracos[i].transform.position) > 0.01f)
+        /*while (Vector3.Distance(bolaEscolhida.transform.position, buracos[i].transform.position) > 0.01f)
         {
             Vector3 direcaoBuraco = (buracos[i].transform.position - bolaEscolhida.transform.position).normalized;
             bolaEscolhida.transform.position += direcaoBuraco * velocidade * Time.deltaTime;
             yield return null;
-        }
+        }*/
+        yield return MoverAte(bolaEscolhida, buracos[i].transform.position);
         desativarComAtraso(0.2f, animator, animacao);
-        //bolaEscolhida.gameObject.SetActive(false);
+        bolaEscolhida.gameObject.SetActive(false);
     }
     IEnumerator desativarComAtraso(float tempo, Animator animator, string animacao)
     {
