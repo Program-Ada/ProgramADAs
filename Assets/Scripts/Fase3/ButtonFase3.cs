@@ -292,7 +292,7 @@ public class ButtonFase3 : MonoBehaviour
     public void Button_Ok(){
         if(condicaoEscolhida){
             interactableNoButtonQuadro1();
-            verificaCondicional(bola[bolaDoMomento]);
+            StartCoroutine(verificaCondicional(bola[bolaDoMomento]));
         }else{
             if(operadorEscolhido && !condicaoEscolhida){
             FeedbackManagerFase3.Instance.Feedback_Test("okS/Condicao");
@@ -483,7 +483,7 @@ public class ButtonFase3 : MonoBehaviour
         }
         return null;
     }
-    public void verificaCondicional(GameObject bolaEscolhida){
+    public IEnumerator verificaCondicional(GameObject bolaEscolhida){
         int resultadoInt = -1;
         GameObject resultadoBola = null;
         List<GameObject> bolasAtivas = new List<GameObject>();
@@ -524,13 +524,13 @@ public class ButtonFase3 : MonoBehaviour
         }
         emojis[resultadoInt].SetActive(true);
         if(resultadoInt == 2){
-            MiniFases.Instance.StartCoroutine(MiniFases.Instance.AnimarFase(resultadoBola));
+            yield return MiniFases.Instance.StartCoroutine(MiniFases.Instance.AnimarFase(resultadoBola));
             Invoke("comecarNovaFase", 2f);
         }else{
             error++;
             menosVida(error);
             if(resultadoBola != bolaBranca){
-                MiniFases.Instance.StartCoroutine(MiniFases.Instance.AnimarFase(resultadoBola));
+                yield return MiniFases.Instance.StartCoroutine(MiniFases.Instance.AnimarFase(resultadoBola));
             }
             if(resultadoInt ==1){
                 FeedbackManagerFase3.Instance.Feedback_Test("meioErrado");
@@ -546,12 +546,12 @@ public class ButtonFase3 : MonoBehaviour
         }
     }
     public void comecarNovaFase(){
-    desativarEmojis();
-    Button_X();
-    desativarBolas();
-    interactableAllYes();
-    partidaJogadas++;
-    bolaDoMomento = escolheFase();
+        desativarEmojis();
+        Button_X();
+        desativarBolas();
+        interactableAllYes();
+        partidaJogadas++;
+        bolaDoMomento = escolheFase();
     }
     public int escolheFase(){
         //desativarBolas();

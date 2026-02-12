@@ -26,6 +26,7 @@ public class MiniFases : MonoBehaviour
     public GameObject[] bolasFase13;
     public GameObject[] bolasFase14;
     public GameObject[] bolasFase15;
+    public bool animacaoCompleta = false;   
     // Start is called before the first frame update
     void Awake()
     {
@@ -342,6 +343,7 @@ public class MiniFases : MonoBehaviour
         yield return MoverAte(bolaEscolhida, buracos[i].transform.position);
         desativarComAtraso(0.2f, animator, animacao);
         bolaEscolhida.gameObject.SetActive(false);
+        animacaoCompleta = true;
     }
     IEnumerator desativarComAtraso(float tempo, Animator animator, string animacao)
     {
